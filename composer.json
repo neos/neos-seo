@@ -1,0 +1,14 @@
+{
+    "name": "typo3/neos-seo",
+    "type": "typo3-flow-package",
+    "description": "SEO configuration and tools for TYPO3 Neos",
+    "license": "GPL-3.0+",
+    "require": {
+        "typo3/neos": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TYPO3\\Neos\\Seo": "Classes"
+        }
+    }
+}
