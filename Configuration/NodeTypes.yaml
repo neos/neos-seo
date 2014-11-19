@@ -1,10 +1,19 @@
 #
-# Add mixin to default "Document" type
+# Add mixins; and a SEO tab to the inspector
 #
 'TYPO3.Neos:Document':
   superTypes:
     'TYPO3.Neos.Seo.TitleTagMixin': 'TYPO3.Neos.Seo:TitleTagMixin'
+    'TYPO3.Neos.Seo.SeoMetaTagsMixin': 'TYPO3.Neos.Seo:SeoMetaTagsMixin'
+  ui:
+    inspector:
+      tabs:
+        seo:
+          label: 'SEO'
+          position: 30
+          icon: 'icon-bullseye'
 
 'TYPO3.Neos:Shortcut':
   superTypes:
     'TYPO3.Neos.Seo.TitleTagMixin': ~
+    'TYPO3.Neos.Seo.SeoMetaTagsMixin': ~

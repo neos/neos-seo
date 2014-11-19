@@ -3,17 +3,46 @@
 # so TYPO3.Neos.Seo extends this default object
 #
 prototype(TYPO3.Neos:Page) {
-	head.titleTag {
-		default = TYPO3.TypoScript:Collection {
-			// Retrieve all parent document nodes excluding the homepage
-			collection = ${q(documentNode).add(q(documentNode).parents()).slice(0, -1).get()}
-			itemName = 'node'
-			iterationName = 'nodeIterator'
-			// Implode node titles with a dash
-			itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
-			// Always add general site name as suffix
-			@process.siteName = ${(value ? String.stripTags(value) + ' - ' : '') + site.context.currentSite.name}
+	head {
+		titleTag {
+			default = TYPO3.TypoScript:Collection {
+				// Retrieve all parent document nodes excluding the homepage
+				collection = ${q(documentNode).add(q(documentNode).parents()).slice(0, -1).get()}
+				itemName = 'node'
+				iterationName = 'nodeIterator'
+				// Implode node titles with a dash
+				itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
+				// Always add general site name as suffix
+				@process.siteName = ${(value ? String.stripTags(value) + ' - ' : '') + site.context.currentSite.name}
+			}
+
+			content = ${q(node).property('titleOverride') ? q(node).property('titleOverride') : this.default}
 		}
-		content = ${q(node).property('titleOverride') ? q(node).property('titleOverride') : this.default}
+
+		metaDescriptionTag = TYPO3.TypoScript:Tag {
+			tagName = 'meta'
+			attributes {
+				name = 'description'
+				content = ${q(node).property('metaDescription')}
+			}
+			@if.isNotBlank = ${!String.isBlank(q(node).property('metaDescription'))}
+		}
+
+		metaKeywordsTag = TYPO3.TypoScript:Tag {
+			tagName = 'meta'
+			attributes {
+				name = 'keywords'
+				content = ${q(node).property('metaKeywords')}
+			}
+			@if.isNotBlank = ${!String.isBlank(q(node).property('metaKeywords'))}
+		}
+
+		metaRobotsTag = TYPO3.TypoScript:Tag {
+			tagName = 'meta'
+			attributes {
+				name = 'robots'
+				content = ${(q(node).property('metaRobotsNoindex') ? 'noindex' : 'index') + ',' + (q(node).property('metaRobotsNofollow') ? 'nofollow' : 'follow')}
+			}
+		}
 	}
 }

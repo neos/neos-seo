@@ -17,3 +17,55 @@
       validation:
         'TYPO3.Neos/Validation/StringLengthValidator':
           maximum: 60
+
+#
+# SEO <meta> tags mixins
+#
+'TYPO3.Neos.Seo:SeoMetaTagsMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        seometa:
+          label: 'Meta Tags'
+          position: 100
+          tab: seo
+  properties:
+    metaDescription:
+      type: string
+      ui:
+        label: 'Description'
+        inspector:
+          group: 'seometa'
+          position: 10
+          editorOptions:
+            placeholder: 'max. 156 characters'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          maximum: 156
+    metaKeywords:
+      type: string
+      ui:
+        label: 'Keywords'
+        inspector:
+          group: 'seometa'
+          position: 20
+          editorOptions:
+            placeholder: 'comma separated, max. 255 chars'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          maximum: 255
+    metaRobotsNoindex:
+      type: boolean
+      ui:
+        label: 'Hide from search engines (nofollow)'
+        inspector:
+          group: 'seometa'
+          position: 30
+    metaRobotsNofollow:
+      type: boolean
+      ui:
+        label: 'Do not follow links (nofollow)'
+        inspector:
+          group: 'seometa'
+          position: 40
