@@ -1,0 +1,10 @@
+#
+# Add mixin to default "Document" type
+#
+'TYPO3.Neos:Document':
+  superTypes:
+    'TYPO3.Neos.Seo.TitleTagMixin': 'TYPO3.Neos.Seo:TitleTagMixin'
+
+'TYPO3.Neos:Shortcut':
+  superTypes:
+    'TYPO3.Neos.Seo.TitleTagMixin': ~

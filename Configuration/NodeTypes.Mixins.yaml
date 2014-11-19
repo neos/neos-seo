@@ -1,0 +1,19 @@
+#
+# SEO <title> tag mixin
+#
+'TYPO3.Neos.Seo:TitleTagMixin':
+  abstract: TRUE
+  properties:
+    titleOverride:
+      type: string
+      ui:
+        label: 'Title Override'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+          position: 10000
+          editorOptions:
+            placeholder: 'Used in <title> tag, max. 60 chars'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          maximum: 60
