@@ -45,6 +45,13 @@ prototype(TYPO3.Neos:Page) {
 			}
 		}
 
+		alternateLanguageLinks = TYPO3.Neos:DimensionMenu {
+			@if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.language') != null}
+			@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
+			dimension = 'language'
+			templatePath = 'resource://TYPO3.Neos.Seo/Private/Templates/TypoScriptObjects/AlternateLanguageLinks.html'
+		}
+
 		twitterCard = TYPO3.TypoScript:Array {
 			@if.isEnabledBlank = ${!String.isBlank(q(node).property('twitterCardType'))}
 			@if.isEnabled = ${q(node).property('twitterCardType') != null}
@@ -116,7 +123,6 @@ prototype(TYPO3.Neos:Page) {
 					}
 				}
 			}
-
 		}
 	}
 }
