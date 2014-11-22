@@ -241,3 +241,56 @@
             features:
               crop: TRUE
 
+
+#
+# XML sitemap fields mixin
+#
+'TYPO3.Neos.Seo:XmlSitemapMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        xmlsitemap:
+          label: 'XML Sitemap'
+          position: 200
+          tab: seo
+  properties:
+    xmlSitemapChangeFrequency:
+      type: string
+      ui:
+        label: 'Change frequency'
+        inspector:
+          group: 'xmlsitemap'
+          position: 10
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'none (unspecified)'
+              'always':
+                label: 'Always'
+              'hourly':
+                label: 'Hourly'
+              'daily':
+                label: 'Daily'
+              'weekly':
+                label: 'Weekly'
+              'monthly':
+                label: 'Monthly'
+              'yearly':
+                label: 'Yearly'
+              'never':
+                label: 'Never (Archived)'
+    xmlSitemapPriority:
+      type: string
+      ui:
+        label: 'Priority'
+        inspector:
+          group: 'xmlsitemap'
+          position: 20
+          editorOptions:
+            placeholder: 'between 0 and 1'
+      validation:
+        'TYPO3.Neos/Validation/NumberRangeValidator':
+          minimum: 0
+          maximum: 1

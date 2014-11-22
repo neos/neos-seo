@@ -1,0 +1,35 @@
+#                                                                        #
+# Default subroutes configuration for the TYPO3.Neos.Seo package         #
+#                                                                        #
+
+# Make sure to include the following commented route before the TYPO3.Neos subroutes in your global /Configuration/Routes.yaml
+
+##
+# TYPO3 Neos Seo: XML Sitemap
+
+#-
+#  name: 'TYPO3 Neos Seo'
+#  uriPattern: '<TYPO3NeosSeoSubroutes>'
+#  subRoutes:
+#    'TYPO3NeosSeoSubroutes':
+#      package: 'TYPO3.Neos.Seo'
+#      variables:
+#        'xmlSitemapPath': 'sitemap.xml'
+
+##
+# XML Sitemap
+
+-
+  name:  'XML Sitemap'
+  uriPattern: '{node}<xmlSitemapPath>'
+  defaults:
+    '@package':    'TYPO3.Neos'
+    '@controller': 'Frontend\Node'
+    '@action':     'show'
+    '@format':     'xml.sitemap'
+  routeParts:
+    'node':
+      handler:     'TYPO3\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      options:
+        onlyMatchSiteNodes: TRUE
+  appendExceedingArguments: TRUE
