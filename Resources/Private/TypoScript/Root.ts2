@@ -196,3 +196,25 @@ prototype(TYPO3.Neos:Page) {
 		}
 	}
 }
+
+prototype(TYPO3.Neos.Seo:XmlSitemap) < prototype(TYPO3.TypoScript:Http.Message) {
+	doctype = '<?xml version="1.0" encoding="UTF-8"?>'
+	httpResponseHead.headers.Content-Type = 'text/xml'
+
+	body = Menu {
+		root = ${site}
+		entryLevel = 0
+		maximumLevels = 999
+		renderHiddenInIndex = TRUE
+		templatePath = 'resource://TYPO3.Neos.Seo/Private/Templates/Page/XmlSiteMap.xml'
+		startingPoint = ${site}
+
+		@cache.entryTags.1 = ${'DescendantOf_' + this.startingPoint.identifier}
+	}
+}
+
+root.xmlSitemap {
+	condition = ${request.format == 'xml.sitemap'}
+	type = 'TYPO3.Neos.Seo:XmlSitemap'
+}
+

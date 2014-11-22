@@ -15,17 +15,16 @@ The fields for keywords and description are added to `TYPO3.Neos:Document` via t
 If they are filled in, `<meta>` tags for their contents will be rendered (see `head.metaTitleTag` and
 `head.metaDescriptionTag` in `TYPO3.Neos:Page`).
 
-Two checkboxes allow to set the content for the `<meta name="robots">` tag to any combination of the possible values
-(follow, nofollow, index, noindex).
+Two checkboxes allow to set the content for the `<meta name="robots">` tag to any combination of the possible values `follow`, `nofollow`, `index` and `noindex`.
 
 Twitter Cards
 -------------
 
 The `TYPO3.Neos.Seo:TwitterCardMixin` (added to `TYPO3.Neos:Document` by default) provides a new inspector tab to
-configure Twitter Cards on any document. If a twitter card is enabled, the related meta tags will be rendered as needed
+configure Twitter Cards on any document. If a Twitter Card is enabled, the related meta tags will be rendered as needed
 and useful.
 
-The `twitter:site` handle can be set by setting the `TYPO3.Neos.Seo.twitterCard.siteHandle` to a twitter handle::
+The `twitter:site` handle can be configured with the setting `TYPO3.Neos.Seo.twitterCard.siteHandle` by providing a valid Twitter handle::
 
   TYPO3:
     Neos:
@@ -33,7 +32,7 @@ The `twitter:site` handle can be set by setting the `TYPO3.Neos.Seo.twitterCard.
         twitterCard:
           siteHandle: '@typo3neos'
 
-Check the documentation on https://dev.twitter.com/cards/overview for more on twitter cards.
+Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
 
 Open Graph
 ----------
@@ -42,18 +41,54 @@ The `TYPO3.Neos.Seo:OpenGraphMixin` (added to `TYPO3.Neos:Document` by default) 
 configure Open Graph on any document.
 The Open Graph protocol enables any web page to become a rich object in a social graph. The essential ones are:
 
-* og:type
-* og:title
-* og:description
-* og:image
-* og:url
+* `og:type`
+* `og:title`
+* `og:description`
+* `og:image`
+* `og:url`
 
-In general Open Graph tags are just shown if they have given data, because otherwise Facebook for example will extract data for the generated view from the site itself. So fallbacks are not needed. If you are not satisfied with the generated view you should define your own. 
+In general Open Graph tags are just shown if they have given data, because otherwise Facebook for example will extract data for the generated view from the site itself. So fallbacks are not needed. If you are not satisfied with the generated view you should define your own.
 If a Open Graph Type is enabled, the related meta tags will be rendered according to following rules.
 
-* og:title is only rendered if it includes data
-* og:description will use as fallback meta:description or show nothing
-* og:url the url of the document
-* og:image is only rendered if it includes data
+* `og:title` is only rendered if it includes data
+* `og:description` will use `meta:description` as a fallback or show nothing
+* `og:url` the URL of the document
+* `og:image` is only rendered if it includes data
 
-For more information please have a look at http://ogp.me/
+For more information please have a look at http://ogp.me/.
+
+XML sitemap
+-----------
+
+The generation of an XML sitemap to submit to search engines can be enabled as follows:
+
+The change frequency and priority for each sitemap entry are used as specified in the respective fields added
+to the SEO tab in the inspector of `TYPO3.Neos:Document` nodes via the `TYPO3.Neos.Seo:XmlSitemapMixin`. For
+priority the default value is 0.5 (neutral) and the change frequency is omitted unless specified.
+
+The generated sitemap does not contain information about the last modification of a document, because Neos does not yet
+keep track of this.
+
+For activating the rendering of the `sitemap.xml` you need to add the following route to the TYPO3.Neos.Seo package in your global `Configuration/Routes.yaml`.
+Keep in mind that there are no tabs in YAML, but only two spaces for indentation.
+
+::
+
+	##
+	# TYPO3 Neos Seo: XML Sitemap
+
+	-
+	  name: 'TYPO3 Neos Seo'
+	  uriPattern: '<TYPO3NeosSeoSubroutes>'
+	  subRoutes:
+		'TYPO3NeosSeoSubroutes':
+		  package: 'TYPO3.Neos.Seo'
+		  variables:
+			'xmlSitemapPath': 'sitemap.xml'
+
+	##
+	# TYPO3 Neos subroutes
+
+	...
+
+There is no need for creating a document node for the sitemap as this route will work for all site nodes.
