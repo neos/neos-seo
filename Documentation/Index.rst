@@ -17,3 +17,12 @@ If they are filled in, `<meta>` tags for their contents will be rendered (see `h
 
 Two checkboxes allow to set the content for the `<meta name="robots">` tag to any combination of the possible values
 (follow, nofollow, index, noindex).
+
+Twitter Cards
+-------------
+
+The `TYPO3.Neos.Seo:TwitterCardMixin` (added to `TYPO3.Neos:Document` by default) provides a new inspector tab to
+configure Twitter Cards on any document. If a twitter card is enabled, the related meta tags will be rendered as needed
+and useful.
+
+Check the documentation on https://dev.twitter.com/cards/overview for more on twitter cards.

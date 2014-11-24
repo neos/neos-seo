@@ -5,6 +5,7 @@
   superTypes:
     'TYPO3.Neos.Seo.TitleTagMixin': 'TYPO3.Neos.Seo:TitleTagMixin'
     'TYPO3.Neos.Seo.SeoMetaTagsMixin': 'TYPO3.Neos.Seo:SeoMetaTagsMixin'
+    'TYPO3.Neos.Seo.TwitterCardMixin': 'TYPO3.Neos.Seo:TwitterCardMixin'
   ui:
     inspector:
       tabs:
@@ -12,8 +13,13 @@
           label: 'SEO'
           position: 30
           icon: 'icon-bullseye'
+        twitter:
+          label: 'twitter'
+          position: 40
+          icon: 'icon-twitter'
 
 'TYPO3.Neos:Shortcut':
   superTypes:
     'TYPO3.Neos.Seo.TitleTagMixin': ~
     'TYPO3.Neos.Seo.SeoMetaTagsMixin': ~
+    'TYPO3.Neos.Seo.TwitterCardMixin': ~

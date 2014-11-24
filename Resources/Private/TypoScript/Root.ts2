@@ -44,5 +44,79 @@ prototype(TYPO3.Neos:Page) {
 				content = ${(q(node).property('metaRobotsNoindex') ? 'noindex' : 'index') + ',' + (q(node).property('metaRobotsNofollow') ? 'nofollow' : 'follow')}
 			}
 		}
+
+		twitterCard = TYPO3.TypoScript:Array {
+			@if.isEnabledBlank = ${!String.isBlank(q(node).property('twitterCardType'))}
+			@if.isEnabled = ${q(node).property('twitterCardType') != 'none'}
+
+			cardTypeTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:card'
+					content = ${q(node).property('twitterCardType')}
+				}
+			}
+
+			cardSiteTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:site'
+					content = ${q(node).property('twitterCardSite')}
+				}
+				@if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardSite'))}
+			}
+
+			cardCreatorTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:creator'
+					content = ${q(node).property('twitterCardCreator')}
+				}
+				@if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardCreator'))}
+			}
+
+			cardTitleTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:title'
+					content = ${q(node).property('twitterCardTitle')}
+				}
+				@if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardTitle'))}
+			}
+
+			cardDescriptionTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:description'
+					content = ${q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')}
+				}
+				@if.isNotBlank = ${!String.isBlank((q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')))}
+			}
+
+			cardImageTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:image:src'
+					content = TYPO3.Neos:ImageUri {
+						asset = ${q(node).property('twitterCardImage')}
+						maximumWidth = 2000
+						maximumHeight = 2000
+					}
+				}
+				@if.isImageSet = ${q(node).property('twitterCardImage') != ''}
+			}
+
+			cardUrlTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'twitter:url'
+					content = TYPO3.Neos:NodeUri {
+						node = ${node}
+						absolute = TRUE
+					}
+				}
+			}
+
+		}
 	}
 }
