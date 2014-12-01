@@ -12,6 +12,7 @@
         inspector:
           group: 'document'
           position: 10000
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'Used in <title> tag, max. 60 chars'
       validation:
@@ -38,6 +39,7 @@
         inspector:
           group: 'seometa'
           position: 10
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 156 characters'
       validation:
@@ -50,6 +52,7 @@
         inspector:
           group: 'seometa'
           position: 20
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'comma separated, max. 255 chars'
       validation:
@@ -133,6 +136,7 @@
         label: 'Title'
         inspector:
           group: 'twittercardcontent'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 70 characters'
       validation:
@@ -144,6 +148,7 @@
         label: 'Description'
         inspector:
           group: 'twittercardcontent'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 200 characters'
       validation:
