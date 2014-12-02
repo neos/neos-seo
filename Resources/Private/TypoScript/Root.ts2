@@ -47,7 +47,7 @@ prototype(TYPO3.Neos:Page) {
 
 		twitterCard = TYPO3.TypoScript:Array {
 			@if.isEnabledBlank = ${!String.isBlank(q(node).property('twitterCardType'))}
-			@if.isEnabled = ${q(node).property('twitterCardType') != 'none'}
+			@if.isEnabled = ${q(node).property('twitterCardType') != null}
 
 			cardTypeTag = TYPO3.TypoScript:Tag {
 				tagName = 'meta'
@@ -63,7 +63,7 @@ prototype(TYPO3.Neos:Page) {
 					name = 'twitter:site'
 					content = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle')}
 				}
-				@if.isSet = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle') != NULL}
+				@if.isSet = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle') != null}
 			}
 
 			cardCreatorTag = TYPO3.TypoScript:Tag {
@@ -103,7 +103,7 @@ prototype(TYPO3.Neos:Page) {
 						maximumHeight = 2000
 					}
 				}
-				@if.isImageSet = ${q(node).property('twitterCardImage') != ''}
+				@if.isImageSet = ${q(node).property('twitterCardImage') != null}
 			}
 
 			cardUrlTag = TYPO3.TypoScript:Tag {

@@ -82,26 +82,26 @@
     inspector:
       groups:
         twittercardsettings:
-          label: 'Twitter Card settings'
+          label: 'Twitter Card Settings'
           position: 10
           tab: twitter
         twittercardcontent:
-          label: 'Twitter Card content'
+          label: 'Twitter Card Content'
           position: 20
           tab: twitter
   properties:
     twitterCardType:
       type: string
-      defaultValue: 'none'
+      defaultValue: ~
       ui:
-        label: 'Type'
+        label: 'Card Type'
         inspector:
           group: 'twittercardsettings'
           editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              'none':
-                label: 'none'
+              ~:
+                label: 'None'
               'summary':
                 label: 'Summary Card'
               'summary_large_image':
@@ -111,11 +111,11 @@
     twitterCardCreator:
       type: string
       ui:
-        label: 'Creator handle'
+        label: 'Creator Handle'
         inspector:
           group: 'twittercardsettings'
           editorOptions:
-            placeholder: '@…'
+            placeholder: '@johnexample'
       validation:
         'TYPO3.Neos/Validation/RegularExpressionValidator':
           regularExpression: '/@[a-z0-9_]{1,15}/i'
@@ -146,7 +146,7 @@
     twitterCardImage:
       type: TYPO3\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Card image'
+        label: 'Card Image'
         inspector:
           group: 'twittercardcontent'
           editorOptions:
