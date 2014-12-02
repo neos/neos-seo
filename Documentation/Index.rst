@@ -25,4 +25,12 @@ The `TYPO3.Neos.Seo:TwitterCardMixin` (added to `TYPO3.Neos:Document` by default
 configure Twitter Cards on any document. If a twitter card is enabled, the related meta tags will be rendered as needed
 and useful.
 
+The `twitter:site` handle can be set by setting the `TYPO3.Neos.Seo.twitterCard.siteHandle` to a twitter handle::
+
+  TYPO3:
+    Neos:
+      Seo:
+        twitterCard:
+          siteHandle: '@typo3neos'
+
 Check the documentation on https://dev.twitter.com/cards/overview for more on twitter cards.

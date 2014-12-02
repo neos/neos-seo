@@ -61,9 +61,9 @@ prototype(TYPO3.Neos:Page) {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:site'
-					content = ${q(node).property('twitterCardSite')}
+					content = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle')}
 				}
-				@if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardSite'))}
+				@if.isSet = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle') != NULL}
 			}
 
 			cardCreatorTag = TYPO3.TypoScript:Tag {

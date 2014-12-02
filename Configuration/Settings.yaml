@@ -3,3 +3,9 @@ TYPO3:
     typoScript:
       autoInclude:
         'TYPO3.Neos.Seo': TRUE
+
+    Seo:
+      # Twitter Card settings
+      twitterCard:
+        # the Twitter handle for the twitter:site attribution
+        siteHandle: ~

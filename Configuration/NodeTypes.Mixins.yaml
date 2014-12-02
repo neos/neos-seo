@@ -58,7 +58,7 @@
     metaRobotsNoindex:
       type: boolean
       ui:
-        label: 'Hide from search engines (nofollow)'
+        label: 'Hide from search engines (noindex)'
         inspector:
           group: 'seometa'
           position: 30
@@ -79,11 +79,11 @@
     inspector:
       groups:
         twittercardsettings:
-          label: 'Card settings'
+          label: 'Twitter Card settings'
           position: 10
           tab: twitter
         twittercardcontent:
-          label: 'Card content'
+          label: 'Twitter Card content'
           position: 20
           tab: twitter
   properties:
@@ -105,17 +105,6 @@
                 label: 'Summary Card with Large Image'
               'photo':
                 label: 'Photo Card'
-    twitterCardSite:
-      type: string
-      ui:
-        label: 'Site handle'
-        inspector:
-          group: 'twittercardsettings'
-          editorOptions:
-            placeholder: '@…'
-      validation:
-        'TYPO3.Neos/Validation/RegularExpressionValidator':
-          regularExpression: '/@[a-z0-9_]{1,15}/i'
     twitterCardCreator:
       type: string
       ui:
