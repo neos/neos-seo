@@ -152,3 +152,27 @@
           editorOptions:
             features:
               crop: TRUE
+
+#
+# Canonical link field mixin
+#
+'TYPO3.Neos.Seo:CanonicalLinkMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        canonicallink:
+          label: 'Canonical Link'
+          position: 300
+          tab: seo
+  properties:
+    canonicalLink:
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Canonical Link'
+        inspector:
+          group: 'canonicallink'
+          position: 30
+          editorOptions:
+            placeholder: 'Paste a url, or use the default.'
