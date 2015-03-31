@@ -45,6 +45,18 @@ prototype(TYPO3.Neos:Page) {
 			}
 		}
 
+		canonicalLink = TYPO3.TypoScript:Tag {
+			tagName = 'link'
+			attributes {
+				rel = 'canonical'
+				href = TYPO3.Neos:NodeUri {
+					node = ${documentNode}
+					absolute = TRUE
+				}
+				href.@process.canonical = ${q(node).property('canonicalLink') ? q(node).property('canonicalLink') : value}
+			}
+		}
+
 		alternateLanguageLinks = TYPO3.Neos:DimensionMenu {
 			@if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.language') != null}
 			@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
