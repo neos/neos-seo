@@ -97,3 +97,59 @@ Keep in mind that there are no tabs in YAML, but only two spaces for indentation
 	...
 
 There is no need for creating a document node for the sitemap as this route will work for all site nodes.
+
+
+Alternate Language Tag
+------------------------
+
+The `Alternate Language Tag` provides information that the site is also available in other languages. By default the tags
+are rendered with the `TYPO3.Neos:DimensionMenu` and the `language` dimension. Given the Neos Demo Site Package as an
+example the rendered tags for the homepage would be.
+
+::
+
+  <link rel="alternate" hreflang="en_US" href="http://neos.dev/"/>
+  <link rel="alternate" hreflang="en_UK" href="http://neos.dev/uk"/>
+
+According to the following dimension settings, there would be a lot more tags expected. However only two variants of the
+homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
+
+::
+
+  TYPO3CR:
+    contentDimensions:
+      'language':
+        label: 'Language'
+        icon: 'icon-language'
+        default: 'en_US'
+        defaultPreset: 'en_US'
+        presets:
+          'all': ~
+          'en_US':
+            label: 'English (US)'
+            values: ['en_US']
+            uriSegment: 'en'
+          'en_UK':
+            label: 'English (UK)'
+            values: ['en_UK', 'en_US']
+            uriSegment: 'uk'
+          'de':
+            label: 'German'
+            values: ['de']
+            uriSegment: 'de'
+          'fr':
+            label: 'French'
+            values: ['fr']
+            uriSegment: 'fr'
+          'nl':
+            label: 'Dutch'
+            values: ['nl', 'de']
+            uriSegment: 'nl'
+          'dk':
+            label: 'Danish'
+            values: ['dk']
+            uriSegment: 'dk'
+          'lv':
+            label: 'Latvian'
+            values: ['lv']
+            uriSegment: 'lv'
