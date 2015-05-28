@@ -176,3 +176,68 @@
           position: 30
           editorOptions:
             placeholder: 'Paste a url, or use the default.'
+
+#
+# OpenGraph mixin
+#
+'TYPO3.Neos.Seo:OpenGraphMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      groups:
+        openGraph:
+          label: 'OpenGraph'
+          position: 100
+          tab: openGraph
+  properties:
+    openGraphType:
+      type: string
+      defaultValue: ~
+      ui:
+        label: 'Open Graph Type'
+        inspector:
+          group: 'openGraph'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              ~:
+                label: 'None'
+              'website':
+                label: 'Website'
+              'article':
+                label: 'Article'
+    openGraphTitle:
+      type: string
+      ui:
+        label: 'Open Graph title'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'openGraph'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            placeholder: 'Used as og:title , max. 60 chars'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          maximum: 60
+    openGraphDescription:
+      type: string
+      ui:
+        label: 'Open Graph Description'
+        inspector:
+          group: 'openGraph'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            placeholder: 'max. 200 characters'
+      validation:
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          maximum: 200
+    openGraphImage:
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Open Graph Image'
+        inspector:
+          group: 'openGraph'
+          editorOptions:
+            features:
+              crop: TRUE
+

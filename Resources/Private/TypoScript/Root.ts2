@@ -143,5 +143,63 @@ prototype(TYPO3.Neos:Page) {
 				}
 			}
 		}
+
+		openGraphMetaTags = TYPO3.TypoScript:Array {
+			@override.openGraphType = ${q(node).property('openGraphType')}
+			@if.isEnabled = ${!String.isBlank(openGraphType)}
+
+			openGraphTypeTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'og:type'
+					content = ${openGraphType}
+				}
+			}
+
+			openGraphTitleTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				@override.openGraphTitle = ${q(node).property('openGraphTitle')}
+				attributes {
+					name = 'og:title'
+					content = ${openGraphTitle}
+				}
+				@if.isNotBlank = ${!String.isBlank(openGraphTitle)}
+			}
+
+			openGraphDescriptionTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				@override.openGraphDescription = ${q(node).property('openGraphDescription') ? q(node).property('openGraphDescription') : q(node).property('metaDescription')}
+				attributes {
+					name = 'og:description'
+					content = ${openGraphDescription}
+				}
+				@if.isNotBlank = ${!String.isBlank(openGraphDescription)}
+			}
+
+			openGraphImageTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				@override.openGraphImage = ${q(node).property('openGraphImage')}
+				attributes {
+					name = 'og:image'
+					content = TYPO3.Neos:ImageUri {
+						asset = ${openGraphImage}
+						maximumWidth = 2000
+						maximumHeight = 2000
+					}
+				}
+				@if.isImageSet = ${openGraphImage != null && openGraphImage != ''}
+			}
+
+			openGraphUrlTag = TYPO3.TypoScript:Tag {
+				tagName = 'meta'
+				attributes {
+					name = 'og:url'
+						content = TYPO3.Neos:NodeUri {
+						node = ${node}
+						absolute = TRUE
+					}
+				}
+			}
+		}
 	}
 }
