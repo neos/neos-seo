@@ -34,3 +34,26 @@ The `twitter:site` handle can be set by setting the `TYPO3.Neos.Seo.twitterCard.
           siteHandle: '@typo3neos'
 
 Check the documentation on https://dev.twitter.com/cards/overview for more on twitter cards.
+
+Open Graph
+----------
+
+The `TYPO3.Neos.Seo:OpenGraphMixin` (added to `TYPO3.Neos:Document` by default) provides a new inspector tab to
+configure Open Graph on any document.
+The Open Graph protocol enables any web page to become a rich object in a social graph. The essential ones are:
+
+* og:type
+* og:title
+* og:description
+* og:image
+* og:url
+
+In general Open Graph tags are just shown if they have given data, because otherwise Facebook for example will extract data for the generated view from the site itself. So fallbacks are not needed. If you are not satisfied with the generated view you should define your own. 
+If a Open Graph Type is enabled, the related meta tags will be rendered according to following rules.
+
+* og:title is only rendered if it includes data
+* og:description will use as fallback meta:description or show nothing
+* og:url the url of the document
+* og:image is only rendered if it includes data
+
+For more information please have a look at http://ogp.me/
