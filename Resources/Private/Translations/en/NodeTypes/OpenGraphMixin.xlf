@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="groups.openGraph" xml:space="preserve">
+				<source>OpenGraph</source>
+			</trans-unit>
+			<trans-unit id="properties.openGraphType" xml:space="preserve">
+				<source>Open Graph Type</source>
+			</trans-unit>
+			<trans-unit id="properties.openGraphTitle" xml:space="preserve">
+				<source>Open Graph title</source>
+			</trans-unit>
+			<trans-unit id="properties.openGraphDescription" xml:space="preserve">
+				<source>Open Graph Description</source>
+			</trans-unit>
+			<trans-unit id="properties.openGraphImage" xml:space="preserve">
+				<source>Open Graph Image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
