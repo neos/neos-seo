@@ -13,15 +13,15 @@
     inspector:
       tabs:
         seo:
-          label: 'SEO'
+          label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.seo'
           position: 30
           icon: 'icon-bullseye'
         twitter:
-          label: 'twitter'
+          label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.twitter'
           position: 40
           icon: 'icon-twitter'
         openGraph:
-          label: 'Open Graph'
+          label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.openGraph'
           position: 50
           icon: 'icon-facebook'
 
@@ -33,4 +33,3 @@
     'TYPO3.Neos.Seo:CanonicalLinkMixin': FALSE
     'TYPO3.Neos.Seo:OpenGraphMixin': FALSE
     'TYPO3.Neos.Seo:XmlSitemapMixin': FALSE
-

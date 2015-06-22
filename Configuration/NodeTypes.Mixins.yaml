@@ -7,7 +7,7 @@
     titleOverride:
       type: string
       ui:
-        label: 'Title Override'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
@@ -28,14 +28,14 @@
     inspector:
       groups:
         seometa:
-          label: 'Meta Tags'
+          label: i18n
           position: 100
           tab: seo
   properties:
     metaDescription:
       type: string
       ui:
-        label: 'Description'
+        label: i18n
         inspector:
           group: 'seometa'
           position: 10
@@ -48,7 +48,7 @@
     metaKeywords:
       type: string
       ui:
-        label: 'Keywords'
+        label: i18n
         inspector:
           group: 'seometa'
           position: 20
@@ -61,14 +61,14 @@
     metaRobotsNoindex:
       type: boolean
       ui:
-        label: 'Hide from search engines (noindex)'
+        label: i18n
         inspector:
           group: 'seometa'
           position: 30
     metaRobotsNofollow:
       type: boolean
       ui:
-        label: 'Do not follow links (nofollow)'
+        label: i18n
         inspector:
           group: 'seometa'
           position: 40
@@ -82,11 +82,11 @@
     inspector:
       groups:
         twittercardsettings:
-          label: 'Twitter Card Settings'
+          label: i18n
           position: 10
           tab: twitter
         twittercardcontent:
-          label: 'Twitter Card Content'
+          label: i18n
           position: 20
           tab: twitter
   properties:
@@ -94,7 +94,7 @@
       type: string
       defaultValue: ~
       ui:
-        label: 'Card Type'
+        label: i18n
         inspector:
           group: 'twittercardsettings'
           editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
@@ -111,7 +111,7 @@
     twitterCardCreator:
       type: string
       ui:
-        label: 'Creator Handle'
+        label: i18n
         inspector:
           group: 'twittercardsettings'
           editorOptions:
@@ -122,7 +122,7 @@
     twitterCardTitle:
       type: string
       ui:
-        label: 'Title'
+        label: i18n
         inspector:
           group: 'twittercardcontent'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
@@ -134,7 +134,7 @@
     twitterCardDescription:
       type: string
       ui:
-        label: 'Description'
+        label: i18n
         inspector:
           group: 'twittercardcontent'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
@@ -146,7 +146,7 @@
     twitterCardImage:
       type: TYPO3\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Card Image'
+        label: i18n
         inspector:
           group: 'twittercardcontent'
           editorOptions:
@@ -162,7 +162,7 @@
     inspector:
       groups:
         canonicallink:
-          label: 'Canonical Link'
+          label: i18n
           position: 300
           tab: seo
   properties:
@@ -170,7 +170,7 @@
       type: string
       defaultValue: ''
       ui:
-        label: 'Canonical Link'
+        label: i18n
         inspector:
           group: 'canonicallink'
           position: 30
@@ -186,7 +186,7 @@
     inspector:
       groups:
         openGraph:
-          label: 'OpenGraph'
+          label: i18n
           position: 100
           tab: openGraph
   properties:
@@ -194,7 +194,7 @@
       type: string
       defaultValue: ~
       ui:
-        label: 'Open Graph Type'
+        label: i18n
         inspector:
           group: 'openGraph'
           editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
@@ -209,7 +209,7 @@
     openGraphTitle:
       type: string
       ui:
-        label: 'Open Graph title'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'openGraph'
@@ -222,7 +222,7 @@
     openGraphDescription:
       type: string
       ui:
-        label: 'Open Graph Description'
+        label: i18n
         inspector:
           group: 'openGraph'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
@@ -234,13 +234,12 @@
     openGraphImage:
       type: TYPO3\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Open Graph Image'
+        label: i18n
         inspector:
           group: 'openGraph'
           editorOptions:
             features:
               crop: TRUE
-
 
 #
 # XML sitemap fields mixin
@@ -251,14 +250,14 @@
     inspector:
       groups:
         xmlsitemap:
-          label: 'XML Sitemap'
+          label: i18n
           position: 200
           tab: seo
   properties:
     xmlSitemapChangeFrequency:
       type: string
       ui:
-        label: 'Change frequency'
+        label: i18n
         inspector:
           group: 'xmlsitemap'
           position: 10
@@ -284,7 +283,7 @@
     xmlSitemapPriority:
       type: string
       ui:
-        label: 'Priority'
+        label: i18n
         inspector:
           group: 'xmlsitemap'
           position: 20

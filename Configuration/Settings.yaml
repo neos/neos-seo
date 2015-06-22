@@ -4,6 +4,11 @@ TYPO3:
       autoInclude:
         'TYPO3.Neos.Seo': TRUE
 
+    userInterface:
+      translation:
+        autoInclude:
+          'TYPO3.Neos.Seo': ['NodeTypes/*']
+
     Seo:
       # Twitter Card settings
       twitterCard:
