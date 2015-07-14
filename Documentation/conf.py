@@ -50,9 +50,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'{packageKey}'
-copyright = u'{f:format.date(date:'now', format:'Y')} and onwards by the authors'
-author = u'Author and Contributors'
+project = u'Neos SEO Addon'
+copyright = u'2014 and onwards by the authors'
+author = u'Neos Team and Contributors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -214,7 +214,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Documentation'
+htmlhelp_basename = 'NeosSeoAddonDoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -236,8 +236,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Documentation.tex', u'{packageKey} Documentation',
-   u'The author', 'manual'),
+  (master_doc, 'NeosSeoAddon.tex', u'Neos SEO Addon Documentation',
+   u'The Neos Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -266,7 +266,7 @@ latex_use_parts = True
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, '{packageKey}', u'{packageKey} Documentation',
+    (master_doc, 'NeosSeoAddon', u'Neos SEO Addon Documentation',
      [author], 1)
 ]
 
@@ -280,8 +280,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'Documentation', u'{packageKey} Documentation',
-   author, '{packageKey}', '',
+  (master_doc, 'NeosSeoAddon', u'Neos SEO Addon Documentation',
+   author, 'Neos SEO Addon', 'A SEO addon for the Neos CMS',
    'Miscellaneous'),
 ]
 
