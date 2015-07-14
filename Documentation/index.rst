@@ -80,10 +80,10 @@ Keep in mind that there are no tabs in YAML, but only two spaces for indentation
 ::
 
 	##
-	# TYPO3 Neos Seo: XML Sitemap
+	# Neos Seo: XML Sitemap
 
 	-
-	  name: 'TYPO3 Neos Seo'
+	  name: 'Neos Seo'
 	  uriPattern: '<TYPO3NeosSeoSubroutes>'
 	  subRoutes:
 		'TYPO3NeosSeoSubroutes':
@@ -92,7 +92,7 @@ Keep in mind that there are no tabs in YAML, but only two spaces for indentation
 			'xmlSitemapPath': 'sitemap.xml'
 
 	##
-	# TYPO3 Neos subroutes
+	# Neos subroutes
 
 	...
 
