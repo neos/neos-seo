@@ -145,7 +145,7 @@ prototype(TYPO3.Neos:Page) {
 		}
 
 		openGraphMetaTags = TYPO3.TypoScript:Array {
-			@override.openGraphType = ${q(node).property('openGraphType')}
+			@context.openGraphType = ${q(node).property('openGraphType')}
 			@if.isEnabled = ${!String.isBlank(openGraphType)}
 
 			openGraphTypeTag = TYPO3.TypoScript:Tag {
@@ -158,7 +158,7 @@ prototype(TYPO3.Neos:Page) {
 
 			openGraphTitleTag = TYPO3.TypoScript:Tag {
 				tagName = 'meta'
-				@override.openGraphTitle = ${q(node).property('openGraphTitle')}
+				@context.openGraphTitle = ${q(node).property('openGraphTitle')}
 				attributes {
 					name = 'og:title'
 					content = ${openGraphTitle}
@@ -168,7 +168,7 @@ prototype(TYPO3.Neos:Page) {
 
 			openGraphDescriptionTag = TYPO3.TypoScript:Tag {
 				tagName = 'meta'
-				@override.openGraphDescription = ${q(node).property('openGraphDescription') ? q(node).property('openGraphDescription') : q(node).property('metaDescription')}
+				@context.openGraphDescription = ${q(node).property('openGraphDescription') ? q(node).property('openGraphDescription') : q(node).property('metaDescription')}
 				attributes {
 					name = 'og:description'
 					content = ${openGraphDescription}
@@ -178,7 +178,7 @@ prototype(TYPO3.Neos:Page) {
 
 			openGraphImageTag = TYPO3.TypoScript:Tag {
 				tagName = 'meta'
-				@override.openGraphImage = ${q(node).property('openGraphImage')}
+				@context.openGraphImage = ${q(node).property('openGraphImage')}
 				attributes {
 					name = 'og:image'
 					content = TYPO3.Neos:ImageUri {
