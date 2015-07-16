@@ -3,6 +3,13 @@
 # so TYPO3.Neos.Seo extends this default object
 #
 prototype(TYPO3.Neos:Page) {
+	htmlTag {
+		attributes {
+			lang = ${q(documentNode.context.dimensions.language).first().get()}
+			lang.@if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.language') != null}
+			lang.@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
+		}
+	}
 	head {
 		titleTag {
 			default = TYPO3.TypoScript:Collection {
