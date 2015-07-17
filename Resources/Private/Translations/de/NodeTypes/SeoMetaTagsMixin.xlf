@@ -4,19 +4,19 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="de" state="needs-translation">Meta Tags</target></trans-unit>
+			<target xml:lang="de" state="translated">Meta-Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="de" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="de" state="translated">Beschreibung</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="de" state="needs-translation">Keywords</target></trans-unit>
+			<target xml:lang="de" state="translated">Keywords</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="de" state="needs-translation">Hide from search engines (noindex)</target></trans-unit>
+			<target xml:lang="de" state="translated">Vor Suchmaschinen verstecken</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="de" state="needs-translation">Do not follow links (nofollow)</target></trans-unit>
+			<target xml:lang="de" state="translated">Links nicht folgen (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>
