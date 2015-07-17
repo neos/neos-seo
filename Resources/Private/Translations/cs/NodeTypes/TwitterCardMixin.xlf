@@ -14,9 +14,9 @@
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
 			<target xml:lang="cs" state="needs-translation">Creator Handle</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="cs">Titul</target></trans-unit>
+			<target xml:lang="cs" state="translated">Titul</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="cs" state="needs-translation">Description</target></trans-unit>

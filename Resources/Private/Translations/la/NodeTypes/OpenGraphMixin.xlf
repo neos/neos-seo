@@ -2,21 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="la-LA">
     <body>
-      <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
+      <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="la-LA">crwdns370:0crwdne370:0</target></trans-unit>
-      <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="translated">crwdns370:0crwdne370:0</target></trans-unit>
+      <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="la-LA">crwdns371:0crwdne371:0</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="translated">crwdns371:0crwdne371:0</target></trans-unit>
+      <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="la-LA">crwdns372:0crwdne372:0</target></trans-unit>
-      <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="translated">crwdns372:0crwdne372:0</target></trans-unit>
+      <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="la-LA">crwdns373:0crwdne373:0</target></trans-unit>
-      <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="translated">crwdns373:0crwdne373:0</target></trans-unit>
+      <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="la-LA">crwdns374:0crwdne374:0</target></trans-unit>
+			<target xml:lang="la-LA" state="translated">crwdns374:0crwdne374:0</target></trans-unit>
     </body>
   </file>
 </xliff>
