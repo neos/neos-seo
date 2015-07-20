@@ -7,10 +7,10 @@
 			<target xml:lang="pl" state="needs-translation">Meta Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="pl" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="pl" state="translated">Opis</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="pl" state="needs-translation">Keywords</target></trans-unit>
+			<target xml:lang="pl" state="translated">Słowa kluczowe</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="pl" state="needs-translation">Hide from search engines (noindex)</target></trans-unit>
