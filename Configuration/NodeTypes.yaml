@@ -16,14 +16,6 @@
           label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.seo'
           position: 30
           icon: 'icon-bullseye'
-        twitter:
-          label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.twitter'
-          position: 40
-          icon: 'icon-twitter'
-        openGraph:
-          label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.openGraph'
-          position: 50
-          icon: 'icon-facebook'
 
 'TYPO3.Neos:Shortcut':
   superTypes:
