@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="tabs.seo" xml:space="preserve">
 				<source>SEO</source>
-			<target xml:lang="fi" state="needs-translation">SEO</target></trans-unit>
+			<target xml:lang="fi" state="translated">SEO</target></trans-unit>
       <trans-unit id="tabs.twitter" xml:space="preserve">
 				<source>Twitter</source>
-			<target xml:lang="fi" state="needs-translation">Twitter</target></trans-unit>
+			<target xml:lang="fi" state="translated">Twitter</target></trans-unit>
       <trans-unit id="tabs.openGraph" xml:space="preserve">
 				<source>Open Graph</source>
 			<target xml:lang="fi" state="needs-translation">Open Graph</target></trans-unit>

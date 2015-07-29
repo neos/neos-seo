@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="fi" state="needs-translation">Canonical Link</target></trans-unit>
+			<target xml:lang="fi" state="translated">Ensisijainen linkki</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="fi" state="needs-translation">Canonical Link</target></trans-unit>
+			<target xml:lang="fi" state="translated">Ensisijainen linkki</target></trans-unit>
     </body>
   </file>
 </xliff>
