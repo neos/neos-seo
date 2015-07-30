@@ -81,14 +81,10 @@
   ui:
     inspector:
       groups:
-        twittercardsettings:
+        twittercard:
           label: i18n
-          position: 10
-          tab: twitter
-        twittercardcontent:
-          label: i18n
-          position: 20
-          tab: twitter
+          position: 400
+          tab: seo
   properties:
     twitterCardType:
       type: string
@@ -113,7 +109,7 @@
       ui:
         label: i18n
         inspector:
-          group: 'twittercardsettings'
+          group: 'twittercard'
           editorOptions:
             placeholder: '@johnexample'
       validation:
@@ -124,7 +120,7 @@
       ui:
         label: i18n
         inspector:
-          group: 'twittercardcontent'
+          group: 'twittercard'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 70 characters'
@@ -136,7 +132,7 @@
       ui:
         label: i18n
         inspector:
-          group: 'twittercardcontent'
+          group: 'twittercard'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 200 characters'
@@ -148,7 +144,7 @@
       ui:
         label: i18n
         inspector:
-          group: 'twittercardcontent'
+          group: 'twittercard'
           editorOptions:
             features:
               crop: TRUE
@@ -163,7 +159,7 @@
       groups:
         canonicallink:
           label: i18n
-          position: 300
+          position: 200
           tab: seo
   properties:
     canonicalLink:
@@ -187,8 +183,8 @@
       groups:
         openGraph:
           label: i18n
-          position: 100
-          tab: openGraph
+          position: 300
+          tab: seo
   properties:
     openGraphType:
       type: string
@@ -251,7 +247,7 @@
       groups:
         xmlsitemap:
           label: i18n
-          position: 200
+          position: 500
           tab: seo
   properties:
     xmlSitemapChangeFrequency:
