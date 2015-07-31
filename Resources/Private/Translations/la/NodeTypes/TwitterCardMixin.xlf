@@ -2,12 +2,9 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="la-LA">
     <body>
-      <trans-unit id="groups.twittercardsettings" xml:space="preserve">
-				<source>Twitter Card Settings</source>
-			<target xml:lang="la-LA" state="translated">crwdns381:0crwdne381:0</target></trans-unit>
-      <trans-unit id="groups.twittercardcontent" xml:space="preserve">
-				<source>Twitter Card Content</source>
-			<target xml:lang="la-LA" state="translated">crwdns382:0crwdne382:0</target></trans-unit>
+      <trans-unit id="groups.twittercard" xml:space="preserve">
+				<source>Twitter Card</source>
+			<target xml:lang="la-LA" state="translated">crwdns553:0crwdne553:0</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
 			<target xml:lang="la-LA" state="translated">crwdns383:0crwdne383:0</target></trans-unit>

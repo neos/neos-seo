@@ -5,12 +5,6 @@
       <trans-unit id="tabs.seo" xml:space="preserve" approved="yes">
 				<source>SEO</source>
 			<target xml:lang="de">SEO</target></trans-unit>
-      <trans-unit id="tabs.twitter" xml:space="preserve">
-				<source>Twitter</source>
-			<target xml:lang="de" state="translated">Twitter</target></trans-unit>
-      <trans-unit id="tabs.openGraph" xml:space="preserve">
-				<source>Open Graph</source>
-			<target xml:lang="de" state="translated">Open Graph</target></trans-unit>
     </body>
   </file>
 </xliff>
