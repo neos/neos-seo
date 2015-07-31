@@ -10,7 +10,7 @@
 			<target xml:lang="pl" state="translated">Typ karty</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="pl" state="needs-translation">Creator Handle</target></trans-unit>
+			<target xml:lang="pl" state="translated">Twórca karty</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="pl" state="translated">Tytuł</target></trans-unit>
