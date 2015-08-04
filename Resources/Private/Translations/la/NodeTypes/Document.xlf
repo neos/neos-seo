@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="tabs.seo" xml:space="preserve">
 				<source>SEO</source>
-			<target xml:lang="la-LA" state="translated">crwdns367:0crwdne367:0</target></trans-unit>
+			<target xml:lang="la-LA" state="needs-translation">crwdns367:0crwdne367:0</target></trans-unit>
     </body>
   </file>
 </xliff>
