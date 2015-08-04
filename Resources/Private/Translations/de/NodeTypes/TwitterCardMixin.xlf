@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="de" state="needs-translation">Twitter Card</target></trans-unit>
+			<target xml:lang="de" state="translated">Twitter-Karte</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
 			<target xml:lang="de" state="translated">Kartentyp</target></trans-unit>
