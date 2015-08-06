@@ -2,15 +2,15 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="ru">
     <body>
-      <trans-unit id="groups.xmlsitemap" xml:space="preserve">
+      <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target xml:lang="ru" state="translated">XML Sitemap</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
+			<target xml:lang="ru">XML Sitemap</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="ru" state="translated">Изменить частоту</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
+			<target xml:lang="ru">Изменить частоту</target><alt-trans><target xml:lang="ru">Частота изменения</target></alt-trans></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target xml:lang="ru" state="translated">Важность</target></trans-unit>
+			<target xml:lang="ru">Важность</target><alt-trans><target xml:lang="ru">Приоритет</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
