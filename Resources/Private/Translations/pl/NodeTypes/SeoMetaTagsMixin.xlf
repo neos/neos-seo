@@ -13,10 +13,10 @@
 			<target xml:lang="pl" state="translated">Słowa kluczowe</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="pl" state="needs-translation">Hide from search engines (noindex)</target></trans-unit>
+			<target xml:lang="pl" state="translated">Nie indeksuj w wyszukiwarkach internetowych (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="pl" state="needs-translation">Do not follow links (nofollow)</target></trans-unit>
+			<target xml:lang="pl" state="translated">Nie podążaj za linkami (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>
