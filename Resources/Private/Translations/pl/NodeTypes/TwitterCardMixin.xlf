@@ -2,24 +2,24 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="pl">
     <body>
-      <trans-unit id="groups.twittercard" xml:space="preserve">
+      <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target xml:lang="pl" state="translated">Karta Twitter</target></trans-unit>
-      <trans-unit id="properties.twitterCardType" xml:space="preserve">
+			<target xml:lang="pl">Karta Twitter</target></trans-unit>
+      <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target xml:lang="pl" state="translated">Typ karty</target></trans-unit>
-      <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
+			<target xml:lang="pl">Typ karty</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="pl" state="translated">Twórca karty</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
+			<target xml:lang="pl">Twórca karty</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="pl" state="translated">Tytuł</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
+			<target xml:lang="pl">Tytuł</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="pl" state="translated">Opis</target></trans-unit>
-      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
+			<target xml:lang="pl">Opis</target></trans-unit>
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="pl" state="translated">Obraz karty</target></trans-unit>
+			<target xml:lang="pl">Obraz karty</target></trans-unit>
     </body>
   </file>
 </xliff>
