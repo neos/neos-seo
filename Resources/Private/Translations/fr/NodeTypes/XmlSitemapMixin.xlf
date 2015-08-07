@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="fr" state="needs-translation">XML Sitemap</target></trans-unit>
+			<target xml:lang="fr" state="translated">Plan du site XML</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="fr" state="needs-translation">Change frequency</target></trans-unit>
+			<target xml:lang="fr" state="translated">Fréquence de changement</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
 			<target xml:lang="fr" state="translated">Priorité</target></trans-unit>
