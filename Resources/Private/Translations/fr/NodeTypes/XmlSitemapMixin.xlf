@@ -10,7 +10,7 @@
 			<target xml:lang="fr" state="needs-translation">Change frequency</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="fr" state="needs-translation">Priority</target></trans-unit>
+			<target xml:lang="fr" state="translated">Priorité</target></trans-unit>
     </body>
   </file>
 </xliff>

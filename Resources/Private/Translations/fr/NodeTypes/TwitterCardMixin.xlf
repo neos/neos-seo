@@ -16,7 +16,7 @@
 			<target xml:lang="fr">Titre</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="fr" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="fr" state="translated">Description</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="fr" state="needs-translation">Card Image</target></trans-unit>
