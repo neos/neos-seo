@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="la-LA" state="translated">crwdns365:0crwdne365:0</target></trans-unit>
+			<target xml:lang="la-LA" state="needs-translation">crwdns365:0crwdne365:0</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="la-LA" state="translated">crwdns366:0crwdne366:0</target></trans-unit>
+			<target xml:lang="la-LA" state="needs-translation">crwdns366:0crwdne366:0</target></trans-unit>
     </body>
   </file>
 </xliff>
