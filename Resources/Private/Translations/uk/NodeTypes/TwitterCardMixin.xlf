@@ -13,7 +13,7 @@
 			<target xml:lang="uk" state="needs-translation">Creator Handle</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="uk" state="needs-translation">Title</target></trans-unit>
+			<target xml:lang="uk" state="translated">Назва</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="uk" state="needs-translation">Description</target></trans-unit>
