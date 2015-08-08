@@ -4,19 +4,19 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="uk" state="needs-translation">Meta Tags</target></trans-unit>
+			<target xml:lang="uk" state="translated">Мета-теги</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="uk" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="uk" state="translated">Опис</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="uk" state="needs-translation">Keywords</target></trans-unit>
+			<target xml:lang="uk" state="translated">Ключові слова</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="uk" state="needs-translation">Hide from search engines (noindex)</target></trans-unit>
+			<target xml:lang="uk" state="translated">Приховати від пошукових систем (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="uk" state="needs-translation">Do not follow links (nofollow)</target></trans-unit>
+			<target xml:lang="uk" state="translated">Не переходьте за посиланнями (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>
