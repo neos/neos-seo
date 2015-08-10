@@ -2,21 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="da">
     <body>
-      <trans-unit id="groups.seometa" xml:space="preserve">
+      <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target xml:lang="da" state="translated">Meta-Tags</target></trans-unit>
-      <trans-unit id="properties.metaDescription" xml:space="preserve">
+			<target xml:lang="da">Metatags</target><alt-trans><target xml:lang="da">Meta-Tags</target></alt-trans></trans-unit>
+      <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="da" state="translated">Beskrivelse</target></trans-unit>
-      <trans-unit id="properties.metaKeywords" xml:space="preserve">
+			<target xml:lang="da">Beskrivelse</target></trans-unit>
+      <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target xml:lang="da" state="translated">Nøgleord</target></trans-unit>
-      <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
+			<target xml:lang="da">Nøgleord</target></trans-unit>
+      <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="da" state="translated">Skjul fra søgemaskiner (noindex)</target></trans-unit>
-      <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
+			<target xml:lang="da">Skjul fra søgemaskiner (noindex)</target></trans-unit>
+      <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="da" state="translated">Følg ikke links (nofollow)</target></trans-unit>
+			<target xml:lang="da">Følg ikke links (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

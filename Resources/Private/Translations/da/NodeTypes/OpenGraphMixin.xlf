@@ -2,21 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="da">
     <body>
-      <trans-unit id="groups.openGraph" xml:space="preserve">
+      <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target xml:lang="da" state="translated">OpenGraph</target></trans-unit>
-      <trans-unit id="properties.openGraphType" xml:space="preserve">
+			<target xml:lang="da">OpenGraph</target></trans-unit>
+      <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target xml:lang="da" state="translated">Åben Graftype</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle" xml:space="preserve">
+			<target xml:lang="da">Open Graph type</target><alt-trans><target xml:lang="da">Åben Graftype</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target xml:lang="da" state="translated">Åbn grafoverskrift</target></trans-unit>
-      <trans-unit id="properties.openGraphDescription" xml:space="preserve">
+			<target xml:lang="da">Open Graph titel</target><alt-trans><target xml:lang="da">Åbn grafoverskrift</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target xml:lang="da" state="translated">Åbne graf beskrivelse</target></trans-unit>
-      <trans-unit id="properties.openGraphImage" xml:space="preserve">
+			<target xml:lang="da">Open Graph beskrivelse</target><alt-trans><target xml:lang="da">Åbne graf beskrivelse</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target xml:lang="da" state="translated">Åbne graf billede</target></trans-unit>
+			<target xml:lang="da">Open Graph billede</target><alt-trans><target xml:lang="da">Åbne graf billede</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
