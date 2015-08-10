@@ -4,19 +4,19 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="la-LA" state="needs-translation">crwdns370:0crwdne370:0</target></trans-unit>
+			<target xml:lang="la-LA" state="translated">crwdns370:0crwdne370:0</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="la-LA" state="needs-translation">crwdns371:0crwdne371:0</target></trans-unit>
+			<target xml:lang="la-LA" state="translated">crwdns371:0crwdne371:0</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="la-LA" state="needs-translation">crwdns372:0crwdne372:0</target></trans-unit>
+			<target xml:lang="la-LA" state="translated">crwdns372:0crwdne372:0</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="la-LA" state="needs-translation">crwdns373:0crwdne373:0</target></trans-unit>
+			<target xml:lang="la-LA" state="translated">crwdns373:0crwdne373:0</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="la-LA" state="needs-translation">crwdns374:0crwdne374:0</target></trans-unit>
+			<target xml:lang="la-LA" state="translated">crwdns374:0crwdne374:0</target></trans-unit>
     </body>
   </file>
 </xliff>
