@@ -16,7 +16,7 @@
 			<target xml:lang="uk" state="translated">Приховати від пошукових систем (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="uk" state="translated">Не переходьте за посиланнями (nofollow)</target></trans-unit>
+			<target xml:lang="uk" state="translated">Не переходити за посиланнями (nofollow)</target><alt-trans><target xml:lang="uk">Не переходьте за посиланнями (nofollow)</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
