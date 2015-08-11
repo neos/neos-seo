@@ -2,15 +2,15 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="lv">
     <body>
-      <trans-unit id="groups.xmlsitemap" xml:space="preserve">
+      <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target xml:lang="lv" state="translated">XML lapas karte</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
+			<target xml:lang="lv">XML lapas karte</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="lv" state="translated">Mainīt frekvenci</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
+			<target xml:lang="lv">Mainīt frekvenci</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target xml:lang="lv" state="translated">Prioritāte</target></trans-unit>
+			<target xml:lang="lv">Prioritāte</target></trans-unit>
     </body>
   </file>
 </xliff>
