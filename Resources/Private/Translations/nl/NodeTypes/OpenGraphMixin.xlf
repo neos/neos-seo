@@ -2,21 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="nl">
     <body>
-      <trans-unit id="groups.openGraph" xml:space="preserve">
+      <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target xml:lang="nl" state="translated">OpenGraph</target></trans-unit>
-      <trans-unit id="properties.openGraphType" xml:space="preserve">
+			<target xml:lang="nl">OpenGraph</target></trans-unit>
+      <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target xml:lang="nl" state="translated">Open Graph Type</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle" xml:space="preserve">
+			<target xml:lang="nl">Open Graph type</target><alt-trans><target xml:lang="nl">Open Graph Type</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target xml:lang="nl" state="translated">Open Graph titel</target></trans-unit>
-      <trans-unit id="properties.openGraphDescription" xml:space="preserve">
+			<target xml:lang="nl">Open Graph titel</target></trans-unit>
+      <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target xml:lang="nl" state="translated">Open Graph omschrijving</target></trans-unit>
-      <trans-unit id="properties.openGraphImage" xml:space="preserve">
+			<target xml:lang="nl">Open Graph omschrijving</target></trans-unit>
+      <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target xml:lang="nl" state="translated">Open Graph afbeelding</target></trans-unit>
+			<target xml:lang="nl">Open Graph afbeelding</target></trans-unit>
     </body>
   </file>
 </xliff>
