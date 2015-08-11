@@ -2,24 +2,24 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="nl">
     <body>
-      <trans-unit id="groups.twittercard" xml:space="preserve">
+      <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target xml:lang="nl" state="translated">Twitter kaart</target></trans-unit>
-      <trans-unit id="properties.twitterCardType" xml:space="preserve">
+			<target xml:lang="nl">Twitter kaart</target></trans-unit>
+      <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target xml:lang="nl" state="translated">Kaarttype</target></trans-unit>
-      <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
+			<target xml:lang="nl">Kaarttype</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="nl" state="translated">Creator Handle</target></trans-unit>
+			<target xml:lang="nl">Handle van auteur</target><alt-trans><target xml:lang="nl">Creator Handle</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
 			<target xml:lang="nl">Titel</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
+      <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="nl" state="translated">Omschrijving</target></trans-unit>
-      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
+			<target xml:lang="nl">Omschrijving</target></trans-unit>
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="nl" state="translated">Afbeelding van de kaart</target></trans-unit>
+			<target xml:lang="nl">Afbeelding van de kaart</target></trans-unit>
     </body>
   </file>
 </xliff>
