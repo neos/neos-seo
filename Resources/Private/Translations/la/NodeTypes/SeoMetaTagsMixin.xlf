@@ -2,21 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="la-LA">
     <body>
-      <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
+      <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="la-LA">crwdns375:0crwdne375:0</target></trans-unit>
-      <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="needs-translation">crwdns375:0crwdne375:0</target></trans-unit>
+      <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="la-LA">crwdns376:0crwdne376:0</target></trans-unit>
-      <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="needs-translation">crwdns376:0crwdne376:0</target></trans-unit>
+      <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="la-LA">crwdns377:0crwdne377:0</target></trans-unit>
-      <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="needs-translation">crwdns377:0crwdne377:0</target></trans-unit>
+      <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="la-LA">crwdns378:0crwdne378:0</target></trans-unit>
-      <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
+			<target xml:lang="la-LA" state="needs-translation">crwdns378:0crwdne378:0</target></trans-unit>
+      <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="la-LA">crwdns379:0crwdne379:0</target></trans-unit>
+			<target xml:lang="la-LA" state="needs-translation">crwdns379:0crwdne379:0</target></trans-unit>
     </body>
   </file>
 </xliff>
