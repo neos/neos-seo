@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target xml:lang="es-ES" state="needs-translation">Title Override</target></trans-unit>
+			<target xml:lang="es-ES" state="translated">Sobreescritura del título</target></trans-unit>
     </body>
   </file>
 </xliff>
