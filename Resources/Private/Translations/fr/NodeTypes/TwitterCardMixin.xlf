@@ -11,15 +11,15 @@
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
 			<target xml:lang="fr">Créateur</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="fr" state="translated">Titre</target></trans-unit>
+			<target xml:lang="fr">Titre</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="fr">Description</target></trans-unit>
-      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="fr" state="translated">Image</target></trans-unit>
+			<target xml:lang="fr">Image</target></trans-unit>
     </body>
   </file>
 </xliff>
