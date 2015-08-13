@@ -4,19 +4,19 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="pt-BR" state="needs-translation">OpenGraph</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="pt-BR" state="needs-translation">Open Graph Type</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Tipo do Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="pt-BR" state="needs-translation">Open Graph title</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Título do Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="pt-BR" state="needs-translation">Open Graph Description</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Descrição do Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="pt-BR" state="needs-translation">Open Graph Image</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Imagem do Open Graph</target></trans-unit>
     </body>
   </file>
 </xliff>
