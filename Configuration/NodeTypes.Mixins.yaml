@@ -92,7 +92,7 @@
       ui:
         label: i18n
         inspector:
-          group: 'twittercardsettings'
+          group: 'twittercard'
           editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
