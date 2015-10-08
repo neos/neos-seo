@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="zh-CN">
+  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="pt-BR">
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="zh-CN" state="translated">推特卡</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Cartão do Twitter</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="zh-CN" state="translated">卡片类型</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Tipo de Cartão</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="zh-CN" state="translated">创建者的句柄</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Identificador do Criador</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="zh-CN" state="translated">标题</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Título</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="zh-CN" state="translated">说明</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Descrição</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="zh-CN" state="translated">卡图像</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Imagem de Cartão</target></trans-unit>
     </body>
   </file>
 </xliff>
