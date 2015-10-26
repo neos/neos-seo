@@ -4,22 +4,22 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="km" state="needs-translation">Twitter Card</target></trans-unit>
+			<target xml:lang="km" state="translated">កាតTwitter</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="km" state="needs-translation">Card Type</target></trans-unit>
+			<target xml:lang="km" state="translated">ប្រភេទនៃកាត</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="km" state="needs-translation">Creator Handle</target></trans-unit>
+			<target xml:lang="km" state="translated">អ្នកបង្កើតដំណេាះស្រាយ</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="km" state="translated">ចំណងជើង</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="km" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="km" state="translated">ពិពណ៍នា</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="km" state="needs-translation">Card Image</target></trans-unit>
+			<target xml:lang="km" state="translated">កាតដែលមានរូបភាព</target></trans-unit>
     </body>
   </file>
 </xliff>

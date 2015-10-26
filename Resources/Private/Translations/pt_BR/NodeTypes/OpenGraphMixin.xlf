@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="no">
+  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="pt-BR">
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="no" state="translated">OpenGraph</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="no" state="translated">OpenGraph-type</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Tipo do Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="no" state="translated">OpenGraph-tittel</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Título do Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="no" state="translated">OpenGraph-beskrivelse</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Descrição do Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="no" state="translated">OpenGraph-bilde</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Imagem do Open Graph</target></trans-unit>
     </body>
   </file>
 </xliff>

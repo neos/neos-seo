@@ -4,19 +4,19 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="km" state="needs-translation">OpenGraph</target></trans-unit>
+			<target xml:lang="km" state="translated">បើកដ្យាក្រាម</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="km" state="needs-translation">Open Graph Type</target></trans-unit>
+			<target xml:lang="km" state="translated">បើកជាប្រភេទក្រាប</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="km" state="needs-translation">Open Graph title</target></trans-unit>
+			<target xml:lang="km" state="translated">បើកចំណងជើងដ្យាក្រាម</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="km" state="needs-translation">Open Graph Description</target></trans-unit>
+			<target xml:lang="km" state="translated">បើកការបរិយាយអំពីដ្រាក្រាម</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="km" state="needs-translation">Open Graph Image</target></trans-unit>
+			<target xml:lang="km" state="translated">បើករូបភាពក្រាហ្វ</target></trans-unit>
     </body>
   </file>
 </xliff>

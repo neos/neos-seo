@@ -7,7 +7,7 @@
 			<target xml:lang="lv">XML lapas karte</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="lv">Mainīt frekvenci</target></trans-unit>
+			<target xml:lang="lv">Mainīt frekvenci</target><alt-trans><target xml:lang="lv">Mainīt biežumu</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
 			<target xml:lang="lv">Prioritāte</target></trans-unit>
