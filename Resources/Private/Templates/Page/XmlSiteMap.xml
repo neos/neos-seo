@@ -6,10 +6,13 @@
 </urlset>
 <f:section name="itemsList">
 	<f:for each="{items}" as="item">
-		<url>
-			<loc>{neos:uri.node(node: item.node, format: 'html', absolute: true)}</loc>
-			<f:if condition="{item.node.properties.xmlSitemapChangeFrequency}"><changefreq>{item.node.properties.xmlSitemapChangeFrequency}</changefreq></f:if>
-			<priority>{f:if(condition: item.node.properties.xmlSitemapPriority, then: item.node.properties.xmlSitemapPriority, else: '0.5')}</priority>
-		</url><f:if condition="{item.subItems}"><f:render section="itemsList" arguments="{items: item.subItems}"/></f:if>
+        <f:if condition="{item.node.properties.metaRobotsNoindex} != 'FALSE'">
+            <url>
+		    	<loc>{neos:uri.node(node: item.node, format: 'html', absolute: true)}</loc>
+		    	<f:if condition="{item.node.properties.xmlSitemapChangeFrequency}"><changefreq>{item.node.properties.xmlSitemapChangeFrequency}</changefreq></f:if>
+		    	<priority>{f:if(condition: item.node.properties.xmlSitemapPriority, then: item.node.properties.xmlSitemapPriority, else: '0.5')}</priority>
+		    </url>
+        </f:if>
+        <f:if condition="{item.subItems}"><f:render section="itemsList" arguments="{items: item.subItems}"/></f:if>
 	</f:for>
 </f:section>
