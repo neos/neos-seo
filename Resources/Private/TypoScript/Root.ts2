@@ -151,7 +151,7 @@ prototype(TYPO3.Neos:Page) {
 			openGraphTypeTag = TYPO3.TypoScript:Tag {
 				tagName = 'meta'
 				attributes {
-					name = 'og:type'
+					property = 'og:type'
 					content = ${openGraphType}
 				}
 			}
@@ -160,7 +160,7 @@ prototype(TYPO3.Neos:Page) {
 				tagName = 'meta'
 				@context.openGraphTitle = ${q(node).property('openGraphTitle')}
 				attributes {
-					name = 'og:title'
+					property = 'og:title'
 					content = ${openGraphTitle}
 				}
 				@if.isNotBlank = ${!String.isBlank(openGraphTitle)}
@@ -170,7 +170,7 @@ prototype(TYPO3.Neos:Page) {
 				tagName = 'meta'
 				@context.openGraphDescription = ${q(node).property('openGraphDescription') ? q(node).property('openGraphDescription') : q(node).property('metaDescription')}
 				attributes {
-					name = 'og:description'
+					property = 'og:description'
 					content = ${openGraphDescription}
 				}
 				@if.isNotBlank = ${!String.isBlank(openGraphDescription)}
@@ -180,7 +180,7 @@ prototype(TYPO3.Neos:Page) {
 				tagName = 'meta'
 				@context.openGraphImage = ${q(node).property('openGraphImage')}
 				attributes {
-					name = 'og:image'
+					property = 'og:image'
 					content = TYPO3.Neos:ImageUri {
 						asset = ${openGraphImage}
 						maximumWidth = 2000
@@ -193,8 +193,8 @@ prototype(TYPO3.Neos:Page) {
 			openGraphUrlTag = TYPO3.TypoScript:Tag {
 				tagName = 'meta'
 				attributes {
-					name = 'og:url'
-						content = TYPO3.Neos:NodeUri {
+					property = 'og:url'
+					content = TYPO3.Neos:NodeUri {
 						node = ${node}
 						absolute = TRUE
 					}
