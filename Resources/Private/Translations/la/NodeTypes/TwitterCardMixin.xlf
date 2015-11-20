@@ -2,22 +2,22 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="la-LA">
     <body>
-      <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
+      <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
 			<target xml:lang="la-LA">crwdns553:0crwdne553:0</target></trans-unit>
-      <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
 			<target xml:lang="la-LA">crwdns383:0crwdne383:0</target></trans-unit>
-      <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
 			<target xml:lang="la-LA">crwdns384:0crwdne384:0</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="la-LA">crwdns385:0crwdne385:0</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="la-LA">crwdns386:0crwdne386:0</target></trans-unit>
-      <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="la-LA">crwdns387:0crwdne387:0</target></trans-unit>
     </body>
