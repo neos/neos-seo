@@ -16,7 +16,7 @@
 			<target xml:lang="ja" state="needs-translation">Title</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="ja" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="ja" state="translated">説明</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="ja" state="needs-translation">Card Image</target></trans-unit>
