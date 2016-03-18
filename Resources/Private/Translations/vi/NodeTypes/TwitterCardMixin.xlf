@@ -10,7 +10,7 @@
 			<target xml:lang="vi" state="translated">Loại thẻ</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="vi" state="needs-translation">Creator Handle</target></trans-unit>
+			<target xml:lang="vi" state="translated">Người tạo</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="vi" state="translated">Tiêu đề</target></trans-unit>
