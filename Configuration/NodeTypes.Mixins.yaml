@@ -29,6 +29,7 @@
       groups:
         seometa:
           label: i18n
+          icon: 'icon-tags'
           position: 100
           tab: seo
   properties:
@@ -83,6 +84,7 @@
       groups:
         twittercard:
           label: i18n
+          icon: 'icon-twitter'
           position: 400
           tab: seo
   properties:
@@ -159,6 +161,7 @@
       groups:
         canonicallink:
           label: i18n
+          icon: 'icon-link'
           position: 200
           tab: seo
   properties:
@@ -183,6 +186,7 @@
       groups:
         openGraph:
           label: i18n
+          icon: 'icon-share-alt'
           position: 300
           tab: seo
   properties:
@@ -247,6 +251,7 @@
       groups:
         xmlsitemap:
           label: i18n
+          icon: 'icon-sitemap'
           position: 500
           tab: seo
   properties:
