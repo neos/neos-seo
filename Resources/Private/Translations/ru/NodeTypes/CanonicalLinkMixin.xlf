@@ -5,9 +5,9 @@
       <trans-unit id="groups.canonicallink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
 			<target xml:lang="ru">Каноническая ссылка</target></trans-unit>
-      <trans-unit id="properties.canonicalLink" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="ru">Каноническая ссылка</target></trans-unit>
+			<target xml:lang="ru" state="translated">Каноническая ссылка</target></trans-unit>
     </body>
   </file>
 </xliff>

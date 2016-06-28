@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target xml:lang="ru">XML Sitemap</target></trans-unit>
+			<target xml:lang="ru">Карта сайта в XML</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="ru">Изменить частоту</target><alt-trans><target xml:lang="ru">Частота изменения</target></alt-trans></trans-unit>
+			<target xml:lang="ru">Частота изменений</target><alt-trans><target xml:lang="ru">Частота изменения</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target xml:lang="ru">Важность</target><alt-trans><target xml:lang="ru">Приоритет</target></alt-trans></trans-unit>
+			<target xml:lang="ru">Приоритет</target></trans-unit>
     </body>
   </file>
 </xliff>

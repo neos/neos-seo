@@ -4,22 +4,22 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="ro" state="needs-translation">Twitter Card</target></trans-unit>
+			<target xml:lang="ro" state="translated">Twitter Card</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="ro" state="needs-translation">Card Type</target></trans-unit>
+			<target xml:lang="ro" state="translated">Tip card</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="ro" state="needs-translation">Creator Handle</target></trans-unit>
+			<target xml:lang="ro" state="translated">Autor</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="ro" state="needs-translation">Title</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="ro" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="ro" state="translated">Descriere (meta description)</target><alt-trans><target xml:lang="ro">Descriere</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="ro" state="needs-translation">Card Image</target></trans-unit>
+			<target xml:lang="ro" state="translated">Imagine</target></trans-unit>
     </body>
   </file>
 </xliff>
