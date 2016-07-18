@@ -4,19 +4,19 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="tr" state="needs-translation">Meta Tags</target></trans-unit>
+			<target xml:lang="tr" state="translated">Meta Etiketleri</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="tr" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="tr" state="translated">Açıklama</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="tr" state="needs-translation">Keywords</target></trans-unit>
+			<target xml:lang="tr" state="translated">Anahtar Kelimeler</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="tr" state="needs-translation">Hide from search engines (noindex)</target></trans-unit>
+			<target xml:lang="tr" state="translated">Arama motorlarından gizle (indekslenmez)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="tr" state="needs-translation">Do not follow links (nofollow)</target></trans-unit>
+			<target xml:lang="tr" state="translated">Bağlantıları takip etme (takip edilemez)</target></trans-unit>
     </body>
   </file>
 </xliff>
