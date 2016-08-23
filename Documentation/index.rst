@@ -71,9 +71,6 @@ The change frequency and priority for each sitemap entry are used as specified i
 to the SEO tab in the inspector of `TYPO3.Neos:Document` nodes via the `TYPO3.Neos.Seo:XmlSitemapMixin`. For
 priority the default value is 0.5 (neutral) and the change frequency is omitted unless specified.
 
-The generated sitemap does not contain information about the last modification of a document, because Neos does not yet
-keep track of this.
-
 For activating the rendering of the `sitemap.xml` you need to add the following route to the TYPO3.Neos.Seo package in your global `Configuration/Routes.yaml`.
 Keep in mind that there are no tabs in YAML, but only two spaces for indentation.
 
