@@ -13,7 +13,7 @@
 			<target xml:lang="hu" state="translated">Létrehozó</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="hu" state="needs-translation">Title</target></trans-unit>
+			<target xml:lang="hu" state="translated">Cím</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="hu" state="translated">Leírás</target></trans-unit>
