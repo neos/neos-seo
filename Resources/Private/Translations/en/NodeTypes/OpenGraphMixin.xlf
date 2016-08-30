@@ -12,7 +12,7 @@
 				<source>Open Graph title</source>
 			</trans-unit>
 			<trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
-				<source>Used as og:title , max. 60 chars</source>
+				<source>Used as og:title, max. 60 chars</source>
 			</trans-unit>
 			<trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
