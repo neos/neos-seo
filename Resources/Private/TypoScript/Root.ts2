@@ -68,7 +68,7 @@ prototype(TYPO3.Neos:Page) {
 			@if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.language') != null}
 			@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
 
-			localeToLanguage = ${String.replace(item.preset.values[0], '_', '-')}
+			localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions.language[0]), '_', '-')}
 
 			dimension = 'language'
 			templatePath = 'resource://TYPO3.Neos.Seo/Private/Templates/TypoScriptObjects/AlternateLanguageLinks.html'
