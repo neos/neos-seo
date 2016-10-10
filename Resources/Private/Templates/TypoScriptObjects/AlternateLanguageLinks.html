@@ -1,4 +1,4 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <f:for each="{items}" as="item"><f:if condition="{item.node}">
-<link rel="alternate" hreflang="{ts:render(path: 'localeToLanguage', context: {item: item})}" href="{neos:uri.node(node : item.node, absolute: true)}"/></f:if></f:for>
+<link rel="alternate" hreflang="{ts:render(path: 'localeToLanguage', context: {item: item, dimension: dimension})}" href="{neos:uri.node(node : item.node, absolute: true)}"/></f:if></f:for>

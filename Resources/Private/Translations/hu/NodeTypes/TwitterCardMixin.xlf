@@ -4,22 +4,22 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="hu" state="needs-translation">Twitter Card</target></trans-unit>
+			<target xml:lang="hu" state="translated">Twitter kártya</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="hu" state="needs-translation">Card Type</target></trans-unit>
+			<target xml:lang="hu" state="translated">Kártya típusa</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="hu" state="needs-translation">Creator Handle</target></trans-unit>
+			<target xml:lang="hu" state="translated">Létrehozó</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="hu" state="needs-translation">Title</target></trans-unit>
+			<target xml:lang="hu" state="translated">Cím</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="hu" state="needs-translation">Description</target></trans-unit>
+			<target xml:lang="hu" state="translated">Leírás</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="hu" state="needs-translation">Card Image</target></trans-unit>
+			<target xml:lang="hu" state="translated">Kártya kép</target></trans-unit>
     </body>
   </file>
 </xliff>
