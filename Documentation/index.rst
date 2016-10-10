@@ -81,12 +81,12 @@ Keep in mind that there are no tabs in YAML, but only two spaces for indentation
 
 	-
 	  name: 'Neos Seo'
-	  uriPattern: '<TYPO3NeosSeoSubroutes>'
+	  uriPattern: '<NeosSeoSubroutes>'
 	  subRoutes:
-		'TYPO3NeosSeoSubroutes':
-		  package: 'TYPO3.Neos.Seo'
-		  variables:
-			'xmlSitemapPath': 'sitemap.xml'
+	    'NeosSeoSubroutes':
+	      package: 'TYPO3.Neos.Seo'
+	      variables:
+	        'xmlSitemapPath': 'sitemap.xml'
 
 	##
 	# Neos subroutes
