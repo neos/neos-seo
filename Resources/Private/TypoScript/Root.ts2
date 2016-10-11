@@ -72,6 +72,7 @@ prototype(TYPO3.Neos:Page) {
 
 			localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[languageDimension][0]), '_', '-')}
 
+			dimension = ${languageDimension}
 			templatePath = 'resource://TYPO3.Neos.Seo/Private/Templates/TypoScriptObjects/AlternateLanguageLinks.html'
 		}
 
