@@ -8,8 +8,14 @@
 			<trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
 			</trans-unit>
+			<trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 156 characters</source>
+			</trans-unit>
 			<trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
+			</trans-unit>
+			<trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
+				<source>comma separated, max. 255 chars</source>
 			</trans-unit>
 			<trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
