@@ -70,30 +70,8 @@ The change frequency and priority for each sitemap entry are used as specified i
 to the SEO tab in the inspector of `Neos.Neos:Document` nodes via the `Neos.Seo:XmlSitemapMixin`. For
 priority the default value is 0.5 (neutral) and the change frequency is omitted unless specified.
 
-For activating the rendering of the `sitemap.xml` you need to add the following route to the TYPO3.Neos.Seo package in your global `Configuration/Routes.yaml`.
-Keep in mind that there are no tabs in YAML, but only two spaces for indentation.
-
-::
-
-	##
-	# Neos Seo: XML Sitemap
-
-	-
-	  name: 'Neos Seo'
-	  uriPattern: '<NeosSeoSubroutes>'
-	  subRoutes:
-	    'NeosSeoSubroutes':
-	      package: 'Neos.Seo'
-	      variables:
-	        'xmlSitemapPath': 'sitemap.xml'
-
-	##
-	# Neos subroutes
-
-	...
-
-There is no need for creating a document node for the sitemap as this route will work for all site nodes.
-
+The necessary route to make the sitemap available is automatically included via `Settings.yaml` and will provide
+the sitemap via `your.domain/sitemap.xml`. See Settings on how to disable or change the route.
 
 Alternate Language Tag
 ------------------------
