@@ -1,7 +1,7 @@
 #
 # SEO <title> tag mixin
 #
-'TYPO3.Neos.Seo:TitleTagMixin':
+'Neos.Seo:TitleTagMixin':
   abstract: TRUE
   properties:
     titleOverride:
@@ -12,17 +12,17 @@
         inspector:
           group: 'document'
           position: 10000
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'Used in <title> tag, max. 60 chars'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 60
 
 #
 # SEO <meta> tags mixins
 #
-'TYPO3.Neos.Seo:SeoMetaTagsMixin':
+'Neos.Neos.Seo:SeoMetaTagsMixin':
   abstract: TRUE
   ui:
     inspector:
@@ -40,11 +40,11 @@
         inspector:
           group: 'seometa'
           position: 10
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 156 characters'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 156
     metaKeywords:
       type: string
@@ -53,11 +53,11 @@
         inspector:
           group: 'seometa'
           position: 20
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'comma separated, max. 255 chars'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 255
     metaRobotsNoindex:
       type: boolean
@@ -77,7 +77,7 @@
 #
 # Twitter Card mixin
 #
-'TYPO3.Neos.Seo:TwitterCardMixin':
+'Neos.Neos.Seo:TwitterCardMixin':
   abstract: TRUE
   ui:
     inspector:
@@ -95,7 +95,7 @@
         label: i18n
         inspector:
           group: 'twittercard'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               ~:
@@ -115,7 +115,7 @@
           editorOptions:
             placeholder: '@johnexample'
       validation:
-        'TYPO3.Neos/Validation/RegularExpressionValidator':
+        'Neos.Neos/Validation/RegularExpressionValidator':
           regularExpression: '/@[a-z0-9_]{1,15}/i'
     twitterCardTitle:
       type: string
@@ -123,11 +123,11 @@
         label: i18n
         inspector:
           group: 'twittercard'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 70 characters'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 70
     twitterCardDescription:
       type: string
@@ -135,14 +135,14 @@
         label: i18n
         inspector:
           group: 'twittercard'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 200 characters'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200
     twitterCardImage:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: i18n
         inspector:
@@ -154,7 +154,7 @@
 #
 # Canonical link field mixin
 #
-'TYPO3.Neos.Seo:CanonicalLinkMixin':
+'Neos.Neos.Seo:CanonicalLinkMixin':
   abstract: TRUE
   ui:
     inspector:
@@ -179,7 +179,7 @@
 #
 # OpenGraph mixin
 #
-'TYPO3.Neos.Seo:OpenGraphMixin':
+'Neos.Neos.Seo:OpenGraphMixin':
   abstract: TRUE
   ui:
     inspector:
@@ -197,7 +197,7 @@
         label: i18n
         inspector:
           group: 'openGraph'
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               ~:
@@ -213,11 +213,11 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'openGraph'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'Used as og:title , max. 60 chars'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 60
     openGraphDescription:
       type: string
@@ -225,14 +225,14 @@
         label: i18n
         inspector:
           group: 'openGraph'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
             placeholder: 'max. 200 characters'
       validation:
-        'TYPO3.Neos/Validation/StringLengthValidator':
+        'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200
     openGraphImage:
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: i18n
         inspector:
@@ -244,7 +244,7 @@
 #
 # XML sitemap fields mixin
 #
-'TYPO3.Neos.Seo:XmlSitemapMixin':
+'Neos.Neos.Seo:XmlSitemapMixin':
   abstract: TRUE
   ui:
     inspector:
@@ -262,7 +262,7 @@
         inspector:
           group: 'xmlsitemap'
           position: 10
-          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
               ~:
@@ -291,6 +291,6 @@
           editorOptions:
             placeholder: 'between 0 and 1'
       validation:
-        'TYPO3.Neos/Validation/NumberRangeValidator':
+        'Neos.Neos/Validation/NumberRangeValidator':
           minimum: 0
           maximum: 1

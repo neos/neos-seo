@@ -1,14 +1,14 @@
 {
-    "name": "typo3/neos-seo",
+    "name": "neos/seo",
     "type": "neos-package",
-    "description": "SEO configuration and tools for TYPO3 Neos",
+    "description": "SEO configuration and tools for Neos",
     "license": "GPL-3.0+",
     "require": {
-        "typo3/neos": "*"
+        "neos/neos": "*"
     },
     "autoload": {
-        "psr-0": {
-            "TYPO3\\Neos\\Seo": "Classes"
+        "psr-4": {
+            "Neos\\Seo\\": "Classes"
         }
     }
 }

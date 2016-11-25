@@ -6,43 +6,42 @@ This documentation covering version |release| has been rendered at: |today|
 Page title
 ----------
 
-The default `<title>` tag rendering in the `TYPO3.Neos:Page` TypoScript object is a "reverse breadcrumb" of the regular
+The default `<title>` tag rendering in the `Neos.Neos:Page` TypoScript object is a "reverse breadcrumb" of the regular
 title field(s). This is done in `head.titleTag.default`.
 
-A new field `titleOverride` is added to `TYPO3.Neos:Document` via the `TYPO3.Neos.Seo:TitleTagMixin`. The new field is
-used as the `<title>` tag content if it is filled (see `head.titleTag.content` in `TYPO3.Neos:Page`).
+A new field `titleOverride` is added to `Neos.Neos:Document` via the `Neos.Seo:TitleTagMixin`. The new field is
+used as the `<title>` tag content if it is filled (see `head.titleTag.content` in `Neos.Neos:Page`).
 
 Basic meta tags
 ---------------
 
-The fields for keywords and description are added to `TYPO3.Neos:Document` via the `TYPO3.Neos.Seo:SoeMetaTagsMixin`
+The fields for keywords and description are added to `Neos.Neos:Document` via the `Neos.Seo:SoeMetaTagsMixin`
 
 If they are filled in, `<meta>` tags for their contents will be rendered (see `head.metaTitleTag` and
-`head.metaDescriptionTag` in `TYPO3.Neos:Page`).
+`head.metaDescriptionTag` in `Neos.Neos:Page`).
 
 Two checkboxes allow to set the content for the `<meta name="robots">` tag to any combination of the possible values `follow`, `nofollow`, `index` and `noindex`.
 
 Twitter Cards
 -------------
 
-The `TYPO3.Neos.Seo:TwitterCardMixin` (added to `TYPO3.Neos:Document` by default) provides a new inspector tab to
+The `Neos.Seo:TwitterCardMixin` (added to `Neos.Neos:Document` by default) provides a new inspector tab to
 configure Twitter Cards on any document. If a Twitter Card is enabled, the related meta tags will be rendered as needed
 and useful.
 
-The `twitter:site` handle can be configured with the setting `TYPO3.Neos.Seo.twitterCard.siteHandle` by providing a valid Twitter handle::
+The `twitter:site` handle can be configured with the setting `Neos.Seo.twitterCard.siteHandle` by providing a valid Twitter handle::
 
-  TYPO3:
-    Neos:
-      Seo:
-        twitterCard:
-          siteHandle: '@typo3neos'
+  Neos:
+    Seo:
+      twitterCard:
+        siteHandle: '@typo3neos'
 
 Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
 
 Open Graph
 ----------
 
-The `TYPO3.Neos.Seo:OpenGraphMixin` (added to `TYPO3.Neos:Document` by default) provides a new inspector tab to
+The `Neos.Seo:OpenGraphMixin` (added to `Neos.Neos:Document` by default) provides a new inspector tab to
 configure Open Graph on any document.
 The Open Graph protocol enables any web page to become a rich object in a social graph. The essential ones are:
 
@@ -68,7 +67,7 @@ XML sitemap
 The generation of an XML sitemap to submit to search engines can be enabled as follows:
 
 The change frequency and priority for each sitemap entry are used as specified in the respective fields added
-to the SEO tab in the inspector of `TYPO3.Neos:Document` nodes via the `TYPO3.Neos.Seo:XmlSitemapMixin`. For
+to the SEO tab in the inspector of `Neos.Neos:Document` nodes via the `Neos.Seo:XmlSitemapMixin`. For
 priority the default value is 0.5 (neutral) and the change frequency is omitted unless specified.
 
 For activating the rendering of the `sitemap.xml` you need to add the following route to the TYPO3.Neos.Seo package in your global `Configuration/Routes.yaml`.
@@ -84,7 +83,7 @@ Keep in mind that there are no tabs in YAML, but only two spaces for indentation
 	  uriPattern: '<NeosSeoSubroutes>'
 	  subRoutes:
 	    'NeosSeoSubroutes':
-	      package: 'TYPO3.Neos.Seo'
+	      package: 'Neos.Seo'
 	      variables:
 	        'xmlSitemapPath': 'sitemap.xml'
 
@@ -100,7 +99,7 @@ Alternate Language Tag
 ------------------------
 
 The `Alternate Language Tag` provides information that the site is also available in other languages. By default the tags
-are rendered with the `TYPO3.Neos:DimensionMenu` and the `language` dimension. Given the Neos Demo Site Package as an
+are rendered with the `Neos.Neos:DimensionMenu` and the `language` dimension. Given the Neos Demo Site Package as an
 example the rendered tags for the homepage would be.
 
 ::
