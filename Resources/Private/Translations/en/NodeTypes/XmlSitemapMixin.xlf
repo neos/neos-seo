@@ -11,6 +11,9 @@
 			<trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
 			</trans-unit>
+			<trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
+				<source>between 0 and 1</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
