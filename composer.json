@@ -10,5 +10,8 @@
         "psr-4": {
             "Neos\\Seo\\": "Classes"
         }
+    },
+    "replace": {
+        "typo3/neos-seo": "self.version"
     }
 }
