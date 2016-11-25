@@ -1,4 +1,4 @@
-{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace neos=Neos\Neos\ViewHelpers}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>{neos:uri.node(node: root, format: 'html', absolute: true)}</loc><lastmod>{root.lastModificationDateTime -> f:format.date(format: 'Y-m-d\TH:iP')}</lastmod><f:if condition="{root.sitemapXmlChangeFrequency}"><changefreq>{root.sitemapXmlChangeFrequency}</changefreq></f:if><f:if condition="{root.sitemapXmlPriority}"><priority>{root.sitemapXmlPriority}</priority></f:if>

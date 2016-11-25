@@ -1,27 +1,27 @@
 #
 # Add mixins; and a SEO tab to the inspector
 #
-'TYPO3.Neos:Document':
+'Neos.Neos:Document':
   superTypes:
-    'TYPO3.Neos.Seo:TitleTagMixin': TRUE
-    'TYPO3.Neos.Seo:SeoMetaTagsMixin': TRUE
-    'TYPO3.Neos.Seo:TwitterCardMixin': TRUE
-    'TYPO3.Neos.Seo:CanonicalLinkMixin': TRUE
-    'TYPO3.Neos.Seo:OpenGraphMixin': TRUE
-    'TYPO3.Neos.Seo:XmlSitemapMixin': TRUE
+    'Neos.Seo:TitleTagMixin': TRUE
+    'Neos.Seo:SeoMetaTagsMixin': TRUE
+    'Neos.Seo:TwitterCardMixin': TRUE
+    'Neos.Seo:CanonicalLinkMixin': TRUE
+    'Neos.Seo:OpenGraphMixin': TRUE
+    'Neos.Seo:XmlSitemapMixin': TRUE
   ui:
     inspector:
       tabs:
         seo:
-          label: 'TYPO3.Neos.Seo:NodeTypes.Document:tabs.seo'
+          label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
           position: 30
           icon: 'icon-bullseye'
 
-'TYPO3.Neos:Shortcut':
+'Neos.Neos:Shortcut':
   superTypes:
-    'TYPO3.Neos.Seo:TitleTagMixin': FALSE
-    'TYPO3.Neos.Seo:SeoMetaTagsMixin': FALSE
-    'TYPO3.Neos.Seo:TwitterCardMixin': FALSE
-    'TYPO3.Neos.Seo:CanonicalLinkMixin': FALSE
-    'TYPO3.Neos.Seo:OpenGraphMixin': FALSE
-    'TYPO3.Neos.Seo:XmlSitemapMixin': FALSE
+    'Neos.Seo:TitleTagMixin': FALSE
+    'Neos.Seo:SeoMetaTagsMixin': FALSE
+    'Neos.Seo:TwitterCardMixin': FALSE
+    'Neos.Seo:CanonicalLinkMixin': FALSE
+    'Neos.Seo:OpenGraphMixin': FALSE
+    'Neos.Seo:XmlSitemapMixin': FALSE

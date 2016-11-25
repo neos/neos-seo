@@ -1,16 +1,16 @@
-TYPO3:
+Neos:
   Neos:
     typoScript:
       autoInclude:
-        'TYPO3.Neos.Seo': TRUE
+        'Neos.Seo': TRUE
 
     userInterface:
       translation:
         autoInclude:
-          'TYPO3.Neos.Seo': ['NodeTypes/*']
+          'Neos.Seo': ['NodeTypes/*']
 
-    Seo:
-      # Twitter Card settings
-      twitterCard:
-        # the Twitter handle for the twitter:site attribution
-        siteHandle: ~
+  Seo:
+    # Twitter Card settings
+    twitterCard:
+      # the Twitter handle for the twitter:site attribution
+      siteHandle: ~
