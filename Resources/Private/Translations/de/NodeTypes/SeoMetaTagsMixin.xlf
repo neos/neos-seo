@@ -8,6 +8,9 @@
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="de">Beschreibung</target></trans-unit>
+      <trans-unit id="properties.metaDescription.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>max. 156 characters</source>
+			<target xml:lang="de">max. 156 Zeichen</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
 			<target xml:lang="de">Keywords</target></trans-unit>
