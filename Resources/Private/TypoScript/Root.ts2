@@ -56,7 +56,7 @@ prototype(Neos.Neos:Page) {
 			tagName = 'link'
 			attributes {
 				rel = 'canonical'
-				href = TYPO3.Neos:NodeUri {
+				href = Neos.Neos:NodeUri {
 					node = ${documentNode}
 					absolute = TRUE
 				}
@@ -64,14 +64,14 @@ prototype(Neos.Neos:Page) {
 			}
 		}
 
-		alternateLanguageLinks = TYPO3.Neos:DimensionMenu {
+		alternateLanguageLinks = Neos.Neos:DimensionMenu {
 			@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
 			@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
 
 			localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}
 
 			dimension = 'language'
-			templatePath = 'resource://Neos.Seo/Private/Templates/TypoScriptObjects/AlternateLanguageLinks.html'
+			templatePath = 'resource://Neos.Seo/Private/Templates/FusionObjects/AlternateLanguageLinks.html'
 		}
 
 		twitterCard = Neos.Fusion:Array {
@@ -126,7 +126,7 @@ prototype(Neos.Neos:Page) {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:image:src'
-					content = TYPO3.Neos:ImageUri {
+					content = Neos.Neos:ImageUri {
 						asset = ${q(node).property('twitterCardImage')}
 						maximumWidth = 2000
 						maximumHeight = 2000
@@ -139,7 +139,7 @@ prototype(Neos.Neos:Page) {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:url'
-					content = TYPO3.Neos:NodeUri {
+					content = Neos.Neos:NodeUri {
 						node = ${node}
 						absolute = TRUE
 					}
@@ -184,7 +184,7 @@ prototype(Neos.Neos:Page) {
 				@context.openGraphImage = ${q(node).property('openGraphImage')}
 				attributes {
 					property = 'og:image'
-					content = TYPO3.Neos:ImageUri {
+					content = Neos.Neos:ImageUri {
 						asset = ${openGraphImage}
 						maximumWidth = 2000
 						maximumHeight = 2000
@@ -197,7 +197,7 @@ prototype(Neos.Neos:Page) {
 				tagName = 'meta'
 				attributes {
 					property = 'og:url'
-					content = TYPO3.Neos:NodeUri {
+					content = Neos.Neos:NodeUri {
 						node = ${node}
 						absolute = TRUE
 					}
