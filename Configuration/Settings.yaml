@@ -1,4 +1,12 @@
 Neos:
+  Flow:
+    mvc:
+      routes:
+        # Override this to false to not add the SEO routes.
+        'Neos.Seo':
+          variables:
+            # Override this to change the uri to the sitemap
+            xmlSitemapPath: 'sitemap.xml'
   Neos:
     typoScript:
       autoInclude:
