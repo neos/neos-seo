@@ -11,6 +11,9 @@
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
 			<target xml:lang="ru">Приоритет</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>between 0 and 1</source>
+			<target xml:lang="ru">между 0 и 1</target></trans-unit>
     </body>
   </file>
 </xliff>

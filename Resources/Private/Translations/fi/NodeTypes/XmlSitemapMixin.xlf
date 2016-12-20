@@ -11,6 +11,9 @@
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
 			<target xml:lang="fi">Prioriteetti</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>between 0 and 1</source>
+			<target xml:lang="fi">väliltä 0-1</target><alt-trans><target xml:lang="fi">0-1</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
