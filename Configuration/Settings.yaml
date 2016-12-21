@@ -8,7 +8,7 @@ Neos:
             # Override this to change the uri to the sitemap
             xmlSitemapPath: 'sitemap.xml'
   Neos:
-    typoScript:
+    fusion:
       autoInclude:
         'Neos.Seo': TRUE
 
