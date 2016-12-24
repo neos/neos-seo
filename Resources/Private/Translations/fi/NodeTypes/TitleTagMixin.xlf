@@ -5,6 +5,9 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
 			<target xml:lang="fi">Otsikon ylikirjoitus</target></trans-unit>
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
+			<target xml:lang="fi">HTML-tagi &lt;title&gt;, max. 60 merkkiä</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -5,6 +5,9 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
 			<target xml:lang="ru">Переопределение названия</target></trans-unit>
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
+			<target xml:lang="ru">Используется в теге &lt; title &gt;, макс. 60 символов</target></trans-unit>
     </body>
   </file>
 </xliff>

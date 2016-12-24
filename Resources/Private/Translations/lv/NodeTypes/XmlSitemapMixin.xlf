@@ -2,15 +2,18 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="lv">
     <body>
-      <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
+      <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="lv">XML lapas karte</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
+			<target xml:lang="lv" state="translated">XML lapas karte</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="lv">Mainīt frekvenci</target><alt-trans><target xml:lang="lv">Mainīt biežumu</target></alt-trans></trans-unit>
-      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
+			<target xml:lang="lv" state="translated">Mainīt biežumu</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="lv">Prioritāte</target></trans-unit>
+			<target xml:lang="lv" state="translated">Prioritāte</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
+				<source>between 0 and 1</source>
+			<target xml:lang="lv" state="translated">starp 0 un 1</target></trans-unit>
     </body>
   </file>
 </xliff>
