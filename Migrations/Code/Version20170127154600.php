@@ -12,7 +12,7 @@ namespace Neos\Seo\Core\Migrations;
  */
 
 /**
- * Check for globally defined setting identifiers in Settings.yaml files
+ * Migrate to new namespace
  */
 class Version20170127154600 extends AbstractMigration
 {
