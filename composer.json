@@ -15,6 +15,9 @@
         "typo3/neos-seo": "self.version"
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        },
         "applied-flow-migrations": [
             "TYPO3.TYPO3CR-20150510103823",
             "TYPO3.FLOW3-201201261636",
