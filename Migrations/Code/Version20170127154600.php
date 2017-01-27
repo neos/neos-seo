@@ -14,14 +14,14 @@ namespace Neos\Seo\Core\Migrations;
 /**
  * Check for globally defined setting identifiers in Settings.yaml files
  */
-class Version20161125154600 extends AbstractMigration
+class Version20170127154600 extends AbstractMigration
 {
     /**
      * @return string
      */
     public function getIdentifier()
     {
-        return 'Neos.Seo-20161125154600';
+        return 'Neos.Seo-20170127154600';
     }
 
     /**
@@ -29,15 +29,7 @@ class Version20161125154600 extends AbstractMigration
      */
     public function up()
     {
-        $this->processConfiguration(\Neos\Flow\Configuration\ConfigurationManager::CONFIGURATION_TYPE_SETTINGS,
-            function (&$configuration) {
-                if (!isset($configuration['Neos']['Neos']['Seo'])) {
-                    $configuration['Neos']['Seo'] = $configuration['Neos']['Neos']['Seo'];
-                    unset($configuration['Neos']['Neos']['Seo']);
-                }
-            }
-        );
-
+        $this->moveSettingsPaths('Neos.Neos.Seo', 'Neos.Seo');
         $this->searchAndReplace('Neos.Neos.Seo:', 'Neos.Seo:');
         $this->searchAndReplace('resource://TYPO3.Neos.Seo/', 'resource://Neos.Seo/');
     }
