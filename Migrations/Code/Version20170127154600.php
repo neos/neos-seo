@@ -1,5 +1,5 @@
 <?php
-namespace Neos\Seo\Core\Migrations;
+namespace Neos\Flow\Core\Migrations;
 
 /*
  * This file is part of the Neos.Seo package.
