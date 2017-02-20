@@ -116,7 +116,7 @@
             placeholder: '@johnexample'
       validation:
         'Neos.Neos/Validation/RegularExpressionValidator':
-          regularExpression: '/@[a-z0-9_]{1,15}/i'
+          regularExpression: '/^@[a-z0-9_]{1,15}$/i'
     twitterCardTitle:
       type: string
       ui:
