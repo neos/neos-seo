@@ -125,7 +125,7 @@ prototype(Neos.Neos:Page) {
 			cardImageTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
-					name = 'twitter:image:src'
+					name = 'twitter:image'
 					content = Neos.Neos:ImageUri {
 						asset = ${q(node).property('twitterCardImage')}
 						maximumWidth = 2000
