@@ -1,0 +1,8 @@
+prototype(Neos.Seo:MetaKeywordsTag) < prototype(Neos.Fusion:Tag) {
+    tagName = 'meta'
+    attributes {
+        name = 'keywords'
+        content = ${q(node).property('metaKeywords')}
+    }
+    @if.isNotBlank = ${!String.isBlank(q(node).property('metaKeywords'))}
+}

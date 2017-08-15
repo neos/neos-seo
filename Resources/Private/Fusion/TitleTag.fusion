@@ -1,0 +1,15 @@
+prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Tag) {
+    tagName = 'title'
+    default = Neos.Fusion:Collection {
+        // Retrieve all parent document nodes excluding the homepage
+        collection = ${q(documentNode).add(q(documentNode).parents()).slice(0, -1).get()}
+        itemName = 'node'
+        iterationName = 'nodeIterator'
+        // Implode node titles with a dash
+        itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
+        // Always add general site name as suffix
+        @process.siteName = ${(value ? String.stripTags(value) + ' - ' : '') + site.context.currentSite.name}
+    }
+
+    content = ${q(node).property('titleOverride') ? q(node).property('titleOverride') : this.default}
+}

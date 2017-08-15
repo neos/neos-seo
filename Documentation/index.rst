@@ -3,10 +3,55 @@ Neos SEO |version| Documentation
 
 This documentation covering version |release| has been rendered at: |today|
 
+Installation
+------------
+
+This package provides a number of mixins to help rendering SEO metadata.
+To enable all mixins add this to `Configuration/NodeTypes.yaml` file of your site package::
+  'Neos.Neos:Document':
+    superTypes:
+      'Neos.Seo:TitleTagMixin': TRUE
+      'Neos.Seo:SeoMetaTagsMixin': TRUE
+      'Neos.Seo:TwitterCardMixin': TRUE
+      'Neos.Seo:CanonicalLinkMixin': TRUE
+      'Neos.Seo:OpenGraphMixin': TRUE
+      'Neos.Seo:XmlSitemapMixin': TRUE
+    ui:
+      inspector:
+        tabs:
+          seo:
+            label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
+            position: 30
+            icon: 'icon-bullseye'
+
+  'Neos.Neos:Shortcut':
+    superTypes:
+      'Neos.Seo:TitleTagMixin': FALSE
+      'Neos.Seo:SeoMetaTagsMixin': FALSE
+      'Neos.Seo:TwitterCardMixin': FALSE
+      'Neos.Seo:CanonicalLinkMixin': FALSE
+      'Neos.Seo:OpenGraphMixin': FALSE
+      'Neos.Seo:XmlSitemapMixin': FALSE
+
+Then to enable rendering of all SEO metatags, add the following code to any Fusion file in your site package::
+  prototype(Neos.Neos:Page) {
+    htmlTag.attributes.lang = Neos.Seo:LangAttribute
+    head {
+      titleTag = Neos.Seo:TitleTag
+      metaDescriptionTag = Neos.Seo:MetaDescriptionTag
+      metaKeywordsTag = Neos.Seo:MetaKeywordsTag
+      metaRobotsTag = Neos.Seo:MetaRobotsTag
+      canonicalLink = Neos.Seo:CanonicalLink
+      alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
+      twitterCard = Neos.Seo:TwitterCard
+      openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
+    }
+  }
+
 Page title
 ----------
 
-The default `<title>` tag rendering in the `Neos.Neos:Page` TypoScript object is a "reverse breadcrumb" of the regular
+The default `<title>` tag rendering in the `Neos.Neos:Page` Fusion object is a "reverse breadcrumb" of the regular
 title field(s). This is done in `head.titleTag.default`.
 
 A new field `titleOverride` is added to `Neos.Neos:Document` via the `Neos.Seo:TitleTagMixin`. The new field is
@@ -90,7 +135,7 @@ homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
 
 ::
 
-  TYPO3CR:
+  ContentRepository:
     contentDimensions:
       'language':
         label: 'Language'

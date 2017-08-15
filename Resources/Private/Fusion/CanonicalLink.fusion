@@ -1,0 +1,11 @@
+prototype(Neos.Seo:CanonicalLink) < prototype(Neos.Fusion:Tag) {
+    tagName = 'link'
+    attributes {
+        rel = 'canonical'
+        href = Neos.Neos:NodeUri {
+            node = ${documentNode}
+            absolute = TRUE
+        }
+        href.@process.canonical = ${q(node).property('canonicalLink') ? q(node).property('canonicalLink') : value}
+    }
+}
