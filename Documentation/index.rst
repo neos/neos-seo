@@ -8,14 +8,15 @@ Installation
 
 This package provides a number of mixins to help rendering SEO metadata.
 To enable all mixins add this to `Configuration/NodeTypes.yaml` file of your site package::
+
   'Neos.Neos:Document':
     superTypes:
-      'Neos.Seo:TitleTagMixin': TRUE
-      'Neos.Seo:SeoMetaTagsMixin': TRUE
-      'Neos.Seo:TwitterCardMixin': TRUE
-      'Neos.Seo:CanonicalLinkMixin': TRUE
-      'Neos.Seo:OpenGraphMixin': TRUE
-      'Neos.Seo:XmlSitemapMixin': TRUE
+      'Neos.Seo:TitleTagMixin': true
+      'Neos.Seo:SeoMetaTagsMixin': true
+      'Neos.Seo:TwitterCardMixin': true
+      'Neos.Seo:CanonicalLinkMixin': true
+      'Neos.Seo:OpenGraphMixin': true
+      'Neos.Seo:XmlSitemapMixin': true
     ui:
       inspector:
         tabs:
@@ -26,14 +27,15 @@ To enable all mixins add this to `Configuration/NodeTypes.yaml` file of your sit
 
   'Neos.Neos:Shortcut':
     superTypes:
-      'Neos.Seo:TitleTagMixin': FALSE
-      'Neos.Seo:SeoMetaTagsMixin': FALSE
-      'Neos.Seo:TwitterCardMixin': FALSE
-      'Neos.Seo:CanonicalLinkMixin': FALSE
-      'Neos.Seo:OpenGraphMixin': FALSE
-      'Neos.Seo:XmlSitemapMixin': FALSE
+      'Neos.Seo:TitleTagMixin': false
+      'Neos.Seo:SeoMetaTagsMixin': false
+      'Neos.Seo:TwitterCardMixin': false
+      'Neos.Seo:CanonicalLinkMixin': false
+      'Neos.Seo:OpenGraphMixin': false
+      'Neos.Seo:XmlSitemapMixin': false
 
 Then to enable rendering of all SEO metatags, add the following code to any Fusion file in your site package::
+
   prototype(Neos.Neos:Page) {
     htmlTag.attributes.lang = Neos.Seo:LangAttribute
     head {
@@ -79,7 +81,7 @@ The `twitter:site` handle can be configured with the setting `Neos.Seo.twitterCa
   Neos:
     Seo:
       twitterCard:
-        siteHandle: '@typo3neos'
+        siteHandle: '@neoscms'
 
 Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
 
