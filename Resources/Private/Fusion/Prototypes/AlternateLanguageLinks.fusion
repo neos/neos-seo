@@ -5,5 +5,5 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionMenu) 
     localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}
 
     dimension = 'language'
-    templatePath = 'resource://Neos.Seo/Private/Fusion/AlternateLanguageLinks.html'
+    templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/AlternateLanguageLinks.html'
 }
