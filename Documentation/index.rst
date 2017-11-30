@@ -6,49 +6,9 @@ This documentation covering version |release| has been rendered at: |today|
 Installation
 ------------
 
-This package provides a number of mixins to help rendering SEO metadata.
-To enable all mixins add this to `Configuration/NodeTypes.yaml` file of your site package::
+Install the package through composer::
 
-  'Neos.Neos:Document':
-    superTypes:
-      'Neos.Seo:TitleTagMixin': true
-      'Neos.Seo:SeoMetaTagsMixin': true
-      'Neos.Seo:TwitterCardMixin': true
-      'Neos.Seo:CanonicalLinkMixin': true
-      'Neos.Seo:OpenGraphMixin': true
-      'Neos.Seo:XmlSitemapMixin': true
-    ui:
-      inspector:
-        tabs:
-          seo:
-            label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
-            position: 30
-            icon: 'icon-bullseye'
-
-  'Neos.Neos:Shortcut':
-    superTypes:
-      'Neos.Seo:TitleTagMixin': false
-      'Neos.Seo:SeoMetaTagsMixin': false
-      'Neos.Seo:TwitterCardMixin': false
-      'Neos.Seo:CanonicalLinkMixin': false
-      'Neos.Seo:OpenGraphMixin': false
-      'Neos.Seo:XmlSitemapMixin': false
-
-Then to enable rendering of all SEO metatags, add the following code to any Fusion file in your site package::
-
-  prototype(Neos.Neos:Page) {
-    htmlTag.attributes.lang = Neos.Seo:LangAttribute
-    head {
-      titleTag = Neos.Seo:TitleTag
-      metaDescriptionTag = Neos.Seo:MetaDescriptionTag
-      metaKeywordsTag = Neos.Seo:MetaKeywordsTag
-      metaRobotsTag = Neos.Seo:MetaRobotsTag
-      canonicalLink = Neos.Seo:CanonicalLink
-      alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
-      twitterCard = Neos.Seo:TwitterCard
-      openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
-    }
-  }
+  composer require neos/seo
 
 Page title
 ----------
@@ -174,3 +134,63 @@ homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
             label: 'Latvian'
             values: ['lv']
             uriSegment: 'lv'
+
+Disabling not needed features
+-----------------------------
+
+The package provides a number of mixins to help rendering SEO metadata. By default, they are
+enabled in the `Configuration/NodeTypes.yaml` file, along with an inspector tab::
+
+  'Neos.Neos:Document':
+    superTypes:
+      'Neos.Seo:TitleTagMixin': true
+      'Neos.Seo:SeoMetaTagsMixin': true
+      'Neos.Seo:TwitterCardMixin': true
+      'Neos.Seo:CanonicalLinkMixin': true
+      'Neos.Seo:OpenGraphMixin': true
+      'Neos.Seo:XmlSitemapMixin': true
+    ui:
+      inspector:
+        tabs:
+          seo:
+            label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
+            position: 30
+            icon: 'icon-bullseye'
+
+  'Neos.Neos:Shortcut':
+    superTypes:
+      'Neos.Seo:TitleTagMixin': false
+      'Neos.Seo:SeoMetaTagsMixin': false
+      'Neos.Seo:TwitterCardMixin': false
+      'Neos.Seo:CanonicalLinkMixin': false
+      'Neos.Seo:OpenGraphMixin': false
+      'Neos.Seo:XmlSitemapMixin': false
+
+Then to enable rendering of all SEO meta tags, the following code is used::
+
+  prototype(Neos.Neos:Page) {
+    htmlTag.attributes.lang = Neos.Seo:LangAttribute
+    head {
+      titleTag = Neos.Seo:TitleTag
+      metaDescriptionTag = Neos.Seo:MetaDescriptionTag
+      metaKeywordsTag = Neos.Seo:MetaKeywordsTag
+      metaRobotsTag = Neos.Seo:MetaRobotsTag
+      canonicalLink = Neos.Seo:CanonicalLink
+      alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
+      twitterCard = Neos.Seo:TwitterCard
+      openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
+    }
+  }
+
+If not all of the features are needed in a project, they can be disabled as needed. This example removes OpenGraph
+support.
+
+*Packages/Sites/Acme.AcmeCom/Configuration/NodeTypes.yaml*::
+
+  'Neos.Neos:Document':
+    superTypes:
+      'Neos.Seo:OpenGraphMixin': false
+
+*Packages/Sites/Acme.AcmeCom/Resources/Private/Fusion/Root.fusion*::
+
+  prototype(Neos.Neos:Page).head.openGraphMetaTags >

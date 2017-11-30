@@ -1,0 +1,27 @@
+#
+# Add mixins; and a SEO tab to the inspector
+#
+'Neos.Neos:Document':
+  superTypes:
+    'Neos.Seo:TitleTagMixin': true
+    'Neos.Seo:SeoMetaTagsMixin': true
+    'Neos.Seo:TwitterCardMixin': true
+    'Neos.Seo:CanonicalLinkMixin': true
+    'Neos.Seo:OpenGraphMixin': true
+    'Neos.Seo:XmlSitemapMixin': true
+  ui:
+    inspector:
+      tabs:
+        seo:
+          label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
+          position: 30
+          icon: 'icon-bullseye'
+
+'Neos.Neos:Shortcut':
+  superTypes:
+    'Neos.Seo:TitleTagMixin': false
+    'Neos.Seo:SeoMetaTagsMixin': false
+    'Neos.Seo:TwitterCardMixin': false
+    'Neos.Seo:CanonicalLinkMixin': false
+    'Neos.Seo:OpenGraphMixin': false
+    'Neos.Seo:XmlSitemapMixin': false
