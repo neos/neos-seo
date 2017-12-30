@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="la-LA">crwdns3925:0crwdne3925:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4760:0crwdne4760:0</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="la-LA">crwdns3926:0crwdne3926:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4761:0crwdne4761:0</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="la-LA">crwdns3927:0crwdne3927:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4762:0crwdne4762:0</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
-			<target xml:lang="la-LA">crwdns3928:0crwdne3928:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4763:0crwdne4763:0</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="la-LA">crwdns3929:0crwdne3929:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4764:0crwdne4764:0</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="la-LA">crwdns3930:0crwdne3930:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4765:0crwdne4765:0</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="la-LA">crwdns3931:0crwdne3931:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4766:0crwdne4766:0</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="la-LA">crwdns3932:0crwdne3932:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4767:0crwdne4767:0</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="la-LA">crwdns3933:0crwdne3933:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4768:0crwdne4768:0</target></trans-unit>
     </body>
   </file>
 </xliff>
