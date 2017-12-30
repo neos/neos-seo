@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="ar" state="needs-translation">XML Sitemap</target></trans-unit>
+			<target xml:lang="ar" state="translated">XML خريطة الموقع</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="ar" state="needs-translation">Change frequency</target></trans-unit>
+			<target xml:lang="ar" state="translated">تغيير التردد</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="ar" state="needs-translation">Priority</target></trans-unit>
+			<target xml:lang="ar" state="translated">الأولوية</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="ar" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="ar" state="translated">بين 0 و 1</target><alt-trans><target xml:lang="ar">بين ٠ و ١</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

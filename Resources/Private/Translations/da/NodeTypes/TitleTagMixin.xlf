@@ -5,9 +5,9 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
 			<target xml:lang="da">Titel erstatning</target></trans-unit>
-      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="da" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="da">Bruges i &lt;tite &gt;-tag, maks. 60 tegn</target></trans-unit>
     </body>
   </file>
 </xliff>

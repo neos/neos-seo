@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target xml:lang="ar" state="needs-translation">Title Override</target></trans-unit>
+			<target xml:lang="ar" state="translated">تجاوز عنوان</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="ar" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="ar" state="translated">وتستخدم في العلامة &lt; العنوان &gt;، كحد أقصى. 60 حرف</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -8,15 +8,15 @@
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="da">Beskrivelse</target></trans-unit>
-      <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target xml:lang="da" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target xml:lang="da">maks. 156 tegn</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
 			<target xml:lang="da">Nøgleord</target></trans-unit>
-      <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="da" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target xml:lang="da">komma-separerede, maks. 255 tegn</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="da">Skjul fra søgemaskiner (noindex)</target></trans-unit>

@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="tr" state="translated">Meta Etiketleri</target></trans-unit>
+			<target xml:lang="tr" state="translated">Meta Etiketleriniz</target><alt-trans><target xml:lang="tr">Meta Etiketleri</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="tr" state="translated">Açıklama</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="tr" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target xml:lang="tr" state="translated">maksimum 156 karakter kullanabilirsiniz</target><alt-trans><target xml:lang="tr">maksimum 156 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="tr" state="translated">Anahtar Kelimeler</target></trans-unit>
+			<target xml:lang="tr" state="translated">Anahtar Kelimeleriniz</target><alt-trans><target xml:lang="tr">Anahtar Kelimeler</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="tr" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target xml:lang="tr" state="translated">virgülle ayrılmış, maksimum 255 karakter kullanabilirsiniz</target><alt-trans><target xml:lang="tr">virgülle ayrılmış, maksimum 255 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="tr" state="translated">Arama motorlarından gizle (indekslenmez)</target></trans-unit>
+			<target xml:lang="tr" state="translated">Arama motorlarından gizle (arama motorunda index almaz)</target><alt-trans><target xml:lang="tr">Arama motorlarından gizle (indekslenmez)</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="tr" state="translated">Bağlantıları takip etme (takip edilemez)</target></trans-unit>
+			<target xml:lang="tr" state="translated">Bağlantıları takip etme (no follow link)</target><alt-trans><target xml:lang="tr">Bağlantıları takip etme (takip edilemez)</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

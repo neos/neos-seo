@@ -7,19 +7,19 @@
 			<target xml:lang="sv-SE" state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="sv-SE" state="translated">Open Graph type</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Open Graph typ</target><alt-trans><target xml:lang="sv-SE">Open Graph type</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target xml:lang="sv-SE" state="translated">Open Graph titel</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="sv-SE" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Används som og:title, max 60 tecken</target><alt-trans><target xml:lang="sv-SE">Används som og: title, max. 60 tecken</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="sv-SE" state="translated">Open Graph Beskrivning</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Open Graph Beskrivning</target><alt-trans><target xml:lang="sv-SE">Open Graph beskrivning</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="sv-SE" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">max 200 tecken</target><alt-trans><target xml:lang="sv-SE">max. 200 tecken</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target xml:lang="sv-SE" state="translated">Open Graph bild</target></trans-unit>

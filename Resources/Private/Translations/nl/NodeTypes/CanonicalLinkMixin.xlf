@@ -10,7 +10,7 @@
 			<target xml:lang="nl">Canonieke Link</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target xml:lang="nl" state="needs-translation">Paste a url, or use the default.</target></trans-unit>
+			<target xml:lang="nl" state="translated">Plak een url, of gebruik de standaardwaarde.</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -11,9 +11,9 @@
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
 			<target xml:lang="da">Prioritet</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
-			<target xml:lang="da" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="da">mellem 0 og 1</target></trans-unit>
     </body>
   </file>
 </xliff>

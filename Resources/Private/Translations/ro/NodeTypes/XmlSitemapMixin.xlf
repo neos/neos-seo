@@ -13,7 +13,7 @@
 			<target xml:lang="ro" state="translated">Prioritate</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="ro" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="ro" state="translated">între 0 și 1</target></trans-unit>
     </body>
   </file>
 </xliff>

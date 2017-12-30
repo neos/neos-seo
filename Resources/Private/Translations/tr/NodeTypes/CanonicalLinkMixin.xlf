@@ -10,7 +10,7 @@
 			<target xml:lang="tr" state="translated">Standart Adres</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target xml:lang="tr" state="needs-translation">Paste a url, or use the default.</target></trans-unit>
+			<target xml:lang="tr" state="translated">Bir Url (internet adresi) yapıştırın veya varsayılan Url'yi kullanın.</target><alt-trans><target xml:lang="tr">Bir URL yapıştırın ya da varsayılanı kullanın.</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
