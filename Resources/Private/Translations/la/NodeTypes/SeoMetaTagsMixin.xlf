@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="la-LA">crwdns1572:0crwdne1572:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3074:0crwdne3074:0</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="la-LA">crwdns1573:0crwdne1573:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3075:0crwdne3075:0</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="la-LA">crwdns1574:0crwdne1574:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3076:0crwdne3076:0</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="la-LA">crwdns1575:0crwdne1575:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3077:0crwdne3077:0</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="la-LA">crwdns1576:0crwdne1576:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3078:0crwdne3078:0</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="la-LA">crwdns1577:0crwdne1577:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3079:0crwdne3079:0</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="la-LA">crwdns1578:0crwdne1578:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3080:0crwdne3080:0</target></trans-unit>
     </body>
   </file>
 </xliff>

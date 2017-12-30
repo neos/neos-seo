@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="la-LA">crwdns1565:0crwdne1565:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3100:0crwdne3100:0</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="la-LA">crwdns1566:0crwdne1566:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3101:0crwdne3101:0</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="la-LA">crwdns1567:0crwdne1567:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3102:0crwdne3102:0</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="la-LA">crwdns1568:0crwdne1568:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3103:0crwdne3103:0</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="la-LA">crwdns1569:0crwdne1569:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3104:0crwdne3104:0</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="la-LA">crwdns1570:0crwdne1570:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3105:0crwdne3105:0</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="la-LA">crwdns1571:0crwdne1571:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3106:0crwdne3106:0</target></trans-unit>
     </body>
   </file>
 </xliff>

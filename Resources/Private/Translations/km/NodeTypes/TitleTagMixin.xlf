@@ -2,12 +2,12 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="km">
     <body>
-      <trans-unit id="properties.titleOverride" xml:space="preserve">
+      <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
-			<target xml:lang="km" state="translated">ចំណងជើងថ្មី</target></trans-unit>
-      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+			<target xml:lang="km">ចំណងជើងថ្មី</target></trans-unit>
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="km" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="km">ត្រូវបានប្រើក្នុង​ &amp;title&gt; ស្លាក អតិបរមា ៦០ តួអក្សរ</target></trans-unit>
     </body>
   </file>
 </xliff>

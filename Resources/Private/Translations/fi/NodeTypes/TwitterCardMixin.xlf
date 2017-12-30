@@ -19,13 +19,13 @@
 			<target xml:lang="fi">Otsikko</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 70 characters</source>
-			<target xml:lang="fi">max. 70 merkkiä</target></trans-unit>
+			<target xml:lang="fi">max. 70 merkkiä</target><alt-trans><target xml:lang="fi">maks. 70 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="fi">Kuvaus</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="fi">max. 200 merkkiä</target></trans-unit>
+			<target xml:lang="fi">max. 200 merkkiä</target><alt-trans><target xml:lang="fi">max 200 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
 			<target xml:lang="fi">Kortin kuva</target></trans-unit>

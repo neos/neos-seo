@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="zh-TW" state="needs-translation">XML Sitemap</target></trans-unit>
+			<target xml:lang="zh-TW" state="translated">XML網站地圖</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="zh-TW" state="needs-translation">Change frequency</target></trans-unit>
+			<target xml:lang="zh-TW" state="translated">變更頻率</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="zh-TW" state="needs-translation">Priority</target></trans-unit>
+			<target xml:lang="zh-TW" state="translated">優先權</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="zh-TW" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="zh-TW" state="translated">介於 0 和 1之間</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -7,7 +7,7 @@
 			<target xml:lang="nl">Titel overschrijven</target><alt-trans><target xml:lang="nl">Titel overschrijving</target></alt-trans></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="nl" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="nl" state="translated">Gebruikt in &lt;titel&gt; tag, max. 60tekens</target></trans-unit>
     </body>
   </file>
 </xliff>

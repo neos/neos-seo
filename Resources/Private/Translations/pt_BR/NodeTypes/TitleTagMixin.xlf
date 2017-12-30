@@ -7,7 +7,7 @@
 			<target xml:lang="pt-BR" state="translated">Substituição de título</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="pt-BR" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">Usado na tag &lt; title &gt;, max. 60 caracteres</target></trans-unit>
     </body>
   </file>
 </xliff>

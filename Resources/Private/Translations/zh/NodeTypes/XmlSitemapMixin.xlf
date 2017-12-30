@@ -13,7 +13,7 @@
 			<target xml:lang="zh-CN" state="translated">优先级</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="zh-CN" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="zh-CN" state="translated">介于 0 和 1 之间</target></trans-unit>
     </body>
   </file>
 </xliff>

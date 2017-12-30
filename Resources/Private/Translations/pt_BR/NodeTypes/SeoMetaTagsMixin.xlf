@@ -10,13 +10,13 @@
 			<target xml:lang="pt-BR" state="translated">Descrição</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="pt-BR" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">máximo de 156 caracteres</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target xml:lang="pt-BR" state="translated">Palavras-Chave</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="pt-BR" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target xml:lang="pt-BR" state="translated">virgula separada, máximo 255 caracteres</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="pt-BR" state="translated">Esconder dos motores de busca (noindex)</target></trans-unit>

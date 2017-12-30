@@ -7,7 +7,7 @@
 			<target xml:lang="zh-CN" state="translated">标题重写</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="zh-CN" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="zh-CN" state="translated">在 &lt;title&gt; 标签中使用，最多 60 字符</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="sv-SE" state="translated">XML-Sidkarta</target><alt-trans><target xml:lang="sv-SE">XML-Sitemap</target></alt-trans></trans-unit>
+			<target xml:lang="sv-SE" state="translated">XML-sidkarta</target><alt-trans><target xml:lang="sv-SE">XML-Sidkarta</target></alt-trans><alt-trans><target xml:lang="sv-SE">XML-Sitemap</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
 			<target xml:lang="sv-SE" state="translated">Ändra frekvensen</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="sv-SE" state="translated">Prioritering</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Prioritet</target><alt-trans><target xml:lang="sv-SE">Prioritering</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="sv-SE" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">mellan 0 och 1</target></trans-unit>
     </body>
   </file>
 </xliff>

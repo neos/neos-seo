@@ -10,13 +10,13 @@
 			<target xml:lang="ja" state="translated">概要</target><alt-trans><target xml:lang="ja">説明</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="ja" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target xml:lang="ja" state="translated">最大。156 文字</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target xml:lang="ja" state="translated">キーワード</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="ja" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target xml:lang="ja" state="translated">コンマ区切り、最大。255文字</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="ja" state="translated">検索エンジンから隠す (noindex)</target><alt-trans><target xml:lang="ja">検索エンジンから非表示 (noindex)</target></alt-trans></trans-unit>
