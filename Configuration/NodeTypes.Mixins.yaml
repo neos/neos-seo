@@ -98,7 +98,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              ~:
+              '~':
                 label: 'None'
               'summary':
                 label: 'Summary Card'
@@ -200,7 +200,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              ~:
+              '~':
                 label: 'None'
               'website':
                 label: 'Website'
@@ -265,7 +265,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              ~:
+              '~':
                 label: 'none (unspecified)'
               'always':
                 label: 'Always'
