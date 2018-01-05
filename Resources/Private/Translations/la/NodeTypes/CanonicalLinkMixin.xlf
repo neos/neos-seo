@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="la-LA">crwdns2349:0crwdne2349:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3922:0crwdne3922:0</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="la-LA">crwdns2350:0crwdne2350:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3923:0crwdne3923:0</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target xml:lang="la-LA">crwdns2351:0crwdne2351:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns3924:0crwdne3924:0</target></trans-unit>
     </body>
   </file>
 </xliff>
