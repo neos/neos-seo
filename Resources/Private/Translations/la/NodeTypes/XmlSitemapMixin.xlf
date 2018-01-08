@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="la-LA">crwdns3916:0crwdne3916:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4751:0crwdne4751:0</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="la-LA">crwdns3917:0crwdne3917:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4752:0crwdne4752:0</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="la-LA">crwdns3918:0crwdne3918:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4753:0crwdne4753:0</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="la-LA">crwdns3919:0crwdne3919:0</target></trans-unit>
+			<target xml:lang="la-LA">crwdns4754:0crwdne4754:0</target></trans-unit>
     </body>
   </file>
 </xliff>
