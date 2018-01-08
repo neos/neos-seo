@@ -1,9 +1,6 @@
-#                                                                        #
-# Default subroutes configuration for the Neos.Seo package               #
-#                                                                        #
-
-##
-# XML Sitemap
+#
+# Default subroutes configuration for the Neos.Seo package
+#
 
 -
   name:  'XML Sitemap'
@@ -17,5 +14,5 @@
     'node':
       handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
       options:
-        onlyMatchSiteNodes: TRUE
-  appendExceedingArguments: TRUE
+        onlyMatchSiteNodes: true
+  appendExceedingArguments: true

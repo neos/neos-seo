@@ -7,7 +7,7 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
         entryLevel = 0
         maximumLevels = 999
         renderHiddenInIndex = TRUE
-        templatePath = 'resource://Neos.Seo/Private/Fusion/XmlSiteMap.xml'
+        templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/XmlSiteMap.xml'
         startingPoint = ${site}
 
         @cache.entryTags.1 = ${'DescendantOf_' + this.startingPoint.identifier}
