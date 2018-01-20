@@ -2,7 +2,7 @@
     "name": "neos/seo",
     "type": "neos-package",
     "description": "SEO configuration and tools for Neos",
-    "license": "GPL-3.0+",
+    "license": "GPL-3.0-or-later",
     "require": {
         "neos/neos": "~3.0 || dev-master"
     },
