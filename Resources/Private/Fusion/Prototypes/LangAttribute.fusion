@@ -1,0 +1,5 @@
+prototype(Neos.Seo:LangAttribute) < prototype(Neos.Fusion:Value) {
+    value = ${String.replace(documentNode.context.dimensions.language[0], '_', '-')}
+    @if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
+    @if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
+}

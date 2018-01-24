@@ -1,23 +1,6 @@
-#                                                                        #
-# Default subroutes configuration for the Neos.Seo package         #
-#                                                                        #
-
-# Make sure to include the following commented route before the Neos.Neos subroutes in your global /Configuration/Routes.yaml
-
-##
-# Neos Seo: XML Sitemap
-
-#-
-#  name: 'Neos Seo'
-#  uriPattern: '<NeosSeoSubroutes>'
-#  subRoutes:
-#    'NeosSeoSubroutes':
-#      package: 'Neos.Seo'
-#      variables:
-#        'xmlSitemapPath': 'sitemap.xml'
-
-##
-# XML Sitemap
+#
+# Default subroutes configuration for the Neos.Seo package
+#
 
 -
   name:  'XML Sitemap'
@@ -31,5 +14,5 @@
     'node':
       handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
       options:
-        onlyMatchSiteNodes: TRUE
-  appendExceedingArguments: TRUE
+        onlyMatchSiteNodes: true
+  appendExceedingArguments: true

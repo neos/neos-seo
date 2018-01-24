@@ -1,0 +1,7 @@
+prototype(Neos.Seo:MetaRobotsTag) < prototype(Neos.Fusion:Tag) {
+    tagName = 'meta'
+    attributes {
+        name = 'robots'
+        content = ${(q(node).property('metaRobotsNoindex') ? 'noindex' : 'index') + ',' + (q(node).property('metaRobotsNofollow') ? 'nofollow' : 'follow')}
+    }
+}

@@ -3,10 +3,17 @@ Neos SEO |version| Documentation
 
 This documentation covering version |release| has been rendered at: |today|
 
+Installation
+------------
+
+Install the package through composer::
+
+  composer require neos/seo
+
 Page title
 ----------
 
-The default `<title>` tag rendering in the `Neos.Neos:Page` TypoScript object is a "reverse breadcrumb" of the regular
+The default `<title>` tag rendering in the `Neos.Neos:Page` Fusion object is a "reverse breadcrumb" of the regular
 title field(s). This is done in `head.titleTag.default`.
 
 A new field `titleOverride` is added to `Neos.Neos:Document` via the `Neos.Seo:TitleTagMixin`. The new field is
@@ -34,7 +41,7 @@ The `twitter:site` handle can be configured with the setting `Neos.Seo.twitterCa
   Neos:
     Seo:
       twitterCard:
-        siteHandle: '@typo3neos'
+        siteHandle: '@neoscms'
 
 Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
 
@@ -90,7 +97,7 @@ homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
 
 ::
 
-  TYPO3CR:
+  ContentRepository:
     contentDimensions:
       'language':
         label: 'Language'
@@ -127,3 +134,63 @@ homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
             label: 'Latvian'
             values: ['lv']
             uriSegment: 'lv'
+
+Disabling not needed features
+-----------------------------
+
+The package provides a number of mixins to help rendering SEO metadata. By default, they are
+enabled in the `Configuration/NodeTypes.yaml` file, along with an inspector tab::
+
+  'Neos.Neos:Document':
+    superTypes:
+      'Neos.Seo:TitleTagMixin': true
+      'Neos.Seo:SeoMetaTagsMixin': true
+      'Neos.Seo:TwitterCardMixin': true
+      'Neos.Seo:CanonicalLinkMixin': true
+      'Neos.Seo:OpenGraphMixin': true
+      'Neos.Seo:XmlSitemapMixin': true
+    ui:
+      inspector:
+        tabs:
+          seo:
+            label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
+            position: 30
+            icon: 'icon-bullseye'
+
+  'Neos.Neos:Shortcut':
+    superTypes:
+      'Neos.Seo:TitleTagMixin': false
+      'Neos.Seo:SeoMetaTagsMixin': false
+      'Neos.Seo:TwitterCardMixin': false
+      'Neos.Seo:CanonicalLinkMixin': false
+      'Neos.Seo:OpenGraphMixin': false
+      'Neos.Seo:XmlSitemapMixin': false
+
+Then to enable rendering of all SEO meta tags, the following code is used::
+
+  prototype(Neos.Neos:Page) {
+    htmlTag.attributes.lang = Neos.Seo:LangAttribute
+    head {
+      titleTag = Neos.Seo:TitleTag
+      metaDescriptionTag = Neos.Seo:MetaDescriptionTag
+      metaKeywordsTag = Neos.Seo:MetaKeywordsTag
+      metaRobotsTag = Neos.Seo:MetaRobotsTag
+      canonicalLink = Neos.Seo:CanonicalLink
+      alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
+      twitterCard = Neos.Seo:TwitterCard
+      openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
+    }
+  }
+
+If not all of the features are needed in a project, they can be disabled as needed. This example removes OpenGraph
+support.
+
+*Packages/Sites/Acme.AcmeCom/Configuration/NodeTypes.yaml*::
+
+  'Neos.Neos:Document':
+    superTypes:
+      'Neos.Seo:OpenGraphMixin': false
+
+*Packages/Sites/Acme.AcmeCom/Resources/Private/Fusion/Root.fusion*::
+
+  prototype(Neos.Neos:Page).head.openGraphMetaTags >
