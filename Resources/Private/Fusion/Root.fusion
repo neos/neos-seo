@@ -3,10 +3,12 @@
 # so Neos.Seo extends this default object
 #
 prototype(Neos.Neos:Page) {
+	@context.languageDimension = ${Configuration.setting('Neos.ContentRepository.dimensionTypes.language') != null ? Configuration.setting('Neos.ContentRepository.dimensionTypes.language') : 'language'}
+
 	htmlTag {
 		attributes {
-			lang = ${String.replace(documentNode.context.dimensions.language[0], '_', '-')}
-			lang.@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
+			lang = ${String.replace(documentNode.context.dimensions[languageDimension][0], '_', '-')}
+			lang.@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + languageDimension) != null}
 			lang.@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
 		}
 	}
@@ -65,12 +67,12 @@ prototype(Neos.Neos:Page) {
 		}
 
 		alternateLanguageLinks = Neos.Neos:DimensionMenu {
-			@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
+			@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + languageDimension) != null}
 			@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
 
-			localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}
+			localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[languageDimension][0]), '_', '-')}
 
-			dimension = 'language'
+			dimension = ${languageDimension}
 			templatePath = 'resource://Neos.Seo/Private/Templates/FusionObjects/AlternateLanguageLinks.html'
 		}
 
