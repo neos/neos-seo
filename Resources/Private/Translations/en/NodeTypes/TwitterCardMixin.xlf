@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext">
+	<file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext">
 		<body>
 			<trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
@@ -11,11 +11,20 @@
 			<trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
 			</trans-unit>
+			<trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
+				<source>@johnexample</source>
+			</trans-unit>
 			<trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			</trans-unit>
+			<trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 70 characters</source>
+			</trans-unit>
 			<trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 200 characters</source>
 			</trans-unit>
 			<trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>

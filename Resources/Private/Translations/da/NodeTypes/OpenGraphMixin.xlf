@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="da">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="da">
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
@@ -11,9 +11,15 @@
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
 			<target xml:lang="da">Open Graph titel</target><alt-trans><target xml:lang="da">Åbn grafoverskrift</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>Used as og:title, max. 60 chars</source>
+			<target xml:lang="da">Bruges som og:titel, maks. 60 tegn</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
 			<target xml:lang="da">Open Graph beskrivelse</target><alt-trans><target xml:lang="da">Åbne graf beskrivelse</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>max. 200 characters</source>
+			<target xml:lang="da">maks. 140 tegn</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
 			<target xml:lang="da">Open Graph billede</target><alt-trans><target xml:lang="da">Åbne graf billede</target></alt-trans></trans-unit>

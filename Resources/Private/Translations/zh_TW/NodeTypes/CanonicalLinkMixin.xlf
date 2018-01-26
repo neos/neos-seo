@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="zh-TW">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="zh-TW">
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="zh-TW" state="needs-translation">Canonical Link</target></trans-unit>
+			<target xml:lang="zh-TW" state="translated">標準連結</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="zh-TW" state="needs-translation">Canonical Link</target></trans-unit>
+			<target xml:lang="zh-TW" state="translated">標準連結</target></trans-unit>
+      <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
+				<source>Paste a url, or use the default.</source>
+			<target xml:lang="zh-TW" state="translated">貼上網址或使用預設值。</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="id">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="id">
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
 			<target xml:lang="id" state="translated">Judul menimpa</target></trans-unit>
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
+			<target xml:lang="id" state="translated">Digunakan dalam &lt;title&gt; tag, max. 60 karakter</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext">
+	<file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext">
 		<body>
 			<trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
@@ -8,8 +8,14 @@
 			<trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
 			</trans-unit>
+			<trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 156 characters</source>
+			</trans-unit>
 			<trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
+			</trans-unit>
+			<trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
+				<source>comma separated, max. 255 chars</source>
 			</trans-unit>
 			<trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>

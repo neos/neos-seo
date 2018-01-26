@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="he">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="he">
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
@@ -11,12 +11,21 @@
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
 			<target xml:lang="he" state="needs-translation">Creator Handle</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
+				<source>@johnexample</source>
+			<target xml:lang="he" state="needs-translation">@johnexample</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="he" state="needs-translation">Title</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 70 characters</source>
+			<target xml:lang="he" state="needs-translation">max. 70 characters</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="he" state="needs-translation">Description</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 200 characters</source>
+			<target xml:lang="he" state="needs-translation">max. 200 characters</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="he" state="needs-translation">Card Image</target></trans-unit>

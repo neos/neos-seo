@@ -1,16 +1,24 @@
-TYPO3:
+Neos:
+  Flow:
+    mvc:
+      routes:
+        # Override this to false to not add the SEO routes.
+        'Neos.Seo':
+          variables:
+            # Override this to change the uri to the sitemap
+            xmlSitemapPath: 'sitemap.xml'
   Neos:
-    typoScript:
+    fusion:
       autoInclude:
-        'TYPO3.Neos.Seo': TRUE
+        'Neos.Seo': TRUE
 
     userInterface:
       translation:
         autoInclude:
-          'TYPO3.Neos.Seo': ['NodeTypes/*']
+          'Neos.Seo': ['NodeTypes/*']
 
-    Seo:
-      # Twitter Card settings
-      twitterCard:
-        # the Twitter handle for the twitter:site attribution
-        siteHandle: ~
+  Seo:
+    # Twitter Card settings
+    twitterCard:
+      # the Twitter handle for the twitter:site attribution
+      siteHandle: ~

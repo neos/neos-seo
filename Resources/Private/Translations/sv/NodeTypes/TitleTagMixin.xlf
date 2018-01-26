@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="sv-SE">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="sv-SE">
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target xml:lang="sv-SE" state="translated">Titeln omställning</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Ignorera titeln</target><alt-trans><target xml:lang="sv-SE">Titeln omställning</target></alt-trans></trans-unit>
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
+			<target xml:lang="sv-SE" state="translated">Används i &lt;title&gt;-tagg, max 60 tecken</target><alt-trans><target xml:lang="sv-SE">Används i &lt; title &gt;-tagg, max. 60 tecken</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

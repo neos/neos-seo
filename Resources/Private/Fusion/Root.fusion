@@ -1,20 +1,20 @@
 #
-# TYPO3.Neos:Page is the default object used for rendering in most sites,
-# so TYPO3.Neos.Seo extends this default object
+# Neos.Neos:Page is the default object used for rendering in most sites,
+# so Neos.Seo extends this default object
 #
-prototype(TYPO3.Neos:Page) {
-	@context.languageDimension = ${Configuration.setting('TYPO3.TYPO3CR.dimensionTypes.language') != null ? Configuration.setting('TYPO3.TYPO3CR.dimensionTypes.language') : 'language'}
+prototype(Neos.Neos:Page) {
+	@context.languageDimension = ${Configuration.setting('Neos.ContentRepository.dimensionTypes.language') != null ? Configuration.setting('Neos.ContentRepository.dimensionTypes.language') : 'language'}
 
 	htmlTag {
 		attributes {
 			lang = ${String.replace(documentNode.context.dimensions[languageDimension][0], '_', '-')}
-			lang.@if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.' + languageDimension) != null}
+			lang.@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + languageDimension) != null}
 			lang.@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
 		}
 	}
 	head {
 		titleTag {
-			default = TYPO3.TypoScript:Collection {
+			default = Neos.Fusion:Collection {
 				// Retrieve all parent document nodes excluding the homepage
 				collection = ${q(documentNode).add(q(documentNode).parents()).slice(0, -1).get()}
 				itemName = 'node'
@@ -28,7 +28,7 @@ prototype(TYPO3.Neos:Page) {
 			content = ${q(node).property('titleOverride') ? q(node).property('titleOverride') : this.default}
 		}
 
-		metaDescriptionTag = TYPO3.TypoScript:Tag {
+		metaDescriptionTag = Neos.Fusion:Tag {
 			tagName = 'meta'
 			attributes {
 				name = 'description'
@@ -37,7 +37,7 @@ prototype(TYPO3.Neos:Page) {
 			@if.isNotBlank = ${!String.isBlank(q(node).property('metaDescription'))}
 		}
 
-		metaKeywordsTag = TYPO3.TypoScript:Tag {
+		metaKeywordsTag = Neos.Fusion:Tag {
 			tagName = 'meta'
 			attributes {
 				name = 'keywords'
@@ -46,7 +46,7 @@ prototype(TYPO3.Neos:Page) {
 			@if.isNotBlank = ${!String.isBlank(q(node).property('metaKeywords'))}
 		}
 
-		metaRobotsTag = TYPO3.TypoScript:Tag {
+		metaRobotsTag = Neos.Fusion:Tag {
 			tagName = 'meta'
 			attributes {
 				name = 'robots'
@@ -54,11 +54,11 @@ prototype(TYPO3.Neos:Page) {
 			}
 		}
 
-		canonicalLink = TYPO3.TypoScript:Tag {
+		canonicalLink = Neos.Fusion:Tag {
 			tagName = 'link'
 			attributes {
 				rel = 'canonical'
-				href = TYPO3.Neos:NodeUri {
+				href = Neos.Neos:NodeUri {
 					node = ${documentNode}
 					absolute = TRUE
 				}
@@ -66,21 +66,21 @@ prototype(TYPO3.Neos:Page) {
 			}
 		}
 
-		alternateLanguageLinks = TYPO3.Neos:DimensionMenu {
-			@if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.' + languageDimension) != null}
+		alternateLanguageLinks = Neos.Neos:DimensionMenu {
+			@if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + languageDimension) != null}
 			@if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
 
 			localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[languageDimension][0]), '_', '-')}
 
 			dimension = ${languageDimension}
-			templatePath = 'resource://TYPO3.Neos.Seo/Private/Templates/TypoScriptObjects/AlternateLanguageLinks.html'
+			templatePath = 'resource://Neos.Seo/Private/Templates/FusionObjects/AlternateLanguageLinks.html'
 		}
 
-		twitterCard = TYPO3.TypoScript:Array {
+		twitterCard = Neos.Fusion:Array {
 			@if.isEnabledBlank = ${!String.isBlank(q(node).property('twitterCardType'))}
 			@if.isEnabled = ${q(node).property('twitterCardType') != null}
 
-			cardTypeTag = TYPO3.TypoScript:Tag {
+			cardTypeTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:card'
@@ -88,16 +88,16 @@ prototype(TYPO3.Neos:Page) {
 				}
 			}
 
-			cardSiteTag = TYPO3.TypoScript:Tag {
+			cardSiteTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:site'
-					content = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle')}
+					content = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle')}
 				}
-				@if.isSet = ${Configuration.setting('TYPO3.Neos.Seo.twitterCard.siteHandle') != null}
+				@if.isSet = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle') != null}
 			}
 
-			cardCreatorTag = TYPO3.TypoScript:Tag {
+			cardCreatorTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:creator'
@@ -106,7 +106,7 @@ prototype(TYPO3.Neos:Page) {
 				@if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardCreator'))}
 			}
 
-			cardTitleTag = TYPO3.TypoScript:Tag {
+			cardTitleTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:title'
@@ -115,7 +115,7 @@ prototype(TYPO3.Neos:Page) {
 				@if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardTitle'))}
 			}
 
-			cardDescriptionTag = TYPO3.TypoScript:Tag {
+			cardDescriptionTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:description'
@@ -124,11 +124,11 @@ prototype(TYPO3.Neos:Page) {
 				@if.isNotBlank = ${!String.isBlank((q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')))}
 			}
 
-			cardImageTag = TYPO3.TypoScript:Tag {
+			cardImageTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
-					name = 'twitter:image:src'
-					content = TYPO3.Neos:ImageUri {
+					name = 'twitter:image'
+					content = Neos.Neos:ImageUri {
 						asset = ${q(node).property('twitterCardImage')}
 						maximumWidth = 2000
 						maximumHeight = 2000
@@ -137,11 +137,11 @@ prototype(TYPO3.Neos:Page) {
 				@if.isImageSet = ${q(node).property('twitterCardImage') != null}
 			}
 
-			cardUrlTag = TYPO3.TypoScript:Tag {
+			cardUrlTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					name = 'twitter:url'
-					content = TYPO3.Neos:NodeUri {
+					content = Neos.Neos:NodeUri {
 						node = ${node}
 						absolute = TRUE
 					}
@@ -149,11 +149,11 @@ prototype(TYPO3.Neos:Page) {
 			}
 		}
 
-		openGraphMetaTags = TYPO3.TypoScript:Array {
+		openGraphMetaTags = Neos.Fusion:Array {
 			@context.openGraphType = ${q(node).property('openGraphType')}
 			@if.isEnabled = ${!String.isBlank(openGraphType)}
 
-			openGraphTypeTag = TYPO3.TypoScript:Tag {
+			openGraphTypeTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					property = 'og:type'
@@ -161,7 +161,7 @@ prototype(TYPO3.Neos:Page) {
 				}
 			}
 
-			openGraphTitleTag = TYPO3.TypoScript:Tag {
+			openGraphTitleTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				@context.openGraphTitle = ${q(node).property('openGraphTitle')}
 				attributes {
@@ -171,7 +171,7 @@ prototype(TYPO3.Neos:Page) {
 				@if.isNotBlank = ${!String.isBlank(openGraphTitle)}
 			}
 
-			openGraphDescriptionTag = TYPO3.TypoScript:Tag {
+			openGraphDescriptionTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				@context.openGraphDescription = ${q(node).property('openGraphDescription') ? q(node).property('openGraphDescription') : q(node).property('metaDescription')}
 				attributes {
@@ -181,12 +181,12 @@ prototype(TYPO3.Neos:Page) {
 				@if.isNotBlank = ${!String.isBlank(openGraphDescription)}
 			}
 
-			openGraphImageTag = TYPO3.TypoScript:Tag {
+			openGraphImageTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				@context.openGraphImage = ${q(node).property('openGraphImage')}
 				attributes {
 					property = 'og:image'
-					content = TYPO3.Neos:ImageUri {
+					content = Neos.Neos:ImageUri {
 						asset = ${openGraphImage}
 						maximumWidth = 2000
 						maximumHeight = 2000
@@ -195,11 +195,11 @@ prototype(TYPO3.Neos:Page) {
 				@if.isImageSet = ${openGraphImage != null && openGraphImage != ''}
 			}
 
-			openGraphUrlTag = TYPO3.TypoScript:Tag {
+			openGraphUrlTag = Neos.Fusion:Tag {
 				tagName = 'meta'
 				attributes {
 					property = 'og:url'
-					content = TYPO3.Neos:NodeUri {
+					content = Neos.Neos:NodeUri {
 						node = ${node}
 						absolute = TRUE
 					}
@@ -209,7 +209,7 @@ prototype(TYPO3.Neos:Page) {
 	}
 }
 
-prototype(TYPO3.Neos.Seo:XmlSitemap) < prototype(TYPO3.TypoScript:Http.Message) {
+prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
 	doctype = '<?xml version="1.0" encoding="UTF-8"?>'
 	httpResponseHead.headers.Content-Type = 'text/xml'
 
@@ -218,7 +218,7 @@ prototype(TYPO3.Neos.Seo:XmlSitemap) < prototype(TYPO3.TypoScript:Http.Message) 
 		entryLevel = 0
 		maximumLevels = 999
 		renderHiddenInIndex = TRUE
-		templatePath = 'resource://TYPO3.Neos.Seo/Private/Templates/Page/XmlSiteMap.xml'
+		templatePath = 'resource://Neos.Seo/Private/Templates/Page/XmlSiteMap.xml'
 		startingPoint = ${site}
 
 		@cache.entryTags.1 = ${'DescendantOf_' + this.startingPoint.identifier}
@@ -227,6 +227,6 @@ prototype(TYPO3.Neos.Seo:XmlSitemap) < prototype(TYPO3.TypoScript:Http.Message) 
 
 root.xmlSitemap {
 	condition = ${request.format == 'xml.sitemap'}
-	type = 'TYPO3.Neos.Seo:XmlSitemap'
+	type = 'Neos.Seo:XmlSitemap'
 }
 

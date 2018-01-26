@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="hu">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="hu">
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
@@ -11,9 +11,15 @@
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target xml:lang="hu" state="translated">Open Graph cím</target></trans-unit>
+      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
+				<source>Used as og:title, max. 60 chars</source>
+			<target xml:lang="hu" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target xml:lang="hu" state="translated">Open Graph leírás</target></trans-unit>
+      <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 200 characters</source>
+			<target xml:lang="hu" state="needs-translation">max. 200 characters</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target xml:lang="hu" state="translated">Open Graph kép</target></trans-unit>

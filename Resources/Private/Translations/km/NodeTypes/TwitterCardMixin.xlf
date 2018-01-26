@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="km">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="km">
     <body>
-      <trans-unit id="groups.twittercard" xml:space="preserve">
+      <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target xml:lang="km" state="translated">កាតTwitter</target></trans-unit>
-      <trans-unit id="properties.twitterCardType" xml:space="preserve">
+			<target xml:lang="km">កាតTwitter</target></trans-unit>
+      <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target xml:lang="km" state="translated">ប្រភេទនៃកាត</target></trans-unit>
-      <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
+			<target xml:lang="km">ប្រភេទនៃកាត</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="km" state="translated">អ្នកបង្កើតដំណេាះស្រាយ</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
+			<target xml:lang="km">អ្នកបង្កើតដំណេាះស្រាយ</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>@johnexample</source>
+			<target xml:lang="km">@ឈ្មោះរបស់អ្នកប្រើប្រាស់</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="km" state="translated">ចំណងជើង</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
+			<target xml:lang="km">ចំណងជើង</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>max. 70 characters</source>
+			<target xml:lang="km">អតិបរមា ៧០ តួអក្សរ</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="km" state="translated">ពិពណ៍នា</target></trans-unit>
-      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
+			<target xml:lang="km">ពិពណ៍នា</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>max. 200 characters</source>
+			<target xml:lang="km">អតិបរមា ២០០​ តួអក្សរ</target></trans-unit>
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="km" state="translated">កាតដែលមានរូបភាព</target></trans-unit>
+			<target xml:lang="km">កាតដែលមានរូបភាព</target></trans-unit>
     </body>
   </file>
 </xliff>

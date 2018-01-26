@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext">
+	<file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext">
 		<body>
 			<trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
 			</trans-unit>
 			<trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
+			</trans-unit>
+			<trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
+				<source>Paste a url, or use the default.</source>
 			</trans-unit>
 		</body>
 	</file>

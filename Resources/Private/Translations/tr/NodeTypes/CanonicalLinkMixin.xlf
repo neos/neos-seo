@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="tr">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="tr">
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
@@ -8,6 +8,9 @@
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
 			<target xml:lang="tr" state="translated">Standart Adres</target></trans-unit>
+      <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
+				<source>Paste a url, or use the default.</source>
+			<target xml:lang="tr" state="translated">Bir Url (internet adresi) yapıştırın veya varsayılan Url'yi kullanın.</target><alt-trans><target xml:lang="tr">Bir URL yapıştırın ya da varsayılanı kullanın.</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="nl">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="nl">
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
@@ -8,9 +8,15 @@
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="nl">Omschrijving</target></trans-unit>
+      <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 156 characters</source>
+			<target xml:lang="nl" state="translated">max. 156 tekens</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
 			<target xml:lang="nl">Trefwoorden</target></trans-unit>
+      <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
+				<source>comma separated, max. 255 chars</source>
+			<target xml:lang="nl" state="translated">met komma's gescheiden, max 225 tekens</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="nl">Verbergen in zoekmachines (noindex)</target><alt-trans><target xml:lang="nl">Verbergen van zoekmachines (noindex)</target></alt-trans></trans-unit>

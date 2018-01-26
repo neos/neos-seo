@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="tr">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="tr">
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
 			<target xml:lang="tr" state="translated">Açık Grafik</target><alt-trans><target xml:lang="tr">AçıkGrafik</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="tr" state="translated">Açık Grafik Türü</target></trans-unit>
+			<target xml:lang="tr" state="translated">Açık Grafik Tipi</target><alt-trans><target xml:lang="tr">Açık Grafik Türü</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="tr" state="translated">Açık Grafik başlığı</target></trans-unit>
+			<target xml:lang="tr" state="translated">Açık Grafik Başlığı</target><alt-trans><target xml:lang="tr">Açık Grafik başlığı</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
+				<source>Used as og:title, max. 60 chars</source>
+			<target xml:lang="tr" state="translated">Og:title olarak maksimum 60 karaktere kadar kullanabilirsiniz</target><alt-trans><target xml:lang="tr">Og:başlık olarak maksimum 60 karaktere kadar kullanabilirsiniz</target></alt-trans><alt-trans><target xml:lang="tr">Maksimum og:başlıkta 60 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target xml:lang="tr" state="translated">Açık Grafik Açıklaması</target></trans-unit>
+      <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 200 characters</source>
+			<target xml:lang="tr" state="translated">en fazla 200 karakter kullanabilirsiniz</target><alt-trans><target xml:lang="tr">En fazla 200 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target xml:lang="tr" state="translated">Açık Grafik Resmi</target></trans-unit>

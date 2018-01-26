@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file original="" product-name="TYPO3.Neos.Seo" source-language="en" datatype="plaintext" target-language="fr">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="fr">
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
@@ -8,9 +8,15 @@
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="fr">Description</target></trans-unit>
+      <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 156 characters</source>
+			<target xml:lang="fr" state="translated">max. 156 caractères</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
 			<target xml:lang="fr">Mots-clés</target></trans-unit>
+      <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
+				<source>comma separated, max. 255 chars</source>
+			<target xml:lang="fr" state="translated">séparés par des virgules, max. 255 caractères</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="fr">Cacher des moteurs de recherche (noindex)</target></trans-unit>
