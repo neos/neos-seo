@@ -89,11 +89,11 @@ According to the following dimension settings, there would be a lot more tags ex
 homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
 
 In case the dimension that contains the language is not named `language` you have to set the alternative name with the
-property `TYPO3CR.dimensionTypes.language`.
+property `ContentRepository.dimensionTypes.language`.
 
 ::
 
-  TYPO3CR:
+  ContentRepository:
     contentDimensions:
       'language':
         label: 'Language'
