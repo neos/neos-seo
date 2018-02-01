@@ -90,7 +90,7 @@
   properties:
     twitterCardType:
       type: string
-      defaultValue: ~
+      defaultValue: ''
       ui:
         label: i18n
         inspector:
@@ -98,7 +98,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              ~:
+              '':
                 label: 'None'
               'summary':
                 label: 'Summary Card'
@@ -192,7 +192,7 @@
   properties:
     openGraphType:
       type: string
-      defaultValue: ~
+      defaultValue: ''
       ui:
         label: i18n
         inspector:
@@ -200,7 +200,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              ~:
+              '':
                 label: 'None'
               'website':
                 label: 'Website'
@@ -257,6 +257,7 @@
   properties:
     xmlSitemapChangeFrequency:
       type: string
+      defaultValue: ''
       ui:
         label: i18n
         inspector:
@@ -265,7 +266,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             values:
-              ~:
+              '':
                 label: 'none (unspecified)'
               'always':
                 label: 'Always'
