@@ -13,13 +13,13 @@
 			<target xml:lang="it" state="needs-translation">Creator Handle</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
-			<target xml:lang="it" state="needs-translation">@johnexample</target></trans-unit>
+			<target xml:lang="it" state="translated">@johnexample</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
 			<target xml:lang="it" state="translated">Titolo</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="it" state="needs-translation">max. 70 characters</target></trans-unit>
+			<target xml:lang="it" state="translated">max. 70 caratteri</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="it" state="needs-translation">Description</target></trans-unit>
