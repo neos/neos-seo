@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target xml:lang="it" state="needs-translation">Title Override</target></trans-unit>
+			<target xml:lang="it" state="translated">Override del titolo</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
 			<target xml:lang="it" state="translated">Utilizzato nel &lt;title&gt; tag, max. 60 caratteri</target></trans-unit>
