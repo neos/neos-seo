@@ -23,9 +23,9 @@
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target xml:lang="de">Beschreibung</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="de" state="translated">max. 200 Zeichen</target></trans-unit>
+			<target xml:lang="de">max. 200 Zeichen</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
 			<target xml:lang="de">Bild</target></trans-unit>
