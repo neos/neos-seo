@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="sv-SE" state="translated">Kanoniska Link</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Kanonisk länk</target><alt-trans><target xml:lang="sv-SE">Kanoniska Link</target></alt-trans></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target xml:lang="sv-SE" state="translated">Kanoniska Link</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Kanonisk länk</target><alt-trans><target xml:lang="sv-SE">Kanoniska Link</target></alt-trans></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target xml:lang="sv-SE" state="needs-translation">Paste a url, or use the default.</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">Klistra in en URL eller använd standardvärdet.</target></trans-unit>
     </body>
   </file>
 </xliff>

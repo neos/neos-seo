@@ -10,13 +10,13 @@
 			<target xml:lang="zh-CN" state="translated">说明</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="zh-CN" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target xml:lang="zh-CN" state="translated">最多 156 字符</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target xml:lang="zh-CN" state="translated">关键字</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="zh-CN" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target xml:lang="zh-CN" state="translated">以逗号分隔，最多 255 字符</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="zh-CN" state="translated">从搜索引擎 (noindex) 隐藏</target></trans-unit>

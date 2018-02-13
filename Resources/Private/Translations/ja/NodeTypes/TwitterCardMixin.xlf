@@ -25,7 +25,7 @@
 			<target xml:lang="ja" state="translated">概要</target><alt-trans><target xml:lang="ja">説明</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="ja" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target xml:lang="ja" state="translated">最大200文字</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="ja" state="translated">カードイメージ</target></trans-unit>

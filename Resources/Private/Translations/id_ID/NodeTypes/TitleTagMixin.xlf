@@ -7,7 +7,7 @@
 			<target xml:lang="id" state="translated">Judul menimpa</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="id" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="id" state="translated">Digunakan dalam &lt;title&gt; tag, max. 60 karakter</target></trans-unit>
     </body>
   </file>
 </xliff>

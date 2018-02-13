@@ -2,9 +2,9 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="lv">
     <body>
-      <trans-unit id="groups.openGraph" xml:space="preserve">
+      <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target xml:lang="lv" state="translated">OpenGraph</target></trans-unit>
+			<target xml:lang="lv">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target xml:lang="lv" state="translated">Open Graph veids</target></trans-unit>

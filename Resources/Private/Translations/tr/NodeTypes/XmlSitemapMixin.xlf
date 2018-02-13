@@ -13,7 +13,7 @@
 			<target xml:lang="tr" state="translated">Öncelik</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="tr" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="tr" state="translated">değer 0 ve 1 arasında olmalıdır</target><alt-trans><target xml:lang="tr">1ila 0 arasında</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

@@ -95,6 +95,9 @@ example the rendered tags for the homepage would be.
 According to the following dimension settings, there would be a lot more tags expected. However only two variants of the
 homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
 
+In case the dimension that contains the language is not named `language` you have to set the alternative name with the
+property `ContentRepository.dimensionTypes.language`.
+
 ::
 
   ContentRepository:
@@ -134,6 +137,8 @@ homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
             label: 'Latvian'
             values: ['lv']
             uriSegment: 'lv'
+    dimensionTypes:
+      language: 'language'
 
 Disabling not needed features
 -----------------------------
@@ -194,3 +199,4 @@ support.
 *Packages/Sites/Acme.AcmeCom/Resources/Private/Fusion/Root.fusion*::
 
   prototype(Neos.Neos:Page).head.openGraphMetaTags >
+

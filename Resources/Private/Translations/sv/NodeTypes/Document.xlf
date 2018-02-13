@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="tabs.seo" xml:space="preserve">
 				<source>SEO</source>
-			<target xml:lang="sv-SE" state="translated">Sökmotor-optimering</target></trans-unit>
+			<target xml:lang="sv-SE" state="translated">SEO</target><alt-trans><target xml:lang="sv-SE">Sökmotor-optimering</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

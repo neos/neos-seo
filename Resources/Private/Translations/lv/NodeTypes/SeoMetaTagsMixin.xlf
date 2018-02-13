@@ -2,27 +2,27 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="lv">
     <body>
-      <trans-unit id="groups.seometa" xml:space="preserve">
+      <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target xml:lang="lv" state="translated">Meta tagi</target></trans-unit>
-      <trans-unit id="properties.metaDescription" xml:space="preserve">
+			<target xml:lang="lv">Meta tagi</target><alt-trans><target xml:lang="lv">Meta dati</target></alt-trans></trans-unit>
+      <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="lv" state="translated">Apraksts</target></trans-unit>
+			<target xml:lang="lv">Apraksts</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
 			<target xml:lang="lv" state="translated">maks. 156 rakstzīmes</target></trans-unit>
-      <trans-unit id="properties.metaKeywords" xml:space="preserve">
+      <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target xml:lang="lv" state="translated">Atslēgas vārdi</target></trans-unit>
+			<target xml:lang="lv">Atslēgas vārdi</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
 			<target xml:lang="lv" state="translated">ar komatiem atdalītas, maks. 255 rakstzīmes</target></trans-unit>
-      <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
+      <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="lv" state="translated">Slēpt no meklētājprogrammas (noindex)</target></trans-unit>
-      <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
+			<target xml:lang="lv">Slēpt no meklētājprogrammas (noindex)</target></trans-unit>
+      <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="lv" state="translated">Neizmantojiet saites (nofollow)</target></trans-unit>
+			<target xml:lang="lv">Neizmantojiet saites (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

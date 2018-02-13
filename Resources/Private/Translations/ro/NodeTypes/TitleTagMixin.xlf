@@ -7,7 +7,7 @@
 			<target xml:lang="ro" state="translated">Suprascrie titlul</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="ro" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="ro" state="translated">Folosit în &lt;titlu&gt; tag, maxim 60 caractere</target></trans-unit>
     </body>
   </file>
 </xliff>

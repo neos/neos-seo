@@ -13,13 +13,13 @@
 			<target xml:lang="ro" state="translated">Titlu Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="ro" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
+			<target xml:lang="ro" state="translated">Folosit ca "og:title", maxim 60 charactere</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target xml:lang="ro" state="translated">Descriere Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="ro" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target xml:lang="ro" state="translated">Maxim 200 caractere</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target xml:lang="ro" state="translated">Imagine Open Graph</target></trans-unit>
