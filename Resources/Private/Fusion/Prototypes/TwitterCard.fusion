@@ -1,0 +1,72 @@
+prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Array) {
+    @if.isEnabledBlank = ${!String.isBlank(q(node).property('twitterCardType'))}
+    @if.isEnabled = ${q(node).property('twitterCardType') != null}
+
+    cardTypeTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:card'
+            content = ${q(node).property('twitterCardType')}
+        }
+    }
+
+    cardSiteTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:site'
+            content = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle')}
+        }
+        @if.isSet = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle') != null}
+    }
+
+    cardCreatorTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:creator'
+            content = ${q(node).property('twitterCardCreator')}
+        }
+        @if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardCreator'))}
+    }
+
+    cardTitleTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:title'
+            content = ${q(node).property('twitterCardTitle')}
+        }
+        @if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardTitle'))}
+    }
+
+    cardDescriptionTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:description'
+            content = ${q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')}
+        }
+        @if.isNotBlank = ${!String.isBlank((q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')))}
+    }
+
+    cardImageTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:image'
+            content = Neos.Neos:ImageUri {
+                asset = ${q(node).property('twitterCardImage')}
+                maximumWidth = 2000
+                maximumHeight = 2000
+            }
+        }
+        @if.isImageSet = ${q(node).property('twitterCardImage') != null}
+    }
+
+    cardUrlTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'twitter:url'
+            content = Neos.Neos:NodeUri {
+                node = ${node}
+                absolute = TRUE
+            }
+        }
+    }
+}

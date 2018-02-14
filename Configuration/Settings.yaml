@@ -10,7 +10,7 @@ Neos:
   Neos:
     fusion:
       autoInclude:
-        'Neos.Seo': TRUE
+        'Neos.Seo': true
 
     userInterface:
       translation:
