@@ -13,7 +13,7 @@
 			<target xml:lang="tl" state="needs-translation">Open Graph title</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="tl" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
+			<target xml:lang="tl" state="translated">Gamitin bilang og:pamagat, pinakamataas. 60 chars</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target xml:lang="tl" state="needs-translation">Open Graph Description</target></trans-unit>
