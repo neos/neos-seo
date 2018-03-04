@@ -16,7 +16,7 @@
 			<target xml:lang="tl" state="needs-translation">@johnexample</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="tl" state="needs-translation">Title</target></trans-unit>
+			<target xml:lang="tl" state="translated">Pamagat</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
 			<target xml:lang="tl" state="needs-translation">max. 70 characters</target></trans-unit>
