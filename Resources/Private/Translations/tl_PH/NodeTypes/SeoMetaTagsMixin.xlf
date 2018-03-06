@@ -10,13 +10,13 @@
 			<target xml:lang="tl" state="needs-translation">Description</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="tl" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target xml:lang="tl" state="translated">max. 156 na mga karakter</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target xml:lang="tl" state="needs-translation">Keywords</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="tl" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target xml:lang="tl" state="translated">ang comma ay hiniwalay, max. 255 chars</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="tl" state="needs-translation">Hide from search engines (noindex)</target></trans-unit>
