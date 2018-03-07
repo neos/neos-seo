@@ -7,28 +7,28 @@
 			<target xml:lang="es-ES" state="translated">Twitter Card</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="es-ES" state="translated">Tipo de tarjeta</target></trans-unit>
-      <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
+			<target xml:lang="es-ES" state="needs-translation">Card Type</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="es-ES" state="translated">Identificador del creador</target></trans-unit>
-      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
+			<target xml:lang="es-ES">Identificador del creador</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
-			<target xml:lang="es-ES" state="translated">@johnexample</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
+			<target xml:lang="es-ES">@johnejemplo</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="es-ES" state="translated">Título</target></trans-unit>
-      <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
+			<target xml:lang="es-ES">Título</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 70 characters</source>
-			<target xml:lang="es-ES" state="translated">máx. 70 caracteres</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
+			<target xml:lang="es-ES">máx. 70 caracteres</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="es-ES" state="translated">Descripción</target></trans-unit>
-      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
+			<target xml:lang="es-ES">Descripción</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="es-ES" state="translated">máx. 200 caracteres</target></trans-unit>
-      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
+			<target xml:lang="es-ES">máx. 200 caracteres</target></trans-unit>
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="es-ES" state="translated">Imagen de la tarjeta</target></trans-unit>
+			<target xml:lang="es-ES">Imagen de la tarjeta</target></trans-unit>
     </body>
   </file>
 </xliff>
