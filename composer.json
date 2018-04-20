@@ -4,7 +4,7 @@
     "description": "SEO configuration and tools for Neos",
     "license": "GPL-3.0-or-later",
     "require": {
-        "neos/neos": "~3.0 || dev-master"
+        "neos/neos": "~3.0 || ~4.0 || dev-master"
     },
     "autoload": {
         "psr-4": {
