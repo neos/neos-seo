@@ -2,7 +2,7 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
     doctype = '<?xml version="1.0" encoding="UTF-8"?>'
     httpResponseHead.headers.Content-Type = 'text/xml'
 
-    body = Menu {
+    body = Neos.Neos:Menu {
         root = ${site}
         entryLevel = 0
         maximumLevels = 999
