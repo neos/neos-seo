@@ -3,6 +3,7 @@ include: Prototypes/*.fusion
 prototype(Neos.Neos:Page) {
     htmlTag.attributes.lang = Neos.Seo:LangAttribute
     head {
+        titleTag >
         titleTag = Neos.Seo:TitleTag
         metaDescriptionTag = Neos.Seo:MetaDescriptionTag
         metaKeywordsTag = Neos.Seo:MetaKeywordsTag
