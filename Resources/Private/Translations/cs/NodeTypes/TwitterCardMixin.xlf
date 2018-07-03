@@ -19,13 +19,13 @@
 			<target xml:lang="cs" state="translated">Titul</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="cs" state="needs-translation">max. 70 characters</target></trans-unit>
+			<target xml:lang="cs" state="translated">max. 70 znaků</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="cs" state="translated">Popis</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="cs" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target xml:lang="cs" state="translated">max. 200 znaků</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="cs" state="translated">Obrázek karty</target></trans-unit>
