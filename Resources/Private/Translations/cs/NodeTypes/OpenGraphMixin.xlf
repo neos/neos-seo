@@ -19,7 +19,7 @@
 			<target xml:lang="cs" state="translated">Open Graph Popis</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="cs" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target xml:lang="cs" state="translated">max. 200 znaků</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target xml:lang="cs" state="translated">Open Graph Obrázek</target></trans-unit>
