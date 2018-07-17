@@ -19,13 +19,13 @@
 			<target xml:lang="uk" state="translated">Заголовок</target><alt-trans><target xml:lang="uk">Назва</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="uk" state="needs-translation">max. 70 characters</target></trans-unit>
+			<target xml:lang="uk" state="translated">макс. 70 символів</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="uk" state="translated">Опис</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="uk" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target xml:lang="uk" state="translated">макс. 200 символів</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="uk" state="needs-translation">Card Image</target></trans-unit>
