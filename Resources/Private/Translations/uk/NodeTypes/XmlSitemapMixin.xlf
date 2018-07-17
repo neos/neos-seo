@@ -13,7 +13,7 @@
 			<target xml:lang="uk" state="translated">Пріоритет</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="uk" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target xml:lang="uk" state="translated">між 0 і 1</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -7,7 +7,7 @@
 			<target xml:lang="uk" state="translated">Зміна заголовку</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="uk" state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target xml:lang="uk" state="translated">Використовується в тегу &lt; title &gt;, макс. 60 символів</target></trans-unit>
     </body>
   </file>
 </xliff>
