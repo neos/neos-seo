@@ -19,13 +19,13 @@
 			<target xml:lang="pt-PT" state="needs-translation">Title</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="pt-PT" state="translated">max. 70 caracteres</target></trans-unit>
+			<target xml:lang="pt-PT" state="translated">max. 70 carateres</target><alt-trans><target xml:lang="pt-PT">max. 70 caracteres</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="pt-PT" state="needs-translation">Description</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="pt-PT" state="translated">max. 200 caracteres</target></trans-unit>
+			<target xml:lang="pt-PT" state="translated">max. 200 carateres</target><alt-trans><target xml:lang="pt-PT">max. 200 caracteres</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target xml:lang="pt-PT" state="needs-translation">Card Image</target></trans-unit>
