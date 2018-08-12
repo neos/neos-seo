@@ -19,7 +19,7 @@
 			<target xml:lang="pt-PT" state="needs-translation">Open Graph Description</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="pt-PT" state="translated">max. 200 caracteres</target></trans-unit>
+			<target xml:lang="pt-PT" state="translated">max. 200 carateres</target><alt-trans><target xml:lang="pt-PT">max. 200 caracteres</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target xml:lang="pt-PT" state="needs-translation">Open Graph Image</target></trans-unit>
