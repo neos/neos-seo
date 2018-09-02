@@ -10,7 +10,7 @@
 			<target xml:lang="ar" state="translated">الوصف</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="ar" state="translated">كحد أقصى ١٥٦ حرف</target></trans-unit>
+			<target xml:lang="ar" state="translated">الحد الأقصى 156 حرف</target><alt-trans><target xml:lang="ar">كحد أقصى ١٥٦ حرف</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target xml:lang="ar" state="translated">كلمات مفتاحية</target></trans-unit>
