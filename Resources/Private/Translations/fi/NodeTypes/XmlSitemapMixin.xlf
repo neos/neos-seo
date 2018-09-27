@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target xml:lang="fi">XML-sivukartta</target></trans-unit>
+			<target xml:lang="fi" state="translated">XML-sivukartta</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="fi">Muutostiheys</target></trans-unit>
+			<target xml:lang="fi" state="translated">Muutostiheys</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target xml:lang="fi">Prioriteetti</target></trans-unit>
+			<target xml:lang="fi" state="translated">Prioriteetti</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
-			<target xml:lang="fi">väliltä 0-1</target><alt-trans><target xml:lang="fi">0-1</target></alt-trans></trans-unit>
+			<target xml:lang="fi" state="translated">väliltä 0-1</target><alt-trans><target xml:lang="fi">0-1</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
-			<target xml:lang="fi">Otsikon ylikirjoitus</target></trans-unit>
+			<target xml:lang="fi" state="translated">Otsikon ylikirjoitus</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="fi">HTML-tagi &lt;title&gt;, enintään 60 merkkiä</target><alt-trans><target xml:lang="fi">HTML-tagi &lt;title&gt;, maks. 60 merkkiä</target></alt-trans><alt-trans><target xml:lang="fi">HTML-tagi &lt;title&gt;, max. 60 merkkiä</target></alt-trans></trans-unit>
+			<target xml:lang="fi" state="translated">HTML-tagi &lt;title&gt;, enintään 60 merkkiä</target><alt-trans><target xml:lang="fi">HTML-tagi &lt;title&gt;, maks. 60 merkkiä</target></alt-trans><alt-trans><target xml:lang="fi">HTML-tagi &lt;title&gt;, max. 60 merkkiä</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

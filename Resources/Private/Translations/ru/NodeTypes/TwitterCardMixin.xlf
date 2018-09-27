@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target xml:lang="ru">Карта Twitter</target></trans-unit>
+			<target xml:lang="ru" state="translated">Карта Twitter</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target xml:lang="ru">Тип карты</target></trans-unit>
+			<target xml:lang="ru" state="translated">Тип карты</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="ru">Автор</target><alt-trans><target xml:lang="ru">Перо создателя</target></alt-trans></trans-unit>
+			<target xml:lang="ru" state="translated">Автор</target><alt-trans><target xml:lang="ru">Перо создателя</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
-			<target xml:lang="ru">@ivanivanov</target><alt-trans><target xml:lang="ru">@johnexample</target></alt-trans></trans-unit>
+			<target xml:lang="ru" state="translated">@ivanivanov</target><alt-trans><target xml:lang="ru">@johnexample</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="ru">Название</target></trans-unit>
+			<target xml:lang="ru" state="translated">Название</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 70 characters</source>
-			<target xml:lang="ru">макс. 70 символов</target></trans-unit>
+			<target xml:lang="ru" state="translated">макс. 70 символов</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="ru">Описание</target></trans-unit>
+			<target xml:lang="ru" state="translated">Описание</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="ru">макс. 200 символов</target></trans-unit>
+			<target xml:lang="ru" state="translated">макс. 200 символов</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="ru">Карта изображений</target><alt-trans><target xml:lang="ru">Картина</target></alt-trans></trans-unit>
+			<target xml:lang="ru" state="translated">Карта изображений</target><alt-trans><target xml:lang="ru">Картина</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

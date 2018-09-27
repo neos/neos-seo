@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target xml:lang="pl">Meta tagi</target></trans-unit>
+			<target xml:lang="pl" state="translated">Meta tagi</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="pl">Opis</target></trans-unit>
+			<target xml:lang="pl" state="translated">Opis</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target xml:lang="pl">maks. 156 znaków</target></trans-unit>
+			<target xml:lang="pl" state="translated">maks. 156 znaków</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target xml:lang="pl">Słowa kluczowe</target></trans-unit>
+			<target xml:lang="pl" state="translated">Słowa kluczowe</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="pl">oddzielone przecinkami, maks. 255 znaków</target></trans-unit>
+			<target xml:lang="pl" state="translated">oddzielone przecinkami, maks. 255 znaków</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="pl">Nie indeksuj w wyszukiwarkach internetowych (noindex)</target></trans-unit>
+			<target xml:lang="pl" state="translated">Nie indeksuj w wyszukiwarkach internetowych (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="pl">Nie podążaj za linkami (nofollow)</target></trans-unit>
+			<target xml:lang="pl" state="translated">Nie podążaj za linkami (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -10,13 +10,13 @@
 			<target xml:lang="id" state="translated">Deskripsi</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target xml:lang="id">max. 156 karakter</target></trans-unit>
+			<target xml:lang="id" state="translated">max. 156 karakter</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target xml:lang="id" state="translated">Kata kunci</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="id">dipisahkan koma, maks. 255 karakter</target></trans-unit>
+			<target xml:lang="id" state="translated">dipisahkan koma, maks. 255 karakter</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target xml:lang="id" state="translated">Sembunyikan dari mesin pencari (noindex)</target></trans-unit>

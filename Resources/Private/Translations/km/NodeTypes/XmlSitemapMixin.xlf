@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target xml:lang="km">ការបង្កើតផែនទីជាមួយXML</target></trans-unit>
+			<target xml:lang="km" state="translated">ការបង្កើតផែនទីជាមួយXML</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="km">ផ្លាស់ប្តូរប្រេកង់</target></trans-unit>
+			<target xml:lang="km" state="translated">ផ្លាស់ប្តូរប្រេកង់</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target xml:lang="km">អាទិភាព</target></trans-unit>
+			<target xml:lang="km" state="translated">អាទិភាព</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
-			<target xml:lang="km">ចន្លោះ០​នឹង១</target></trans-unit>
+			<target xml:lang="km" state="translated">ចន្លោះ០​នឹង១</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target xml:lang="fi">OpenGraph</target></trans-unit>
+			<target xml:lang="fi" state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target xml:lang="fi">Open Graph tyyppi</target></trans-unit>
+			<target xml:lang="fi" state="translated">Open Graph tyyppi</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target xml:lang="fi">Open Graph otsikko</target></trans-unit>
+			<target xml:lang="fi" state="translated">Open Graph otsikko</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="fi">HTML-tagi og:title, enintään 60 merkkiä</target><alt-trans><target xml:lang="fi">HTML-tagi og:title, maks. 60 merkkiä</target></alt-trans><alt-trans><target xml:lang="fi">HTML-tagi og:title, max 60 merkkiä</target></alt-trans></trans-unit>
+			<target xml:lang="fi" state="translated">HTML-tagi og:title, enintään 60 merkkiä</target><alt-trans><target xml:lang="fi">HTML-tagi og:title, maks. 60 merkkiä</target></alt-trans><alt-trans><target xml:lang="fi">HTML-tagi og:title, max 60 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target xml:lang="fi">Open Graph kuvaus</target></trans-unit>
+			<target xml:lang="fi" state="translated">Open Graph kuvaus</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="fi">max. 200 merkkiä</target><alt-trans><target xml:lang="fi">max 200 merkkiä</target></alt-trans></trans-unit>
+			<target xml:lang="fi" state="translated">max. 200 merkkiä</target><alt-trans><target xml:lang="fi">max 200 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target xml:lang="fi">Open Graph kuva</target></trans-unit>
+			<target xml:lang="fi" state="translated">Open Graph kuva</target></trans-unit>
     </body>
   </file>
 </xliff>

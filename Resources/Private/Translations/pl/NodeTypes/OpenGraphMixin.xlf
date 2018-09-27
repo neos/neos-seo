@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target xml:lang="pl">OpenGraph</target><alt-trans><target xml:lang="pl">Open Graph</target></alt-trans></trans-unit>
+			<target xml:lang="pl" state="translated">OpenGraph</target><alt-trans><target xml:lang="pl">Open Graph</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target xml:lang="pl">Typ Open Graph</target></trans-unit>
+			<target xml:lang="pl" state="translated">Typ Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target xml:lang="pl">Tytuł Open Graph</target></trans-unit>
+			<target xml:lang="pl" state="translated">Tytuł Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="pl">Używany jako og:title, maks. 60 znaków</target></trans-unit>
+			<target xml:lang="pl" state="translated">Używany jako og:title, maks. 60 znaków</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target xml:lang="pl">Opis Open Graph</target></trans-unit>
+			<target xml:lang="pl" state="translated">Opis Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="pl">maks. 200 znaków</target></trans-unit>
+			<target xml:lang="pl" state="translated">maks. 200 znaków</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target xml:lang="pl">Obrazek Open Graph</target></trans-unit>
+			<target xml:lang="pl" state="translated">Obrazek Open Graph</target></trans-unit>
     </body>
   </file>
 </xliff>
