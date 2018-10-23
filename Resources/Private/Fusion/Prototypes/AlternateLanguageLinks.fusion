@@ -1,4 +1,4 @@
-prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionMenu) {
+prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu) {
     @if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
     @if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
     @if.hasNoForeignCanonical = ${String.isBlank(q(node).property('canonicalLink'))}
