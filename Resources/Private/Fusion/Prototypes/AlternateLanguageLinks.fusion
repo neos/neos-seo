@@ -1,6 +1,7 @@
 prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionMenu) {
     @if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
     @if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
+    @if.hasNoForeignCanonical = ${String.isBlank(q(node).property('canonicalLink'))}
 
     localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}
 
