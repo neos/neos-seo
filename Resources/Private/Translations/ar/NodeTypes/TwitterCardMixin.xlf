@@ -7,7 +7,7 @@
 			<target xml:lang="ar" state="needs-translation">Twitter Card</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="ar" state="needs-translation">Card Type</target></trans-unit>
+			<target xml:lang="ar" state="translated">نوع البطاقة</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
 			<target xml:lang="ar" state="needs-translation">Creator Handle</target></trans-unit>
