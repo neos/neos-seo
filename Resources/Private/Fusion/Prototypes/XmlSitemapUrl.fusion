@@ -1,0 +1,18 @@
+prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
+    node = null
+    lastModificationDateTime = ${Date.format(this.node.lastModificationDateTime, 'Y-m-d\TH:iP')}
+    changeFrequency = ${q(this.node).property('xmlSitemapChangeFrequency')}
+    priority = ${q(this.node).property('xmlSitemapPriority') || 0.5}
+
+    @if.isNotShortcut = ${!q(this.node).is('[instanceof Neos.Neos:Shortcut]')}
+    @if.indexable = ${!q(this.node).property('metaRobotsNoindex')}
+
+    renderer = afx`
+        <url>
+            <loc @key="loc"><Neos.Neos:NodeUri node={props.node} format="html" absolute={true}/></loc>
+            <lastmod @key="lastmod">{props.lastModificationDateTime}</lastmod>
+            <changefreq @key="changefreq" @if.hasChangeFrequency={props.changeFrequency}>{props.changeFrequency}</changefreq>
+            <priority @key="priority" @if.hasPriority={props.priority}>{props.priority}</priority>
+        </url>
+    `
+}

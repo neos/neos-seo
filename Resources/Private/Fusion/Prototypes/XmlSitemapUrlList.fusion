@@ -1,0 +1,10 @@
+prototype(Neos.Seo:XmlSitemap.UrlList) < prototype(Neos.Fusion:Component) {
+    items = ${[]}
+
+    renderer = afx`
+        <Neos.Fusion:Collection collection={props.items} itemName="item" @children="itemRenderer">
+            <Neos.Seo:XmlSitemap.Url node={item.node}/>
+            <Neos.Seo:XmlSitemap.UrlList items={item.subItems} @if.hasSubItems={item.subItems}/>
+        </Neos.Fusion:Collection>
+    `
+}

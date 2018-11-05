@@ -3,14 +3,28 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
     httpResponseHead.headers.Content-Type = 'text/xml'
 
     body = Neos.Neos:Menu {
-        root = ${site}
         entryLevel = 0
         maximumLevels = 999
-        renderHiddenInIndex = TRUE
+        renderHiddenInIndex = true
         templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/XmlSiteMap.xml'
         startingPoint = ${site}
 
-        @cache.entryTags.1 = ${'DescendantOf_' + this.startingPoint.identifier}
+        @context {
+            startingPoint = ${this.startingPoint}
+            items = ${this.items}
+        }
+
+        urlset = afx`
+            <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+                <Neos.Seo:XmlSitemap.Url node={startingPoint}/>
+                <Neos.Seo:XmlSitemap.UrlList items={items} @if.hasItems={items}/>
+            </urlset>
+        `
+
+        @cache.entryTags {
+            1 = ${Neos.Caching.nodeTag(this.startingPoint)}
+            2 = ${Neos.Caching.descendantOfTag(this.startingPoint)}
+        }
     }
 }
 

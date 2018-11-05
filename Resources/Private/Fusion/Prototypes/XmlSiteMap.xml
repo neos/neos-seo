@@ -1,21 +1,2 @@
-{namespace neos=Neos\Neos\ViewHelpers}
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>{neos:uri.node(node: root, format: 'html', absolute: true)}</loc><lastmod>{root.lastModificationDateTime -> f:format.date(format: 'Y-m-d\TH:iP')}</lastmod><f:if condition="{root.sitemapXmlChangeFrequency}"><changefreq>{root.sitemapXmlChangeFrequency}</changefreq></f:if><f:if condition="{root.sitemapXmlPriority}"><priority>{root.sitemapXmlPriority}</priority></f:if>
-    </url><f:render section="itemsList" arguments="{items: items}" />
-</urlset>
-<f:section name="itemsList">
-    <f:for each="{items}" as="item">
-        <f:if condition="{item.node.nodeType.name} != 'Neos.Neos:Shortcut'">
-        <f:if condition="{item.node.properties.metaRobotsNoindex} == 0">
-            <url>
-                <loc>{neos:uri.node(node: item.node, format: 'html', absolute: true)}</loc>
-                <lastmod>{item.node.lastModificationDateTime -> f:format.date(format: 'Y-m-d\TH:iP')}</lastmod>
-                <f:if condition="{item.node.properties.xmlSitemapChangeFrequency}"><changefreq>{item.node.properties.xmlSitemapChangeFrequency}</changefreq></f:if>
-                <priority>{f:if(condition: item.node.properties.xmlSitemapPriority, then: item.node.properties.xmlSitemapPriority, else: '0.5')}</priority>
-            </url>
-        </f:if>
-        </f:if>
-        <f:if condition="{item.subItems}"><f:render section="itemsList" arguments="{items: item.subItems}"/></f:if>
-    </f:for>
-</f:section>
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<fusion:render path="urlset" />
