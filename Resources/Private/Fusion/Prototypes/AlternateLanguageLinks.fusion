@@ -4,8 +4,20 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu)
     @if.hasNoForeignCanonical = ${String.isBlank(q(node).property('canonicalLink'))}
 
     defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language.default')}
-    localeToLanguage = ${String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}
 
     dimension = 'language'
     templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/AlternateLanguageLinks.html'
+
+    @context {
+        items = ${this.items}
+        defaultLocale = ${this.defaultLocale}
+        dimension = ${this.dimension}
+    }
+
+    links = afx`
+        <Neos.Fusion:Collection collection={items} itemName="item" @children="itemRenderer">
+            <Neos.Seo:AlternateLanguageLink node={item.node} hreflang="x-default" @if.isDefaultLocale={defaultLocale == item.dimensions[dimension][0]}/>
+            <Neos.Seo:AlternateLanguageLink node={item.node} hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}/>
+        </Neos.Fusion:Collection>
+    `
 }

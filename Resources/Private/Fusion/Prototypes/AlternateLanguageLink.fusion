@@ -1,0 +1,16 @@
+prototype(Neos.Seo:AlternateLanguageLink) < prototype(Neos.Fusion:Component) {
+    node = null
+    hreflang = ''
+
+    // Define current node as the documentNode so dimension uri is resolved correctly
+    @context.documentNode = ${this.node}
+
+    nodeUri = Neos.Neos:NodeUri {
+        node = ${props.node}
+        absolute = true
+    }
+
+    renderer = afx`<link rel="alternate" hreflang={props.hreflang} href={props.nodeUri}/>`
+
+    @if.hasNode = ${this.node}
+}
