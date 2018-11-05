@@ -1,15 +1,17 @@
 prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu) {
-    @if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
+    @if.languageDimensionExists = ${this.dimensionConfiguration != null}
     @if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
     @if.hasNoForeignCanonical = ${String.isBlank(q(node).property('canonicalLink'))}
 
-    defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language.default')}
-
     dimension = 'language'
+    defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension + '.default')}
+    dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
+
     templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/AlternateLanguageLinks.html'
 
     @context {
         items = ${this.items}
+        items.@if.hasValidDimension = ${this.dimensionConfiguration != null}
         defaultLocale = ${this.defaultLocale}
         dimension = ${this.dimension}
     }
