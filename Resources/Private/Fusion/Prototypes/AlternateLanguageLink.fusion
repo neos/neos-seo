@@ -3,10 +3,14 @@ prototype(Neos.Seo:AlternateLanguageLink) < prototype(Neos.Fusion:Component) {
     hreflang = ''
 
     // Define current node as the documentNode so dimension uri is resolved correctly
-    @context.documentNode = ${this.node}
+    @context {
+        node = ${this.node}
+        documentNode = ${this.node}
+    }
 
     nodeUri = Neos.Neos:NodeUri {
-        node = ${props.node}
+        format = 'html'
+        node = ${node}
         absolute = true
     }
 

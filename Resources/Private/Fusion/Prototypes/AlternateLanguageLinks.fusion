@@ -1,12 +1,12 @@
 prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu) {
     @if.languageDimensionExists = ${this.dimensionConfiguration != null}
-    @if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
-    @if.hasNoForeignCanonical = ${String.isBlank(q(node).property('canonicalLink'))}
+    @if.onlyRenderWhenInLiveWorkspace = ${this.node.context.workspace.name == 'live'}
+    @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
 
+    node = null
     dimension = 'language'
     defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension + '.default')}
     dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
-
     templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/AlternateLanguageLinks.html'
 
     @context {
@@ -18,7 +18,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu)
 
     links = afx`
         <Neos.Fusion:Collection collection={items} itemName="item" @children="itemRenderer">
-            <Neos.Seo:AlternateLanguageLink node={item.node} hreflang="x-default" @if.isDefaultLocale={defaultLocale == item.dimensions[dimension][0]}/>
+            <Neos.Seo:AlternateLanguageLink @key="defaultLink" node={item.node} hreflang="x-default" @if.isDefaultLocale={defaultLocale == item.dimensions[dimension][0]}/>
             <Neos.Seo:AlternateLanguageLink node={item.node} hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}/>
         </Neos.Fusion:Collection>
     `
