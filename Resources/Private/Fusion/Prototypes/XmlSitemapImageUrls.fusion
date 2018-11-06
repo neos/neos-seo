@@ -1,0 +1,12 @@
+prototype(Neos.Seo:XmlSitemap.ImageUrls) < prototype(Neos.Fusion:Component) {
+    images = ${[]}
+
+    renderer = afx`
+        <Neos.Fusion:Collection collection={props.images} itemName="image" @children="itemRenderer">
+            <Neos.Fusion:Tag tagName="image:image">
+                <Neos.Fusion:Tag tagName="image:loc"><Neos.Neos:ImageUri asset={image}/></Neos.Fusion:Tag>
+                <Neos.Fusion:Tag tagName="image:title" @if.hasTitle={image.title}>{image.title}</Neos.Fusion:Tag>
+            </Neos.Fusion:Tag>
+        </Neos.Fusion:Collection>
+    `
+}
