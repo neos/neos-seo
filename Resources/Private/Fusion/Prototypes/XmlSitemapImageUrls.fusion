@@ -6,7 +6,7 @@ prototype(Neos.Seo:XmlSitemap.ImageUrls) < prototype(Neos.Fusion:Component) {
             <Neos.Fusion:Tag tagName="image:image">
                 <Neos.Fusion:Tag @key="loc" tagName="image:loc"><Neos.Neos:ImageUri asset={image}/></Neos.Fusion:Tag>
                 <Neos.Fusion:Tag @key="title" tagName="image:title" @if.hasTitle={image.title}>{image.title}</Neos.Fusion:Tag>
-                <Neos.Fusion:Tag @key="license" tagName="image:license" @if.hasLicense={image.copyright}>{image.copyright}</Neos.Fusion:Tag>
+                <Neos.Fusion:Tag @key="license" tagName="image:license" @if.hasLicense={image.copyrightNotice}>{image.copyrightNotice}</Neos.Fusion:Tag>
                 <Neos.Fusion:Tag @key="caption" tagName="image:caption" @if.hasCaption={image.caption}>{image.caption}</Neos.Fusion:Tag>
             </Neos.Fusion:Tag>
         </Neos.Fusion:Collection>
