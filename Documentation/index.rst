@@ -71,7 +71,7 @@ For more information please have a look at http://ogp.me/.
 XML sitemap
 -----------
 
-The generation of an XML sitemap to submit to search engines can be enabled as follows:
+The generation of an XML sitemap to submit to search engines can be used as follows:
 
 The change frequency and priority for each sitemap entry are used as specified in the respective fields added
 to the SEO tab in the inspector of `Neos.Neos:Document` nodes via the `Neos.Seo:XmlSitemapMixin`. For
@@ -79,6 +79,12 @@ priority the default value is 0.5 (neutral) and the change frequency is omitted 
 
 The necessary route to make the sitemap available is automatically included via `Settings.yaml` and will provide
 the sitemap via `your.domain/sitemap.xml`. See Settings on how to disable or change the route.
+
+To include contained images of pages in the xml sitemap use the following fusion code::
+
+    prototype(Neos.Seo:XmlSitemap) {
+        body.includeImageUrls = true
+    }
 
 Alternate Language Tag
 ------------------------
