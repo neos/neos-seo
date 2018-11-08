@@ -41,11 +41,30 @@ class XmlSitemapImplementation extends TemplateImplementation
     protected $assetPropertiesByNodeType;
 
     /**
+     * @var bool
+     */
+    protected $renderHiddenInIndex;
+
+    /**
+     * @var bool
+     */
+    protected $includeImageUrls;
+
+    /**
+     * @var NodeInterface
+     */
+    protected $startingPoint;
+
+    /**
      * @return bool
      */
     public function getIncludeImageUrls(): bool
     {
-        return $this->fusionValue('includeImageUrls');
+        if ($this->includeImageUrls === null) {
+            return $this->fusionValue('includeImageUrls');
+        }
+
+        return $this->includeImageUrls;
     }
 
     /**
@@ -53,7 +72,11 @@ class XmlSitemapImplementation extends TemplateImplementation
      */
     public function getRenderHiddenInIndex(): bool
     {
-        return $this->fusionValue('renderHiddenInIndex');
+        if ($this->renderHiddenInIndex === null) {
+            $this->renderHiddenInIndex = (boolean)$this->fusionValue('renderHiddenInIndex');
+        }
+
+        return $this->renderHiddenInIndex;
     }
 
     /**
@@ -61,7 +84,11 @@ class XmlSitemapImplementation extends TemplateImplementation
      */
     public function getStartingPoint(): NodeInterface
     {
-        return $this->fusionValue('startingPoint');
+        if ($this->startingPoint === null) {
+            return $this->fusionValue('startingPoint');
+        }
+
+        return $this->startingPoint;
     }
 
     /**
@@ -69,16 +96,19 @@ class XmlSitemapImplementation extends TemplateImplementation
      */
     public function initializeObject()
     {
-        $relevantPropertyTypes = [
-            'array<Neos\Media\Domain\Model\Asset>' => true,
-            'Neos\Media\Domain\Model\Asset' => true,
-            'Neos\Media\Domain\Model\ImageInterface' => true
-        ];
-        foreach ($this->nodeTypeManager->getNodeTypes(false) as $nodeType) {
-            /** @var NodeType $nodeType */
-            foreach ($nodeType->getProperties() as $propertyName => $propertyConfiguration) {
-                if (isset($relevantPropertyTypes[$nodeType->getPropertyType($propertyName)])) {
-                    $this->assetPropertiesByNodeType[$nodeType->getName()][] = $propertyName;
+        if ($this->getIncludeImageUrls()) {
+            $relevantPropertyTypes = [
+                'array<Neos\Media\Domain\Model\Asset>' => true,
+                'Neos\Media\Domain\Model\Asset' => true,
+                'Neos\Media\Domain\Model\ImageInterface' => true
+            ];
+
+            foreach ($this->nodeTypeManager->getNodeTypes(false) as $nodeType) {
+                /** @var NodeType $nodeType */
+                foreach ($nodeType->getProperties() as $propertyName => $propertyConfiguration) {
+                    if (isset($relevantPropertyTypes[$nodeType->getPropertyType($propertyName)])) {
+                        $this->assetPropertiesByNodeType[$nodeType->getName()][] = $propertyName;
+                    }
                 }
             }
         }
