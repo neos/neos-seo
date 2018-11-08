@@ -12,10 +12,6 @@ prototype(Neos.Neos:Page) {
         alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
         twitterCard = Neos.Seo:TwitterCard
         openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
-
-        structuredData = Neos.Fusion:Array {
-            breadcrumb = Neos.Seo:StructuredData.Breadcrumb
-            breadcrumb.doRender = ${true}
-        }
+        structuredData = Neos.Seo:StructuredData.Container
     }
 }
