@@ -68,6 +68,19 @@ If a Open Graph Type is enabled, the related meta tags will be rendered accordin
 
 For more information please have a look at http://ogp.me/.
 
+Structured data
+---------------
+
+Breadcrumb
+^^^^^^^^^^
+
+Search engines can output breadcrumbs by passing a structured data representation of a documents rootline.
+More information is available here: https://developers.google.com/search/docs/data-types/breadcrumb.
+
+You can enable this feature with the following code::
+
+    prototype(Neos.Seo:StructuredData.Container).breadcrumb.@if.enabled = true
+
 XML sitemap
 -----------
 
