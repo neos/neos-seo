@@ -1,0 +1,28 @@
+prototype(Neos.Seo:StructuredData.Breadcrumb) < prototype(Neos.Fusion:Component) {
+    items = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
+    items.@process.reverse = ${Array.reverse(value)}
+
+    @context.items = ${this.items}
+
+    renderer = afx`
+        <script type="application/ld+json">
+            <Neos.Seo:StructuredData.Object context="http://schema.org" type="BreadcrumbList" @children="renderer.itemListElement" @process.toJson={Json.stringify(value)}>
+                <Neos.Fusion:RawCollection collection={items} itemName="item" iterationName="iteration" @children="itemRenderer">
+                    <Neos.Seo:StructuredData.Object type="ListItem" renderer.position={iteration.cycle} renderer.name={item.label} @children="renderer.item">
+                        <Neos.Neos:NodeUri node={item} absolute={true}/>
+                    </Neos.Seo:StructuredData.Object>
+                </Neos.Fusion:RawCollection>
+            </Neos.Seo:StructuredData.Object>
+        </script>
+    `
+}
+
+prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
+    context = ''
+    type = ''
+    renderer = Neos.Fusion:RawArray {
+        "@context" = ${props.context}
+        "@context".@if.isSet = ${props.context}
+        "@type" = ${props.type}
+    }
+}
