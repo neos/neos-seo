@@ -1,0 +1,4 @@
+prototype(Neos.Seo:StructuredData.RootObject) < prototype(Neos.Seo:StructuredData.Object) {
+    context = 'http://schema.org'
+    @process.toJson = ${Json.stringify(value)}
+}

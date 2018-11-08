@@ -1,0 +1,10 @@
+prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
+    context = ''
+    type = ''
+    renderer = Neos.Fusion:RawArray {
+        '@context' = ${props.context}
+        '@context'.@if.isSet = ${props.context}
+        '@type' = ${props.type}
+    }
+    @if.hasType = ${this.type}
+}
