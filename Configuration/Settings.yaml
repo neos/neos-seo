@@ -22,3 +22,12 @@ Neos:
     twitterCard:
       # the Twitter handle for the twitter:site attribution
       siteHandle: ~
+
+    # Social profile names for the structured data object
+    socialProfiles:
+      twitter: ~
+      facebook: ~
+      instagram: ~
+      linkedIn: ~
+      youTube: ~
+

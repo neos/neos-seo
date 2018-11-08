@@ -1,0 +1,46 @@
+prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Component) {
+    @if.onHomepage = ${documentNode == site}
+    @if.hasProfiles = ${Array.length(this.profiles) > 0}
+
+    // 'type' can either be 'Person' or 'Organization' and should be set accordingly
+    type = 'Person'
+    twitterName = ${q(documentNode).property('twitterCardCreator') || Configuration.setting('Neos.Seo.socialProfiles.twitter')}
+    facebookName = ${Configuration.setting('Neos.Seo.socialProfiles.facebook')}
+    instagramName = ${Configuration.setting('Neos.Seo.socialProfiles.instagram')}
+    youTubeName = ${Configuration.setting('Neos.Seo.socialProfiles.youTube')}
+    linkedInName = ${Configuration.setting('Neos.Seo.socialProfiles.linkedIn')}
+
+    @context {
+        twitterName = ${this.twitterName}
+        facebookName = ${this.facebookName}
+        instagramName = ${this.instagramName}
+        youTubeName = ${this.youTubeName}
+        linkedInName = ${this.linkedInName}
+    }
+
+    profiles = Neos.Fusion:RawArray {
+        twitter = ${'https://twitter.com/' + twitterName}
+        twitter.@if.hasValue = ${!String.isBlank(twitterName)}
+
+        facebook = ${'https://www.facebook.com/' + facebookName}
+        facebook.@if.hasValue = ${!String.isBlank(facebookName)}
+
+        instagram = ${'https://www.instagram.com/' + instagramName}
+        instagram.@if.hasValue = ${!String.isBlank(instagramName)}
+
+        youTube = ${'https://www.youtube.com/channel/' + youTubeName}
+        youTube.@if.hasValue = ${!String.isBlank(youTubeName)}
+
+        linkedIn = ${'https://www.linkedin.com/in/' + linkedInName}
+        linkedIn.@if.hasValue = ${!String.isBlank(linkedInName)}
+    }
+
+    renderer = afx`
+        <script type="application/ld+json">
+            <Neos.Seo:StructuredData.RootObject type={props.type} url={siteUrl} profiles={props.profiles} @children="renderer.sameAs">
+                <Neos.Fusion:RawCollection collection={props.profiles} itemName="profile"
+                                           iterationName="iteration" itemRenderer={profile}/>
+            </Neos.Seo:StructuredData.RootObject>
+        </script>
+    `
+}
