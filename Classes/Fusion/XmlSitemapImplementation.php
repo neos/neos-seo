@@ -56,6 +56,11 @@ class XmlSitemapImplementation extends TemplateImplementation
     protected $startingPoint;
 
     /**
+     * @var array
+     */
+    protected $items;
+
+    /**
      * @return bool
      */
     public function getIncludeImageUrls(): bool
@@ -120,11 +125,14 @@ class XmlSitemapImplementation extends TemplateImplementation
      */
     public function getItems(): array
     {
-        $items = [];
+        if ($this->items === null) {
+            $items = [];
 
-        $this->appendItems($items, $this->getStartingPoint());
+            $this->appendItems($items, $this->getStartingPoint());
+            $this->items = $items;
+        }
 
-        return $items;
+        return $this->items;
     }
 
     /**
@@ -150,9 +158,6 @@ class XmlSitemapImplementation extends TemplateImplementation
             }
             $items[] = $item;
         }
-        if (!$node->hasChildNodes()) {
-            return;
-        }
         foreach ($node->getChildNodes('Neos.Neos:Document') as $childDocumentNode) {
             $this->appendItems($items, $childDocumentNode);
         }
@@ -164,7 +169,7 @@ class XmlSitemapImplementation extends TemplateImplementation
      * @return void
      * @throws NodeException
      */
-    protected function resolveImages(NodeInterface $node, array & $item)
+    protected function resolveImages(NodeInterface $node, array &$item)
     {
         if (isset($this->assetPropertiesByNodeType[$node->getNodeType()->getName()]) && !empty($this->assetPropertiesByNodeType[$node->getNodeType()->getName()])) {
 
