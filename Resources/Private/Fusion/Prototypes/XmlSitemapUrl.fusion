@@ -3,7 +3,7 @@ prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
     lastModificationDateTime = ${Date.now()}
     lastModificationDateTime.@process.format = ${Date.format(value, 'Y-m-d\TH:iP')}
     changeFrequency = ''
-    priority = '0.5'
+    priority = ''
     images = ${[]}
 
     renderer = afx`
