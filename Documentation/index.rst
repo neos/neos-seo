@@ -172,6 +172,7 @@ enabled in the `Configuration/NodeTypes.yaml` file, along with an inspector tab:
     superTypes:
       'Neos.Seo:TitleTagMixin': false
       'Neos.Seo:SeoMetaTagsMixin': false
+      'Neos.Seo:NoindexMixin': true
       'Neos.Seo:TwitterCardMixin': false
       'Neos.Seo:CanonicalLinkMixin': false
       'Neos.Seo:OpenGraphMixin': false

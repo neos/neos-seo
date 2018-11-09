@@ -75,6 +75,17 @@
           position: 40
 
 #
+# SEO Noindex tag mixin
+#
+'Neos.Seo:NoindexMixin':
+  abstract: true
+  properties:
+    metaRobotsNoindex:
+      defaultValue: true
+      disabled: true
+
+
+#
 # Twitter Card mixin
 #
 'Neos.Seo:TwitterCardMixin':
