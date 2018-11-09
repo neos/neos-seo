@@ -147,7 +147,7 @@ class XmlSitemapImplementation extends TemplateImplementation
             $item = [
                 'node' => $node,
                 'lastModificationDateTime' => $node->getNodeData()->getLastModificationDateTime(),
-                'priority' => $node->getProperty('xmlSitemapPriority') ?: '0.5',
+                'priority' => $node->getProperty('xmlSitemapPriority') ?: '',
                 'images' => [],
             ];
             if ($node->getProperty('xmlSitemapChangeFrequency')) {
