@@ -37,11 +37,19 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Array) {
             property = 'og:image'
             content = Neos.Neos:ImageUri {
                 asset = ${openGraphImage}
-                maximumWidth = 2000
-                maximumHeight = 2000
             }
         }
         @if.isImageSet = ${openGraphImage != null && openGraphImage != ''}
+    }
+
+    openGraphImageAttributeTags = Neos.Fusion:Component {
+        openGraphImage = ${q(node).property('openGraphImage')}
+        renderer = afx`
+            <meta @key="width" property="og:image:width" content={props.openGraphImage.width}/>
+            <meta @key="height" property="og:image:height" content={props.openGraphImage.height} />
+            <meta @key="alt" property="og:image:alt" content={props.openGraphImage.title}/>
+        `
+        @if.isImageSet = ${this.openGraphImage != null && this.openGraphImage != ''}
     }
 
     openGraphUrlTag = Neos.Fusion:Tag {
