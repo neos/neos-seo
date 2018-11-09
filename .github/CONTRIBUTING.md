@@ -1,6 +1,6 @@
 # How to contribute
 
-I love to welcome your contributions. There are several ways to help out:
+We welcome your contributions. There are several ways to help out:
 
 * Create an [issue](https://github.com/neos/neos-seo/issues) on GitHub, if you have found a bug
 * Write test cases or provide examples for open bug issues
