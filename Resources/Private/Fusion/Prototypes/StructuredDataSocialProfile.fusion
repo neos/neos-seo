@@ -3,14 +3,15 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
     @if.hasProfiles = ${Array.length(this.profiles) > 0}
 
     // 'type' can either be 'Person' or 'Organization' and should be set accordingly
-    type = 'Person'
-    twitterName = ${q(documentNode).property('twitterCardCreator') || Configuration.setting('Neos.Seo.socialProfiles.twitter')}
-    facebookName = ${Configuration.setting('Neos.Seo.socialProfiles.facebook')}
-    instagramName = ${Configuration.setting('Neos.Seo.socialProfiles.instagram')}
-    youTubeName = ${Configuration.setting('Neos.Seo.socialProfiles.youTube')}
-    linkedInName = ${Configuration.setting('Neos.Seo.socialProfiles.linkedIn')}
+    type = ${Configuration.setting('Neos.Seo.socialProfile.type')}
+    twitterName = ${q(documentNode).property('twitterCardCreator') || Configuration.setting('Neos.Seo.socialProfile.profiles.twitter')}
+    facebookName = ${Configuration.setting('Neos.Seo.socialProfile.profiles.facebook')}
+    instagramName = ${Configuration.setting('Neos.Seo.socialProfile.profiles.instagram')}
+    youTubeName = ${Configuration.setting('Neos.Seo.socialProfile.profiles.youTube')}
+    linkedInName = ${Configuration.setting('Neos.Seo.socialProfile.profiles.linkedIn')}
 
     @context {
+        type = ${this.type}
         twitterName = ${this.twitterName}
         facebookName = ${this.facebookName}
         instagramName = ${this.instagramName}
@@ -18,6 +19,21 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
         linkedInName = ${this.linkedInName}
     }
 
+    // Automatically add site url for organizations, see https://developers.google.com/search/docs/data-types/logo
+    siteUrl = Neos.Neos:NodeUri {
+        node = ${site}
+        absolute = true
+        @if.isOrganization = ${type == 'Organization'}
+    }
+
+    // Allow setting a logo path for organizations, see https://developers.google.com/search/docs/data-types/logo
+    // Example: logo.path = 'resource://Vendor.Site/Public/Images/MyLogo.png'
+    logo = Neos.Fusion:ResourceUri {
+        path = ${Configuration.setting('Neos.Seo.socialProfile.logo')}
+        @if.isOrganization = ${type == 'Organization' && !String.isBlank(this.path)}
+    }
+
+    // Automatically adds social profiles for a site owner, see https://developers.google.com/search/docs/data-types/social-profile
     profiles = Neos.Fusion:RawArray {
         twitter = ${'https://twitter.com/' + twitterName}
         twitter.@if.hasValue = ${!String.isBlank(twitterName)}
@@ -37,7 +53,8 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
 
     renderer = afx`
         <script type="application/ld+json">
-            <Neos.Seo:StructuredData.RootObject type={props.type} url={siteUrl} profiles={props.profiles} @children="renderer.sameAs">
+            <Neos.Seo:StructuredData.RootObject type={props.type} url={siteUrl} profiles={props.profiles}
+                                                url={props.siteUrl} logo={props.logo} @children="renderer.sameAs">
                 <Neos.Fusion:RawCollection collection={props.profiles} itemName="profile"
                                            iterationName="iteration" itemRenderer={profile}/>
             </Neos.Seo:StructuredData.RootObject>
