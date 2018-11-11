@@ -71,6 +71,15 @@ For more information please have a look at http://ogp.me/.
 Structured data
 ---------------
 
+This package provides basic prototypes for structured data and some already implemented elements.
+You can activate and configure them according to your needs.
+
+The prototypes are also meant to be a very basic standard for your own structured elements.
+So feel free to adjust and reuse them.
+
+When you activate structured data elements and have them on your live site you should use the Google Search Console
+to verify that they work as expected: https://search.google.com/search-console.
+
 Breadcrumb
 ^^^^^^^^^^
 
