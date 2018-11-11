@@ -1,6 +1,6 @@
-[![Latest Stable Version](https://poser.pugx.org/neos.seo/v/stable)](https://packagist.org/packages/neos.seo)
-[![Total Downloads](https://poser.pugx.org/neos.seo/downloads)](https://packagist.org/packages/neos.seo)
-[![License](https://poser.pugx.org/neos.seo/license)](LICENSE)
+[![Latest Stable Version](https://poser.pugx.org/neos/seo/v/stable)](https://packagist.org/packages/neos/seo)
+[![Total Downloads](https://poser.pugx.org/neos/seo/downloads)](https://packagist.org/packages/neos/seo)
+[![License](https://poser.pugx.org/neos/seo/license)](LICENSE)
 
 # Neos.Seo
 
