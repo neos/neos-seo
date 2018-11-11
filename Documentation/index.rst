@@ -137,6 +137,10 @@ To include contained images of pages in the xml sitemap use the following fusion
         body.includeImageUrls = true
     }
 
+Be aware that the sitemap will output all images referenced in a page and it's content.
+If you reference images that should not render in the frontend you might need to adjust the sitemap according
+to your needs.
+
 By default all shortcuts are ignored in the sitemap. They inherit from the prototype `Neos.Seo:NoindexMixin`.
 If you have other document types that should not appear in the sitemap you can also let them inherit from
 that prototype.
