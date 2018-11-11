@@ -68,6 +68,28 @@ If a Open Graph Type is enabled, the related meta tags will be rendered accordin
 
 For more information please have a look at http://ogp.me/.
 
+Structured data
+---------------
+
+This package provides basic prototypes for structured data and some already implemented elements.
+You can activate and configure them according to your needs.
+
+The prototypes are also meant to be a very basic standard for your own structured elements.
+So feel free to adjust and reuse them.
+
+When you activate structured data elements and have them on your live site you should use the Google Search Console
+to verify that they work as expected: https://search.google.com/search-console.
+
+Breadcrumb
+^^^^^^^^^^
+
+Search engines can output breadcrumbs by passing a structured data representation of a documents rootline.
+More information is available here: https://developers.google.com/search/docs/data-types/breadcrumb.
+
+You can enable this feature with the following code::
+
+    prototype(Neos.Seo:StructuredData.Container).breadcrumb.@if.enabled = true
+
 XML sitemap
 -----------
 
