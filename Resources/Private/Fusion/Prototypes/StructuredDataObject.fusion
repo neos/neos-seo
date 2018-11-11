@@ -1,6 +1,8 @@
 prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
     context = ''
     type = ''
+    // Inherit props from parent object into data. These can be accessed in the renderer via props.data.
+    data = ${props}
     renderer = Neos.Fusion:RawArray {
         '@context' = ${props.context}
         '@context'.@if.isSet = ${props.context}
