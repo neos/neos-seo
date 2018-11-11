@@ -1,16 +1,20 @@
-# neos-seo
+[![Latest Stable Version](https://poser.pugx.org/neos/seo/v/stable)](https://packagist.org/packages/neos/seo)
+[![Total Downloads](https://poser.pugx.org/neos/seo/downloads)](https://packagist.org/packages/neos/seo)
+[![License](https://poser.pugx.org/neos/seo/license)](LICENSE)
+
+# Neos.Seo
 
 A package to enable additional SEO features for Neos CMS. 
 
 ## Installation and usage
 
 1. Run the following command f.e. in your site package:
-   ```
+   ```bash
    composer require no-update neos/neos-seo
    ```
    
 2. Update your dependencies by running the following command in your project root folder:
-   ```
+   ```bash
    composer update
    ```
    
