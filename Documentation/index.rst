@@ -146,6 +146,31 @@ property `ContentRepository.dimensionTypes.language`.
     dimensionTypes:
       language: 'language'
 
+Dynamic robots.txt
+------------------
+
+To activate the automatic `robots.txt` you have to delete the `robots.txt` inside the `/Web` folder. 
+You also have to edit the `.htaccess`:: Change the line `RewriteRule ^(_Resources/Packages/|robots\.txt|favicon\.ico) - [L]` 
+to `RewriteRule ^(_Resources/Packages/|favicon\.ico) - [L]`.
+
+**If don't want to delete `robots.txt` after every update, you should add following lines to your `.htaccess`::**
+
+  # Use Neos robots.txt
+  RewriteCond %{REQUEST_URI} ^/robots\.txt
+  RewriteRule (.*) index.php [L]
+
+
+If you only want to render a subset of the available language dimensions (e.g., if the content is not yet ready) 
+you can configure this in the `Settings.yaml`::
+
+
+  Neos:
+    Seo:
+      robotsTxt:
+        # Activate only English and German
+        dimensionsPresets: ['en','de']
+
+
 Disabling not needed features
 -----------------------------
 

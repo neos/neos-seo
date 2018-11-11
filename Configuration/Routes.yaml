@@ -16,3 +16,18 @@
       options:
         onlyMatchSiteNodes: true
   appendExceedingArguments: true
+
+-
+  name:  'robots.txt'
+  uriPattern: '{node}robots.txt'
+  defaults:
+    '@package':    'Neos.Neos'
+    '@controller': 'Frontend\Node'
+    '@action':     'show'
+    '@format':     'txt.robots'
+  routeParts:
+    'node':
+      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      options:
+        onlyMatchSiteNodes: true
+  appendExceedingArguments: true

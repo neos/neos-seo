@@ -1,0 +1,14 @@
+prototype(Neos.Neos:Page) {
+    htmlTag.attributes.lang = Neos.Seo:LangAttribute
+    head {
+        titleTag >
+        titleTag = Neos.Seo:TitleTag
+        metaDescriptionTag = Neos.Seo:MetaDescriptionTag
+        metaKeywordsTag = Neos.Seo:MetaKeywordsTag
+        metaRobotsTag = Neos.Seo:MetaRobotsTag
+        canonicalLink = Neos.Seo:CanonicalLink
+        alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
+        twitterCard = Neos.Seo:TwitterCard
+        openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
+    }
+}

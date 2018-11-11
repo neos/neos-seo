@@ -1,0 +1,59 @@
+prototype(Neos.Seo:TxtRobots) < prototype(Neos.Fusion:Component) {
+    // Every entry get a line in the robots.txt
+    data = Neos.Fusion:RawArray {
+        userAgent = 'User-agent: *'
+        disallow = 'Disallow: /neos/'
+    }
+    // Render the sitemap.xml
+    renderXMLSitemap = true
+    // The language dimension of the system
+    languageDimension = 'language'
+
+    dimensionsPresets = ${Configuration.setting('Neos.Seo.robotsTxt.dimensionsPresets')}
+
+    renderer = Neos.Fusion:Component {
+        sitemaps = Neos.Fusion:Case {
+            @if.render = ${props.renderXMLSitemap}
+            hasLanguage {
+                condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions[' + props.languageDimension + ']') != null}
+                renderer = Neos.Neos:DimensionsMenu {
+                    dimension = ${props.languageDimension}
+                    templatePath = 'resource://Neos.Seo/Private/Fusion/TxtRobots/Sitemap.html'
+                    presets = ${props.dimensionsPresets}
+                    renderHiddenInIndex = true
+                    includeAllPresets = true
+                }
+            }
+            noLanguage {
+                condition = true
+                renderer = Neos.Fusion:Array {
+                    sitemap = 'Sitemap: '
+                    url = Neos.Neos:NodeUri {
+                        absolute = true
+                        format = 'xml.sitemap'
+                        node = ${site}
+                    }
+                }
+            }
+        }
+
+        data = ${props.data}
+
+        linebreak = '
+'
+        renderer = Neos.Fusion:Http.Message {
+            httpResponseHead.headers.Content-Type = 'text/plain;'
+            body = afx`
+                <Neos.Fusion:Collection collection={props.data} @children='itemRenderer'>
+                    {item}{props.linebreak}
+                </Neos.Fusion:Collection>
+                {props.sitemaps}
+            `
+        }
+    }
+}
+
+root.textRobots {
+    condition = ${request.format == 'txt.robots'}
+    renderer = Neos.Seo:TxtRobots
+}
