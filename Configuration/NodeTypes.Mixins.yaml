@@ -82,7 +82,10 @@
   properties:
     metaRobotsNoindex:
       defaultValue: true
-      disabled: true
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
 
 
 #
