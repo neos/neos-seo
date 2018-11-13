@@ -4,6 +4,22 @@
 
 -
   name:  'XML Sitemap'
+  uriPattern: '{node}/<xmlSitemapPath>'
+  defaults:
+    '@package':    'Neos.Neos'
+    '@controller': 'Frontend\Node'
+    '@action':     'show'
+    '@format':     'xml.sitemap'
+  routeParts:
+    'node':
+      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      options:
+        onlyMatchSiteNodes: true
+  appendExceedingArguments: true
+
+
+-
+  name:  'XML Sitemap'
   uriPattern: '{node}<xmlSitemapPath>'
   defaults:
     '@package':    'Neos.Neos'
