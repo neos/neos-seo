@@ -47,6 +47,11 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
             `
         }
     }
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier.identifier = 'robots.txt'
+    }
 }
 
 root.robotsTxt {
