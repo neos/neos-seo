@@ -1,24 +1,22 @@
-prototype(Neos.Seo:TxtRobots) < prototype(Neos.Fusion:Component) {
-    // Every entry get a line in the robots.txt
+prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
+    // Every entry gets a line in the robots.txt
     data = Neos.Fusion:RawArray {
         userAgent = 'User-agent: *'
         disallow = 'Disallow: /neos/'
     }
-    // Render the sitemap.xml
-    renderXMLSitemap = true
-    // The language dimension of the system
+    renderXMLSitemapLinks = true
     languageDimension = 'language'
-
     dimensionsPresets = ${Configuration.setting('Neos.Seo.robotsTxt.dimensionsPresets')}
 
     renderer = Neos.Fusion:Component {
+
         sitemaps = Neos.Fusion:Case {
-            @if.render = ${props.renderXMLSitemap}
+            @if.render = ${props.renderXMLSitemapLinks}
             hasLanguage {
-                condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions[' + props.languageDimension + ']') != null}
+                condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + props.languageDimension) != null}
                 renderer = Neos.Neos:DimensionsMenu {
                     dimension = ${props.languageDimension}
-                    templatePath = 'resource://Neos.Seo/Private/Fusion/TxtRobots/Sitemap.html'
+                    templatePath = 'resource://Neos.Seo/Private/Fusion/RobotsTxt/Sitemap.html'
                     presets = ${props.dimensionsPresets}
                     renderHiddenInIndex = true
                     includeAllPresets = true
@@ -26,13 +24,11 @@ prototype(Neos.Seo:TxtRobots) < prototype(Neos.Fusion:Component) {
             }
             noLanguage {
                 condition = true
-                renderer = Neos.Fusion:Array {
-                    sitemap = 'Sitemap: '
-                    url = Neos.Neos:NodeUri {
-                        absolute = true
-                        format = 'xml.sitemap'
-                        node = ${site}
-                    }
+                renderer = Neos.Neos:NodeUri {
+                    absolute = true
+                    format = 'xml.sitemap'
+                    node = ${site}
+                    @process.prefix = ${'Sitemap: ' + value}
                 }
             }
         }
@@ -53,7 +49,7 @@ prototype(Neos.Seo:TxtRobots) < prototype(Neos.Fusion:Component) {
     }
 }
 
-root.textRobots {
+root.robotsTxt {
     condition = ${request.format == 'txt.robots'}
-    renderer = Neos.Seo:TxtRobots
+    renderer = Neos.Seo:RobotsTxt
 }
