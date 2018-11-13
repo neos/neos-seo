@@ -18,6 +18,9 @@ Neos:
           'Neos.Seo': ['NodeTypes/*']
 
   Seo:
+    # robots.txt settings
+    robotsTxt:
+      dimensionsPresets: null
     # Twitter Card settings
     twitterCard:
       # the Twitter handle for the twitter:site attribution

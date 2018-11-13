@@ -172,6 +172,50 @@ property `ContentRepository.dimensionTypes.language`.
     dimensionTypes:
       language: 'language'
 
+Dynamic robots.txt
+------------------
+
+To activate the automatic `robots.txt` you have to delete the `robots.txt` inside the `/Web` folder.
+You also have to edit the `.htaccess`:: Change the line `RewriteRule ^(_Resources/Packages/|robots\.txt|favicon\.ico) - [L]`
+to `RewriteRule ^(_Resources/Packages/|favicon\.ico) - [L]`.
+
+**If don't want to delete `robots.txt` after every update, you should add following lines to your `.htaccess`::**
+
+  # Use Neos robots.txt
+  RewriteCond %{REQUEST_URI} ^/robots\.txt
+  RewriteRule (.*) index.php [L]
+
+**If you use nginx you should disable the following entry if you have it::**
+
+  location = /robots.txt {
+    allow all;
+    log_not_found off;
+    access_log off;
+  }
+
+If you only want to render a subset of the available language dimensions (e.g., if the content is not yet ready)
+you can configure this in the `Settings.yaml`::
+
+  Neos:
+    Seo:
+      robotsTxt:
+        # Activate only English and German
+        dimensionsPresets: ['en','de']
+
+You can also add your own definitions to the `robots.txt`.
+They can be passed by adding them to definitions array. For example to block the GoogleBot from a directory use this fusion code::
+
+    prototype(Neos.Seo:RobotsTxt) {
+        data {
+            userAgentGoogleBot = 'User-agent: Googlebot'
+            disallowAll = 'Disallow: /private'
+            disallowAll.@position = 'after userAgentGoogleBot'
+        }
+    }
+
+You should work with the position argument to ensure that everything is where you want it.
+By default a definition is preconfigured that blocks `/neos` for all user agents.
+
 Disabling not needed features
 -----------------------------
 
