@@ -201,7 +201,7 @@ class XmlSitemapImplementation extends TemplateImplementation
      */
     protected function isDocumentNodeToBeIndexed(NodeInterface $node): bool
     {
-        return !$node->getNodeType()->isOfType('Neos.Neos:Shortcut') && $node->isVisible()
+        return !$node->getNodeType()->isOfType('Neos.Seo:NoindexMixin') && $node->isVisible()
             && ($this->getRenderHiddenInIndex() || !$node->isHiddenInIndex()) && $node->isAccessible()
             && $node->getProperty('metaRobotsNoindex') !== true;
     }
