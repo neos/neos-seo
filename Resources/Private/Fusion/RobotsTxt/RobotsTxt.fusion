@@ -1,8 +1,10 @@
 prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     // Every entry gets a line in the robots.txt
     data = Neos.Fusion:RawArray {
-        userAgent = 'User-agent: *'
-        disallow = 'Disallow: /neos/'
+        userAgentAll = 'User-agent: *'
+        userAgentAll.@position = 'start'
+        disallowNeos = 'Disallow: /neos/'
+        disallowNeos.@position = 'after userAgentAll'
     }
     renderXMLSitemapLinks = true
     languageDimension = 'language'
@@ -11,7 +13,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     renderer = Neos.Fusion:Component {
 
         sitemaps = Neos.Fusion:Case {
-            @if.render = ${props.renderXMLSitemapLinks}
+            @if.shouldRender = ${props.renderXMLSitemapLinks}
             hasLanguage {
                 condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + props.languageDimension) != null}
                 renderer = Neos.Neos:DimensionsMenu {

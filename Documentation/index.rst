@@ -181,7 +181,7 @@ to `RewriteRule ^(_Resources/Packages/|favicon\.ico) - [L]`.
   RewriteCond %{REQUEST_URI} ^/robots\.txt
   RewriteRule (.*) index.php [L]
 
-** If you use nginx you should disable the following entry if you have it:: **
+**If you use nginx you should disable the following entry if you have it::**
 
   location = /robots.txt {
     allow all;
@@ -198,6 +198,19 @@ you can configure this in the `Settings.yaml`::
         # Activate only English and German
         dimensionsPresets: ['en','de']
 
+You can also add your own definitions to the `robots.txt`.
+They can be passed by adding them to definitions array. For example to block the GoogleBot from a directory use this fusion code::
+
+    prototype(Neos.Seo:RobotsTxt) {
+        data {
+            userAgentGoogleBot = 'User-agent: Googlebot'
+            disallowAll = 'Disallow: /private'
+            disallowAll.@position = 'after userAgentGoogleBot'
+        }
+    }
+
+You should work with the position argument to ensure that everything is where you want it.
+By default a definition is preconfigured that blocks `/neos` for all user agents.
 
 Disabling not needed features
 -----------------------------
