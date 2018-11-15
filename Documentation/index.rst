@@ -112,6 +112,16 @@ By default all shortcuts are ignored in the sitemap. They inherit from the proto
 If you have other document types that should not appear in the sitemap you can also let them inherit from
 that prototype.
 
+To include alternate language links of pages in the xml sitemap use the following fusion code::
+
+    prototype(Neos.Seo:XmlSitemap) {
+        body.includeAlternateLanguageLinks = true
+    }
+
+Be aware of possible performance issues. Rendering the sitemap with all optional features might be slow
+for larger installations and needs an optimized `XmlSitemapImplementation` which could use ElasticSearch for example.
+Alternatively you can change the caching behavior and have a cron job that recreates the sitemap for example once per day.
+
 Alternate Language Tag
 ------------------------
 

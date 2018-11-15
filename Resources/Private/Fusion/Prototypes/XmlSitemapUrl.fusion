@@ -5,6 +5,17 @@ prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
     changeFrequency = ''
     priority = ''
     images = ${[]}
+    includeAlternateLanguageLinks = false
+
+    prototype(Neos.Seo:AlternateLanguageLinks) {
+        links.itemRenderer.defaultLink >
+    }
+
+    prototype(Neos.Seo:AlternateLanguageLink) {
+        renderer.tagName = 'xhtml:link'
+    }
+
+    @context.documentNode = ${this.node}
 
     renderer = afx`
         <url>
@@ -13,6 +24,7 @@ prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
             <changefreq @key="changefreq" @if.hasChangeFrequency={props.changeFrequency}>{props.changeFrequency}</changefreq>
             <priority @key="priority" @if.hasPriority={props.priority}>{props.priority}</priority>
             <Neos.Seo:XmlSitemap.ImageUrls @key="images" images={props.images} @if.hasImages={props.images}/>
+            <Neos.Seo:AlternateLanguageLinks @key="alternateLanguageLinks" node={props.node} @if.includeAlternateLanguageLinks={props.includeAlternateLanguageLinks}/>
         </url>
     `
 }
