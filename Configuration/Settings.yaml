@@ -25,3 +25,17 @@ Neos:
     twitterCard:
       # the Twitter handle for the twitter:site attribution
       siteHandle: ~
+
+    # Social profile for the structured data object
+    socialProfile:
+      # `type` can be either `Person` or `Organization`
+      type: Person
+      # `logo` can be for example `resource://Vendor.Site/Public/Images/MyLogo.png`
+      logo: ''
+      profiles:
+        twitter: ~
+        facebook: ~
+        instagram: ~
+        linkedIn: ~
+        youTube: ~
+

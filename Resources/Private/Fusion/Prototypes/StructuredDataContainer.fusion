@@ -1,4 +1,7 @@
 prototype(Neos.Seo:StructuredData.Container) < prototype(Neos.Fusion:Array) {
     breadcrumb = Neos.Seo:StructuredData.Breadcrumb
     breadcrumb.@if.enabled = false
+
+    socialProfile = Neos.Seo:StructuredData.SocialProfile
+    socialProfile.@if.enabled = false
 }

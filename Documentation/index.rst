@@ -90,6 +90,35 @@ You can enable this feature with the following code::
 
     prototype(Neos.Seo:StructuredData.Container).breadcrumb.@if.enabled = true
 
+Social profile
+^^^^^^^^^^^^^^
+
+Search engines can output information about the social profile by passing a structured data
+representation of a documents rootline.
+Depending whether the site is run by a person or organization some parts need to be configured.
+
+More information is available here:
+* https://developers.google.com/search/docs/data-types/social-profile
+* https://developers.google.com/search/docs/data-types/logo
+
+You can enable this feature with the following code::
+
+    prototype(Neos.Seo:StructuredData.Container).socialProfile.@if.enabled = true
+
+To adjust the profile configure this according to your requirements in your `Settings.yaml`::
+
+    Neos:
+      Seo:
+        socialProfile:
+          type: 'set either to "Person" or "Organization"'
+          logo: 'resource://Vendor.Site/Public/Images/MyLogo.png'
+          profiles:
+            twitter: 'your twitter name'
+            facebook: 'your facebook name'
+            instagram: 'your instagram name'
+            linkedIn: 'your linkedin name'
+            youTube: 'your YouTube channel identifier'
+
 XML sitemap
 -----------
 
@@ -107,6 +136,10 @@ To include contained images of pages in the xml sitemap use the following fusion
     prototype(Neos.Seo:XmlSitemap) {
         body.includeImageUrls = true
     }
+
+Be aware that the sitemap will output all images referenced in a page and it's content.
+If you reference images that should not render in the frontend you might need to adjust the sitemap according
+to your needs.
 
 By default all shortcuts are ignored in the sitemap. They inherit from the prototype `Neos.Seo:NoindexMixin`.
 If you have other document types that should not appear in the sitemap you can also let them inherit from
