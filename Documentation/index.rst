@@ -179,7 +179,7 @@ To activate the automatic `robots.txt` you have to delete the `robots.txt` insid
 You also have to edit the `.htaccess`:: Change the line `RewriteRule ^(_Resources/Packages/|robots\.txt|favicon\.ico) - [L]`
 to `RewriteRule ^(_Resources/Packages/|favicon\.ico) - [L]`.
 
-**If don't want to delete `robots.txt` after every update, you should add following lines to your `.htaccess`::**
+**If you don't want to delete `robots.txt` after every update, you should add following lines to your `.htaccess`::**
 
   # Use Neos robots.txt
   RewriteCond %{REQUEST_URI} ^/robots\.txt
