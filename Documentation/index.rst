@@ -22,7 +22,7 @@ used as the `<title>` tag content if it is filled (see `head.titleTag.content` i
 Basic meta tags
 ---------------
 
-The fields for keywords and description are added to `Neos.Neos:Document` via the `Neos.Seo:SoeMetaTagsMixin`
+The fields for keywords and description are added to `Neos.Neos:Document` via the `Neos.Seo:SeoMetaTagsMixin`
 
 If they are filled in, `<meta>` tags for their contents will be rendered (see `head.metaTitleTag` and
 `head.metaDescriptionTag` in `Neos.Neos:Page`).
