@@ -4,8 +4,8 @@ prototype(Neos.Seo:StructuredData.Breadcrumb) < prototype(Neos.Fusion:Component)
 
     renderer = afx`
         <script type="application/ld+json">
-            <Neos.Seo:StructuredData.RootObject type="BreadcrumbList" items={props.items} @children="renderer.itemListElement">
-                <Neos.Fusion:RawCollection collection={props.items} itemName="item" iterationName="iteration" @children="itemRenderer">
+            <Neos.Seo:StructuredData.RootObject type="BreadcrumbList" @children="renderer.itemListElement">
+                <Neos.Fusion:RawCollection collection={props.data.items} itemName="item" iterationName="iteration" @children="itemRenderer">
                     <Neos.Seo:StructuredData.Object type="ListItem" renderer.position={iteration.cycle} renderer.name={item.label} @children="renderer.item">
                         <Neos.Neos:NodeUri node={item} absolute={true}/>
                     </Neos.Seo:StructuredData.Object>
