@@ -53,9 +53,10 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
 
     renderer = afx`
         <script type="application/ld+json">
-            <Neos.Seo:StructuredData.RootObject type={props.type} url={siteUrl} profiles={props.profiles}
-                                                url={props.siteUrl} logo={props.logo} @children="renderer.sameAs">
-                <Neos.Fusion:RawCollection collection={props.profiles} itemName="profile"
+            <Neos.Seo:StructuredData.RootObject type={props.type} @children="renderer.sameAs"
+                                                renderer.url={props.siteUrl} renderer.url.@if.isSet={props.siteUrl}
+                                                renderer.logo={props.logo} renderer.logo.@if.isSet={props.logo}>
+                <Neos.Fusion:RawCollection collection={props.data.profiles} itemName="profile"
                                            iterationName="iteration" itemRenderer={profile}/>
             </Neos.Seo:StructuredData.RootObject>
         </script>
