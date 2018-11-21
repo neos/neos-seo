@@ -7,7 +7,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu)
     dimension = 'language'
     defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension + '.default')}
     dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
-    templatePath = 'resource://Neos.Seo/Private/Fusion/Prototypes/AlternateLanguageLinks.html'
+    templatePath = 'resource://Neos.Seo/Private/Fusion/Metadata/AlternateLanguageLinks.html'
 
     @context {
         items = ${this.items}
