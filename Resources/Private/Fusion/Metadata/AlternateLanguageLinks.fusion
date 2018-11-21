@@ -3,7 +3,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu)
     @if.onlyRenderWhenInLiveWorkspace = ${this.node.context.workspace.name == 'live'}
     @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
 
-    node = null
+    node = ${documentNode}
     dimension = 'language'
     defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension + '.default')}
     dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
