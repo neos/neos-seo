@@ -13,7 +13,7 @@
 			<target xml:lang="cs" state="translated">Open Graph název</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="cs" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
+			<target xml:lang="cs" state="translated">Používá se jako og: titul, max. 60 znaků</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target xml:lang="cs" state="translated">Open Graph Popis</target></trans-unit>
