@@ -90,6 +90,22 @@ You can enable this feature with the following code::
 
     prototype(Neos.Seo:StructuredData.Container).breadcrumb.@if.enabled = true
 
+Website & Searchbox
+^^^^^^^^^^^^^^^^^^^
+
+To output general information including url and name of your site you can enable the `Website` object::
+
+    prototype(Neos.Seo:StructuredData.Container).website.@if.enabled = true
+
+Additionally if you have a local search on your site you can enable the `Sitelinks Searchbox` object.
+More information is available here: https://developers.google.com/search/docs/data-types/sitelinks-searchbox
+
+You can enable this feature with the following code and by adjusting `targetNode`::
+
+    prototype(Neos.Seo:StructuredData.Website) {
+        searchAction.targetNode = ${<reference to your search page>}
+    }
+
 Social profile
 ^^^^^^^^^^^^^^
 

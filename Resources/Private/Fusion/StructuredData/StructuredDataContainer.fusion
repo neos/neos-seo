@@ -4,4 +4,7 @@ prototype(Neos.Seo:StructuredData.Container) < prototype(Neos.Fusion:Array) {
 
     socialProfile = Neos.Seo:StructuredData.SocialProfile
     socialProfile.@if.enabled = false
+
+    website = Neos.Seo:StructuredData.Website
+    website.@if.enabled = false
 }
