@@ -4,7 +4,7 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
 
     body = Neos.Fusion:Template {
         @class = 'Neos\\Seo\\Fusion\\XmlSitemapImplementation'
-        templatePath = 'resource://Neos.Seo/Private/Fusion/XmlSiteMap/XmlSiteMap.xml'
+        templatePath = 'resource://Neos.Seo/Private/Fusion/XmlSitemap/XmlSitemap.xml'
         # "root" deprecated since 2.1, removed in 3.0
         root = ${site}
         startingPoint = ${site}
