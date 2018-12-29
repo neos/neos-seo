@@ -47,7 +47,7 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
         youTube = ${'https://www.youtube.com/channel/' + youTubeName}
         youTube.@if.hasValue = ${!String.isBlank(youTubeName)}
 
-        linkedIn = ${'https://www.linkedin.com/in/' + linkedInName}
+        linkedIn = ${'https://www.linkedin.com/' + (type == 'Organization' ? 'company' : 'in') + '/' + linkedInName}
         linkedIn.@if.hasValue = ${!String.isBlank(linkedInName)}
     }
 
