@@ -19,7 +19,7 @@
 			<target xml:lang="id" state="translated">Judul</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="id" state="translated">max. 70 karakter</target></trans-unit>
+			<target xml:lang="id" state="translated">maks. 70 karakter</target><alt-trans><target xml:lang="id">max. 70 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target xml:lang="id" state="translated">Deskripsi</target></trans-unit>
