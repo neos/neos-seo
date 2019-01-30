@@ -4,7 +4,16 @@
 
 # Neos.Seo
 
-A package to enable additional SEO features for Neos CMS. 
+A package to enable additional SEO features for Neos CMS.
+
+It includes for example:
+
+* Meta tags
+* Sitemap
+* Social tags
+* Structured data
+
+Check the [documentation](https://neos-seo.readthedocs.io/en/stable/) for all features and usage. 
 
 ## Installation and usage
 
