@@ -2,6 +2,6 @@ prototype(Neos.Seo:MetaRobotsTag) < prototype(Neos.Fusion:Tag) {
     tagName = 'meta'
     attributes {
         name = 'robots'
-        content = ${(q(node).property('metaRobotsNoindex') ? 'noindex' : 'index') + ',' + (q(node).property('metaRobotsNofollow') ? 'nofollow' : 'follow')}
+        content = ${(q(node).property('metaRobotsNoindex') || q(node).is('[instanceof Neos.Seo:NoindexMixin]') ? 'noindex' : 'index') + ',' + (q(node).property('metaRobotsNofollow') ? 'nofollow' : 'follow')}
     }
 }
