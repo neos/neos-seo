@@ -45,6 +45,21 @@ The `twitter:site` handle can be configured with the setting `Neos.Seo.twitterCa
 
 Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
 
+Facebook
+--------
+
+The `fb:admins` handle can be configured with the setting `Neos.Seo.facebook.admins` by providing fb user ids::
+
+  Neos:
+    Seo:
+      facebook:
+        admins:
+          - 'myAdmin1'
+          - 'myAdmin2'
+
+Check the documentation on https://developers.facebook.com/docs/reference/opengraph/object-type/article for more on
+facebook specific tags.
+
 Open Graph
 ----------
 

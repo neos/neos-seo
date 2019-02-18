@@ -10,6 +10,7 @@ prototype(Neos.Neos:Page) {
         alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
         twitterCard = Neos.Seo:TwitterCard
         openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
+        facebookMetaTags = Neos.Seo:FacebookMetaTags
         structuredData = Neos.Seo:StructuredData.Container
     }
 }
