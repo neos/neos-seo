@@ -68,15 +68,19 @@ configure Open Graph on any document.
 The Open Graph protocol enables any web page to become a rich object in a social graph. The essential ones are:
 
 * `og:type`
+* `og:site_name`
 * `og:title`
+* `og:locale`
 * `og:description`
 * `og:image`
 * `og:url`
+
 
 In general Open Graph tags are just shown if they have given data, because otherwise Facebook for example will extract data for the generated view from the site itself. So fallbacks are not needed. If you are not satisfied with the generated view you should define your own.
 If a Open Graph Type is enabled, the related meta tags will be rendered according to following rules.
 
 * `og:title` is only rendered if it includes data
+* `og:locale` is only rendered if there is a content dimension `language`
 * `og:description` will use `meta:description` as a fallback or show nothing
 * `og:url` the URL of the document
 * `og:image` is only rendered if it includes data
