@@ -1,87 +1,42 @@
-prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Array) {
-    @if.isEnabledBlank = ${!String.isBlank(q(node).property('twitterCardType'))}
-    @if.isEnabled = ${q(node).property('twitterCardType') != null}
-
-    cardTypeTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:card'
-            content = ${q(node).property('twitterCardType')}
-        }
+prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
+    type = ${q(node).property('twitterCardType') || 'summary'}
+    title = ${q(node).property('twitterCardTitle') || q(node).property('titleOverride') || q(node).property('title')}
+    description = ${q(node).property('twitterCardDescription') || q(node).property('metaDescription')}
+    siteHandle = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle')}
+    creator = ${q(node).property('twitterCardCreator')}
+    url = Neos.Neos:NodeUri {
+        node = ${node}
+        absolute = TRUE
     }
-
-    cardSiteTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:site'
-            content = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle')}
-        }
-        @if.isSet = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle') != null}
-    }
-
-    cardCreatorTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:creator'
-            content = ${q(node).property('twitterCardCreator')}
-        }
-        @if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardCreator'))}
-    }
-
-    cardTitleTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:title'
-            content = ${q(node).property('twitterCardTitle')}
-        }
-        @if.isNotBlank = ${!String.isBlank(q(node).property('twitterCardTitle'))}
-    }
-
-    cardDescriptionTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:description'
-            content = ${q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')}
-        }
-        @if.isNotBlank = ${!String.isBlank((q(node).property('twitterCardDescription') ? q(node).property('twitterCardDescription') : q(node).property('metaDescription')))}
-    }
-
-    cardImageTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:image'
-            content = Neos.Neos:ImageUri {
-                asset = Neos.Fusion:Case {
-                    default {
-                        @position = 'start'
-                        condition = ${Type.instance(q(node).property('twitterCardImage'), 'Neos\Media\Domain\Model\ImageInterface')}
-                        renderer = ${q(node).property('twitterCardImage')}
-                    }
-                }
-                preset = Neos.Fusion:Case {
-                    summaryCardLargeImage {
-                        condition = ${q(node).property('twitterCardType') == 'summary_large_image'}
-                        renderer = 'Neos.Seo:TwitterCard.SummaryCardLargeImage'
-                    }
-
-                    default {
-                        condition = true
-                        renderer = 'Neos.Seo:TwitterCard.SummaryCard'
-                    }
-                }
+    image = Neos.Neos:ImageUri {
+        asset = Neos.Fusion:Case {
+            default {
+                @position = 'start'
+                condition = ${Type.instance(q(node).property('twitterCardImage'), 'Neos\Media\Domain\Model\ImageInterface')}
+                renderer = ${q(node).property('twitterCardImage')}
             }
         }
-        @if.isImageSet = ${q(node).property('twitterCardImage') != null}
-    }
+        preset = Neos.Fusion:Case {
+            summaryCardLargeImage {
+                condition = ${q(node).property('twitterCardType') == 'summary_large_image'}
+                renderer = 'Neos.Seo:TwitterCard.SummaryCardLargeImage'
+            }
 
-    cardUrlTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            name = 'twitter:url'
-            content = Neos.Neos:NodeUri {
-                node = ${node}
-                absolute = TRUE
+            default {
+                condition = true
+                renderer = 'Neos.Seo:TwitterCard.SummaryCard'
             }
         }
+        @if.isImageSet = ${this.asset}
     }
+
+    renderer = afx`
+        <meta @key="type" name="twitter:card" content={props.type}/>
+        <meta @key="title" name="twitter:title" content={props.title}/>
+        <meta @key="siteHandle" name="twitter:site" content={props.siteHandle} @if.hasSiteHandle={props.siteHandle}/>
+        <meta @key="description" name="twitter:description" content={props.description} @if.hasDescription={props.description}/>
+        <meta @key="creator" name="twitter:creator" content={props.creator} @if.hasCreator={props.creator}/>
+        <meta @key="url" name="twitter:url" content={props.url}/>
+        <meta @key="image" name="twitter:image" content={props.image} @if.hasImage={props.image}/>
+    `
 }
