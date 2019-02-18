@@ -14,7 +14,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Array) {
         tagName = 'meta'
         attributes {
             property = 'og:site_name'
-            content = ${site.label}
+            content = ${q(site).property('titleOverride') || site.label}
         }
     }
 
