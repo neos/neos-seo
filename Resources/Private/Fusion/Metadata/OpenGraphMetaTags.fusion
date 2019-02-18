@@ -18,6 +18,16 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Array) {
         }
     }
 
+    openGraphLocaleTag = Neos.Fusion:Tag {
+        tagName = 'meta'
+        @context.openGraphLocale = Neos.Seo:LangAttribute
+        attributes {
+            property = 'og:locale'
+            content = ${openGraphLocale}
+        }
+        @if.isNotBlank = ${!String.isBlank(openGraphLocale)}
+    }
+
     openGraphTitleTag = Neos.Fusion:Tag {
         tagName = 'meta'
         @context.openGraphTitle = ${q(node).property('openGraphTitle')}
