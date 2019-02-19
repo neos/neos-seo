@@ -1,10 +1,14 @@
 prototype(Neos.Seo:FacebookMetaTags) < prototype(Neos.Fusion:Component) {
+    facebookProfileId = ${Configuration.setting('Neos.Seo.facebook.profileId')}
+    facebookProfileId.@process.convertToString = ${Type.isArray(value) ? Array.join(value) : value}
     facebookAdmins = ${Configuration.setting('Neos.Seo.facebook.admins')}
     facebookAdmins.@process.convertToString = ${Type.isArray(value) ? Array.join(value) : value}
+    facebookPages = ${Configuration.setting('Neos.Seo.facebook.pages')}
+    facebookPages.@process.convertToString = ${Type.isArray(value) ? Array.join(value) : value}
 
     renderer = afx`
-        <meta property="fb:admins" content={props.facebookAdmins}/>
+        <meta property="fb:profile_id" content={props.facebookProfileId} @if.hasAdmins={props.facebookProfileId}/>
+        <meta property="fb:admins" content={props.facebookAdmins} @if.hasAdmins={props.facebookAdmins}/>
+        <meta property="fb:pages" content={props.facebookPages} @if.hasPages={props.facebookPages}/>
     `
-
-    @if.hasAdmins = ${this.facebookAdmins}
 }
