@@ -48,17 +48,24 @@ Check the documentation on https://dev.twitter.com/cards/overview for more on Tw
 Facebook
 --------
 
-The `fb:admins` handle can be configured with the setting `Neos.Seo.facebook.admins` by providing fb user ids::
+The optional `fb:profile_id`, `fb:admins` and `fb:pages` tags can be configured with
+the settings in `Neos.Seo.facebook` and by providing valid Facebook user/channel ids::
 
   Neos:
     Seo:
       facebook:
+        profileId: 'myUserId'
         admins:
           - 'myAdmin1'
           - 'myAdmin2'
+        pages:
+          - 'myChannelId1'
+          - 'myChannelId2'
 
 Check the documentation on https://developers.facebook.com/docs/reference/opengraph/object-type/article for more on
 facebook specific tags.
+
+You can add further tags if needed by extending the `Neos.Seo:FacebookMetaTags` prototype via Fusion in your own package.
 
 Open Graph
 ----------

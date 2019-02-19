@@ -9,8 +9,12 @@ Neos:
       siteHandle: ~
     # Facebook settings
     facebook:
+      # The id of the user that can be followed on this site
+      profileId: ''
       # List of facebook user ids of your pages/apps administrators
       admins: []
+      # List of facebook channel ids of your pages
+      pages: []
     # Social profile for the structured data object
     socialProfile:
       # `type` can be either `Person` or `Organization`
