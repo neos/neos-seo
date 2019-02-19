@@ -1,0 +1,10 @@
+prototype(Neos.Seo:FacebookMetaTags) < prototype(Neos.Fusion:Component) {
+    facebookAdmins = ${Configuration.setting('Neos.Seo.facebook.admins')}
+    facebookAdmins.@process.convertToString = ${Type.isArray(value) ? Array.join(value) : value}
+
+    renderer = afx`
+        <meta property="fb:admins" content={props.facebookAdmins}/>
+    `
+
+    @if.hasAdmins = ${this.facebookAdmins}
+}
