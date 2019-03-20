@@ -51,7 +51,12 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Array) {
         attributes {
             name = 'twitter:image'
             content = Neos.Neos:ImageUri {
-                asset = ${q(node).property('twitterCardImage')}
+                asset = Neos.Fusion:Case {
+                    default {
+                        condition = ${true}
+                        renderer = ${q(node).property('twitterCardImage')}
+                    }
+                }
                 maximumWidth = 2000
                 maximumHeight = 2000
             }
