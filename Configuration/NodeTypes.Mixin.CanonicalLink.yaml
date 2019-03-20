@@ -1,0 +1,24 @@
+#
+# Canonical link field mixin
+#
+'Neos.Seo:CanonicalLinkMixin':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        canonicallink:
+          label: i18n
+          icon: 'icon-link'
+          position: 200
+          tab: seo
+  properties:
+    canonicalLink:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: 'canonicallink'
+          position: 30
+          editorOptions:
+            placeholder: i18n

@@ -1,0 +1,20 @@
+#
+# SEO <title> tag mixin
+#
+'Neos.Seo:TitleTagMixin':
+  abstract: true
+  properties:
+    titleOverride:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'document'
+          position: 10000
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            placeholder: 'Used in <title> tag, max. 60 chars'
+      validation:
+        'Neos.Neos/Validation/StringLengthValidator':
+          maximum: 60

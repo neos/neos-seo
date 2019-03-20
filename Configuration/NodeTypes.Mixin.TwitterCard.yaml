@@ -1,0 +1,75 @@
+#
+# Twitter Card mixin
+#
+'Neos.Seo:TwitterCardMixin':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        twittercard:
+          label: i18n
+          icon: 'icon-twitter'
+          position: 400
+          tab: seo
+  properties:
+    twitterCardType:
+      type: string
+      ui:
+        label: i18n
+        inspector:
+          group: 'twittercard'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            allowEmpty: true
+            placeholder: 'None'
+            values:
+              'summary':
+                label: 'Summary Card'
+              'summary_large_image':
+                label: 'Summary Card with Large Image'
+              'photo':
+                label: 'Photo Card'
+    twitterCardCreator:
+      type: string
+      ui:
+        label: i18n
+        inspector:
+          group: 'twittercard'
+          editorOptions:
+            placeholder: '@johnexample'
+      validation:
+        'Neos.Neos/Validation/RegularExpressionValidator':
+          regularExpression: '/^@[a-z0-9_]{1,15}$/i'
+    twitterCardTitle:
+      type: string
+      ui:
+        label: i18n
+        inspector:
+          group: 'twittercard'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            placeholder: 'max. 70 characters'
+      validation:
+        'Neos.Neos/Validation/StringLengthValidator':
+          maximum: 70
+    twitterCardDescription:
+      type: string
+      ui:
+        label: i18n
+        inspector:
+          group: 'twittercard'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            placeholder: 'max. 200 characters'
+      validation:
+        'Neos.Neos/Validation/StringLengthValidator':
+          maximum: 200
+    twitterCardImage:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: i18n
+        inspector:
+          group: 'twittercard'
+          editorOptions:
+            features:
+              crop: true
