@@ -1,0 +1,12 @@
+#
+# SEO Noindex tag mixin
+#
+'Neos.Seo:NoindexMixin':
+  abstract: true
+  properties:
+    metaRobotsNoindex:
+      defaultValue: true
+      ui:
+        inspector:
+          editorOptions:
+            disabled: true
