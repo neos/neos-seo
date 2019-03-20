@@ -48,7 +48,7 @@
           group: 'twittercard'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'max. 70 characters'
+            placeholder: i18n
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 70
@@ -60,7 +60,7 @@
           group: 'twittercard'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'max. 200 characters'
+            placeholder: i18n
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200
