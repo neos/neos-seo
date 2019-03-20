@@ -23,12 +23,12 @@
             allowEmpty: true
             placeholder: 'None'
             values:
-              'summary':
+              summary:
                 label: 'Summary Card'
-              'summary_large_image':
+                icon: 'icon-square'
+              summary_large_image:
                 label: 'Summary Card with Large Image'
-              'photo':
-                label: 'Photo Card'
+                icon: 'icon-image'
     twitterCardCreator:
       type: string
       ui:
