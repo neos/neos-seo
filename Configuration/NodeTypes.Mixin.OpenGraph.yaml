@@ -21,12 +21,12 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             allowEmpty: true
-            placeholder: 'None'
+            placeholder: i18n
             values:
               'website':
-                label: 'Website'
+                label: i18n
               'article':
-                label: 'Article'
+                label: i18n
     openGraphTitle:
       type: string
       ui:
@@ -36,7 +36,7 @@
           group: 'openGraph'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'Used as og:title , max. 60 chars'
+            placeholder: i18n
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 60
@@ -48,7 +48,7 @@
           group: 'openGraph'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'max. 200 characters'
+            placeholder: i18n
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200

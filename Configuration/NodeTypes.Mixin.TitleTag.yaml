@@ -14,7 +14,7 @@
           position: 10000
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'Used in <title> tag, max. 60 chars'
+            placeholder: i18n
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 60
