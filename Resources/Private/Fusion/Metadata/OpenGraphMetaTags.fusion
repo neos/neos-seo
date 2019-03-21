@@ -52,6 +52,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Array) {
         tagName = 'meta'
         @context.openGraphImage = Neos.Fusion:Case {
             default {
+                @position = 'end'
                 condition = ${true}
                 renderer = ${q(node).property('openGraphImage')}
             }
