@@ -53,6 +53,7 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Array) {
             content = Neos.Neos:ImageUri {
                 asset = Neos.Fusion:Case {
                     default {
+                        @position = 'end'
                         condition = ${true}
                         renderer = ${q(node).property('twitterCardImage')}
                     }
