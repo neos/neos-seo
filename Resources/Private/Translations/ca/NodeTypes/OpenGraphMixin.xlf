@@ -8,6 +8,15 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target xml:lang="ca" state="needs-translation">Open Graph Type</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>None</source>
+			<target xml:lang="ca" state="needs-translation">None</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
+				<source>Website</source>
+			<target xml:lang="ca" state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
+				<source>Article</source>
+			<target xml:lang="ca" state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target xml:lang="ca" state="needs-translation">Open Graph title</target></trans-unit>
