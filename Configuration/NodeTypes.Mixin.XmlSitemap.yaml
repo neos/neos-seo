@@ -24,20 +24,27 @@
             allowEmpty: true
             placeholder: 'none (unspecified)'
             values:
-              'always':
+              always:
                 label: i18n
-              'hourly':
+                icon: 'icon-clock'
+              hourly:
                 label: i18n
-              'daily':
+                icon: 'icon-hourglass'
+              daily:
                 label: i18n
-              'weekly':
+                icon: 'icon-calendar-day'
+              weekly:
                 label: i18n
-              'monthly':
+                icon: 'icon-calendar-week'
+              monthly:
                 label: i18n
-              'yearly':
+                icon: 'icon-calendar'
+              yearly:
                 label: i18n
-              'never':
+                icon: 'icon-glass-cheers'
+              never:
                 label: i18n
+                icon: 'icon-time-circle'
     xmlSitemapPriority:
       type: string
       ui:

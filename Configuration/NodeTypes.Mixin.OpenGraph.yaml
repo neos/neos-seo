@@ -23,10 +23,12 @@
             allowEmpty: true
             placeholder: i18n
             values:
-              'website':
+              website:
                 label: i18n
-              'article':
+                icon: 'icon-file'
+              article:
                 label: i18n
+                icon: 'icon-newspaper'
     openGraphTitle:
       type: string
       ui:
