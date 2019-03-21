@@ -1,15 +1,32 @@
-prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Tag) {
-    tagName = 'title'
-    default = Neos.Fusion:Collection {
-        // Retrieve all parent document nodes excluding the homepage
-        collection = ${q(documentNode).add(q(documentNode).parents()).slice(0, -1).get()}
-        itemName = 'node'
-        iterationName = 'nodeIterator'
-        // Implode node titles with a dash
-        itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
-        // Always add general site name as suffix
-        @process.siteName = ${(value ? String.stripTags(value) + ' - ' : '') + site.context.currentSite.name}
+prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
+    suffix = ${site.context.currentSite.name}
+
+    title = Neos.Fusion:Case {
+        titleOverride {
+            condition = ${q(node).property('titleOverride')}
+            renderer = ${q(node).property('titleOverride')}
+            @position = 'start'
+        }
+
+        default {
+            condition = true
+            @position = 'end'
+            renderer = Neos.Fusion:Collection {
+                // Retrieve all parent document nodes excluding the homepage
+                collection = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
+                collection.@process.removeSiteNode = ${Array.slice(value, 0, -1)}
+                collection.@process.removeSiteNode.@if.onSubPage = ${documentNode != site}
+                itemName = 'node'
+                iterationName = 'nodeIterator'
+                // Implode node titles with a dash
+                itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
+            }
+        }
+
+        @process.stripTags = ${String.stripTags(value)}
     }
 
-    content = ${q(node).property('titleOverride') ? q(node).property('titleOverride') : this.default}
+    renderer = afx`
+        <title>{(props.title ? props.title + ' - ' : '') + props.suffix}</title>
+    `
 }
