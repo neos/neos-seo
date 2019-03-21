@@ -94,6 +94,43 @@ If a Open Graph Type is enabled, the related meta tags will be rendered accordin
 
 For more information please have a look at http://ogp.me/.
 
+Define image fallbacks for Twitter Cards or Open Graph
+------------------------------------------------------
+
+The fusion object of this package defines Case-Objects that you can use to add you fallbacks. Here are some examples how to do so:
+
+Example: Add a document property 'headerImage 'as fallback, if no Twitter Card image is present.
+
+    prototype(Neos.Seo:TwitterCard) {
+        cardImageTag {
+            attributes.content.asset {
+                headerImage {
+                    condition = ${Type.instance(q(node).property('headerImage'), 'Neos\Media\Domain\Model\ImageInterface')}
+                    renderer = ${q(node).property('headerImage')}
+                }
+            }
+        }
+    }
+
+
+Example: Add the image of the first found content node of type Image as fallback, if no Twitter Card image is present. If not found, we do the same for content node type TextWithImage
+
+    prototype(Neos.Seo:OpenGraphMetaTags) {
+        openGraphImageTag {
+            @context.openGraphImage {
+                image {
+                    condition = ${q(node).find('[instanceof Vendor.Package:Content.Image][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').count() > 0}
+                    renderer = ${q(node).find('[instanceof Vendor.Package:Content.Image][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').property('image')}
+                }
+                textWithImage {
+                    condition = ${q(node).find('[instanceof Vendor.Package:Content.TextWithImage][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').count() > 0}
+                    renderer = ${q(node).find('[instanceof Vendor.Package:Content.TextWithImage][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').property('image')}
+                }
+            }
+        }
+    }
+
+
 Structured data
 ---------------
 
