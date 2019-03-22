@@ -1,5 +1,8 @@
 prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
     suffix = ${site.context.currentSite.name}
+    breadcrumbSeparator = ' - '
+    @context.breadcrumbSeparator = ${this.breadcrumbSeparator}
+    suffixSeparator = ${this.breadcrumbSeparator}
 
     title = Neos.Fusion:Case {
         titleOverride {
@@ -19,7 +22,7 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
                 itemName = 'node'
                 iterationName = 'nodeIterator'
                 // Implode node titles with a dash
-                itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
+                itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : breadcrumbSeparator)}
             }
         }
 
@@ -27,6 +30,6 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
     }
 
     renderer = afx`
-        <title>{(props.title ? props.title + ' - ' : '') + props.suffix}</title>
+        <title>{(props.title ? props.title + props.suffixSeparator : '') + props.suffix}</title>
     `
 }
