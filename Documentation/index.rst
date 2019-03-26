@@ -94,12 +94,12 @@ If a Open Graph Type is enabled, the related meta tags will be rendered accordin
 
 For more information please have a look at http://ogp.me/.
 
-Define image fallbacks for Twitter Cards or Open Graph
-------------------------------------------------------
+Define image fallback for Twitter Cards or Open Graph
+-----------------------------------------------------
 
-The fusion object of this package defines Case-Objects that you can use to add you fallbacks. Here are some examples how to do so:
+The fusion object of this package defines Case-Objects that you can use to add your fallback. Here are some examples how to do so:
 
-Example: Add a document property 'headerImage 'as fallback, if no Twitter Card image is present.
+Example: Add a document property `headerImage` as fallback, if no Twitter Card image is present::
 
     prototype(Neos.Seo:TwitterCard) {
         cardImageTag {
@@ -113,18 +113,15 @@ Example: Add a document property 'headerImage 'as fallback, if no Twitter Card i
     }
 
 
-Example: Add the image of the first found content node of type Image as fallback, if no Twitter Card image is present. If not found, we do the same for content node type TextWithImage
+Example: Add the image of the first content node found that has an image property as fallback, when no Twitter Card image is present::
 
     prototype(Neos.Seo:OpenGraphMetaTags) {
         openGraphImageTag {
             @context.openGraphImage {
-                image {
-                    condition = ${q(node).find('[instanceof Vendor.Package:Content.Image][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').count() > 0}
-                    renderer = ${q(node).find('[instanceof Vendor.Package:Content.Image][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').property('image')}
-                }
-                textWithImage {
-                    condition = ${q(node).find('[instanceof Vendor.Package:Content.TextWithImage][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').count() > 0}
-                    renderer = ${q(node).find('[instanceof Vendor.Package:Content.TextWithImage][image instanceof "Neos\Media\Domain\Model\ImageInterface"]').property('image')}
+                contentImage {
+                    firstContentWithImage = ${q(node).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof Neos.Neos:Content][image instanceof "Neos\Media\Domain\Model\ImageInterface"]')}
+                    condition = ${this.firstContentWithImage.count() > 0}
+                    renderer = ${this.firstContentWithImage.property('image')}
                 }
             }
         }
