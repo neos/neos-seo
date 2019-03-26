@@ -46,3 +46,15 @@ Neos:
         linkedIn: ~
         youTube: ~
 
+  Media:
+    thumbnailPresets:
+      'Neos.Seo:OpenGraph':
+        maximumWidth: 1200
+        maximumHeight: 630
+      'Neos.Seo:TwitterCard.SummaryCardLargeImage':
+        maximumWidth: 1200
+        maximumHeight: 600
+      'Neos.Seo:TwitterCard.SummaryCard':
+        maximumWidth: 600
+        maximumHeight: 600
+

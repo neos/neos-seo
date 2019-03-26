@@ -58,8 +58,17 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Array) {
                         renderer = ${q(node).property('twitterCardImage')}
                     }
                 }
-                maximumWidth = 2000
-                maximumHeight = 2000
+                preset = Neos.Fusion:Case {
+                    summaryCardLargeImage {
+                        condition = ${q(node).property('twitterCardType') == 'summary_large_image'}
+                        renderer = 'Neos.Seo:TwitterCard.SummaryCardLargeImage'
+                    }
+
+                    default {
+                        condition = true
+                        renderer = 'Neos.Seo:TwitterCard.SummaryCard'
+                    }
+                }
             }
         }
         @if.isImageSet = ${q(node).property('twitterCardImage') != null}

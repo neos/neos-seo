@@ -63,3 +63,18 @@
           editorOptions:
             features:
               crop: true
+            crop:
+              aspectRatio:
+                options:
+                  square:
+                    width: 1200
+                    height: 630
+                  fourFive: ~
+                  fiveSeven: ~
+                  twoThree: ~
+                  fourThree: ~
+                  sixteenNine: ~
+                enableOriginal: false
+                allowCustom: false
+                defaultOption: square
+                forceCrop: true
