@@ -1,0 +1,37 @@
+##
+# Prototype for linking social profiles according to
+# https://developers.google.com/search/docs/data-types/social-profile
+#
+prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Component) {
+    @if.onHomepage = ${documentNode == site}
+    @if.hasProfiles = ${Array.length(this.urls) > 0}
+
+    // 'type' can either be 'Person' or 'Organization' and should be set accordingly
+    type = ${Configuration.setting('Neos.Seo.socialProfile.type')}
+    isOrganization = ${this.type == 'Organization'}
+    logo = ${Configuration.setting('Neos.Seo.socialProfile.logo')}
+
+    profiles = ${Configuration.setting('Neos.Seo.socialProfile.profiles') || []}
+
+    twitter = ${'https://twitter.com/' + (q(site).property('twitterCardCreator') || this.profiles.twitter)}
+    twitter.@if.set = ${this.profiles.twitter}
+    facebook = ${'https://www.facebook.com/' + this.profiles.facebook}
+    facebook.@if.set = ${this.profiles.facebook}
+    instagram = ${'https://www.instagram.com/' + this.profiles.instagram}
+    instagram.@if.set = ${this.profiles.instagram}
+    youTube = ${'https://www.youtube.com/channel/' + this.profiles.youTube}
+    youTube.@if.set = ${this.profiles.youTube}
+    linkedIn = ${'https://www.linkedin.com/' + (props.isOrganization ? 'company' : 'in') + '/' + this.profiles.linkedIn}
+    linkedIn.@if.set = ${this.profiles.linkedIn}
+
+    urls = ${[this.twitter, this.facebook, this.instagram, this.youTube, this.linkedIn]}
+    urls.@process.filter = ${Array.filter(value, url => !!url)}
+
+    renderer = afx`
+        <Neos.Seo:StructuredData.RootObject type={props.type}>
+            <Neos.Neos:NodeUri @path="attributes.url" absolute={true} node={site} @if.isOrganization={props.isOrganization}/>
+            <Neos.Fusion:ResourceUri @path="attributes.logo" path={props.logo} @if.set={props.logo} @if.isOrganization={props.isOrganization}/>
+            <Neos.Fusion:Value @path="attributes.sameAs" value={props.urls}/>
+        </Neos.Seo:StructuredData.RootObject>
+    `
+}

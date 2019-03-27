@@ -1,0 +1,14 @@
+prototype(Neos.Seo:StructuredData.Breadcrumb) < prototype(Neos.Fusion:Component) {
+    items = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
+    items.@process.reverse = ${Array.reverse(value)}
+
+    renderer = afx`
+        <Neos.Seo:StructuredData.RootObject type="BreadcrumbList">
+            <Neos.Fusion:Map items={props.items} iterationName="iteration" @path="attributes.itemListElement">
+                <Neos.Seo:StructuredData.Object type="ListItem" attributes.position={iteration.cycle} attributes.name={item.label}>
+                    <Neos.Neos:NodeUri node={item} absolute={true} @path="attributes.item"/>
+                </Neos.Seo:StructuredData.Object>
+            </Neos.Fusion:Map>
+        </Neos.Seo:StructuredData.RootObject>
+    `
+}

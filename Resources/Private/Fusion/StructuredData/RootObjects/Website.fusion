@@ -1,0 +1,12 @@
+prototype(Neos.Seo:StructuredData.Website) < prototype(Neos.Fusion:Component) {
+    @if.onHomepage = ${documentNode == site}
+
+    name = ${site.label}
+    url = Neos.Neos:NodeUri {
+        absolute = true
+        node = ${site}
+    }
+    potentialAction = Neos.Seo:StructuredData.Website.SearchAction
+
+    renderer = afx`<Neos.Seo:StructuredData.RootObject type="WebSite" attributes={props}/>`
+}

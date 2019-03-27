@@ -1,0 +1,13 @@
+prototype(Neos.Seo:StructuredData.ImageObject) < prototype(Neos.Fusion:Component) {
+    asset = null
+    width = null
+    height = null
+    thumbnail = ${Neos.Seo.Image.createThumbnail(this.image, null, this.width, null, this.height)}
+
+    renderer = afx`
+        <Neos.Seo:StructuredData.Object type="ImageObject" attributes.width={props.thumbnail.width} attributes.height={props.thumbnail.height}>
+            <Neos.Fusion:ResourceUri resource={props.thumbnail.resource} @path='attributes.url'/>
+        </Neos.Seo:StructuredData.Object>
+    `
+    @if.hasAsset = ${this.image}
+}
