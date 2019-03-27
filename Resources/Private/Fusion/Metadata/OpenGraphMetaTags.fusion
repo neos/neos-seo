@@ -61,6 +61,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Array) {
             property = 'og:image'
             content = Neos.Neos:ImageUri {
                 asset = ${openGraphImage}
+                preset = 'Neos.Seo:OpenGraph'
             }
         }
         @if.isImageSet = ${openGraphImage != null && openGraphImage != ''}

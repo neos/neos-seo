@@ -73,3 +73,23 @@
           editorOptions:
             features:
               crop: true
+            crop:
+              aspectRatio:
+                options:
+                  twoOne:
+                    width: 1200
+                    height: 600
+                    label: 'Summary Card Large Image'
+                  square:
+                    width: 600
+                    height: 600
+                    label: 'Summary Card'
+                  fourFive: ~
+                  fiveSeven: ~
+                  twoThree: ~
+                  fourThree: ~
+                  sixteenNine: ~
+                enableOriginal: false
+                allowCustom: false
+                defaultOption: 'ClientEval: node.properties.twitterCardType == "summary_large_image" ? "twoOne" : "square"'
+                forceCrop: true
