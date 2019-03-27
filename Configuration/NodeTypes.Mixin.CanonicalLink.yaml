@@ -19,5 +19,8 @@
         inspector:
           group: 'canonicallink'
           position: 30
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
           editorOptions:
             placeholder: i18n
+            assets: false
+            nodeTypes: ['Neos.Neos:Document']
