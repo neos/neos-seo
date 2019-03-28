@@ -94,6 +94,40 @@ If a Open Graph Type is enabled, the related meta tags will be rendered accordin
 
 For more information please have a look at http://ogp.me/.
 
+Define image fallback for Twitter Cards or Open Graph
+-----------------------------------------------------
+
+The fusion object of this package defines Case-Objects that you can use to add your fallback. Here are some examples how to do so:
+
+Example: Add a document property `headerImage` as fallback, if no Twitter Card image is present::
+
+    prototype(Neos.Seo:TwitterCard) {
+        cardImageTag {
+            attributes.content.asset {
+                headerImage {
+                    condition = ${Type.instance(q(node).property('headerImage'), 'Neos\Media\Domain\Model\ImageInterface')}
+                    renderer = ${q(node).property('headerImage')}
+                }
+            }
+        }
+    }
+
+
+Example: Add the image of the first content node found that has an image property as fallback, when no Twitter Card image is present::
+
+    prototype(Neos.Seo:OpenGraphMetaTags) {
+        openGraphImageTag {
+            @context.openGraphImage {
+                contentImage {
+                    firstContentWithImage = ${q(node).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof Neos.Neos:Content][image instanceof "Neos\Media\Domain\Model\ImageInterface"]')}
+                    condition = ${this.firstContentWithImage.count()}
+                    renderer = ${this.firstContentWithImage.property('image')}
+                }
+            }
+        }
+    }
+
+
 Structured data
 ---------------
 
