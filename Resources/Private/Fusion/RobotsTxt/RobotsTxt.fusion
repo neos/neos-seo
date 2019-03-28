@@ -9,8 +9,8 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     renderXMLSitemapLinks = true
     languageDimension = 'language'
     dimensionsPresets = ${Configuration.setting('Neos.Seo.robotsTxt.dimensionsPresets')}
-    linebreak = '
-'
+    excludedDimensionPresets = ${[]}
+    linebreak = ${String.chr(10)}
 
     renderer = Neos.Fusion:Component {
         sitemaps = Neos.Fusion:Case {
@@ -27,6 +27,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
                         format = 'xml.sitemap'
                         node = ${item.node}
                         @process.prefix = ${'Sitemap: ' + value + props.linebreak}
+                        @if.notExcluded = ${!props.excludedDimensionPresets || Array.indexOf(props.excludedDimensionPresets, item.dimensions[props.languageDimension][0]) == -1}
                     }
                 }
             }
@@ -47,7 +48,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
         renderer = Neos.Fusion:Http.Message {
             httpResponseHead.headers.Content-Type = 'text/plain;'
             body = afx`
-                <Neos.Fusion:Loop items={props.data} @children='itemRenderer'>
+                <Neos.Fusion:Loop items={props.data}>
                     {item}{props.linebreak}
                 </Neos.Fusion:Loop>
                 {props.sitemaps}
