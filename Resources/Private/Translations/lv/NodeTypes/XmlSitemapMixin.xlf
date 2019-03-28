@@ -16,28 +16,28 @@
 			<target xml:lang="lv" state="translated">starp 0 un 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target xml:lang="lv" state="needs-translation">none (unspecified)</target></trans-unit>
+			<target xml:lang="lv" state="translated">nav norādīts</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target xml:lang="lv" state="needs-translation">Always</target></trans-unit>
+			<target xml:lang="lv" state="translated">Vienmēr</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target xml:lang="lv" state="needs-translation">Hourly</target></trans-unit>
+			<target xml:lang="lv" state="translated">Pa stundām</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target xml:lang="lv" state="needs-translation">Daily</target></trans-unit>
+			<target xml:lang="lv" state="translated">Ikdienas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target xml:lang="lv" state="needs-translation">Weekly</target></trans-unit>
+			<target xml:lang="lv" state="translated">Iknedēļas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target xml:lang="lv" state="needs-translation">Monthly</target></trans-unit>
+			<target xml:lang="lv" state="translated">Ikmēneša</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target xml:lang="lv" state="needs-translation">Yearly</target></trans-unit>
+			<target xml:lang="lv" state="translated">Ikgadēji</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target xml:lang="lv" state="needs-translation">Never (Archived)</target></trans-unit>
+			<target xml:lang="lv" state="translated">Nekad nav (arhīvā)</target></trans-unit>
     </body>
   </file>
 </xliff>
