@@ -120,7 +120,7 @@ Example: Add the image of the first content node found that has an image propert
             @context.openGraphImage {
                 contentImage {
                     firstContentWithImage = ${q(node).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof Neos.Neos:Content][image instanceof "Neos\Media\Domain\Model\ImageInterface"]')}
-                    condition = ${this.firstContentWithImage.count() > 0}
+                    condition = ${this.firstContentWithImage.count()}
                     renderer = ${this.firstContentWithImage.property('image')}
                 }
             }
