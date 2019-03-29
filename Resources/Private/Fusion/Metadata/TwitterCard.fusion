@@ -33,10 +33,10 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
     renderer = afx`
         <meta @key="type" name="twitter:card" content={props.type}/>
         <meta @key="title" name="twitter:title" content={props.title}/>
-        <meta @key="siteHandle" name="twitter:site" content={props.siteHandle} @if.hasSiteHandle={props.siteHandle}/>
-        <meta @key="description" name="twitter:description" content={props.description} @if.hasDescription={props.description}/>
-        <meta @key="creator" name="twitter:creator" content={props.creator} @if.hasCreator={props.creator}/>
+        <meta @key="siteHandle" name="twitter:site" content={props.siteHandle} @if.set={props.siteHandle}/>
+        <meta @key="description" name="twitter:description" content={props.description} @if.set={props.description}/>
+        <meta @key="creator" name="twitter:creator" content={props.creator} @if.set={props.creator}/>
         <meta @key="url" name="twitter:url" content={props.url}/>
-        <meta @key="image" name="twitter:image" content={props.image} @if.hasImage={props.image}/>
+        <meta @key="image" name="twitter:image" content={props.image} @if.set={props.image}/>
     `
 }
