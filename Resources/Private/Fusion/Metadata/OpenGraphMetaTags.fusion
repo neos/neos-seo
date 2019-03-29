@@ -25,7 +25,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
         <meta @key="description" property="og:description" content={props.description} @if.set={props.description}/>
         <meta @key="url" property="og:url" content={props.url}/>
         <Neos.Fusion:Join @key="image" @if.set={props.image}>
-            <meta @key="image" property="og:image" @children="attributes.content">
+            <meta @key="image" property="og:image">
                 <Neos.Neos:ImageUri asset={props.image} preset='Neos.Seo:OpenGraph'  @path='attributes.content'/>
             </meta>
             <meta @key="width" property="og:image:width" content={props.image.width}/>
