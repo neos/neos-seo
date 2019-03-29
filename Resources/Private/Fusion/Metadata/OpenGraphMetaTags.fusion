@@ -1,90 +1,36 @@
-prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Array) {
-    @context.openGraphType = ${q(node).property('openGraphType')}
-    @if.isEnabled = ${!String.isBlank(openGraphType)}
-
-    openGraphTypeTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            property = 'og:type'
-            content = ${openGraphType}
+prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
+    type = ${q(node).property('openGraphType') || 'website'}
+    title = ${q(node).property('openGraphTitle') || q(node).property('titleOverride') || q(node).property('title')}
+    description = ${q(node).property('openGraphDescription') || q(node).property('metaDescription')}
+    image = ${q(node).property('openGraphImage')}
+    siteName = ${q(site).property('titleOverride') || site.label}
+    locale = Neos.Seo:LangAttribute
+    url = Neos.Neos:NodeUri {
+        node = ${node}
+        absolute = true
+    }
+    image = Neos.Fusion:Case {
+        default {
+            @position = 'start'
+            condition = ${Type.instance(q(node).property('openGraphImage'), 'Neos\Media\Domain\Model\ImageInterface')}
+            renderer = ${q(node).property('openGraphImage')}
         }
     }
 
-    openGraphSiteNameTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            property = 'og:site_name'
-            content = ${q(site).property('titleOverride') || site.label}
-        }
-    }
-
-    openGraphLocaleTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        @context.openGraphLocale = Neos.Seo:LangAttribute
-        attributes {
-            property = 'og:locale'
-            content = ${openGraphLocale}
-        }
-        @if.isNotBlank = ${!String.isBlank(openGraphLocale)}
-    }
-
-    openGraphTitleTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        @context.openGraphTitle = ${q(node).property('openGraphTitle')}
-        attributes {
-            property = 'og:title'
-            content = ${openGraphTitle}
-        }
-        @if.isNotBlank = ${!String.isBlank(openGraphTitle)}
-    }
-
-    openGraphDescriptionTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        @context.openGraphDescription = ${q(node).property('openGraphDescription') ? q(node).property('openGraphDescription') : q(node).property('metaDescription')}
-        attributes {
-            property = 'og:description'
-            content = ${openGraphDescription}
-        }
-        @if.isNotBlank = ${!String.isBlank(openGraphDescription)}
-    }
-
-    openGraphImageTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        @context.openGraphImage = Neos.Fusion:Case {
-            default {
-                @position = 'start'
-                condition = ${Type.instance(q(node).property('openGraphImage'), 'Neos\Media\Domain\Model\ImageInterface')}
-                renderer = ${q(node).property('openGraphImage')}
-            }
-        }
-        attributes {
-            property = 'og:image'
-            content = Neos.Neos:ImageUri {
-                asset = ${openGraphImage}
-                preset = 'Neos.Seo:OpenGraph'
-            }
-        }
-        @if.isImageSet = ${openGraphImage != null && openGraphImage != ''}
-    }
-
-    openGraphImageAttributeTags = Neos.Fusion:Component {
-        openGraphImage = ${q(node).property('openGraphImage')}
-        renderer = afx`
-            <meta @key="width" property="og:image:width" content={props.openGraphImage.width}/>
-            <meta @key="height" property="og:image:height" content={props.openGraphImage.height} />
-            <meta @key="alt" property="og:image:alt" content={props.openGraphImage.label}/>
-        `
-        @if.isImageSet = ${this.openGraphImage != null && this.openGraphImage != ''}
-    }
-
-    openGraphUrlTag = Neos.Fusion:Tag {
-        tagName = 'meta'
-        attributes {
-            property = 'og:url'
-            content = Neos.Neos:NodeUri {
-                node = ${node}
-                absolute = TRUE
-            }
-        }
-    }
+    renderer = afx`
+        <meta @key="type" property="og:type" content={props.type}/>
+        <meta @key="title" property="og:title" content={props.title}/>
+        <meta @key="siteName" property="og:site_name" content={props.title}/>
+        <meta @key="locale" property="og:locale" content={props.locale} @if.set={props.locale}/>
+        <meta @key="description" property="og:description" content={props.description} @if.set={props.description}/>
+        <meta @key="url" property="og:url" content={props.url}/>
+        <Neos.Fusion:Join @key="image" @if.set={props.image}>
+            <meta @key="image" property="og:image">
+                <Neos.Neos:ImageUri asset={props.image} preset='Neos.Seo:OpenGraph'  @path='attributes.content'/>
+            </meta>
+            <meta @key="width" property="og:image:width" content={props.image.width}/>
+            <meta @key="height" property="og:image:height" content={props.image.height}/>
+            <meta @key="alt" property="og:image:alt" content={props.image.label} @if.set={props.image.label}/>
+        </Neos.Fusion:Join>
+    `
 }
