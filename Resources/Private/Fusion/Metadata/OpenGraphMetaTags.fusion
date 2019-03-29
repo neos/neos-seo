@@ -17,6 +17,11 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
         }
     }
 
+    preset = ${'Neos.Seo:OpenGraph.' + (this.image.isOrientationLandscape ? 'Landscape' : 'Square')}
+    preset.@if.hasImage = ${this.image}
+    thumbnail = ${Neos.Seo.Image.createThumbnail(this.image, this.preset)}
+    thumbnail.@if.hasImage = ${this.image}
+
     renderer = afx`
         <meta @key="type" property="og:type" content={props.type}/>
         <meta @key="title" property="og:title" content={props.title}/>
@@ -26,10 +31,10 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
         <meta @key="url" property="og:url" content={props.url}/>
         <Neos.Fusion:Join @key="image" @if.set={props.image}>
             <meta @key="image" property="og:image">
-                <Neos.Neos:ImageUri asset={props.image} preset='Neos.Seo:OpenGraph'  @path='attributes.content'/>
+                <Neos.Fusion:ResourceUri resource={props.thumbnail.resource} @path='attributes.content'/>
             </meta>
-            <meta @key="width" property="og:image:width" content={props.image.width}/>
-            <meta @key="height" property="og:image:height" content={props.image.height}/>
+            <meta @key="width" property="og:image:width" content={props.thumbnail.width}/>
+            <meta @key="height" property="og:image:height" content={props.thumbnail.height}/>
             <meta @key="alt" property="og:image:alt" content={props.image.label} @if.set={props.image.label}/>
         </Neos.Fusion:Join>
     `

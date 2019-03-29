@@ -17,6 +17,10 @@ Neos:
         autoInclude:
           'Neos.Seo': ['NodeTypes/*']
 
+  Fusion:
+    defaultContext:
+      'Neos.Seo.Image': 'Neos\Seo\Fusion\Helper\ImageHelper'
+
   Seo:
     # robots.txt settings
     robotsTxt:
@@ -48,12 +52,18 @@ Neos:
 
   Media:
     thumbnailPresets:
-      'Neos.Seo:OpenGraph':
+      # Presets based on https://developers.facebook.com/docs/sharing/best-practices#images
+      'Neos.Seo:OpenGraph.Square':
+        maximumWidth: 1080
+        maximumHeight: 1080
+      'Neos.Seo:OpenGraph.Landscape':
         maximumWidth: 1200
-        maximumHeight: 630
+        maximumHeight: 628
+      # Preset based on https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image
       'Neos.Seo:TwitterCard.SummaryCardLargeImage':
         maximumWidth: 1200
         maximumHeight: 600
+      # Preset based on https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary
       'Neos.Seo:TwitterCard.SummaryCard':
         maximumWidth: 600
         maximumHeight: 600

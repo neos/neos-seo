@@ -67,8 +67,12 @@
               aspectRatio:
                 options:
                   square:
+                    width: 1080
+                    height: 1080
+                  twoOne:
                     width: 1200
-                    height: 630
+                    height: 628
+                    label: 'Landscape'
                   fourFive: ~
                   fiveSeven: ~
                   twoThree: ~
@@ -76,5 +80,5 @@
                   sixteenNine: ~
                 enableOriginal: false
                 allowCustom: false
-                defaultOption: square
+                defaultOption: twoOne
                 forceCrop: true
