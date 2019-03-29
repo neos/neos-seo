@@ -6,7 +6,7 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
     creator = ${q(node).property('twitterCardCreator')}
     url = Neos.Neos:NodeUri {
         node = ${node}
-        absolute = TRUE
+        absolute = true
     }
     image = Neos.Neos:ImageUri {
         asset = Neos.Fusion:Case {
