@@ -17,6 +17,10 @@ Neos:
         autoInclude:
           'Neos.Seo': ['NodeTypes/*']
 
+  Fusion:
+    defaultContext:
+      'Neos.Seo.Image': 'Neos\Seo\Fusion\Helper\ImageHelper'
+
   Seo:
     # robots.txt settings
     robotsTxt:
