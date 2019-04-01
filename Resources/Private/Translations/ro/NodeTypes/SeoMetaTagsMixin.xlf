@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="ro" state="translated">Meta Tags</target></trans-unit>
+			<target state="translated">Meta Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="ro" state="translated">Descriere (meta description)</target><alt-trans><target xml:lang="ro">Descriere</target></alt-trans></trans-unit>
+			<target state="translated">Descriere (meta description)</target><alt-trans><target>Descriere</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="ro" state="translated">maxim 156 caractere</target></trans-unit>
+			<target state="translated">maxim 156 caractere</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="ro" state="translated">Cuvinte cheie (keywords)</target></trans-unit>
+			<target state="translated">Cuvinte cheie (keywords)</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="ro" state="translated">separate prin virgulă, maxim 255 caractere</target></trans-unit>
+			<target state="translated">separate prin virgulă, maxim 255 caractere</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="ro" state="translated">Ascude de motoarele de cautare (noindex)</target></trans-unit>
+			<target state="translated">Ascude de motoarele de cautare (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="ro" state="translated">Nu urmări link-urile (nofollow)</target></trans-unit>
+			<target state="translated">Nu urmări link-urile (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

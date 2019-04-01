@@ -4,34 +4,34 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="af" state="needs-translation">OpenGraph</target></trans-unit>
+			<target state="needs-translation">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="af" state="needs-translation">Open Graph Type</target></trans-unit>
+			<target state="needs-translation">Open Graph Type</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>None</source>
-			<target xml:lang="af" state="needs-translation">None</target></trans-unit>
+			<target state="needs-translation">None</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
 				<source>Website</source>
-			<target xml:lang="af" state="needs-translation">Website</target></trans-unit>
+			<target state="needs-translation">Website</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
 				<source>Article</source>
-			<target xml:lang="af" state="needs-translation">Article</target></trans-unit>
+			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="af" state="needs-translation">Open Graph title</target></trans-unit>
+			<target state="needs-translation">Open Graph title</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="af" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
+			<target state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="af" state="needs-translation">Open Graph Description</target></trans-unit>
+			<target state="needs-translation">Open Graph Description</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="af" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target state="needs-translation">max. 200 characters</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="af" state="needs-translation">Open Graph Image</target></trans-unit>
+			<target state="needs-translation">Open Graph Image</target></trans-unit>
     </body>
   </file>
 </xliff>

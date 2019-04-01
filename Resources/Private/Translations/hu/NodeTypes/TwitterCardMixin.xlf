@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="hu" state="translated">Twitter kártya</target></trans-unit>
+			<target state="translated">Twitter kártya</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="hu" state="translated">Kártya típusa</target></trans-unit>
+			<target state="translated">Kártya típusa</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="hu" state="translated">Létrehozó</target></trans-unit>
+			<target state="translated">Létrehozó</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
-			<target xml:lang="hu" state="needs-translation">@johnexample</target></trans-unit>
+			<target state="needs-translation">@johnexample</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="hu" state="translated">Cím</target></trans-unit>
+			<target state="translated">Cím</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="hu" state="needs-translation">max. 70 characters</target></trans-unit>
+			<target state="needs-translation">max. 70 characters</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="hu" state="translated">Leírás</target></trans-unit>
+			<target state="translated">Leírás</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="hu" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target state="needs-translation">max. 200 characters</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="hu" state="translated">Kártya kép</target></trans-unit>
+			<target state="translated">Kártya kép</target></trans-unit>
     </body>
   </file>
 </xliff>

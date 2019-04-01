@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target xml:lang="nl" state="translated">Metatags</target></trans-unit>
+			<target state="translated">Metatags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="nl" state="translated">Omschrijving</target></trans-unit>
+			<target state="translated">Omschrijving</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="nl" state="translated">max. 156 tekens</target></trans-unit>
+			<target state="translated">max. 156 tekens</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target xml:lang="nl" state="translated">Trefwoorden</target></trans-unit>
+			<target state="translated">Trefwoorden</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="nl" state="translated">met komma's gescheiden, max 225 tekens</target></trans-unit>
+			<target state="translated">met komma's gescheiden, max 225 tekens</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="nl" state="translated">Verbergen in zoekmachines (noindex)</target><alt-trans><target xml:lang="nl">Verbergen van zoekmachines (noindex)</target></alt-trans></trans-unit>
+			<target state="translated">Verbergen in zoekmachines (noindex)</target><alt-trans><target>Verbergen van zoekmachines (noindex)</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="nl" state="translated">Links niet volgen (nofollow)</target><alt-trans><target xml:lang="nl">Volg links niet (nofollow)</target></alt-trans></trans-unit>
+			<target state="translated">Links niet volgen (nofollow)</target><alt-trans><target>Volg links niet (nofollow)</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

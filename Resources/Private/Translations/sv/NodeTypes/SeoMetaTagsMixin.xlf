@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="sv-SE" state="translated">Meta-taggar</target></trans-unit>
+			<target state="translated">Meta-taggar</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="sv-SE" state="translated">Beskrivning</target></trans-unit>
+			<target state="translated">Beskrivning</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="sv-SE" state="translated">max 156 tecken</target><alt-trans><target xml:lang="sv-SE">max. 156 tecken</target></alt-trans></trans-unit>
+			<target state="translated">max 156 tecken</target><alt-trans><target>max. 156 tecken</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="sv-SE" state="translated">Sökord</target></trans-unit>
+			<target state="translated">Sökord</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="sv-SE" state="translated">kommaseparerade, max 255 tecken</target><alt-trans><target xml:lang="sv-SE">kommaseparerade, max. 255 tecken</target></alt-trans></trans-unit>
+			<target state="translated">kommaseparerade, max 255 tecken</target><alt-trans><target>kommaseparerade, max. 255 tecken</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="sv-SE" state="translated">Dölj från sökmotorer (noindex)</target><alt-trans><target xml:lang="sv-SE">Dölja från sökmotorer (noindex)</target></alt-trans></trans-unit>
+			<target state="translated">Dölj från sökmotorer (noindex)</target><alt-trans><target>Dölja från sökmotorer (noindex)</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="sv-SE" state="translated">Följ inte länkar (nofollow)</target></trans-unit>
+			<target state="translated">Följ inte länkar (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

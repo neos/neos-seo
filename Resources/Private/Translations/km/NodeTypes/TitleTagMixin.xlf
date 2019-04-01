@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
-			<target xml:lang="km" state="translated">ចំណងជើងថ្មី</target></trans-unit>
+			<target state="translated">ចំណងជើងថ្មី</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="km" state="translated">ត្រូវបានប្រើក្នុង​ &amp;title&gt; ស្លាក អតិបរមា ៦០ តួអក្សរ</target></trans-unit>
+			<target state="translated">ត្រូវបានប្រើក្នុង​ &amp;title&gt; ស្លាក អតិបរមា ៦០ តួអក្សរ</target></trans-unit>
     </body>
   </file>
 </xliff>

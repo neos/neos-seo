@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target xml:lang="fi" state="translated">Twitter-kortti</target></trans-unit>
+			<target state="translated">Twitter-kortti</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target xml:lang="fi" state="translated">Korttityyppi</target></trans-unit>
+			<target state="translated">Korttityyppi</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="fi" state="translated">Nimimerkki</target></trans-unit>
+			<target state="translated">Nimimerkki</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
-			<target xml:lang="fi" state="translated">@erkkiesimerkki</target></trans-unit>
+			<target state="translated">@erkkiesimerkki</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="fi" state="translated">Otsikko</target></trans-unit>
+			<target state="translated">Otsikko</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 70 characters</source>
-			<target xml:lang="fi" state="translated">max. 70 merkkiä</target><alt-trans><target xml:lang="fi">maks. 70 merkkiä</target></alt-trans></trans-unit>
+			<target state="translated">max. 70 merkkiä</target><alt-trans><target>maks. 70 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="fi" state="translated">Kuvaus</target></trans-unit>
+			<target state="translated">Kuvaus</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target xml:lang="fi" state="translated">max. 200 merkkiä</target><alt-trans><target xml:lang="fi">max 200 merkkiä</target></alt-trans></trans-unit>
+			<target state="translated">max. 200 merkkiä</target><alt-trans><target>max 200 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="fi" state="translated">Kortin kuva</target></trans-unit>
+			<target state="translated">Kortin kuva</target></trans-unit>
     </body>
   </file>
 </xliff>

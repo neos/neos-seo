@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="zh-TW" state="translated">Meta標籤</target></trans-unit>
+			<target state="translated">Meta標籤</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="zh-TW" state="translated">描述</target></trans-unit>
+			<target state="translated">描述</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="zh-TW" state="translated">最大 156字元</target></trans-unit>
+			<target state="translated">最大 156字元</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="zh-TW" state="translated">關鍵字</target></trans-unit>
+			<target state="translated">關鍵字</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="zh-TW" state="translated">以逗號分隔，最大 255字元</target></trans-unit>
+			<target state="translated">以逗號分隔，最大 255字元</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="zh-TW" state="translated">從搜尋引擎中隱藏 (noindex)</target></trans-unit>
+			<target state="translated">從搜尋引擎中隱藏 (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="zh-TW" state="translated">不要追蹤此連結 (nofollow)</target></trans-unit>
+			<target state="translated">不要追蹤此連結 (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

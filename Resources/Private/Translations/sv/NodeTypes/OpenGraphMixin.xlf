@@ -4,34 +4,34 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="sv-SE" state="translated">OpenGraph</target></trans-unit>
+			<target state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="sv-SE" state="translated">Open Graph typ</target><alt-trans><target xml:lang="sv-SE">Open Graph type</target></alt-trans></trans-unit>
+			<target state="translated">Open Graph typ</target><alt-trans><target>Open Graph type</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>None</source>
-			<target xml:lang="sv-SE" state="needs-translation">None</target></trans-unit>
+			<target state="needs-translation">None</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
 				<source>Website</source>
-			<target xml:lang="sv-SE" state="needs-translation">Website</target></trans-unit>
+			<target state="needs-translation">Website</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
 				<source>Article</source>
-			<target xml:lang="sv-SE" state="needs-translation">Article</target></trans-unit>
+			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="sv-SE" state="translated">Open Graph titel</target></trans-unit>
+			<target state="translated">Open Graph titel</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="sv-SE" state="translated">Används som og:title, max 60 tecken</target><alt-trans><target xml:lang="sv-SE">Används som og: title, max. 60 tecken</target></alt-trans></trans-unit>
+			<target state="translated">Används som og:title, max 60 tecken</target><alt-trans><target>Används som og: title, max. 60 tecken</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="sv-SE" state="translated">Open Graph Beskrivning</target><alt-trans><target xml:lang="sv-SE">Open Graph beskrivning</target></alt-trans></trans-unit>
+			<target state="translated">Open Graph Beskrivning</target><alt-trans><target>Open Graph beskrivning</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="sv-SE" state="translated">max 200 tecken</target><alt-trans><target xml:lang="sv-SE">max. 200 tecken</target></alt-trans></trans-unit>
+			<target state="translated">max 200 tecken</target><alt-trans><target>max. 200 tecken</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="sv-SE" state="translated">Open Graph bild</target></trans-unit>
+			<target state="translated">Open Graph bild</target></trans-unit>
     </body>
   </file>
 </xliff>

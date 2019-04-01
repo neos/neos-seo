@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="ar" state="needs-translation">Meta Tags</target></trans-unit>
+			<target state="needs-translation">Meta Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="ar" state="translated">الوصف</target></trans-unit>
+			<target state="translated">الوصف</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="ar" state="translated">الحد الأقصى 156 حرف</target><alt-trans><target xml:lang="ar">كحد أقصى ١٥٦ حرف</target></alt-trans></trans-unit>
+			<target state="translated">الحد الأقصى 156 حرف</target><alt-trans><target>كحد أقصى ١٥٦ حرف</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="ar" state="translated">كلمات مفتاحية</target></trans-unit>
+			<target state="translated">كلمات مفتاحية</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="ar" state="translated">مفصول بفاصلة، ٢٥٥ حرف كحد أقصى</target></trans-unit>
+			<target state="translated">مفصول بفاصلة، ٢٥٥ حرف كحد أقصى</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="ar" state="translated">إخفاء من محركات البحث (noindex)</target></trans-unit>
+			<target state="translated">إخفاء من محركات البحث (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="ar" state="translated">لا تتبع الروابط (nofollow)</target></trans-unit>
+			<target state="translated">لا تتبع الروابط (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

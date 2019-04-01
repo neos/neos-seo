@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="es-ES" state="translated">Etiquetas meta</target></trans-unit>
+			<target state="translated">Etiquetas meta</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="es-ES" state="translated">Descripción</target></trans-unit>
+			<target state="translated">Descripción</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target xml:lang="es-ES" state="translated">máx. 156 caracteres</target></trans-unit>
+			<target state="translated">máx. 156 caracteres</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="es-ES" state="translated">Palabras clave</target></trans-unit>
+			<target state="translated">Palabras clave</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="es-ES" state="translated">separados por coma, máx. 255 caracteres</target><alt-trans><target xml:lang="es-ES">separado por coma, máx. 255 caracteres</target></alt-trans></trans-unit>
+			<target state="translated">separados por coma, máx. 255 caracteres</target><alt-trans><target>separado por coma, máx. 255 caracteres</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="es-ES" state="translated">Ocultar de los motores de búsqueda (noindex)</target><alt-trans><target xml:lang="es-ES">Esconderse de los motores de búsqueda (noindex)</target></alt-trans></trans-unit>
+			<target state="translated">Ocultar de los motores de búsqueda (noindex)</target><alt-trans><target>Esconderse de los motores de búsqueda (noindex)</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="es-ES" state="translated">No seguir enlaces (nofollow)</target></trans-unit>
+			<target state="translated">No seguir enlaces (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

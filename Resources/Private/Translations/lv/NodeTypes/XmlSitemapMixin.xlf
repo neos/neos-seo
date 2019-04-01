@@ -4,40 +4,40 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="lv" state="translated">XML lapas karte</target></trans-unit>
+			<target state="translated">XML lapas karte</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target xml:lang="lv" state="translated">Mainīt biežumu</target><alt-trans><target xml:lang="lv">Mainīt frekvenci</target></alt-trans></trans-unit>
+			<target state="translated">Mainīt biežumu</target><alt-trans><target>Mainīt frekvenci</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target xml:lang="lv" state="translated">Prioritāte</target></trans-unit>
+			<target state="translated">Prioritāte</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="lv" state="translated">starp 0 un 1</target></trans-unit>
+			<target state="translated">starp 0 un 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target xml:lang="lv" state="translated">nav norādīts</target></trans-unit>
+			<target state="translated">nav norādīts</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target xml:lang="lv" state="translated">Vienmēr</target></trans-unit>
+			<target state="translated">Vienmēr</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target xml:lang="lv" state="translated">Pa stundām</target></trans-unit>
+			<target state="translated">Pa stundām</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target xml:lang="lv" state="translated">Ikdienas</target></trans-unit>
+			<target state="translated">Ikdienas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target xml:lang="lv" state="translated">Iknedēļas</target></trans-unit>
+			<target state="translated">Iknedēļas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target xml:lang="lv" state="translated">Ikmēneša</target></trans-unit>
+			<target state="translated">Ikmēneša</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target xml:lang="lv" state="translated">Ikgadēji</target></trans-unit>
+			<target state="translated">Ikgadēji</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target xml:lang="lv" state="translated">Nekad nav (arhīvā)</target></trans-unit>
+			<target state="translated">Nekad nav (arhīvā)</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve">
 				<source>Twitter Card</source>
-			<target xml:lang="zh-TW" state="translated">Twitter資訊卡</target></trans-unit>
+			<target state="translated">Twitter資訊卡</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve">
 				<source>Card Type</source>
-			<target xml:lang="zh-TW" state="translated">卡片類型</target></trans-unit>
+			<target state="translated">卡片類型</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target xml:lang="zh-TW" state="translated">建立者</target></trans-unit>
+			<target state="translated">建立者</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
-			<target xml:lang="zh-TW" state="translated">@johnexample</target></trans-unit>
+			<target state="translated">@johnexample</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
 				<source>Title</source>
-			<target xml:lang="zh-TW" state="translated">標題</target></trans-unit>
+			<target state="translated">標題</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="zh-TW" state="translated">最大 70字元</target></trans-unit>
+			<target state="translated">最大 70字元</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="zh-TW" state="translated">描述</target></trans-unit>
+			<target state="translated">描述</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="zh-TW" state="translated">最大 200字元</target></trans-unit>
+			<target state="translated">最大 200字元</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target xml:lang="zh-TW" state="translated">卡片圖片</target></trans-unit>
+			<target state="translated">卡片圖片</target></trans-unit>
     </body>
   </file>
 </xliff>

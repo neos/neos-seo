@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target xml:lang="fr" state="translated">Twitter Card</target></trans-unit>
+			<target state="translated">Twitter Card</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target xml:lang="fr" state="translated">Type de carte</target></trans-unit>
+			<target state="translated">Type de carte</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target xml:lang="fr" state="translated">Créateur</target></trans-unit>
+			<target state="translated">Créateur</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
-			<target xml:lang="fr" state="translated">@johnexemple</target></trans-unit>
+			<target state="translated">@johnexemple</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target xml:lang="fr" state="translated">Titre</target></trans-unit>
+			<target state="translated">Titre</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target xml:lang="fr" state="translated">max. 70 caractères</target></trans-unit>
+			<target state="translated">max. 70 caractères</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target xml:lang="fr" state="translated">Description</target></trans-unit>
+			<target state="translated">Description</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="fr" state="translated">max. 200 caractères</target></trans-unit>
+			<target state="translated">max. 200 caractères</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target xml:lang="fr" state="translated">Image</target></trans-unit>
+			<target state="translated">Image</target></trans-unit>
     </body>
   </file>
 </xliff>

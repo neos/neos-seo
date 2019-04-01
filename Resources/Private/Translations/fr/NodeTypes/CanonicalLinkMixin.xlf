@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
-			<target xml:lang="fr" state="translated">Lien canonique</target></trans-unit>
+			<target state="translated">Lien canonique</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
-			<target xml:lang="fr" state="translated">Lien canonique</target></trans-unit>
+			<target state="translated">Lien canonique</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target xml:lang="fr" state="translated">Ajoutez une url ou utilisez la valeur par défaut.</target></trans-unit>
+			<target state="translated">Ajoutez une url ou utilisez la valeur par défaut.</target></trans-unit>
     </body>
   </file>
 </xliff>

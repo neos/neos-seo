@@ -4,40 +4,40 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="ar" state="translated">XML خريطة الموقع</target></trans-unit>
+			<target state="translated">XML خريطة الموقع</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="ar" state="translated">تغيير التردد</target></trans-unit>
+			<target state="translated">تغيير التردد</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="ar" state="translated">الأولوية</target></trans-unit>
+			<target state="translated">الأولوية</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="ar" state="translated">بين 0 و 1</target><alt-trans><target xml:lang="ar">بين ٠ و ١</target></alt-trans></trans-unit>
+			<target state="translated">بين 0 و 1</target><alt-trans><target>بين ٠ و ١</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target xml:lang="ar" state="needs-translation">none (unspecified)</target></trans-unit>
+			<target state="translated">بلا (غير محدد)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target xml:lang="ar" state="needs-translation">Always</target></trans-unit>
+			<target state="translated">دائماً</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target xml:lang="ar" state="needs-translation">Hourly</target></trans-unit>
+			<target state="translated">كل ساعة</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target xml:lang="ar" state="needs-translation">Daily</target></trans-unit>
+			<target state="translated">يومياً</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target xml:lang="ar" state="needs-translation">Weekly</target></trans-unit>
+			<target state="translated">أسبوعيّا</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target xml:lang="ar" state="needs-translation">Monthly</target></trans-unit>
+			<target state="translated">شهرياً</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target xml:lang="ar" state="needs-translation">Yearly</target></trans-unit>
+			<target state="translated">سنويّا</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target xml:lang="ar" state="needs-translation">Never (Archived)</target></trans-unit>
+			<target state="translated">ابداً (أرشفة)</target><alt-trans><target>ابدأ (أرشفة)</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
