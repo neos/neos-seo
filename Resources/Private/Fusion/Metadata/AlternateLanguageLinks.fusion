@@ -9,6 +9,10 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
     excludedPresets = ${[]}
 
+    # The hreflang value needs to have a format like 'en-US', therefore internally used values
+    # like 'en_US' will be modified to match.
+    dimensionValueSeparator = '_'
+
     renderer = Neos.Fusion:Loop {
         items = Neos.Neos:DimensionsMenuItems {
             dimension = ${props.dimension}
@@ -18,7 +22,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
                 @if.isDefaultLocale={props.defaultLocale == item.dimensions[props.dimension][0]}/>
             <Neos.Seo:AlternateLanguageLink node={item.node}
                 @if.notExcluded={!props.excludedPresets || Array.indexOf(props.excludedPresets, item.dimensions[props.dimension][0]) == -1}
-                hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[props.dimension][0]), '_', '-')}/>
+                hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[props.dimension][0]), props.dimensionValueSeparator, '-')}/>
         `
     }
 }
