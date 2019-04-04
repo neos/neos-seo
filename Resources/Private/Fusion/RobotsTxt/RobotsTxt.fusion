@@ -1,6 +1,6 @@
 prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     // Every entry gets a line in the robots.txt
-    data = Neos.Fusion:RawArray {
+    data = Neos.Fusion:DataStructure {
         userAgentAll = 'User-agent: *'
         userAgentAll.@position = 'start'
         disallowNeos = 'Disallow: /neos/'
