@@ -24,7 +24,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
     renderer = afx`
         <meta @key="type" property="og:type" content={props.type}/>
         <meta @key="title" property="og:title" content={props.title}/>
-        <meta @key="siteName" property="og:site_name" content={props.title}/>
+        <meta @key="siteName" property="og:site_name" content={props.siteName}/>
         <meta @key="locale" property="og:locale" content={props.locale} @if.set={props.locale}/>
         <meta @key="description" property="og:description" content={props.description} @if.set={props.description}/>
         <meta @key="url" property="og:url" content={props.url}/>
