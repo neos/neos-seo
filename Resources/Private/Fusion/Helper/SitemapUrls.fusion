@@ -1,0 +1,6 @@
+prototype(Neos.Seo:Helper.SitemapUrls) {
+    @class = 'Neos\\Seo\\Fusion\\XmlSitemapUrlsImplementation'
+    startingPoint = null
+    includeImageUrls = false
+    renderHiddenInIndex = true
+}

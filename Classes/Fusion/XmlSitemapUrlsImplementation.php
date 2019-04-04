@@ -15,13 +15,13 @@ namespace Neos\Seo\Fusion;
 use Neos\ContentRepository\Exception\NodeException;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
+use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
 use Neos\ContentRepository\Domain\Model\NodeInterface;
 use Neos\ContentRepository\Domain\Model\NodeType;
 use Neos\ContentRepository\Domain\Service\NodeTypeManager;
-use Neos\Fusion\FusionObjects\TemplateImplementation;
 
-class XmlSitemapImplementation extends TemplateImplementation
+class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
     /**
      * @Flow\Inject
@@ -120,22 +120,6 @@ class XmlSitemapImplementation extends TemplateImplementation
     }
 
     /**
-     * @return array
-     * @throws NodeException
-     */
-    public function getItems(): array
-    {
-        if ($this->items === null) {
-            $items = [];
-
-            $this->appendItems($items, $this->getStartingPoint());
-            $this->items = $items;
-        }
-
-        return $this->items;
-    }
-
-    /**
      * @param array & $items
      * @param NodeInterface $node
      * @return void
@@ -204,5 +188,25 @@ class XmlSitemapImplementation extends TemplateImplementation
         return !$node->getNodeType()->isOfType('Neos.Seo:NoindexMixin') && $node->isVisible()
             && ($this->getRenderHiddenInIndex() || !$node->isHiddenInIndex()) && $node->isAccessible()
             && $node->getProperty('metaRobotsNoindex') !== true;
+    }
+
+    /**
+     * Evaluate this Fusion object and return the result
+     *
+     * @return array
+     */
+    public function evaluate(): array
+    {
+        if ($this->items === null) {
+            $items = [];
+
+            try {
+                $this->appendItems($items, $this->getStartingPoint());
+            } catch (NodeException $e) {
+            }
+            $this->items = $items;
+        }
+
+        return $this->items;
     }
 }
