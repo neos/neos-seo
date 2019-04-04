@@ -1,4 +1,4 @@
-prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu) {
+prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     @if.languageDimensionExists = ${this.dimensionConfiguration != null}
     @if.onlyRenderWhenInLiveWorkspace = ${this.node.context.workspace.name == 'live'}
     @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
@@ -7,19 +7,22 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Neos:DimensionsMenu)
     dimension = 'language'
     defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension + '.default')}
     dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
-    templatePath = 'resource://Neos.Seo/Private/Fusion/Metadata/AlternateLanguageLinks.html'
+    excludedPresets = ${[]}
 
-    @context {
-        items = ${this.items}
-        items.@if.hasValidDimension = ${this.dimensionConfiguration != null}
-        defaultLocale = ${this.defaultLocale}
-        dimension = ${this.dimension}
+    # The hreflang value needs to have a format like 'en-US', therefore internally used values
+    # like 'en_US' will be modified to match.
+    dimensionValueSeparator = '_'
+
+    renderer = Neos.Fusion:Loop {
+        items = Neos.Neos:DimensionsMenuItems {
+            dimension = ${props.dimension}
+        }
+        itemRenderer = afx`
+            <Neos.Seo:AlternateLanguageLink @key="defaultLink" node={item.node} hreflang="x-default"
+                @if.isDefaultLocale={props.defaultLocale == item.dimensions[props.dimension][0]}/>
+            <Neos.Seo:AlternateLanguageLink node={item.node}
+                @if.notExcluded={!props.excludedPresets || Array.indexOf(props.excludedPresets, item.dimensions[props.dimension][0]) == -1}
+                hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[props.dimension][0]), props.dimensionValueSeparator, '-')}/>
+        `
     }
-
-    links = afx`
-        <Neos.Fusion:Collection collection={items} itemName="item" @children="itemRenderer">
-            <Neos.Seo:AlternateLanguageLink @key="defaultLink" node={item.node} hreflang="x-default" @if.isDefaultLocale={defaultLocale == item.dimensions[dimension][0]}/>
-            <Neos.Seo:AlternateLanguageLink node={item.node} hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[dimension][0]), '_', '-')}/>
-        </Neos.Fusion:Collection>
-    `
 }

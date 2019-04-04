@@ -9,19 +9,26 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     renderXMLSitemapLinks = true
     languageDimension = 'language'
     dimensionsPresets = ${Configuration.setting('Neos.Seo.robotsTxt.dimensionsPresets')}
+    excludedDimensionPresets = ${[]}
+    linebreak = ${String.chr(10)}
 
     renderer = Neos.Fusion:Component {
-
         sitemaps = Neos.Fusion:Case {
             @if.shouldRender = ${props.renderXMLSitemapLinks}
             hasLanguage {
                 condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + props.languageDimension) != null}
-                renderer = Neos.Neos:DimensionsMenu {
-                    dimension = ${props.languageDimension}
-                    templatePath = 'resource://Neos.Seo/Private/Fusion/RobotsTxt/Sitemap.html'
-                    presets = ${props.dimensionsPresets}
-                    renderHiddenInIndex = true
-                    includeAllPresets = true
+                renderer = Neos.Fusion:Loop {
+                    items = Neos.Neos:DimensionsMenuItems {
+                        dimension = ${props.languageDimension}
+                        includeAllPresets = true
+                    }
+                    itemRenderer = Neos.Neos:NodeUri {
+                        absolute = true
+                        format = 'xml.sitemap'
+                        node = ${item.node}
+                        @process.prefix = ${'Sitemap: ' + value + props.linebreak}
+                        @if.notExcluded = ${!props.excludedDimensionPresets || Array.indexOf(props.excludedDimensionPresets, item.dimensions[props.languageDimension][0]) == -1}
+                    }
                 }
             }
             noLanguage {
@@ -36,15 +43,14 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
         }
 
         data = ${props.data}
+        linebreak = ${props.linebreak}
 
-        linebreak = '
-'
         renderer = Neos.Fusion:Http.Message {
             httpResponseHead.headers.Content-Type = 'text/plain;'
             body = afx`
-                <Neos.Fusion:Collection collection={props.data} @children='itemRenderer'>
+                <Neos.Fusion:Loop items={props.data}>
                     {item}{props.linebreak}
-                </Neos.Fusion:Collection>
+                </Neos.Fusion:Loop>
                 {props.sitemaps}
             `
         }
