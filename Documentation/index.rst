@@ -3,6 +3,11 @@ Neos SEO |version| Documentation
 
 This documentation covering version |release| has been rendered at: |today|
 
+.. toctree::
+   :maxdepth: 2
+
+   fallback-definitions
+
 Installation
 ------------
 

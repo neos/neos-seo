@@ -38,7 +38,7 @@
           group: 'openGraph'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: i18n
+            placeholder: 'ClientEval: node.properties.titleOverride || node.properties.title'
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 60
@@ -50,7 +50,7 @@
           group: 'openGraph'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: i18n
+            placeholder: 'ClientEval: node.properties.metaDescription || "i18n"'
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200
