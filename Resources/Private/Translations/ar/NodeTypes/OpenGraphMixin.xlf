@@ -10,13 +10,13 @@
 			<target state="translated">فتح نوع الرسم البياني</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>None</source>
-			<target state="translated">لا شيء</target></trans-unit>
+			<target state="needs-translation">None</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
 				<source>Website</source>
-			<target state="translated">موقع الكتروني</target></trans-unit>
+			<target state="needs-translation">Website</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
 				<source>Article</source>
-			<target state="translated">مقال</target></trans-unit>
+			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">فتح عنوان الرسم البياني</target></trans-unit>

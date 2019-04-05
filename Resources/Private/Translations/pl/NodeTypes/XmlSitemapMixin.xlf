@@ -17,9 +17,9 @@
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
 			<target state="needs-translation">none (unspecified)</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target state="translated">Zawsze</target></trans-unit>
+			<target state="needs-translation">Always</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
 			<target state="needs-translation">Hourly</target></trans-unit>

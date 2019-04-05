@@ -16,28 +16,28 @@
 			<target state="translated">0 és 1 között</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target state="translated">egyik sem (nincs részletezve)</target></trans-unit>
+			<target state="needs-translation">none (unspecified)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target state="translated">Mindig</target></trans-unit>
+			<target state="needs-translation">Always</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target state="translated">Óránként</target></trans-unit>
+			<target state="needs-translation">Hourly</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target state="translated">Naponta</target></trans-unit>
+			<target state="needs-translation">Daily</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target state="translated">Hetente</target></trans-unit>
+			<target state="needs-translation">Weekly</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target state="translated">Havonta</target></trans-unit>
+			<target state="needs-translation">Monthly</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target state="translated">Évente</target></trans-unit>
+			<target state="needs-translation">Yearly</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target state="translated">Soha (Arhiválva)</target></trans-unit>
+			<target state="needs-translation">Never (Archived)</target></trans-unit>
     </body>
   </file>
 </xliff>
