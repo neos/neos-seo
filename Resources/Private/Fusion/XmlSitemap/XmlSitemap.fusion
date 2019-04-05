@@ -4,18 +4,19 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
 
     body = Neos.Fusion:Component {
         includeAlternateLanguageLinks = false
-
-        items = Neos.Seo:Helper.SitemapUrls {
-            startingPoint = ${site}
-            includeImageUrls = false
-        }
+        startingPoint = ${site}
+        includeImageUrls = false
 
         renderer = afx`
             <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
                     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
                     xmlns:xhtml="http://www.w3.org/1999/xhtml/">
-                <Neos.Seo:XmlSitemap.UrlList items={props.items} @if.hasItems={props.items}
-                    includeAlternateLanguageLinks={props.includeAlternateLanguageLinks}/>
+                <Neos.Seo:XmlSitemap.UrlList
+                    @if.hasItems={this.items}
+                    @children='items'
+                    includeAlternateLanguageLinks={props.includeAlternateLanguageLinks}>
+                    <Neos.Seo:Helper.SitemapUrls startingPoint={props.startingPoint} includeImageUrls={props.includeImageUrls} />
+                </Neos.Seo:XmlSitemap.UrlList>
             </urlset>
         `
 
