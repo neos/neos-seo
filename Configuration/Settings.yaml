@@ -25,6 +25,7 @@ Neos:
     # robots.txt settings
     robotsTxt:
       dimensionsPresets: null
+      excludedDimensionsPresets: []
     # Twitter Card settings
     twitterCard:
       # the Twitter handle for the twitter:site attribution
