@@ -8,6 +8,15 @@
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
 			<target state="translated">Kartentyp</target></trans-unit>
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Summary Card</source>
+			<target state="translated">Summary Card</target></trans-unit>
+	  <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary" xml:space="preserve">
+				<source>Summary Card</source>
+			<target state="translated">Summary Card</target></trans-unit>
+	  <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve">
+				<source>Summary Card with Large Image</source>
+			<target state="translated">Summary Card mit großen Bild</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
 			<target state="translated">Autor</target><alt-trans><target>Autor Pseudonym</target></alt-trans></trans-unit>

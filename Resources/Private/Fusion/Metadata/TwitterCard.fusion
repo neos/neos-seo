@@ -1,9 +1,9 @@
 prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
     type = ${q(node).property('twitterCardType') || 'summary'}
-    title = ${q(node).property('twitterCardTitle') || q(node).property('titleOverride') || q(node).property('title')}
-    description = ${q(node).property('twitterCardDescription') || q(node).property('metaDescription')}
+    title = ${q(node).property('twitterCardTitle') || q(node).property('openGraphTitle') || q(node).property('titleOverride') || q(node).property('title')}
+    description = ${q(node).property('twitterCardDescription') || q(node).property('openGraphDescription') || q(node).property('metaDescription')}
     siteHandle = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle')}
-    creator = ${q(node).property('twitterCardCreator')}
+    creator = ${q(node).property('twitterCardCreator') || this.siteHandle}
     url = Neos.Neos:NodeUri {
         node = ${node}
         absolute = true
@@ -14,6 +14,12 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
                 @position = 'start'
                 condition = ${Type.instance(q(node).property('twitterCardImage'), 'Neos\Media\Domain\Model\ImageInterface')}
                 renderer = ${q(node).property('twitterCardImage')}
+            }
+
+            opengraph {
+                @position = 'after default'
+                condition = ${Type.instance(q(node).property('openGraphImage'), 'Neos\Media\Domain\Model\ImageInterface')}
+                renderer = ${q(node).property('openGraphImage')}
             }
         }
         preset = Neos.Fusion:Case {

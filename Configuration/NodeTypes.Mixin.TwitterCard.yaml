@@ -21,13 +21,13 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             allowEmpty: true
-            placeholder: 'None'
+            placeholder: i18n
             values:
               summary:
-                label: 'Summary Card'
+                label: i18n
                 icon: 'icon-square'
               summary_large_image:
-                label: 'Summary Card with Large Image'
+                label: i18n
                 icon: 'icon-image'
     twitterCardCreator:
       type: string
@@ -36,7 +36,7 @@
         inspector:
           group: 'twittercard'
           editorOptions:
-            placeholder: '@johnexample'
+            placeholder: i18n
       validation:
         'Neos.Neos/Validation/RegularExpressionValidator':
           regularExpression: '/^@[a-z0-9_]{1,15}$/i'
@@ -48,7 +48,7 @@
           group: 'twittercard'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: i18n
+            placeholder: 'ClientEval: node.properties.openGraphTitle || node.properties.titleOverride || node.properties.title'
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 70
@@ -60,7 +60,7 @@
           group: 'twittercard'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: i18n
+            placeholder: 'ClientEval: node.properties.openGraphDescription || node.properties.metaDescription || "i18n"'
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200

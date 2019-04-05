@@ -9,7 +9,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     renderXMLSitemapLinks = true
     languageDimension = 'language'
     dimensionsPresets = ${Configuration.setting('Neos.Seo.robotsTxt.dimensionsPresets')}
-    excludedDimensionPresets = ${[]}
+    excludedDimensionPresets = ${Configuration.setting('Neos.Seo.robotsTxt.excludedDimensionsPresets')}
     linebreak = ${String.chr(10)}
 
     renderer = Neos.Fusion:Component {

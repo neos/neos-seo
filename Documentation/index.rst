@@ -3,6 +3,11 @@ Neos SEO |version| Documentation
 
 This documentation covering version |release| has been rendered at: |today|
 
+.. toctree::
+   :maxdepth: 2
+
+   fallback-definitions
+
 Installation
 ------------
 
@@ -14,18 +19,20 @@ Page title
 ----------
 
 The default `<title>` tag rendering in the `Neos.Neos:Page` Fusion object is a "reverse breadcrumb" of the regular
-title field(s). This is done in `head.titleTag.default`.
+title field(s). This is done in `Neos.Seo:TitleTag` with a configurable separator.
 
 A new field `titleOverride` is added to `Neos.Neos:Document` via the `Neos.Seo:TitleTagMixin`. The new field is
-used as the `<title>` tag content if it is filled (see `head.titleTag.content` in `Neos.Neos:Page`).
+used as the `<title>` tag content if it is filled (see `Neos.Seo:TitleTag`).
+
+By default the sites name will be added as suffix. You can also configure this behavior in `Neos.Seo:TitleTag`.
 
 Basic meta tags
 ---------------
 
 The fields for keywords and description are added to `Neos.Neos:Document` via the `Neos.Seo:SeoMetaTagsMixin`
 
-If they are filled in, `<meta>` tags for their contents will be rendered (see `head.metaTitleTag` and
-`head.metaDescriptionTag` in `Neos.Neos:Page`).
+If they are filled in, `<meta>` tags for their contents will be rendered (see `Neos.Seo:MetaKeywordsTag` and
+`Neos.Seo:MetaDescriptionTag`).
 
 Two checkboxes allow to set the content for the `<meta name="robots">` tag to any combination of the possible values `follow`, `nofollow`, `index` and `noindex`.
 
@@ -44,6 +51,8 @@ The `twitter:site` handle can be configured with the setting `Neos.Seo.twitterCa
         siteHandle: '@neoscms'
 
 Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
+
+Also check out the defined fallback-definitions_ for the individual tags.
 
 Facebook
 --------
@@ -82,17 +91,10 @@ The Open Graph protocol enables any web page to become a rich object in a social
 * `og:image`
 * `og:url`
 
+Also check out the defined fallback-definitions_ for the individual tags as most fields will be prefilled with values
+from other fields.
 
-In general Open Graph tags are just shown if they have given data, because otherwise Facebook for example will extract data for the generated view from the site itself. So fallbacks are not needed. If you are not satisfied with the generated view you should define your own.
-If a Open Graph Type is enabled, the related meta tags will be rendered according to following rules.
-
-* `og:title` is only rendered if it includes data
-* `og:locale` is only rendered if there is a content dimension `language`
-* `og:description` will use `meta:description` as a fallback or show nothing
-* `og:url` the URL of the document
-* `og:image` is only rendered if it includes data
-
-For more information please have a look at http://ogp.me/.
+For more information about Open Graph please have a look at http://ogp.me/.
 
 Define image fallback for Twitter Cards or Open Graph
 -----------------------------------------------------
@@ -102,8 +104,8 @@ The fusion object of this package defines Case-Objects that you can use to add y
 Example: Add a document property `headerImage` as fallback, if no Twitter Card image is present::
 
     prototype(Neos.Seo:TwitterCard) {
-        cardImageTag {
-            attributes.content.asset {
+        image {
+            asset {
                 headerImage {
                     condition = ${Type.instance(q(node).property('headerImage'), 'Neos\Media\Domain\Model\ImageInterface')}
                     renderer = ${q(node).property('headerImage')}
@@ -116,13 +118,11 @@ Example: Add a document property `headerImage` as fallback, if no Twitter Card i
 Example: Add the image of the first content node found that has an image property as fallback, when no Twitter Card image is present::
 
     prototype(Neos.Seo:OpenGraphMetaTags) {
-        openGraphImageTag {
-            @context.openGraphImage {
-                contentImage {
-                    firstContentWithImage = ${q(node).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof Neos.Neos:Content][image instanceof "Neos\Media\Domain\Model\ImageInterface"]')}
-                    condition = ${this.firstContentWithImage.count()}
-                    renderer = ${this.firstContentWithImage.property('image')}
-                }
+        image {
+            contentImage {
+                firstContentWithImage = ${q(node).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof Neos.Neos:Content][image instanceof "Neos\Media\Domain\Model\ImageInterface"]')}
+                condition = ${this.firstContentWithImage.count()}
+                renderer = ${this.firstContentWithImage.property('image')}
             }
         }
     }
@@ -146,9 +146,7 @@ Breadcrumb
 Search engines can output breadcrumbs by passing a structured data representation of a documents rootline.
 More information is available here: https://developers.google.com/search/docs/data-types/breadcrumb.
 
-You can enable this feature with the following code::
-
-    prototype(Neos.Seo:StructuredData.Container).breadcrumb.@if.enabled = true
+These are enabled by default.
 
 Website & Searchbox
 ^^^^^^^^^^^^^^^^^^^
@@ -163,7 +161,7 @@ More information is available here: https://developers.google.com/search/docs/da
 You can enable this feature with the following code and by adjusting `targetNode`::
 
     prototype(Neos.Seo:StructuredData.Website) {
-        searchAction.targetNode = ${<reference to your search page>}
+        potentialAction.targetNode = ${<reference to your search page>}
     }
 
 Social profile
@@ -210,7 +208,7 @@ the sitemap via `your.domain/sitemap.xml`. See Settings on how to disable or cha
 To include contained images of pages in the xml sitemap use the following fusion code::
 
     prototype(Neos.Seo:XmlSitemap) {
-        body.includeImageUrls = true
+        body.items.includeImageUrls = true
     }
 
 Be aware that the sitemap will output all images referenced in a page and it's content.
@@ -291,6 +289,8 @@ property `ContentRepository.dimensionTypes.language`.
     dimensionTypes:
       language: 'language'
 
+You can exclude presets by overriding `Neos.Seo:AlternateLanguageLinks`.
+
 Dynamic robots.txt
 ------------------
 
@@ -320,6 +320,8 @@ you can configure this in the `Settings.yaml`::
       robotsTxt:
         # Activate only English and German
         dimensionsPresets: ['en','de']
+        # Or show all but exclude French
+        excludedDimensionsPresets: ['fr']
 
 You can also add your own definitions to the `robots.txt`.
 They can be passed by adding them to definitions array. For example to block the GoogleBot from a directory use this fusion code::
@@ -372,6 +374,7 @@ Then to enable rendering of all SEO meta tags, the following code is used::
   prototype(Neos.Neos:Page) {
     htmlTag.attributes.lang = Neos.Seo:LangAttribute
     head {
+      titleTag >
       titleTag = Neos.Seo:TitleTag
       metaDescriptionTag = Neos.Seo:MetaDescriptionTag
       metaKeywordsTag = Neos.Seo:MetaKeywordsTag
@@ -380,6 +383,8 @@ Then to enable rendering of all SEO meta tags, the following code is used::
       alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
       twitterCard = Neos.Seo:TwitterCard
       openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
+      facebookMetaTags = Neos.Seo:FacebookMetaTags
+      structuredData = Neos.Seo:StructuredData.Container
     }
   }
 
