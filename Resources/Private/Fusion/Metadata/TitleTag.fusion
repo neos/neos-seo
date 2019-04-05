@@ -14,14 +14,14 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
         default {
             condition = true
             @position = 'end'
-            renderer = Neos.Fusion:Collection {
+            renderer = Neos.Fusion:Loop {
                 // Retrieve all parent document nodes excluding the homepage
-                collection = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
-                collection.@process.removeSiteNode = ${Array.slice(value, 0, -1)}
-                collection.@process.removeSiteNode.@if.onSubPage = ${documentNode != site}
+                items = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
+                items.@process.removeSiteNode = ${Array.slice(value, 0, -1)}
+                items.@process.removeSiteNode.@if.onSubPage = ${documentNode != site}
                 itemName = 'node'
                 iterationName = 'nodeIterator'
-                // Implode node titles with a dash
+                // Implode node titles with the separator
                 itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : breadcrumbSeparator)}
             }
         }
