@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="ja" state="translated">OpenGraph</target></trans-unit>
+			<target state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="ja" state="translated">OpenGraph タイプ</target></trans-unit>
+			<target state="translated">OpenGraph タイプ</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="ja" state="translated">OpenGraph タイトル</target></trans-unit>
+			<target state="translated">OpenGraph タイトル</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="ja" state="translated">Max og：タイトルとして使用されます.60文字</target><alt-trans><target xml:lang="ja">Og：title、maxとして使用されます。60文字</target></alt-trans></trans-unit>
+			<target state="translated">Max og：タイトルとして使用されます.60文字</target><alt-trans><target>Og：title、maxとして使用されます。60文字</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="ja" state="translated">OpenGraph ディスクリプション</target></trans-unit>
+			<target state="translated">OpenGraph ディスクリプション</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="ja" state="translated">最大200文字</target></trans-unit>
+			<target state="translated">最大200文字</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="ja" state="translated">OpenGraph イメージ</target></trans-unit>
+			<target state="translated">OpenGraph イメージ</target></trans-unit>
     </body>
   </file>
 </xliff>

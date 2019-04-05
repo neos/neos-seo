@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="zh-CN" state="translated">XML 网站地图</target></trans-unit>
+			<target state="translated">XML 网站地图</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="zh-CN" state="translated">更改频率</target></trans-unit>
+			<target state="translated">更改频率</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="zh-CN" state="translated">优先级</target></trans-unit>
+			<target state="translated">优先级</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="zh-CN" state="translated">介于 0 和 1 之间</target></trans-unit>
+			<target state="translated">介于 0 和 1 之间</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="hu" state="translated">Meta címkék</target></trans-unit>
+			<target state="translated">Meta címkék</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="hu" state="translated">Leírás</target></trans-unit>
+			<target state="translated">Leírás</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="hu" state="needs-translation">max. 156 characters</target></trans-unit>
+			<target state="translated">maximum 156 karakter</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="hu" state="translated">Kulcsszavak</target></trans-unit>
+			<target state="translated">Kulcsszavak</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="hu" state="needs-translation">comma separated, max. 255 chars</target></trans-unit>
+			<target state="translated">vesszővel elhatárolt, maximum 256 karakter</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="hu" state="translated">Elrejtés a keresőrobotok elől (noindex)</target></trans-unit>
+			<target state="translated">Elrejtés a keresőrobotok elől (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="hu" state="translated">Ne kövesse a linkeket (nofollow)</target></trans-unit>
+			<target state="translated">Ne kövesse a linkeket (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="hu" state="translated">XML oldaltérkép</target></trans-unit>
+			<target state="translated">XML oldaltérkép</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="hu" state="translated">Gyakoriság</target></trans-unit>
+			<target state="translated">Gyakoriság</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="hu" state="translated">Prioritás</target></trans-unit>
+			<target state="translated">Prioritás</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="hu" state="needs-translation">between 0 and 1</target></trans-unit>
+			<target state="translated">0 és 1 között</target></trans-unit>
     </body>
   </file>
 </xliff>

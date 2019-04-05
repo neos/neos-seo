@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
-			<target xml:lang="nl" state="translated">Titel overschrijven</target><alt-trans><target xml:lang="nl">Titel overschrijving</target></alt-trans></trans-unit>
+			<target state="translated">Titel overschrijven</target><alt-trans><target>Titel overschrijving</target></alt-trans></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="nl" state="translated">Gebruikt in &lt;titel&gt; tag, max. 60tekens</target></trans-unit>
+			<target state="translated">Gebruikt in &lt;titel&gt; tag, max. 60tekens</target></trans-unit>
     </body>
   </file>
 </xliff>

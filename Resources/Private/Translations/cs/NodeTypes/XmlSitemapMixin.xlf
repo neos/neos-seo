@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="cs" state="translated">XML mapa stránek</target></trans-unit>
+			<target state="translated">XML mapa stránek</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="cs" state="translated">Změnit frekvenci</target></trans-unit>
+			<target state="translated">Změnit frekvenci</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="cs" state="translated">Priorita</target></trans-unit>
+			<target state="translated">Priorita</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target xml:lang="cs" state="translated">mezi 0 a 1</target></trans-unit>
+			<target state="translated">mezi 0 a 1</target></trans-unit>
     </body>
   </file>
 </xliff>

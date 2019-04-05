@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="ar" state="translated">فتح الرسم البياني</target></trans-unit>
+			<target state="translated">فتح الرسم البياني</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="ar" state="translated">فتح نوع الرسم البياني</target></trans-unit>
+			<target state="translated">فتح نوع الرسم البياني</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="ar" state="translated">فتح عنوان الرسم البياني</target></trans-unit>
+			<target state="translated">فتح عنوان الرسم البياني</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="ar" state="translated">تستخدم ك og:title، كحد أقصى 60 حرفا</target><alt-trans><target xml:lang="ar">تستخدم ك og: كعنوان، كحد أقصى 60 حرف</target></alt-trans></trans-unit>
+			<target state="translated">تستخدم ك og:title، كحد أقصى 60 حرفا</target><alt-trans><target>تستخدم ك og: كعنوان، كحد أقصى 60 حرف</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="ar" state="translated">فتح وصف الرسم البياني</target></trans-unit>
+			<target state="translated">فتح وصف الرسم البياني</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="ar" state="translated">الحد الأقصى ٢٠٠ حرف</target><alt-trans><target xml:lang="ar">الحد أقصى ٢٠٠ حرف</target></alt-trans><alt-trans><target xml:lang="ar">كحد أقصى ٢٠٠ حرف</target></alt-trans></trans-unit>
+			<target state="translated">الحد الأقصى ٢٠٠ حرف</target><alt-trans><target>الحد أقصى ٢٠٠ حرف</target></alt-trans><alt-trans><target>كحد أقصى ٢٠٠ حرف</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="ar" state="translated">فتح صورة الرسم البياني</target></trans-unit>
+			<target state="translated">فتح صورة الرسم البياني</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target xml:lang="ko" state="needs-translation">Title Override</target></trans-unit>
+			<target state="needs-translation">Title Override</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="ko" state="translated">&lt;타이틀&gt; 태그에 사용됨, 최대 60 글자</target></trans-unit>
+			<target state="translated">&lt;타이틀&gt; 태그에 사용됨, 최대 60 글자</target></trans-unit>
     </body>
   </file>
 </xliff>

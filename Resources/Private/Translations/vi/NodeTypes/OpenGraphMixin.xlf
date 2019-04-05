@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target xml:lang="vi" state="translated">OpenGraph</target></trans-unit>
+			<target state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target xml:lang="vi" state="translated">Loại OpenGraph</target></trans-unit>
+			<target state="translated">Loại OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target xml:lang="vi" state="translated">Tiêu đề OpenGraph</target></trans-unit>
+			<target state="translated">Tiêu đề OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used as og:title, max. 60 chars</source>
-			<target xml:lang="vi" state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
+			<target state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target xml:lang="vi" state="translated">Mô tả OpenGraph</target></trans-unit>
+			<target state="translated">Mô tả OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target xml:lang="vi" state="needs-translation">max. 200 characters</target></trans-unit>
+			<target state="needs-translation">max. 200 characters</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
-			<target xml:lang="vi" state="translated">Hình ảnh OpenGraph</target></trans-unit>
+			<target state="translated">Hình ảnh OpenGraph</target></trans-unit>
     </body>
   </file>
 </xliff>

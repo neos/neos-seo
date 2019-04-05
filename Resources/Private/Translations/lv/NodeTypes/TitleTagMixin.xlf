@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target xml:lang="lv" state="translated">Nosaukuma ignorēšana</target></trans-unit>
+			<target state="translated">Nosaukuma ignorēšana</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target xml:lang="lv" state="translated">Lietot &lt;title&gt; tagu, maks. 60 rakstzīmes</target></trans-unit>
+			<target state="translated">Lietot &lt;title&gt; tagu, maks. 60 rakstzīmes</target></trans-unit>
     </body>
   </file>
 </xliff>

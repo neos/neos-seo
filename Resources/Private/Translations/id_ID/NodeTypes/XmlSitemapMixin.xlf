@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve">
 				<source>XML Sitemap</source>
-			<target xml:lang="id" state="translated">XML Sitemap</target></trans-unit>
+			<target state="translated">XML Sitemap</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
 				<source>Change frequency</source>
-			<target xml:lang="id" state="translated">Mengubah frekuensi</target></trans-unit>
+			<target state="translated">Mengubah frekuensi</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
 				<source>Priority</source>
-			<target xml:lang="id" state="translated">Prioritas</target></trans-unit>
+			<target state="translated">Prioritas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
-			<target xml:lang="id" state="translated">antara 0 dan 1</target><alt-trans><target xml:lang="id">antara 0 sampai 1</target></alt-trans></trans-unit>
+			<target state="translated">antara 0 dan 1</target><alt-trans><target>antara 0 sampai 1</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

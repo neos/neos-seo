@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="id" state="translated">Meta Tag</target></trans-unit>
+			<target state="translated">Meta Tag</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="id" state="translated">Deskripsi</target></trans-unit>
+			<target state="translated">Deskripsi</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target xml:lang="id" state="translated">max. 156 karakter</target></trans-unit>
+			<target state="translated">max. 156 karakter</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="id" state="translated">Kata kunci</target></trans-unit>
+			<target state="translated">Kata kunci</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="id" state="translated">dipisahkan koma, maks. 255 karakter</target></trans-unit>
+			<target state="translated">dipisahkan koma, maks. 255 karakter</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="id" state="translated">Sembunyikan dari mesin pencari (noindex)</target></trans-unit>
+			<target state="translated">Sembunyikan dari mesin pencari (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="id" state="translated">Tidak mengikuti link (nofollow)</target></trans-unit>
+			<target state="translated">Tidak mengikuti link (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

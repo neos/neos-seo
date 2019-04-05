@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve">
 				<source>Meta Tags</source>
-			<target xml:lang="pt-BR" state="translated">Meta Tags</target></trans-unit>
+			<target state="translated">Meta Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve">
 				<source>Description</source>
-			<target xml:lang="pt-BR" state="translated">Descrição</target></trans-unit>
+			<target state="translated">Descrição</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
-			<target xml:lang="pt-BR" state="translated">máximo de 156 caracteres</target></trans-unit>
+			<target state="translated">máximo de 156 caracteres</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
-			<target xml:lang="pt-BR" state="translated">Palavras-Chave</target></trans-unit>
+			<target state="translated">Palavras-Chave</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target xml:lang="pt-BR" state="translated">virgula separada, máximo 255 caracteres</target></trans-unit>
+			<target state="translated">virgula separada, máximo 255 caracteres</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target xml:lang="pt-BR" state="translated">Esconder dos motores de busca (noindex)</target></trans-unit>
+			<target state="translated">Esconder dos motores de busca (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
-			<target xml:lang="pt-BR" state="translated">Não seguir os links (nofollow)</target></trans-unit>
+			<target state="translated">Não seguir os links (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

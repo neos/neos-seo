@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
-			<target xml:lang="km" state="translated">ភ្ជាប់ទៅកាន់ canolical</target></trans-unit>
+			<target state="translated">ភ្ជាប់ទៅកាន់ canolical</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
-			<target xml:lang="km" state="translated">ភ្ជាប់ទៅកាន់ canolical</target></trans-unit>
+			<target state="translated">ភ្ជាប់ទៅកាន់ canolical</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Paste a url, or use the default.</source>
-			<target xml:lang="km" state="translated">ដាក់ Url, ​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target><alt-trans><target xml:lang="km">ដាក់ url, ​​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target></alt-trans></trans-unit>
+			<target state="translated">ដាក់ Url, ​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target><alt-trans><target>ដាក់ url, ​​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
