@@ -1,2 +1,0 @@
-{namespace fusion=Neos\Fusion\ViewHelpers}
-<fusion:render path="urlset" />

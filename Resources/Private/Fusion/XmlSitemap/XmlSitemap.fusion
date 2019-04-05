@@ -2,26 +2,21 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
     doctype = '<?xml version="1.0" encoding="UTF-8"?>'
     httpResponseHead.headers.Content-Type = 'text/xml'
 
-    body = Neos.Fusion:Template {
-        @class = 'Neos\\Seo\\Fusion\\XmlSitemapImplementation'
-        templatePath = 'resource://Neos.Seo/Private/Fusion/XmlSitemap/XmlSitemap.xml'
-        # "root" deprecated since 2.1, removed in 3.0
-        root = ${site}
+    body = Neos.Fusion:Component {
+        includeAlternateLanguageLinks = false
         startingPoint = ${site}
         includeImageUrls = false
-        includeAlternateLanguageLinks = false
-        renderHiddenInIndex = true
 
-        @context {
-            items = ${this.items}
-            includeAlternateLanguageLinks = ${this.includeAlternateLanguageLinks}
-        }
-
-        urlset = afx`
+        renderer = afx`
             <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
                     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
                     xmlns:xhtml="http://www.w3.org/1999/xhtml/">
-                <Neos.Seo:XmlSitemap.UrlList items={items} includeAlternateLanguageLinks={includeAlternateLanguageLinks} @if.hasItems={items}/>
+                <Neos.Seo:XmlSitemap.UrlList
+                    @if.hasItems={this.items}
+                    @children='items'
+                    includeAlternateLanguageLinks={props.includeAlternateLanguageLinks}>
+                    <Neos.Seo:Helper.SitemapUrls startingPoint={props.startingPoint} includeImageUrls={props.includeImageUrls} />
+                </Neos.Seo:XmlSitemap.UrlList>
             </urlset>
         `
 
