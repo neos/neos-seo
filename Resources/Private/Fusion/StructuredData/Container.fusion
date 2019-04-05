@@ -1,0 +1,5 @@
+prototype(Neos.Seo:StructuredData.Container) < prototype(Neos.Fusion:Join) {
+    breadcrumb = Neos.Seo:StructuredData.Breadcrumb
+    socialProfile = Neos.Seo:StructuredData.SocialProfile
+    website = Neos.Seo:StructuredData.Website
+}

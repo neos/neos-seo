@@ -1,0 +1,21 @@
+prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
+    // Optional context. Usually "http://schema.org" for root objects
+    context = ''
+
+    // The required `schema.org` type for this object
+    type = ''
+
+    // Inherit props from parent object into data. These can be accessed in the renderer via props.data.
+    data = ${props}
+
+    // All attributes will be applied to the resulting object
+    attributes = Neos.Fusion:DataStructure
+
+    renderer = Neos.Fusion:DataStructure {
+        '@context' = ${props.context}
+        '@context'.@if.isSet = ${props.context}
+        '@type' = ${props.type}
+        @apply.attributes = ${props.attributes ? Array.filter(props.attributes, attribute => attribute != null) : []}
+    }
+    @if.hasType = ${this.type}
+}
