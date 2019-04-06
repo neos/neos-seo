@@ -9,8 +9,8 @@
 				<source>Open Graph Type</source>
 			<target state="needs-translation">Open Graph Type</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
-				<source>None</source>
-			<target state="needs-translation">None</target></trans-unit>
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
 				<source>Website</source>
 			<target state="needs-translation">Website</target></trans-unit>
@@ -20,9 +20,6 @@
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="needs-translation">Open Graph title</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
-				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">og로 사용됨: 제목, 최대 60 글자</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="needs-translation">Open Graph Description</target></trans-unit>

@@ -9,8 +9,8 @@
 				<source>Open Graph Type</source>
 			<target state="translated">Loại OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
-				<source>None</source>
-			<target state="needs-translation">None</target></trans-unit>
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
 				<source>Website</source>
 			<target state="needs-translation">Website</target></trans-unit>
@@ -20,9 +20,6 @@
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">Tiêu đề OpenGraph</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
-				<source>Used as og:title, max. 60 chars</source>
-			<target state="needs-translation">Used as og:title, max. 60 chars</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">Mô tả OpenGraph</target></trans-unit>
