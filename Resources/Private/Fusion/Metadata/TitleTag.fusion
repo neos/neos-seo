@@ -27,10 +27,8 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
                 items = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
                 items.@process.removeSiteNode = ${Array.slice(value, 0, -1)}
                 items.@process.removeSiteNode.@if.onSubPage = ${documentNode != site}
-                itemName = 'node'
-                iterationName = 'nodeIterator'
                 // Implode node titles with the separator
-                itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : breadcrumbSeparator)}
+                itemRenderer = ${q(item).property('title') + (iterator.isLast ? '' : breadcrumbSeparator)}
             }
         }
 
