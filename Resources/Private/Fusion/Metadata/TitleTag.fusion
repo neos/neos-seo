@@ -3,9 +3,9 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
     titleOverride = ${q(node).property('titleOverride')}
     breadcrumbSeparator = ' - '
     suffixSeparator = ${this.breadcrumbSeparator}
-    outputSuffixIfTitleOverride = true
+    outputSuffixOnTitleOverride = true
 
-    renderSuffix = ${this.suffix && (this.titleOverride ? this.outputSuffixIfTitleOverride : true)}
+    renderSuffix = ${this.suffix && (this.titleOverride ? this.outputSuffixOnTitleOverride : true)}
 
     @context {
         breadcrumbSeparator = ${this.breadcrumbSeparator}
