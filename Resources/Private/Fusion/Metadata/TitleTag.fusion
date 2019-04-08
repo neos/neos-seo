@@ -1,13 +1,21 @@
 prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
     suffix = ${site.context.currentSite.name}
+    titleOverride = ${q(node).property('titleOverride')}
     breadcrumbSeparator = ' - '
-    @context.breadcrumbSeparator = ${this.breadcrumbSeparator}
     suffixSeparator = ${this.breadcrumbSeparator}
+    outputSuffixOnTitleOverride = true
+
+    renderSuffix = ${this.suffix && (this.titleOverride ? this.outputSuffixOnTitleOverride : true)}
+
+    @context {
+        breadcrumbSeparator = ${this.breadcrumbSeparator}
+        titleOverride = ${this.titleOverride}
+    }
 
     title = Neos.Fusion:Case {
         titleOverride {
-            condition = ${q(node).property('titleOverride')}
-            renderer = ${q(node).property('titleOverride')}
+            condition = ${titleOverride}
+            renderer = ${titleOverride}
             @position = 'start'
         }
 
@@ -19,10 +27,8 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
                 items = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
                 items.@process.removeSiteNode = ${Array.slice(value, 0, -1)}
                 items.@process.removeSiteNode.@if.onSubPage = ${documentNode != site}
-                itemName = 'node'
-                iterationName = 'nodeIterator'
                 // Implode node titles with the separator
-                itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : breadcrumbSeparator)}
+                itemRenderer = ${q(item).property('title') + (iterator.isLast ? '' : breadcrumbSeparator)}
             }
         }
 
@@ -30,6 +36,10 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
     }
 
     renderer = afx`
-        <title>{(props.title ? props.title + props.suffixSeparator : '') + props.suffix}</title>
+        <title>
+            {props.title}
+            {props.title && props.renderSuffix ? props.suffixSeparator : ''}
+            {props.renderSuffix ? props.suffix : ''}
+        </title>
     `
 }
