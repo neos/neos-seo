@@ -15,6 +15,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
             renderer = ${q(node).property('openGraphImage')}
         }
     }
+    imageAltText = ${this.image.caption || this.image.label}
 
     preset = ${'Neos.Seo:OpenGraph.' + (this.image.isOrientationLandscape ? 'Landscape' : 'Square')}
     preset.@if.hasImage = ${this.image}
@@ -34,7 +35,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
             </meta>
             <meta @key="width" property="og:image:width" content={props.thumbnail.width}/>
             <meta @key="height" property="og:image:height" content={props.thumbnail.height}/>
-            <meta @key="alt" property="og:image:alt" content={props.image.label} @if.set={props.image.label}/>
+            <meta @key="alt" property="og:image:alt" content={props.imageAltText} @if.set={props.imageAltText}/>
         </Neos.Fusion:Join>
     `
 }
