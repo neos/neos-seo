@@ -208,7 +208,7 @@ the sitemap via `your.domain/sitemap.xml`. See Settings on how to disable or cha
 To include contained images of pages in the xml sitemap use the following fusion code::
 
     prototype(Neos.Seo:XmlSitemap) {
-        body.items.includeImageUrls = true
+        body.includeImageUrls = true
     }
 
 Be aware that the sitemap will output all images referenced in a page and it's content.
