@@ -5,7 +5,7 @@
 			<trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
 			</trans-unit>
-			<trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+			<trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
 			</trans-unit>
 		</body>
