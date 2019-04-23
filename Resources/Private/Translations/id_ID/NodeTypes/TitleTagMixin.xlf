@@ -5,7 +5,7 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
 			<target state="translated">Judul menimpa</target></trans-unit>
-      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
 			<target state="translated">Dipakai pada label &lt;title&gt;, maks. 60 karakter</target><alt-trans><target>Digunakan dalam &lt;title&gt; tag, max. 60 karakter</target></alt-trans></trans-unit>
     </body>
