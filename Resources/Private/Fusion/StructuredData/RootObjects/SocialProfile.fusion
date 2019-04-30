@@ -25,7 +25,8 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
     linkedIn.@if.set = ${this.profiles.linkedIn}
 
     urls = ${[this.twitter, this.facebook, this.instagram, this.youTube, this.linkedIn]}
-    urls.@process.filter = ${Array.filter(value, url => !!url)}
+    urls.@process.filter = ${Array.reduce(value, (items, url) => !!url ? Array.push(items, url) : items, [])}
+    urls.@process.filter.@position = 'end'
 
     renderer = afx`
         <Neos.Seo:StructuredData.RootObject type={props.type}>
