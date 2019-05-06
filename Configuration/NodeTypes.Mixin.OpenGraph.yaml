@@ -50,7 +50,7 @@
           group: 'openGraph'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'ClientEval: node.properties.metaDescription || "i18n"'
+            placeholder: 'ClientEval: node.properties.metaDescription || "Neos.Seo:NodeTypes.OpenGraphMixin:properties.openGraphDescription.textAreaEditor.placeholder"'
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200

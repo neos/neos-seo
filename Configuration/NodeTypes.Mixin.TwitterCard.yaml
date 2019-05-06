@@ -60,7 +60,7 @@
           group: 'twittercard'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
           editorOptions:
-            placeholder: 'ClientEval: node.properties.openGraphDescription || node.properties.metaDescription || "i18n"'
+            placeholder: 'ClientEval: node.properties.openGraphDescription || node.properties.metaDescription || "Neos.Seo:NodeTypes.TwitterCardMixin:properties.twitterCardDescription.textAreaEditor.placeholder"'
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           maximum: 200
