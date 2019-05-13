@@ -4,13 +4,14 @@ prototype(Neos.Seo:StructuredData.Website.SearchAction) < prototype(Neos.Fusion:
     targetNode = null
     queryInput = 'required name=search_term_string'
     queryParameters = Neos.Fusion:DataStructure {
-        search = '\{search_term_string\}'
+        search = '{search_term_string}'
     }
 
     renderer = afx`
         <Neos.Seo:StructuredData.Object type="SearchAction" attributes.query-input={props.queryInput}>
-            <Neos.Neos:NodeUri absolute={true} node={props.targetNode}
-                additionalParams={props.queryParameters} @path="attributes.target"/>
+            <Neos.Neos:NodeUri absolute={true} node={props.targetNode} additionalParams={props.queryParameters}
+                @path="attributes.target"
+                @process.decode={String.rawUrlDecode(value)}/>
         </Neos.Seo:StructuredData.Object>
     `
 }
