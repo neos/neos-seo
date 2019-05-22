@@ -30,6 +30,14 @@ Check the [documentation](https://neos-seo.readthedocs.io/en/stable/) for all fe
 3. [Read the documentation](https://neos-seo.readthedocs.io/en/stable/)
 
 
+## Contributions
+
+### Doing upmerges
+
+To do an upmerge from 2.1 to 3.x run the following command
+
+    git checkout master && git fetch && git reset --hard origin/master && git merge --no-ff --no-commit origin/2.1 --strategy-option=ours
+
 ## License
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
