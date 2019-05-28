@@ -1,5 +1,5 @@
 prototype(Neos.Seo:StructuredData.ImageObject) < prototype(Neos.Fusion:Component) {
-    asset = null
+    image = null
     width = null
     height = null
     thumbnail = ${Neos.Seo.Image.createThumbnail(this.image, null, this.width, null, this.height)}
