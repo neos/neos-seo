@@ -1,7 +1,7 @@
 prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
     node = null
     lastModificationDateTime = ${Date.now()}
-    lastModificationDateTime.@process.format = ${Date.format(value, 'Y-m-d\TH:iP')}
+    lastModificationDateTime.@process.format = ${Date.format(value, 'c')}
     changeFrequency = ''
     priority = ''
     images = ${[]}
