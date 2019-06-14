@@ -32,6 +32,10 @@ Check the [documentation](https://neos-seo.readthedocs.io/en/stable/) for all fe
 
 ## Contributions
 
+When creating a PR and you change is valid for version 2.1 too, please set this branch also as your PR target.
+
+If you are unsure or change a newer feature, use master as target.
+
 ### Doing upmerges
 
 To do an upmerge from 2.1 to 3.x run the following command
