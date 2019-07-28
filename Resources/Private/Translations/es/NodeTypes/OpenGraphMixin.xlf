@@ -13,7 +13,7 @@
 			<target state="translated">Título de Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">Usado como og:title, máx. 60 caracteres</target></trans-unit>
+			<target state="translated">Usado como og:title, máx. 60 caracteres</target><alt-trans><target>Usalo como og:title, máx. 60 caracteres</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">Descripción de Open Graph</target></trans-unit>
