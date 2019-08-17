@@ -10,7 +10,7 @@
 			<target state="translated">Link canonico</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target state="translated">Incollare un url, o utilizzare l'impostazione predefinita.</target></trans-unit>
+			<target state="translated">Incolla un url, o utilizza l'impostazione predefinita.</target><alt-trans><target>Incollare un url, o utilizzare l'impostazione predefinita.</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

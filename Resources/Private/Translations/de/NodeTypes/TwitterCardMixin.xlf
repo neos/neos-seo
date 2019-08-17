@@ -20,7 +20,7 @@
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
 			<target state="translated">Autor</target><alt-trans><target>Autor Pseudonym</target></alt-trans></trans-unit>
-      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
 			<target state="translated">@johnexample</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
