@@ -8,18 +8,12 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target state="translated">Jenis OpenGraph</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
-				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
-				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
-				<source>Article</source>
-			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">Judul Open Graph</target></trans-unit>
+      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>Used as og:title, max. 60 chars</source>
+			<target state="translated">Digunakan sebagai og: title, max. 60 karakter</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">Deskripsi Open Graph</target></trans-unit>
