@@ -8,12 +8,18 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target state="translated">Open Graph veids</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
+				<source>Article</source>
+			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
 			<target state="translated">Open Graph virsraksts</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
-				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">Izmantot kā og:title, maks. 60 rakstzīmes</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
 			<target state="translated">Open Graph apraksts</target></trans-unit>

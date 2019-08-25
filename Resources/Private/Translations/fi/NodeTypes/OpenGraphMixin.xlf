@@ -8,12 +8,18 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
 			<target state="translated">Open Graph tyyppi</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
+				<source>Article</source>
+			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
 			<target state="translated">Open Graph otsikko</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
-				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">HTML-tagi og:title, enintään 60 merkkiä</target><alt-trans><target>HTML-tagi og:title, maks. 60 merkkiä</target></alt-trans><alt-trans><target>HTML-tagi og:title, max 60 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
 			<target state="translated">Open Graph kuvaus</target></trans-unit>
