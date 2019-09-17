@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target state="translated">Plan du site XML</target></trans-unit>
+			<target state="final">Plan du site XML</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target state="translated">Fréquence de changement</target></trans-unit>
+			<target state="final">Fréquence de changement</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target state="translated">Priorité</target></trans-unit>
+			<target state="final">Priorité</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
 			<target state="translated">entre 0 et 1</target></trans-unit>

@@ -13,13 +13,13 @@
 			<target state="translated">Judul Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">Digunakan sebagai og: title, max. 60 karakter</target></trans-unit>
+			<target state="final">Digunakan sebagai og: title, max. 60 karakter</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">Deskripsi Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target state="translated">max. 200 Karakter</target></trans-unit>
+			<target state="final">max. 200 Karakter</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target state="translated">Gambar Open Graph</target></trans-unit>

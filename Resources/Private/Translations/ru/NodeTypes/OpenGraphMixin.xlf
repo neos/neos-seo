@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target state="translated">OpenGraph</target></trans-unit>
+			<target state="final">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target state="translated">Тип Open Graph</target></trans-unit>
+			<target state="final">Тип Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target state="translated">Название Open Graph</target></trans-unit>
+			<target state="final">Название Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">Используется в качестве заглавия OpenGraph(og:title), макс. 60 символов</target></trans-unit>
+			<target state="final">Используется в качестве заглавия OpenGraph(og:title), макс. 60 символов</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target state="translated">Описание Open Graph</target></trans-unit>
+			<target state="final">Описание Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target state="translated">макс. 200 символов</target></trans-unit>
+			<target state="final">макс. 200 символов</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target state="translated">Изображение Open Graph</target></trans-unit>
+			<target state="final">Изображение Open Graph</target></trans-unit>
     </body>
   </file>
 </xliff>

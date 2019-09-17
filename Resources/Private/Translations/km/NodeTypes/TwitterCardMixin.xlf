@@ -4,31 +4,31 @@
     <body>
       <trans-unit id="groups.twittercard" xml:space="preserve" approved="yes">
 				<source>Twitter Card</source>
-			<target state="translated">កាតTwitter</target></trans-unit>
+			<target state="final">កាតTwitter</target></trans-unit>
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
-			<target state="translated">ប្រភេទនៃកាត</target></trans-unit>
+			<target state="final">ប្រភេទនៃកាត</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target state="translated">អ្នកបង្កើតដំណេាះស្រាយ</target></trans-unit>
+			<target state="final">អ្នកបង្កើតដំណេាះស្រាយ</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
-			<target state="translated">@ឈ្មោះរបស់អ្នកប្រើប្រាស់</target></trans-unit>
+			<target state="final">@ឈ្មោះរបស់អ្នកប្រើប្រាស់</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
-			<target state="translated">ចំណងជើង</target></trans-unit>
+			<target state="final">ចំណងជើង</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 70 characters</source>
-			<target state="translated">អតិបរមា ៧០ តួអក្សរ</target></trans-unit>
+			<target state="final">អតិបរមា ៧០ តួអក្សរ</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target state="translated">ពិពណ៍នា</target></trans-unit>
+			<target state="final">ពិពណ៍នា</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target state="translated">អតិបរមា ២០០​ តួអក្សរ</target></trans-unit>
+			<target state="final">អតិបរមា ២០០​ តួអក្សរ</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target state="translated">កាតដែលមានរូបភាព</target></trans-unit>
+			<target state="final">កាតដែលមានរូបភាព</target></trans-unit>
     </body>
   </file>
 </xliff>
