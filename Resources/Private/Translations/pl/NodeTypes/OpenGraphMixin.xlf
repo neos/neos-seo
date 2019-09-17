@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target state="translated">OpenGraph</target><alt-trans><target>Open Graph</target></alt-trans></trans-unit>
+			<target state="final">OpenGraph</target><alt-trans><target>Open Graph</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target state="translated">Typ Open Graph</target></trans-unit>
+			<target state="final">Typ Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>Website</source>
 			<target state="needs-translation">Website</target></trans-unit>
@@ -19,16 +19,16 @@
 			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target state="translated">Tytuł Open Graph</target></trans-unit>
+			<target state="final">Tytuł Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target state="translated">Opis Open Graph</target></trans-unit>
+			<target state="final">Opis Open Graph</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target state="translated">maks. 200 znaków</target></trans-unit>
+			<target state="final">maks. 200 znaków</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target state="translated">Obrazek Open Graph</target></trans-unit>
+			<target state="final">Obrazek Open Graph</target></trans-unit>
     </body>
   </file>
 </xliff>

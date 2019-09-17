@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target state="translated">Metatagit</target></trans-unit>
+			<target state="final">Metatagit</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target state="translated">Kuvaus</target></trans-unit>
+			<target state="final">Kuvaus</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target state="translated">enintään 156 merkkiä</target><alt-trans><target>maks. 156 merkkiä</target></alt-trans><alt-trans><target>max 156 merkkiä</target></alt-trans><alt-trans><target>max. 156 merkkiä</target></alt-trans></trans-unit>
+			<target state="final">enintään 156 merkkiä</target><alt-trans><target>maks. 156 merkkiä</target></alt-trans><alt-trans><target>max 156 merkkiä</target></alt-trans><alt-trans><target>max. 156 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target state="translated">Avainsanat</target></trans-unit>
+			<target state="final">Avainsanat</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target state="translated">pilkulla erotettu, enintään 255 merkkiä</target><alt-trans><target>pilkulla erotettu, maks. 255 merkkiä</target></alt-trans><alt-trans><target>pilkulla erotettu, max. 255 merkkiä</target></alt-trans></trans-unit>
+			<target state="final">pilkulla erotettu, enintään 255 merkkiä</target><alt-trans><target>pilkulla erotettu, maks. 255 merkkiä</target></alt-trans><alt-trans><target>pilkulla erotettu, max. 255 merkkiä</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target state="translated">Piilota hakukoneilta (noindex)</target></trans-unit>
+			<target state="final">Piilota hakukoneilta (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target state="translated">Älä seuraa linkkejä (nofollow)</target></trans-unit>
+			<target state="final">Älä seuraa linkkejä (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

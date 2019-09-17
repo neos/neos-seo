@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target state="translated">ជាបណ្ដំុអក្សរនៃការពណ៍នានៅលើគេហទំព៍រ</target></trans-unit>
+			<target state="final">ជាបណ្ដំុអក្សរនៃការពណ៍នានៅលើគេហទំព៍រ</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target state="translated">ពិពណ៍នា</target></trans-unit>
+			<target state="final">ពិពណ៍នា</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target state="translated">អតិបរមា​ ១៥០ តួអក្សរ</target></trans-unit>
+			<target state="final">អតិបរមា​ ១៥០ តួអក្សរ</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target state="translated">ពាក្យគន្លឹះ</target></trans-unit>
+			<target state="final">ពាក្យគន្លឹះ</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target state="translated">បំបែកដោយសញ្ញាក្បៀស​​ អតិបរមា 255 តួអក្សរ</target></trans-unit>
+			<target state="final">បំបែកដោយសញ្ញាក្បៀស​​ អតិបរមា 255 តួអក្សរ</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target state="translated">មិនបង្ហាញពីការស្វែងរក(no index)</target></trans-unit>
+			<target state="final">មិនបង្ហាញពីការស្វែងរក(no index)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target state="translated">កុំទៅតាមតំណភ្ជាប់(no follow)</target></trans-unit>
+			<target state="final">កុំទៅតាមតំណភ្ជាប់(no follow)</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
-			<target state="translated">Sobreescritura del título</target></trans-unit>
+			<target state="final">Sobreescritura del título</target></trans-unit>
       <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target state="translated">Usado en la etiqueta &lt;title&gt;, máx. 60 caracteres</target><alt-trans><target>Usado en la etiqueta &lt;title&gt;, máx. 60 characteres</target></alt-trans></trans-unit>
+			<target state="final">Usado en la etiqueta &lt;title&gt;, máx. 60 caracteres</target><alt-trans><target>Usado en la etiqueta &lt;title&gt;, máx. 60 characteres</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

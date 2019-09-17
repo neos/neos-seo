@@ -4,16 +4,16 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target state="translated">XML-Sitemap</target></trans-unit>
+			<target state="final">XML-Sitemap</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target state="translated">Ændre frekvensen</target></trans-unit>
+			<target state="final">Ændre frekvensen</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
-			<target state="translated">Prioritet</target></trans-unit>
+			<target state="final">Prioritet</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
-			<target state="translated">mellem 0 og 1</target></trans-unit>
+			<target state="final">mellem 0 og 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
 			<target state="needs-translation">none (unspecified)</target></trans-unit>

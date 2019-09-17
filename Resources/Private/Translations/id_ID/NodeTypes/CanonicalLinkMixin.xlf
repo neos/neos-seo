@@ -4,13 +4,13 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
-			<target state="translated">Tautan Kanonikal</target></trans-unit>
+			<target state="final">Tautan Kanonikal</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve" approved="yes">
 				<source>Canonical Link</source>
-			<target state="translated">Tautan Kanonikal</target></trans-unit>
+			<target state="final">Tautan Kanonikal</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Paste a url, or use the default.</source>
-			<target state="translated">Sisipkan url, atau menggunakan default.</target></trans-unit>
+			<target state="final">Sisipkan url, atau menggunakan default.</target></trans-unit>
     </body>
   </file>
 </xliff>

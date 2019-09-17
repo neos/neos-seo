@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target state="translated">OpenGraph</target></trans-unit>
+			<target state="final">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target state="translated">Open Graph type</target><alt-trans><target>Åben Graftype</target></alt-trans></trans-unit>
+			<target state="final">Open Graph type</target><alt-trans><target>Åben Graftype</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>Website</source>
 			<target state="needs-translation">Website</target></trans-unit>
@@ -19,16 +19,16 @@
 			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
-			<target state="translated">Open Graph titel</target><alt-trans><target>Åbn grafoverskrift</target></alt-trans></trans-unit>
+			<target state="final">Open Graph titel</target><alt-trans><target>Åbn grafoverskrift</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve" approved="yes">
 				<source>Open Graph Description</source>
-			<target state="translated">Open Graph beskrivelse</target><alt-trans><target>Åbne graf beskrivelse</target></alt-trans></trans-unit>
+			<target state="final">Open Graph beskrivelse</target><alt-trans><target>Åbne graf beskrivelse</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target state="translated">maks. 140 tegn</target></trans-unit>
+			<target state="final">maks. 140 tegn</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve" approved="yes">
 				<source>Open Graph Image</source>
-			<target state="translated">Open Graph billede</target><alt-trans><target>Åbne graf billede</target></alt-trans></trans-unit>
+			<target state="final">Open Graph billede</target><alt-trans><target>Åbne graf billede</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>

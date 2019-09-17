@@ -13,7 +13,7 @@
 			<target state="translated">Prioritas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
-			<target state="translated">antara 0 dan 1</target><alt-trans><target>antara 0 sampai 1</target></alt-trans></trans-unit>
+			<target state="final">antara 0 dan 1</target><alt-trans><target>antara 0 sampai 1</target></alt-trans></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
 			<target state="needs-translation">none (unspecified)</target></trans-unit>

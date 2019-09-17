@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target state="translated">Meta-Tags</target></trans-unit>
+			<target state="final">Meta-Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target state="translated">Beschreibung</target></trans-unit>
+			<target state="final">Beschreibung</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target state="translated">max. 156 Zeichen</target></trans-unit>
+			<target state="final">max. 156 Zeichen</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target state="translated">Keywords</target></trans-unit>
+			<target state="final">Keywords</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target state="translated">kommasepariert, max. 255 Zeichen</target><alt-trans><target>Komma separiert, max. 255 Zeichen</target></alt-trans><alt-trans><target>Komma getrennt, max. 255 Zeichen</target></alt-trans></trans-unit>
+			<target state="final">kommasepariert, max. 255 Zeichen</target><alt-trans><target>Komma separiert, max. 255 Zeichen</target></alt-trans><alt-trans><target>Komma getrennt, max. 255 Zeichen</target></alt-trans></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target state="translated">Vor Suchmaschinen verstecken</target></trans-unit>
+			<target state="final">Vor Suchmaschinen verstecken</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target state="translated">Links nicht folgen (nofollow)</target></trans-unit>
+			<target state="final">Links nicht folgen (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

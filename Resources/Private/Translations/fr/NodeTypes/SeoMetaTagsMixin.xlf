@@ -4,25 +4,25 @@
     <body>
       <trans-unit id="groups.seometa" xml:space="preserve" approved="yes">
 				<source>Meta Tags</source>
-			<target state="translated">Meta Tags</target></trans-unit>
+			<target state="final">Meta Tags</target></trans-unit>
       <trans-unit id="properties.metaDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
-			<target state="translated">Description</target></trans-unit>
+			<target state="final">Description</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 156 characters</source>
 			<target state="translated">max. 156 caractères</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
-			<target state="translated">Mots-clés</target></trans-unit>
+			<target state="final">Mots-clés</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
 			<target state="translated">séparés par des virgules, max. 255 caractères</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target state="translated">Cacher des moteurs de recherche (noindex)</target></trans-unit>
+			<target state="final">Cacher des moteurs de recherche (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target state="translated">Ne pas suivre les liens (nofollow)</target></trans-unit>
+			<target state="final">Ne pas suivre les liens (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>
