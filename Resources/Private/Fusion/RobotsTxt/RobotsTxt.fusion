@@ -20,6 +20,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
                 renderer = Neos.Fusion:Loop {
                     items = Neos.Neos:DimensionsMenuItems {
                         dimension = ${props.languageDimension}
+                        presets = ${Type.isArray(props.dimensionsPresets) ? props.dimensionsPresets : null}
                         includeAllPresets = true
                     }
                     itemRenderer = Neos.Neos:NodeUri {
