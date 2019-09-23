@@ -5,7 +5,7 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
 			<target state="final">Titel erstatning</target></trans-unit>
-      <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
 			<target state="final">Bruges i &lt;tite &gt;-tag, maks. 60 tegn</target></trans-unit>
     </body>

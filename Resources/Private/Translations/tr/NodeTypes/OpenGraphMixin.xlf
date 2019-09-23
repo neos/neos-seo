@@ -8,18 +8,12 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target state="translated">Açık Grafik Tipi</target><alt-trans><target>Açık Grafik Türü</target></alt-trans></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
-				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
-				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
-				<source>Article</source>
-			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">Açık Grafik Başlığı</target><alt-trans><target>Açık Grafik başlığı</target></alt-trans></trans-unit>
+      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
+				<source>Used as og:title, max. 60 chars</source>
+			<target state="translated">Og:title olarak maksimum 60 karaktere kadar kullanabilirsiniz</target><alt-trans><target>Og:başlık olarak maksimum 60 karaktere kadar kullanabilirsiniz</target></alt-trans><alt-trans><target>Maksimum og:başlıkta 60 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">Açık Grafik Açıklaması</target></trans-unit>

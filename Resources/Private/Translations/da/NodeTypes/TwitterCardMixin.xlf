@@ -8,15 +8,6 @@
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
 			<target state="final">Korttype</target></trans-unit>
-      <trans-unit id="properties.twitterCardType.selectBoxEditor.placeholder" xml:space="preserve">
-				<source>Summary Card</source>
-			<target state="needs-translation">Summary Card</target></trans-unit>
-      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary" xml:space="preserve">
-				<source>Summary Card</source>
-			<target state="needs-translation">Summary Card</target></trans-unit>
-      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve">
-				<source>Summary Card with Large Image</source>
-			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
 			<target state="final">Forfatter ID</target><alt-trans><target>Forfatter Handle</target></alt-trans><alt-trans><target>Tilføje håndtering</target></alt-trans></trans-unit>
@@ -26,6 +17,9 @@
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
 			<target state="final">Titel</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
+				<source>max. 70 characters</source>
+			<target state="final">maks. 140 tegn</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve" approved="yes">
 				<source>Description</source>
 			<target state="final">Beskrivelse</target></trans-unit>

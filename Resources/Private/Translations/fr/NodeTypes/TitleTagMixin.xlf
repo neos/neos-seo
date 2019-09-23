@@ -5,7 +5,7 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve" approved="yes">
 				<source>Title Override</source>
 			<target state="final">Surcharger le titre</target><alt-trans><target>Ecraser le titre</target></alt-trans></trans-unit>
-      <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
 			<target state="translated">Utilisé dans la balise du &lt;titre&gt; , max. 60 caractères</target></trans-unit>
     </body>
