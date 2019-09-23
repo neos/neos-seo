@@ -5,7 +5,7 @@
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
 			<target state="translated">Cím felülírása</target></trans-unit>
-      <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
 			<target state="translated">Használva ebben &lt;title&gt; maximum 60 karakter</target></trans-unit>
     </body>

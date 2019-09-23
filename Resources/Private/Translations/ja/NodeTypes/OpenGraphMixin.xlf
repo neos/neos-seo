@@ -8,12 +8,18 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target state="translated">OpenGraph タイプ</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
+				<source>Article</source>
+			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">OpenGraph タイトル</target></trans-unit>
-      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
-				<source>Used as og:title, max. 60 chars</source>
-			<target state="translated">Max og：タイトルとして使用されます.60文字</target><alt-trans><target>Og：title、maxとして使用されます。60文字</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">OpenGraph ディスクリプション</target></trans-unit>
