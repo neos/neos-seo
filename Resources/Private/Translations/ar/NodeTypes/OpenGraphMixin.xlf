@@ -8,18 +8,12 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
 			<target state="translated">فتح نوع الرسم البياني</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
-				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
-				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
-				<source>Article</source>
-			<target state="needs-translation">Article</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">فتح عنوان الرسم البياني</target></trans-unit>
+      <trans-unit id="properties.openGraphTitle.textAreaEditor.placeholder" xml:space="preserve">
+				<source>Used as og:title, max. 60 chars</source>
+			<target state="translated">تستخدم ك og:title، كحد أقصى 60 حرفا</target><alt-trans><target>تستخدم ك og: كعنوان، كحد أقصى 60 حرف</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">فتح وصف الرسم البياني</target></trans-unit>
