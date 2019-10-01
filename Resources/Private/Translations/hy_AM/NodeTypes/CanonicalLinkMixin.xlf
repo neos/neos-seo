@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="hy-AM">
+    <body>
+      <trans-unit id="groups.canonicallink" xml:space="preserve">
+				<source>Canonical Link</source>
+			<target state="needs-translation">Canonical Link</target></trans-unit>
+      <trans-unit id="properties.canonicalLink" xml:space="preserve">
+				<source>Canonical Link</source>
+			<target state="needs-translation">Canonical Link</target></trans-unit>
+      <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
+				<source>Paste a url, or use the default.</source>
+			<target state="needs-translation">Paste a url, or use the default.</target></trans-unit>
+    </body>
+  </file>
+</xliff>
