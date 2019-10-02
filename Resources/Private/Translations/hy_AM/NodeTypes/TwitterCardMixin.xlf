@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="hy-AM">
+    <body>
+      <trans-unit id="groups.twittercard" xml:space="preserve">
+				<source>Twitter Card</source>
+			<target state="needs-translation">Twitter Card</target></trans-unit>
+      <trans-unit id="properties.twitterCardType" xml:space="preserve">
+				<source>Card Type</source>
+			<target state="needs-translation">Card Type</target></trans-unit>
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Summary Card</source>
+			<target state="needs-translation">Summary Card</target></trans-unit>
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary" xml:space="preserve">
+				<source>Summary Card</source>
+			<target state="needs-translation">Summary Card</target></trans-unit>
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve">
+				<source>Summary Card with Large Image</source>
+			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
+				<source>Creator Handle</source>
+			<target state="needs-translation">Creator Handle</target></trans-unit>
+      <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
+				<source>@johnexample</source>
+			<target state="needs-translation">@johnexample</target></trans-unit>
+      <trans-unit id="properties.twitterCardTitle" xml:space="preserve">
+				<source>Title</source>
+			<target state="needs-translation">Title</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
+				<source>Description</source>
+			<target state="needs-translation">Description</target></trans-unit>
+      <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 200 characters</source>
+			<target state="needs-translation">max. 200 characters</target></trans-unit>
+      <trans-unit id="properties.twitterCardImage" xml:space="preserve">
+				<source>Card Image</source>
+			<target state="needs-translation">Card Image</target></trans-unit>
+    </body>
+  </file>
+</xliff>

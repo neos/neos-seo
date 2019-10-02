@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="hy-AM">
+    <body>
+      <trans-unit id="groups.xmlsitemap" xml:space="preserve">
+				<source>XML Sitemap</source>
+			<target state="needs-translation">XML Sitemap</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve">
+				<source>Change frequency</source>
+			<target state="needs-translation">Change frequency</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve">
+				<source>Priority</source>
+			<target state="needs-translation">Priority</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
+				<source>between 0 and 1</source>
+			<target state="needs-translation">between 0 and 1</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>none (unspecified)</source>
+			<target state="needs-translation">none (unspecified)</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
+				<source>Always</source>
+			<target state="needs-translation">Always</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
+				<source>Hourly</source>
+			<target state="needs-translation">Hourly</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
+				<source>Daily</source>
+			<target state="needs-translation">Daily</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
+				<source>Weekly</source>
+			<target state="needs-translation">Weekly</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
+				<source>Monthly</source>
+			<target state="needs-translation">Monthly</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
+				<source>Yearly</source>
+			<target state="needs-translation">Yearly</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
+				<source>Never (Archived)</source>
+			<target state="needs-translation">Never (Archived)</target></trans-unit>
+    </body>
+  </file>
+</xliff>

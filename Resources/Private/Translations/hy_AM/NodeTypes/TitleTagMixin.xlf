@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="hy-AM">
+    <body>
+      <trans-unit id="properties.titleOverride" xml:space="preserve">
+				<source>Title Override</source>
+			<target state="needs-translation">Title Override</target></trans-unit>
+      <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
+				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
+			<target state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+    </body>
+  </file>
+</xliff>

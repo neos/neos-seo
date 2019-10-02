@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="hy-AM">
+    <body>
+      <trans-unit id="groups.openGraph" xml:space="preserve">
+				<source>OpenGraph</source>
+			<target state="needs-translation">OpenGraph</target></trans-unit>
+      <trans-unit id="properties.openGraphType" xml:space="preserve">
+				<source>Open Graph Type</source>
+			<target state="needs-translation">Open Graph Type</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
+				<source>Website</source>
+			<target state="needs-translation">Website</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
+				<source>Article</source>
+			<target state="needs-translation">Article</target></trans-unit>
+      <trans-unit id="properties.openGraphTitle" xml:space="preserve">
+				<source>Open Graph title</source>
+			<target state="needs-translation">Open Graph title</target></trans-unit>
+      <trans-unit id="properties.openGraphDescription" xml:space="preserve">
+				<source>Open Graph Description</source>
+			<target state="needs-translation">Open Graph Description</target></trans-unit>
+      <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
+				<source>max. 200 characters</source>
+			<target state="needs-translation">max. 200 characters</target></trans-unit>
+      <trans-unit id="properties.openGraphImage" xml:space="preserve">
+				<source>Open Graph Image</source>
+			<target state="needs-translation">Open Graph Image</target></trans-unit>
+    </body>
+  </file>
+</xliff>
