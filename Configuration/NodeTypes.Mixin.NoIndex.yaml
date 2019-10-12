@@ -5,6 +5,7 @@
   abstract: true
   properties:
     metaRobotsNoindex:
+      type: boolean
       defaultValue: true
       ui:
         inspector:
