@@ -1,0 +1,19 @@
+prototype(Neos.Seo:RobotsTxt.Fragment.Disallow) < prototype(Neos.Fusion:Component) {
+    node = ${site}
+    filter = '[instanceof Neos.Neos:Document][metaRobotsNoindex = true][metaRobotsNofollow = true][robotsDisallow = true]'
+
+    items = ${q(this.node).find(this.filter).add(q(this.node).filter(this.filter)).get()}
+    @if.hasItems = ${Array.length(this.items)}
+
+    renderer = Neos.Fusion:Map {
+        items = ${props.items}
+        itemRenderer = Neos.Neos:NodeUri {
+            node = ${item}
+            parent = ${q(item).parents(props.filter).count()}
+            format = 'html'
+           @process.prefix = ${!this.parent && value ? 'Disallow: ' + value : false}
+        }
+        @process.uniqueAndJoin = ${Array.join(Neos.Seo.Array.unique(value, true), String.chr(10))}
+    }
+}
+
