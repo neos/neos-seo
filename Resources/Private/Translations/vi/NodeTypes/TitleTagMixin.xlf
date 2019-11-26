@@ -7,7 +7,7 @@
 			<target state="translated">Ghi đè tiêu đề</target></trans-unit>
       <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target state="translated">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
     </body>
   </file>
 </xliff>

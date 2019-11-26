@@ -13,7 +13,7 @@
 			<target state="translated">Ưu tiên</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target state="needs-translation">between 0 and 1</target></trans-unit>
+			<target state="translated">between 0 and 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
 			<target state="needs-translation">none (unspecified)</target></trans-unit>
