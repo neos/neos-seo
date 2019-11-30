@@ -19,7 +19,7 @@
 			<target state="translated">タイトル</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 70 characters</source>
-			<target state="needs-translation">max. 70 characters</target></trans-unit>
+			<target state="translated">マックス 70文字</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription" xml:space="preserve">
 				<source>Description</source>
 			<target state="translated">概要</target><alt-trans><target>説明</target></alt-trans></trans-unit>

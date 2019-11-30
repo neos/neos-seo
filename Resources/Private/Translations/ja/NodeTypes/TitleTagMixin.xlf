@@ -7,7 +7,7 @@
 			<target state="translated">タイトルを上書き</target></trans-unit>
       <trans-unit id="properties.titleOverride.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target state="needs-translation">Used in &lt;title&gt; tag, max. 60 chars</target></trans-unit>
+			<target state="translated">使用される&lt;title&gt;タグマックス 60文字</target></trans-unit>
     </body>
   </file>
 </xliff>
