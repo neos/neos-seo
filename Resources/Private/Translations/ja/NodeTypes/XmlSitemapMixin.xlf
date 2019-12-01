@@ -13,7 +13,7 @@
 			<target state="translated">優先度</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target state="needs-translation">between 0 and 1</target></trans-unit>
+			<target state="translated">0から1の間</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
 			<target state="needs-translation">none (unspecified)</target></trans-unit>
