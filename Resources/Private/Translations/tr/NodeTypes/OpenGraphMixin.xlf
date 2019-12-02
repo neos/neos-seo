@@ -25,7 +25,7 @@
 			<target state="translated">Açık Grafik Açıklaması</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">en fazla 200 karakter kullanabilirsiniz</target><alt-trans><target>En fazla 200 karakter</target></alt-trans></trans-unit>
+			<target state="translated">maks. 200 karakter</target><alt-trans><target>en fazla 200 karakter kullanabilirsiniz</target></alt-trans><alt-trans><target>En fazla 200 karakter</target></alt-trans></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target state="translated">Açık Grafik Resmi</target></trans-unit>
