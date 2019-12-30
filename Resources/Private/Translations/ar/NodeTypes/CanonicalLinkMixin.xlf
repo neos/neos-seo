@@ -10,7 +10,7 @@
 			<target state="translated">الرابط الأساسي</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
-			<target state="translated">قم بلصق الرابط، أو استخدم الافتراضي.</target><alt-trans><target>قم بلصق عنوان Url, أو استخدم الإعداد الافتراضي.</target></alt-trans></trans-unit>
+			<target state="translated">قم بلصق الرابط، أو استخدم الافتراضي.</target><alt-trans><target>قم بلصق الرابط، أو استخدم الرابط الافتراضي.</target></alt-trans><alt-trans><target>قم بلصق عنوان Url, أو استخدم الإعداد الافتراضي.</target></alt-trans></trans-unit>
     </body>
   </file>
 </xliff>
