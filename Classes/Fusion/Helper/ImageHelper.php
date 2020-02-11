@@ -17,6 +17,7 @@ use Neos\Media\Domain\Model\AssetInterface;
 use Neos\Media\Domain\Model\ImageInterface;
 use Neos\Media\Domain\Model\ThumbnailConfiguration;
 use Neos\Media\Domain\Service\ThumbnailService;
+use Neos\Media\Exception\ThumbnailServiceException;
 
 class ImageHelper implements ProtectedContextAwareInterface
 {
@@ -36,8 +37,10 @@ class ImageHelper implements ProtectedContextAwareInterface
      * @param boolean $allowCropping Whether the image should be cropped if the given sizes would hurt the aspect ratio
      * @param boolean $allowUpScaling Whether the resulting image size might exceed the size of the original image
      * @param boolean $async Whether the thumbnail can be generated asynchronously
+     * @param integer $quality Quality of the processed image
+     * @param string $format Format for the image, only jpg, jpeg, gif, png, wbmp, xbm, webp and bmp are supported.
      * @return null|ImageInterface
-     * @throws \Exception
+     * @throws ThumbnailServiceException
      */
     public function createThumbnail(
         AssetInterface $asset,
@@ -48,7 +51,9 @@ class ImageHelper implements ProtectedContextAwareInterface
         $maximumHeight = null,
         $allowCropping = false,
         $allowUpScaling = false,
-        $async = false
+        $async = false,
+        $quality = null,
+        $format = null
     )
     {
         if (!empty($preset)) {
@@ -61,7 +66,9 @@ class ImageHelper implements ProtectedContextAwareInterface
                 $maximumHeight,
                 $allowCropping,
                 $allowUpScaling,
-                $async
+                $async,
+                $quality,
+                $format
             );
         }
         $thumbnailImage = $this->thumbnailService->getThumbnail($asset, $thumbnailConfiguration);
