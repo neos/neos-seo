@@ -21,7 +21,7 @@ prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Compone
     instagram.@if.set = ${this.profiles.instagram}
     youTube = ${'https://www.youtube.com/channel/' + this.profiles.youTube}
     youTube.@if.set = ${this.profiles.youTube}
-    linkedIn = ${'https://www.linkedin.com/' + (props.isOrganization ? 'company' : 'in') + '/' + this.profiles.linkedIn}
+    linkedIn = ${'https://www.linkedin.com/' + (this.isOrganization ? 'company' : 'in') + '/' + this.profiles.linkedIn}
     linkedIn.@if.set = ${this.profiles.linkedIn}
 
     urls = ${[this.twitter, this.facebook, this.instagram, this.youTube, this.linkedIn]}
