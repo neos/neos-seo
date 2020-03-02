@@ -19,22 +19,22 @@
 			<target state="needs-translation">none (unspecified)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target state="needs-translation">Always</target></trans-unit>
+			<target state="translated">Her zaman</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target state="needs-translation">Hourly</target></trans-unit>
+			<target state="translated">Saatlik</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target state="needs-translation">Daily</target></trans-unit>
+			<target state="translated">Günlük</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target state="needs-translation">Weekly</target></trans-unit>
+			<target state="translated">Haftalık</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target state="needs-translation">Monthly</target></trans-unit>
+			<target state="translated">Aylık</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target state="needs-translation">Yearly</target></trans-unit>
+			<target state="translated">Yıllık</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
 			<target state="needs-translation">Never (Archived)</target></trans-unit>
