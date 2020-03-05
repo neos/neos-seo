@@ -20,9 +20,16 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
             </urlset>
         `
 
-        @cache.entryTags {
-            1 = ${Neos.Caching.nodeTag(this.startingPoint)}
-            2 = ${Neos.Caching.descendantOfTag(this.startingPoint)}
+        @context.startingPoint = ${this.startingPoint}        
+        @cache {
+            mode = 'cached'
+            entryIdentifier {
+                startingPoint = ${startingPoint}
+            }
+            entryTags {
+                1 = ${Neos.Caching.nodeTag(startingPoint)}
+                2 = ${Neos.Caching.descendantOfTag(startingPoint)}
+            }
         }
     }
 }
