@@ -16,7 +16,7 @@
 			<target state="translated">Website</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
 				<source>Article</source>
-			<target state="needs-translation">Article</target></trans-unit>
+			<target state="translated">Artikel</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
 			<target state="final">OpenGraph-Titel</target></trans-unit>

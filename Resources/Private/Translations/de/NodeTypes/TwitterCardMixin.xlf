@@ -16,7 +16,7 @@
 			<target state="translated">Zusammenfassung</target></trans-unit>
       <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve">
 				<source>Summary Card with Large Image</source>
-			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
+			<target state="translated">Zusammenfassung mit großem Bild</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
 			<target state="final">Autor</target><alt-trans><target>Autor Pseudonym</target></alt-trans></trans-unit>
