@@ -16,7 +16,7 @@
 			<target state="translated">Web sitesi</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
 				<source>Article</source>
-			<target state="needs-translation">Article</target></trans-unit>
+			<target state="translated">Makale</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
 			<target state="translated">Açık Grafik Başlığı</target><alt-trans><target>Açık Grafik başlığı</target></alt-trans></trans-unit>

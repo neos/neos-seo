@@ -37,7 +37,7 @@
 			<target state="translated">Yıllık</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target state="needs-translation">Never (Archived)</target></trans-unit>
+			<target state="translated">Asla (Arşivlendi)</target></trans-unit>
     </body>
   </file>
 </xliff>
