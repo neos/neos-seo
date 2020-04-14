@@ -34,7 +34,7 @@
 			<target state="final">max. 200 Karakter</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target state="translated">Gambar Kartu</target><alt-trans><target>Kartu gambar</target></alt-trans></trans-unit>
+			<target state="translated">Gambar Kartu</target></trans-unit>
     </body>
   </file>
 </xliff>

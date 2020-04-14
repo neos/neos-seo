@@ -31,7 +31,7 @@
 			<target state="translated">Açıklama</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">maks. 200 karakter</target><alt-trans><target>en fazla 200 karakter kullanabilirsiniz</target></alt-trans><alt-trans><target>En fazla 200 karakter</target></alt-trans></trans-unit>
+			<target state="translated">maks. 200 karakter</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target state="translated">Kart Resmi</target></trans-unit>

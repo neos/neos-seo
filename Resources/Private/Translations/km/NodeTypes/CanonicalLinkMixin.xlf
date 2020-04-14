@@ -10,7 +10,7 @@
 			<target state="final">ភ្ជាប់ទៅកាន់ canolical</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Paste a url, or use the default.</source>
-			<target state="final">ដាក់ Url, ​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target><alt-trans><target>ដាក់ url, ​​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target></alt-trans></trans-unit>
+			<target state="final">ដាក់ Url, ​ឬ ការ​ប្រើ​ប្រាស់​លំនាំ​ដើម</target></trans-unit>
     </body>
   </file>
 </xliff>

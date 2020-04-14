@@ -19,7 +19,7 @@
 			<target state="translated">Samenvattingskaart met grote afbeelding</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target state="final">Handle van auteur</target><alt-trans><target>Creator Handle</target></alt-trans></trans-unit>
+			<target state="final">Handle van auteur</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
 			<target state="translated">@jhonvoorbeeld</target></trans-unit>

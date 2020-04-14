@@ -7,7 +7,7 @@
 			<target state="final">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
-			<target state="final">Open Graph type</target><alt-trans><target>Open Graph Type</target></alt-trans></trans-unit>
+			<target state="final">Open Graph type</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>Website</source>
 			<target state="translated">Website</target></trans-unit>

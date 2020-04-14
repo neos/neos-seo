@@ -7,7 +7,7 @@
 			<target state="translated">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target state="translated">Open Graph typ</target><alt-trans><target>Open Graph type</target></alt-trans></trans-unit>
+			<target state="translated">Open Graph typ</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>Website</source>
 			<target state="needs-translation">Website</target></trans-unit>
@@ -22,10 +22,10 @@
 			<target state="translated">Open Graph titel</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
-			<target state="translated">Open Graph Beskrivning</target><alt-trans><target>Open Graph beskrivning</target></alt-trans></trans-unit>
+			<target state="translated">Open Graph Beskrivning</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">max 200 tecken</target><alt-trans><target>max. 200 tecken</target></alt-trans></trans-unit>
+			<target state="translated">max 200 tecken</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target state="translated">Open Graph bild</target></trans-unit>

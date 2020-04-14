@@ -31,7 +31,7 @@
 			<target state="needs-translation">Description</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">max. 200 carateres</target><alt-trans><target>max. 200 caracteres</target></alt-trans></trans-unit>
+			<target state="translated">max. 200 carateres</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target state="needs-translation">Card Image</target></trans-unit>

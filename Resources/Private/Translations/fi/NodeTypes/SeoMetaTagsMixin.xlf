@@ -10,13 +10,13 @@
 			<target state="final">Kuvaus</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 156 characters</source>
-			<target state="final">enintään 156 merkkiä</target><alt-trans><target>maks. 156 merkkiä</target></alt-trans><alt-trans><target>max 156 merkkiä</target></alt-trans><alt-trans><target>max. 156 merkkiä</target></alt-trans></trans-unit>
+			<target state="final">enintään 156 merkkiä</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve" approved="yes">
 				<source>Keywords</source>
 			<target state="final">Avainsanat</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target state="final">pilkulla erotettu, enintään 255 merkkiä</target><alt-trans><target>pilkulla erotettu, maks. 255 merkkiä</target></alt-trans><alt-trans><target>pilkulla erotettu, max. 255 merkkiä</target></alt-trans></trans-unit>
+			<target state="final">pilkulla erotettu, enintään 255 merkkiä</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
 			<target state="final">Piilota hakukoneilta (noindex)</target></trans-unit>

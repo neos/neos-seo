@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="properties.titleOverride" xml:space="preserve">
 				<source>Title Override</source>
-			<target state="translated">Ignorera titeln</target><alt-trans><target>Titeln omställning</target></alt-trans></trans-unit>
+			<target state="translated">Ignorera titeln</target></trans-unit>
       <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target state="translated">Används i &lt;title&gt;-tagg, max 60 tecken</target><alt-trans><target>Används i &lt; title &gt;-tagg, max. 60 tecken</target></alt-trans></trans-unit>
+			<target state="translated">Används i &lt;title&gt;-tagg, max 60 tecken</target></trans-unit>
     </body>
   </file>
 </xliff>

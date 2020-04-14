@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve" approved="yes">
 				<source>OpenGraph</source>
-			<target state="final">OpenGraph</target><alt-trans><target>Open Graph</target></alt-trans></trans-unit>
+			<target state="final">OpenGraph</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
 			<target state="final">Typ Open Graph</target></trans-unit>

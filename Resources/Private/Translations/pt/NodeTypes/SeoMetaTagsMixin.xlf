@@ -16,7 +16,7 @@
 			<target state="needs-translation">Keywords</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve">
 				<source>comma separated, max. 255 chars</source>
-			<target state="translated">separado por vírgulas, max. 255 carateres</target><alt-trans><target>separado por vírgulas, max. 255 caracteres</target></alt-trans></trans-unit>
+			<target state="translated">separado por vírgulas, max. 255 carateres</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
 			<target state="needs-translation">Hide from search engines (noindex)</target></trans-unit>

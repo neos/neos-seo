@@ -31,7 +31,7 @@
 			<target state="final">Kuvaus</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>max. 200 characters</source>
-			<target state="final">max. 200 merkkiä</target><alt-trans><target>max 200 merkkiä</target></alt-trans></trans-unit>
+			<target state="final">max. 200 merkkiä</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
 			<target state="final">Kortin kuva</target></trans-unit>

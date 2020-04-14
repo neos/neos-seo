@@ -19,7 +19,7 @@
 			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
-			<target state="translated">Skapar-id</target><alt-trans><target>Skapare id</target></alt-trans></trans-unit>
+			<target state="translated">Skapar-id</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve">
 				<source>@johnexample</source>
 			<target state="translated">@johnexample</target></trans-unit>
@@ -31,10 +31,10 @@
 			<target state="translated">Beskrivning</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">max 200 tecken</target><alt-trans><target>max. 200 tecken</target></alt-trans></trans-unit>
+			<target state="translated">max 200 tecken</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
-			<target state="translated">Kortbild</target><alt-trans><target>Kort bild</target></alt-trans></trans-unit>
+			<target state="translated">Kortbild</target></trans-unit>
     </body>
   </file>
 </xliff>

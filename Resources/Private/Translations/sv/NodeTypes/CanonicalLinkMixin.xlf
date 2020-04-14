@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.canonicallink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target state="translated">Kanonisk länk</target><alt-trans><target>Kanoniska Link</target></alt-trans></trans-unit>
+			<target state="translated">Kanonisk länk</target></trans-unit>
       <trans-unit id="properties.canonicalLink" xml:space="preserve">
 				<source>Canonical Link</source>
-			<target state="translated">Kanonisk länk</target><alt-trans><target>Kanoniska Link</target></alt-trans></trans-unit>
+			<target state="translated">Kanonisk länk</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve">
 				<source>Paste a url, or use the default.</source>
 			<target state="translated">Klistra in en URL eller använd standardvärdet.</target></trans-unit>

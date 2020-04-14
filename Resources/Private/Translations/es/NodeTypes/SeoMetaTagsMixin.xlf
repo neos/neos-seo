@@ -16,10 +16,10 @@
 			<target state="translated">Palabras clave</target></trans-unit>
       <trans-unit id="properties.metaKeywords.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>comma separated, max. 255 chars</source>
-			<target state="final">separados por coma, máx. 255 caracteres</target><alt-trans><target>separado por coma, máx. 255 caracteres</target></alt-trans></trans-unit>
+			<target state="final">separados por coma, máx. 255 caracteres</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve">
 				<source>Hide from search engines (noindex)</source>
-			<target state="translated">Ocultar de los motores de búsqueda (noindex)</target><alt-trans><target>Esconderse de los motores de búsqueda (noindex)</target></alt-trans></trans-unit>
+			<target state="translated">Ocultar de los motores de búsqueda (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve">
 				<source>Do not follow links (nofollow)</source>
 			<target state="translated">No seguir enlaces (nofollow)</target></trans-unit>

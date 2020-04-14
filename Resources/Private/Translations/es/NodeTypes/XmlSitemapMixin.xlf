@@ -16,7 +16,7 @@
 			<target state="final">entre 0 y 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target state="translated">ninguno (no especificado)</target><alt-trans><target>Ninguno (Sin especificación)</target></alt-trans></trans-unit>
+			<target state="translated">ninguno (no especificado)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
 			<target state="needs-translation">Always</target></trans-unit>

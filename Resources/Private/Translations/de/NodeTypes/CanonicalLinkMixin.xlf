@@ -10,7 +10,7 @@
 			<target state="final">Canonical Link</target></trans-unit>
       <trans-unit id="properties.canonicalLink.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Paste a url, or use the default.</source>
-			<target state="final">Fügen Sie eine URL ein oder verwenden Sie den Standard.</target><alt-trans><target>Fügen Sie eine URL ein oder verwenden Sie die Voreinstellung.</target></alt-trans><alt-trans><target>Fügen Sie eine Url ein, oder verwenden Sie die Standardeinstellung.</target></alt-trans><alt-trans><target>Fügen Sie eine URL oder verwenden Sie den Standard.</target></alt-trans><alt-trans><target>Einen URL einfügen oder den Standard verwenden.</target></alt-trans><alt-trans><target>Ein Url einfügen oder den Standard verwenden.</target></alt-trans></trans-unit>
+			<target state="final">Fügen Sie eine URL ein oder verwenden Sie den Standard.</target></trans-unit>
     </body>
   </file>
 </xliff>

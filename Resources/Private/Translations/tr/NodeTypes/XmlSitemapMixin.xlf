@@ -13,7 +13,7 @@
 			<target state="translated">Öncelik</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve">
 				<source>between 0 and 1</source>
-			<target state="translated">değer 0 ve 1 arasında olmalıdır</target><alt-trans><target>1ila 0 arasında</target></alt-trans></trans-unit>
+			<target state="translated">değer 0 ve 1 arasında olmalıdır</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
 			<target state="needs-translation">none (unspecified)</target></trans-unit>

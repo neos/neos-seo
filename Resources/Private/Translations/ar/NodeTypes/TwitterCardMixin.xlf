@@ -31,7 +31,7 @@
 			<target state="translated">الوصف</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">الحد الأقصى ٢٠٠ حرف</target><alt-trans><target>الحد أقصى ٢٠٠ حرف</target></alt-trans><alt-trans><target>كحد أقصى ٢٠٠ حرف</target></alt-trans></trans-unit>
+			<target state="translated">الحد الأقصى ٢٠٠ حرف</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target state="needs-translation">Card Image</target></trans-unit>

@@ -19,7 +19,7 @@
 			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target state="final">Forfatter ID</target><alt-trans><target>Forfatter Handle</target></alt-trans><alt-trans><target>Tilføje håndtering</target></alt-trans></trans-unit>
+			<target state="final">Forfatter ID</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
 			<target state="final">@johnexample</target></trans-unit>
@@ -34,7 +34,7 @@
 			<target state="final">maks. 140 tegn</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target state="final">Kortbillede</target><alt-trans><target>Kort billede</target></alt-trans></trans-unit>
+			<target state="final">Kortbillede</target></trans-unit>
     </body>
   </file>
 </xliff>

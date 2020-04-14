@@ -19,10 +19,10 @@
 			<target state="translated">met komma's gescheiden, max 225 tekens</target></trans-unit>
       <trans-unit id="properties.metaRobotsNoindex" xml:space="preserve" approved="yes">
 				<source>Hide from search engines (noindex)</source>
-			<target state="final">Verbergen in zoekmachines (noindex)</target><alt-trans><target>Verbergen van zoekmachines (noindex)</target></alt-trans></trans-unit>
+			<target state="final">Verbergen in zoekmachines (noindex)</target></trans-unit>
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
-			<target state="final">Links niet volgen (nofollow)</target><alt-trans><target>Volg links niet (nofollow)</target></alt-trans></trans-unit>
+			<target state="final">Links niet volgen (nofollow)</target></trans-unit>
     </body>
   </file>
 </xliff>

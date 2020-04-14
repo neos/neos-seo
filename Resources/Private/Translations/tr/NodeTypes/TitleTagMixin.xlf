@@ -7,7 +7,7 @@
 			<target state="translated">Başlığı Geçersiz Kıl</target></trans-unit>
       <trans-unit id="properties.titleOverride.textAreaEditor.placeholder" xml:space="preserve">
 				<source>Used in &lt;title&gt; tag, max. 60 chars</source>
-			<target state="translated">&lt;title&gt; komutunda maksimum 60 karakter kullanabilirsiniz</target><alt-trans><target>&amp;It başlığında &amp;gt etkiketinde, maksimum 60 karakter kullanılır</target></alt-trans></trans-unit>
+			<target state="translated">&lt;title&gt; komutunda maksimum 60 karakter kullanabilirsiniz</target></trans-unit>
     </body>
   </file>
 </xliff>

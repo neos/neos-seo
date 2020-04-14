@@ -4,10 +4,10 @@
     <body>
       <trans-unit id="groups.openGraph" xml:space="preserve">
 				<source>OpenGraph</source>
-			<target state="translated">Açık Grafik</target><alt-trans><target>AçıkGrafik</target></alt-trans></trans-unit>
+			<target state="translated">Açık Grafik</target></trans-unit>
       <trans-unit id="properties.openGraphType" xml:space="preserve">
 				<source>Open Graph Type</source>
-			<target state="translated">Açık Grafik Tipi</target><alt-trans><target>Açık Grafik Türü</target></alt-trans></trans-unit>
+			<target state="translated">Açık Grafik Tipi</target></trans-unit>
       <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>Website</source>
 			<target state="translated">Web sitesi</target></trans-unit>
@@ -19,13 +19,13 @@
 			<target state="translated">Makale</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve">
 				<source>Open Graph title</source>
-			<target state="translated">Açık Grafik Başlığı</target><alt-trans><target>Açık Grafik başlığı</target></alt-trans></trans-unit>
+			<target state="translated">Açık Grafik Başlığı</target></trans-unit>
       <trans-unit id="properties.openGraphDescription" xml:space="preserve">
 				<source>Open Graph Description</source>
 			<target state="translated">Açık Grafik Açıklaması</target></trans-unit>
       <trans-unit id="properties.openGraphDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">maks. 200 karakter</target><alt-trans><target>en fazla 200 karakter kullanabilirsiniz</target></alt-trans><alt-trans><target>En fazla 200 karakter</target></alt-trans></trans-unit>
+			<target state="translated">maks. 200 karakter</target></trans-unit>
       <trans-unit id="properties.openGraphImage" xml:space="preserve">
 				<source>Open Graph Image</source>
 			<target state="translated">Açık Grafik Resmi</target></trans-unit>

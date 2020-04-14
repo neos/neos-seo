@@ -19,10 +19,10 @@
 			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
-			<target state="final">Автор</target><alt-trans><target>Перо создателя</target></alt-trans></trans-unit>
+			<target state="final">Автор</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>@johnexample</source>
-			<target state="final">@ivanivanov</target><alt-trans><target>@johnexample</target></alt-trans></trans-unit>
+			<target state="final">@ivanivanov</target></trans-unit>
       <trans-unit id="properties.twitterCardTitle" xml:space="preserve" approved="yes">
 				<source>Title</source>
 			<target state="final">Название</target></trans-unit>
@@ -34,7 +34,7 @@
 			<target state="final">макс. 200 символов</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve" approved="yes">
 				<source>Card Image</source>
-			<target state="final">Карта изображений</target><alt-trans><target>Картина</target></alt-trans></trans-unit>
+			<target state="final">Карта изображений</target></trans-unit>
     </body>
   </file>
 </xliff>

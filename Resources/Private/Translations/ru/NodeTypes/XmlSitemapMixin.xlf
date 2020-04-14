@@ -7,7 +7,7 @@
 			<target state="final">Карта сайта в XML</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
-			<target state="final">Частота изменений</target><alt-trans><target>Частота изменения</target></alt-trans></trans-unit>
+			<target state="final">Частота изменений</target></trans-unit>
       <trans-unit id="properties.xmlSitemapPriority" xml:space="preserve" approved="yes">
 				<source>Priority</source>
 			<target state="final">Приоритет</target></trans-unit>
