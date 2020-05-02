@@ -16,28 +16,28 @@
 			<target state="translated">entre 0 e 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target state="needs-translation">none (unspecified)</target></trans-unit>
+			<target state="translated">Nenhum (não especificado)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target state="needs-translation">Always</target></trans-unit>
+			<target state="translated">Sempre</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target state="needs-translation">Hourly</target></trans-unit>
+			<target state="translated">Todas as horas</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target state="needs-translation">Daily</target></trans-unit>
+			<target state="translated">Diariamente</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target state="needs-translation">Weekly</target></trans-unit>
+			<target state="translated">Semanal</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target state="needs-translation">Monthly</target></trans-unit>
+			<target state="translated">Mensal</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target state="needs-translation">Yearly</target></trans-unit>
+			<target state="translated">Anual</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target state="needs-translation">Never (Archived)</target></trans-unit>
+			<target state="translated">Nunca (arquivado)</target></trans-unit>
     </body>
   </file>
 </xliff>
