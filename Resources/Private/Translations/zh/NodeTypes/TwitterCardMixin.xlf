@@ -10,13 +10,13 @@
 			<target state="translated">卡片类型</target></trans-unit>
       <trans-unit id="properties.twitterCardType.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>Summary Card</source>
-			<target state="needs-translation">Summary Card</target></trans-unit>
+			<target state="translated">总结卡</target></trans-unit>
       <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary" xml:space="preserve">
 				<source>Summary Card</source>
-			<target state="needs-translation">Summary Card</target></trans-unit>
+			<target state="translated">总结卡</target></trans-unit>
       <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve">
 				<source>Summary Card with Large Image</source>
-			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
+			<target state="translated">大图总结卡</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve">
 				<source>Creator Handle</source>
 			<target state="translated">创建者的句柄</target></trans-unit>

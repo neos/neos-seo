@@ -16,28 +16,28 @@
 			<target state="translated">介于 0 和 1 之间</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target state="needs-translation">none (unspecified)</target></trans-unit>
+			<target state="translated">空（不详）</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target state="needs-translation">Always</target></trans-unit>
+			<target state="translated">总是</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target state="needs-translation">Hourly</target></trans-unit>
+			<target state="translated">每小时</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target state="needs-translation">Daily</target></trans-unit>
+			<target state="translated">每天</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target state="needs-translation">Weekly</target></trans-unit>
+			<target state="translated">每周</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target state="needs-translation">Monthly</target></trans-unit>
+			<target state="translated">每月</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target state="needs-translation">Yearly</target></trans-unit>
+			<target state="translated">每年</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target state="needs-translation">Never (Archived)</target></trans-unit>
+			<target state="translated">从不（归档）</target></trans-unit>
     </body>
   </file>
 </xliff>
