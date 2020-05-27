@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="groups.xmlsitemap" xml:space="preserve" approved="yes">
 				<source>XML Sitemap</source>
-			<target state="final">Карта сайта в XML</target></trans-unit>
+			<target state="final">XML Карта сайта (XML-Sitemap)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency" xml:space="preserve" approved="yes">
 				<source>Change frequency</source>
 			<target state="final">Частота изменений</target></trans-unit>
@@ -14,30 +14,30 @@
       <trans-unit id="properties.xmlSitemapPriority.textFieldEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>between 0 and 1</source>
 			<target state="final">между 0 и 1</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>none (unspecified)</source>
-			<target state="needs-translation">none (unspecified)</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
+			<target state="final">ничего (не указано)</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve" approved="yes">
 				<source>Always</source>
-			<target state="needs-translation">Always</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
+			<target state="final">Всегда</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve" approved="yes">
 				<source>Hourly</source>
-			<target state="needs-translation">Hourly</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
+			<target state="final">Ежечасно</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve" approved="yes">
 				<source>Daily</source>
-			<target state="needs-translation">Daily</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
+			<target state="final">Ежедневно</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve" approved="yes">
 				<source>Weekly</source>
-			<target state="needs-translation">Weekly</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
+			<target state="final">Еженедельно</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve" approved="yes">
 				<source>Monthly</source>
-			<target state="needs-translation">Monthly</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
+			<target state="final">Ежемесячно</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve" approved="yes">
 				<source>Yearly</source>
-			<target state="needs-translation">Yearly</target></trans-unit>
-      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
+			<target state="final">Ежегодно</target></trans-unit>
+      <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve" approved="yes">
 				<source>Never (Archived)</source>
-			<target state="needs-translation">Never (Archived)</target></trans-unit>
+			<target state="final">Никогда (в архиве)</target></trans-unit>
     </body>
   </file>
 </xliff>

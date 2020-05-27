@@ -8,15 +8,15 @@
       <trans-unit id="properties.openGraphType" xml:space="preserve" approved="yes">
 				<source>Open Graph Type</source>
 			<target state="final">Тип Open Graph</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.openGraphType.selectBoxEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve">
+			<target state="final">Веб-сайт</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.website" xml:space="preserve" approved="yes">
 				<source>Website</source>
-			<target state="needs-translation">Website</target></trans-unit>
-      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve">
+			<target state="final">Веб-сайт</target></trans-unit>
+      <trans-unit id="properties.openGraphType.selectBoxEditor.values.article" xml:space="preserve" approved="yes">
 				<source>Article</source>
-			<target state="needs-translation">Article</target></trans-unit>
+			<target state="final">Статья</target></trans-unit>
       <trans-unit id="properties.openGraphTitle" xml:space="preserve" approved="yes">
 				<source>Open Graph title</source>
 			<target state="final">Название Open Graph</target></trans-unit>

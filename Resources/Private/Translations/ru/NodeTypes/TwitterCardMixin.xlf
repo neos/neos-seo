@@ -8,15 +8,15 @@
       <trans-unit id="properties.twitterCardType" xml:space="preserve" approved="yes">
 				<source>Card Type</source>
 			<target state="final">Тип карты</target></trans-unit>
-      <trans-unit id="properties.twitterCardType.selectBoxEditor.placeholder" xml:space="preserve">
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.placeholder" xml:space="preserve" approved="yes">
 				<source>Summary Card</source>
-			<target state="needs-translation">Summary Card</target></trans-unit>
-      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary" xml:space="preserve">
+			<target state="final">Сводная карта</target></trans-unit>
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary" xml:space="preserve" approved="yes">
 				<source>Summary Card</source>
-			<target state="needs-translation">Summary Card</target></trans-unit>
-      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve">
+			<target state="final">Сводная карта</target></trans-unit>
+      <trans-unit id="properties.twitterCardType.selectBoxEditor.values.summary_large_image" xml:space="preserve" approved="yes">
 				<source>Summary Card with Large Image</source>
-			<target state="needs-translation">Summary Card with Large Image</target></trans-unit>
+			<target state="final">Сводная карта с большим изображением</target></trans-unit>
       <trans-unit id="properties.twitterCardCreator" xml:space="preserve" approved="yes">
 				<source>Creator Handle</source>
 			<target state="final">Автор</target></trans-unit>
