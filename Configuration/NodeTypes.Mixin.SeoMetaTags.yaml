@@ -24,7 +24,7 @@
             placeholder: i18n
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
-          maximum: 156
+          maximum: 160
     metaKeywords:
       type: string
       ui:
