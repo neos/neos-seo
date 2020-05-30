@@ -16,7 +16,7 @@
 			<target state="translated">değer 0 ve 1 arasında olmalıdır</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target state="needs-translation">none (unspecified)</target></trans-unit>
+			<target state="translated">hiçbiri (belirlenmemiş)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
 			<target state="translated">Her zaman</target></trans-unit>
