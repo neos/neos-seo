@@ -16,28 +16,28 @@
 			<target state="final">antara 0 dan 1</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.placeholder" xml:space="preserve">
 				<source>none (unspecified)</source>
-			<target state="needs-translation">none (unspecified)</target></trans-unit>
+			<target state="translated">Kosong (tidak spesifik)</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.always" xml:space="preserve">
 				<source>Always</source>
-			<target state="needs-translation">Always</target></trans-unit>
+			<target state="translated">Selalu</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.hourly" xml:space="preserve">
 				<source>Hourly</source>
-			<target state="needs-translation">Hourly</target></trans-unit>
+			<target state="translated">Per jam</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.daily" xml:space="preserve">
 				<source>Daily</source>
-			<target state="needs-translation">Daily</target></trans-unit>
+			<target state="translated">Harian</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.weekly" xml:space="preserve">
 				<source>Weekly</source>
-			<target state="needs-translation">Weekly</target></trans-unit>
+			<target state="translated">Mingguan</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.monthly" xml:space="preserve">
 				<source>Monthly</source>
-			<target state="needs-translation">Monthly</target></trans-unit>
+			<target state="translated">Bulanan</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.yearly" xml:space="preserve">
 				<source>Yearly</source>
-			<target state="needs-translation">Yearly</target></trans-unit>
+			<target state="translated">Tahunan</target></trans-unit>
       <trans-unit id="properties.xmlSitemapChangeFrequency.selectBoxEditor.values.never" xml:space="preserve">
 				<source>Never (Archived)</source>
-			<target state="needs-translation">Never (Archived)</target></trans-unit>
+			<target state="translated">Tidak Pernah (Diarsip)</target></trans-unit>
     </body>
   </file>
 </xliff>
