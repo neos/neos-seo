@@ -31,7 +31,7 @@
 			<target state="translated">说明</target></trans-unit>
       <trans-unit id="properties.twitterCardDescription.textAreaEditor.placeholder" xml:space="preserve">
 				<source>max. 200 characters</source>
-			<target state="translated">最多 200 字符</target></trans-unit>
+			<target state="translated">最多为200字符</target></trans-unit>
       <trans-unit id="properties.twitterCardImage" xml:space="preserve">
 				<source>Card Image</source>
 			<target state="translated">卡图像</target></trans-unit>
