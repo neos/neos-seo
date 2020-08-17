@@ -17,7 +17,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
     }
     imageAltText = ${this.image.caption || this.image.label}
 
-    preset = ${'Neos.Seo:OpenGraph.' + (this.image.isOrientationLandscape ? 'Landscape' : 'Square')}
+    preset = ${'Neos.Seo:OpenGraph.' + (this.image.orientation == 'landscape' ? 'Landscape' : 'Square')}
     preset.@if.hasImage = ${this.image}
     thumbnail = ${Neos.Seo.Image.createThumbnail(this.image, this.preset)}
     thumbnail.@if.hasImage = ${this.image}
