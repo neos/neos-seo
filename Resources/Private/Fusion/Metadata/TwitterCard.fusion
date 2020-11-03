@@ -4,7 +4,7 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
     description = ${q(node).property('twitterCardDescription') || q(node).property('openGraphDescription') || q(node).property('metaDescription')}
     siteHandle = ${Configuration.setting('Neos.Seo.twitterCard.siteHandle')}
     creator = ${q(node).property('twitterCardCreator') || this.siteHandle}
-    @context.__type = ${this.type}
+    @context.type = ${this.type}
     url = Neos.Neos:NodeUri {
         node = ${node}
         absolute = true
@@ -25,7 +25,7 @@ prototype(Neos.Seo:TwitterCard) < prototype(Neos.Fusion:Component) {
         }
         preset = Neos.Fusion:Case {
             summaryCardLargeImage {
-                condition = ${__type == 'summary_large_image'}
+                condition = ${type == 'summary_large_image'}
                 renderer = 'Neos.Seo:TwitterCard.SummaryCardLargeImage'
             }
 
