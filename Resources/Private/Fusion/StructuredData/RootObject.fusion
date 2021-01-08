@@ -1,5 +1,5 @@
 prototype(Neos.Seo:StructuredData.RootObject) < prototype(Neos.Seo:StructuredData.Object) {
-    context = 'http://schema.org'
+    context = 'http://schema.org/'
     @process.toJson = ${Json.stringify(value)}
     @process.wrap = ${'<script type="application/ld+json">' + value +  '</script>'}
 }
