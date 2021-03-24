@@ -41,6 +41,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
                     @process.prefix = ${'Sitemap: ' + value}
                 }
             }
+            @process.prefix = ${props.linebreak + value}
         }
 
         data = ${props.data}
