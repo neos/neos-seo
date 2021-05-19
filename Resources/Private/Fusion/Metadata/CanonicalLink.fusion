@@ -3,7 +3,17 @@ prototype(Neos.Seo:CanonicalLink) < prototype(Neos.Fusion:Tag) {
     attributes {
         rel = 'canonical'
         href = Neos.Fusion:Component {
-            node = ${documentNode}
+            node = Neos.Fusion:Case {
+                useFallback {
+                    condition = ${node.dimensions != node.context.targetDimensionValues}
+                    targetDimensions = ${Array.map(node.dimensions, (item) => item[0])}
+                    renderer = ${q(node).context({dimensions: node.dimensions, targetDimensions: this.targetDimensions}).get(0)}
+                }
+                default {
+                    condition = true
+                    renderer = ${node}
+                }
+            }
             canonicalLink = ${q(this.node).property('canonicalLink')}
 
             renderer = Neos.Fusion:Case {
