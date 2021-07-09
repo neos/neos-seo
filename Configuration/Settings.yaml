@@ -20,6 +20,7 @@ Neos:
   Fusion:
     defaultContext:
       'Neos.Seo.Image': 'Neos\Seo\Fusion\Helper\ImageHelper'
+      'Neos.Seo.Array': 'Carbon\Eel\EelHelper\ArrayHelper'
 
   Seo:
     # robots.txt settings

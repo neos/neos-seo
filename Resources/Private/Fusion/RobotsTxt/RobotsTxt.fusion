@@ -43,7 +43,25 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
             }
             @process.prefix = ${props.linebreak + value}
         }
-
+        disallowedDocuments = Neos.Fusion:Case {
+            hasLanguage {
+                condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + props.languageDimension) != null}
+                renderer = Neos.Fusion:Map {
+                    items = Neos.Neos:DimensionsMenuItems {
+                        dimension = ${props.languageDimension}
+                        includeAllPresets = true
+                    }
+                    itemRenderer = Neos.Seo:RobotsTxt.Fragment.Disallow {
+                        node = ${item.node}
+                    }
+                    @process.uniqueAndJoin = ${Array.join(Neos.Seo.Array.unique(value, true), String.chr(10))}
+                }
+            }
+            noLanguage {
+                condition = true
+                renderer = Neos.Seo:RobotsTxt.Fragment.Disallow
+            }
+        }
         data = ${props.data}
         linebreak = ${props.linebreak}
 
@@ -53,6 +71,8 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
                 <Neos.Fusion:Loop items={props.data}>
                     {item}{props.linebreak}
                 </Neos.Fusion:Loop>
+                {props.disallowedDocuments}
+                {props.disallowedDocuments ? props.linebreak : ''}
                 {props.sitemaps}
             `
         }

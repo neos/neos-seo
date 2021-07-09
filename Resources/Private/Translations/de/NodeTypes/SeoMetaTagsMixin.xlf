@@ -23,6 +23,12 @@
       <trans-unit id="properties.metaRobotsNofollow" xml:space="preserve" approved="yes">
 				<source>Do not follow links (nofollow)</source>
 			<target state="final">Links nicht folgen (nofollow)</target></trans-unit>
+      <trans-unit id="properties.robotsDisallow" xml:space="preserve">
+				<source>Disallow page also in robots.txt</source>
+			<target>Seite auch im robots.txt verbieten</target></trans-unit>
+      <trans-unit id="properties.robotsDisallow.ui.help.message" xml:space="preserve">
+				<source>HELP TEXT FOR robotsDisallow</source>
+			<target>HELP TEXT FOR robotsDisallow</target></trans-unit>
     </body>
   </file>
 </xliff>
