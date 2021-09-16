@@ -9,8 +9,8 @@
 				<source>Description</source>
 			<target state="translated">الوصف</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
-				<source>max. 156 characters</source>
-			<target state="translated">الحد الأقصى 156 حرف</target></trans-unit>
+				<source>max. 160 characters</source>
+			<target state="translated">الحد الأقصى 160 حرف</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target state="translated">كلمات مفتاحية</target></trans-unit>

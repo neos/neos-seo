@@ -9,8 +9,8 @@
 				<source>Description</source>
 			<target state="translated">Опис</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
-				<source>max. 156 characters</source>
-			<target state="translated">макс. 156 символів</target></trans-unit>
+				<source>max. 160 characters</source>
+			<target state="translated">макс. 160 символів</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target state="translated">Ключові слова</target></trans-unit>

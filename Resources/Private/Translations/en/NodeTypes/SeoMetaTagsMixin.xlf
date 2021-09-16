@@ -9,7 +9,7 @@
 				<source>Description</source>
 			</trans-unit>
 			<trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
-				<source>max. 156 characters</source>
+				<source>max. 160 characters</source>
 			</trans-unit>
 			<trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
