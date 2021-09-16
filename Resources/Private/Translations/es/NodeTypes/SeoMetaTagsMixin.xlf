@@ -9,8 +9,8 @@
 				<source>Description</source>
 			<target state="final">Descripción</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve" approved="yes">
-				<source>max. 156 characters</source>
-			<target state="final">máx. 156 caracteres</target></trans-unit>
+				<source>max. 160 characters</source>
+			<target state="final">máx. 160 caracteres</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target state="translated">Palabras clave</target></trans-unit>

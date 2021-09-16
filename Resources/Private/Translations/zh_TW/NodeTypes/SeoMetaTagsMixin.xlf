@@ -9,8 +9,8 @@
 				<source>Description</source>
 			<target state="translated">描述</target></trans-unit>
       <trans-unit id="properties.metaDescription.textAreaEditor.placeholder" xml:space="preserve">
-				<source>max. 156 characters</source>
-			<target state="translated">最大 156字元</target></trans-unit>
+				<source>max. 160 characters</source>
+			<target state="translated">最大 160字元</target></trans-unit>
       <trans-unit id="properties.metaKeywords" xml:space="preserve">
 				<source>Keywords</source>
 			<target state="translated">關鍵字</target></trans-unit>
