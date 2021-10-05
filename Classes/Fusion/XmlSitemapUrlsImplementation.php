@@ -187,7 +187,8 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     {
         return !$node->getNodeType()->isOfType('Neos.Seo:NoindexMixin') && $node->isVisible()
             && ($this->getRenderHiddenInIndex() || !$node->isHiddenInIndex()) && $node->isAccessible()
-            && $node->getProperty('metaRobotsNoindex') !== true;
+            && $node->getProperty('metaRobotsNoindex') !== true
+            && ((string)$node->getProperty('canonicalLink') === '' || substr($node->getProperty('canonicalLink'),7)=== $node->getIdentifier());
     }
 
     /**
