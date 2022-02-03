@@ -137,8 +137,28 @@ You can activate and configure them according to your needs.
 The prototypes are also meant to be a very basic standard for your own structured elements.
 So feel free to adjust and reuse them.
 
+
+Google Search Console
+^^^^^^^^^^^^^^^^^^^^^
+
 When you activate structured data elements and have them on your live site you should use the Google Search Console
 to verify that they work as expected: https://search.google.com/search-console.
+
+You can verify site ownership for the Google Search Console with the following setting:
+
+  Neos:
+    Seo:
+      google:
+        siteVerification: 'yourVerificationProperty'
+
+Or if you prefer having a property to edit in the Neos backend (or on multi site setups), add the following nodeType to the nodeType definition of your site node:
+
+  'Vendor.Package:Document.Home':
+    superTypes:
+      'Neos.Seo:GoogleSiteVerificationMixin': true
+
+Both options will add a meta tag required for Google to verify the ownership.
+
 
 Breadcrumb
 ^^^^^^^^^^

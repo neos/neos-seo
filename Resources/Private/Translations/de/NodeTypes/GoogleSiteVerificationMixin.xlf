@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Seo" source-language="en" datatype="plaintext" target-language="de">
+    <body>
+			<trans-unit id="properties.metaGoogleSiteVerification" xml:space="preserve" approved="yes">
+				<source>Google Site Verification property</source>
+			    <target state="final">Google Site Verification Property</target>
+			</trans-unit>
+			<trans-unit id="properties.metaGoogleSiteVerification.ui.help.message" xml:space="preserve">
+				<source>This sets the HTML tag to confirm site ownership for Google Search Console. Enter only the value here, not the complete tag.</source>
+				<target state="final">Hierdurch wird der HTML-Tag zur Bestätigung der Inhaberschaft für die Google Search Console gesetzt. Tragen Sie hier nur den Wert ein, nicht den kompletten Tag.</target>
+			</trans-unit>
+    </body>
+  </file>
+</xliff>
