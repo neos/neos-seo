@@ -11,6 +11,7 @@ prototype(Neos.Neos:Page) {
         twitterCard = Neos.Seo:TwitterCard
         openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
         facebookMetaTags = Neos.Seo:FacebookMetaTags
+        metaGoogleSiteVerification = Neos.Seo:GoogleSiteVerification
         structuredData = Neos.Seo:StructuredData.Container
     }
 }

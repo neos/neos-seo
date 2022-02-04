@@ -1,0 +1,15 @@
+'Neos.Seo:GoogleSiteVerificationMixin':
+  abstract: true
+  properties:
+    metaGoogleSiteVerification:
+      type: string
+      ui:
+        label: i18n
+        help:
+          message: i18n
+        inspector:
+          group: 'seometa'
+          position: 100
+      validation:
+        'Neos.Neos/Validation/RegularExpressionValidator':
+          regularExpression: '/^[a-z0-9]$/i'

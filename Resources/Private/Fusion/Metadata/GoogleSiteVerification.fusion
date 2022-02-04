@@ -1,0 +1,13 @@
+prototype(Neos.Seo:GoogleSiteVerification) < prototype(Neos.Fusion:Component) {
+    googleSiteVerification = ${q(node).property('metaGoogleSiteVerification') || Configuration.setting('Neos.Seo.google.siteVerification')}
+
+    @if.isSite = ${node == site}
+    @if.hasGoogleSiteVerification = ${this.googleSiteVerification}
+
+    renderer = afx`
+        <meta
+            property="google-site-verification"
+            content={props.googleSiteVerification}
+        />
+    `
+}
