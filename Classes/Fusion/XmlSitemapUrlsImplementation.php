@@ -13,13 +13,13 @@ namespace Neos\Seo\Fusion;
  */
 
 use Neos\ContentRepository\Exception\NodeException;
+use Neos\ContentRepository\SharedModel\NodeType\NodeType;
+use Neos\ContentRepository\SharedModel\NodeType\NodeTypeManager;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
 use Neos\ContentRepository\Domain\Model\NodeInterface;
-use Neos\ContentRepository\Domain\Model\NodeType;
-use Neos\ContentRepository\Domain\Service\NodeTypeManager;
 
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
