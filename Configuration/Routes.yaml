@@ -12,7 +12,7 @@
     '@format':     'xml.sitemap'
   routeParts:
     'node':
-      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      handler:     'Neos\Neos\FrontendRouting\FrontendNodeRoutePartHandlerInterface'
       options:
         onlyMatchSiteNodes: true
   appendExceedingArguments: true
@@ -28,7 +28,7 @@
     '@format':     'xml.sitemap'
   routeParts:
     'node':
-      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      handler:     'Neos\Neos\FrontendRouting\FrontendNodeRoutePartHandlerInterface'
       options:
         onlyMatchSiteNodes: true
   appendExceedingArguments: true
@@ -43,7 +43,7 @@
     '@format':     'txt.robots'
   routeParts:
     'node':
-      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      handler:     'Neos\Neos\FrontendRouting\FrontendNodeRoutePartHandlerInterface'
       options:
         onlyMatchSiteNodes: true
   appendExceedingArguments: true
