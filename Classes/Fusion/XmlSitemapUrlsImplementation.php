@@ -12,22 +12,29 @@ namespace Neos\Seo\Fusion;
  * source code.
  */
 
-use Neos\ContentRepository\Exception\NodeException;
+use Neos\ContentRepository\NodeAccess\NodeAccessorManager;
+use Neos\ContentRepository\Projection\ContentGraph\NodeInterface;
 use Neos\ContentRepository\SharedModel\NodeType\NodeType;
-use Neos\ContentRepository\SharedModel\NodeType\NodeTypeManager;
+use Neos\ContentRepository\SharedModel\NodeType\NodeTypeConstraintParser;
+use Neos\ContentRepositoryRegistry\ContentRepositoryRegistry;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
-use Neos\ContentRepository\Domain\Model\NodeInterface;
 
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
     /**
      * @Flow\Inject
-     * @var NodeTypeManager
+     * @var ContentRepositoryRegistry
      */
-    protected $nodeTypeManager;
+    protected $contentRepositoryRegistry;
+
+    /**
+     * @Flow\Inject
+     * @var NodeAccessorManager
+     */
+    protected $nodeAccessorManager;
 
     /**
      * @Flow\Inject
@@ -38,7 +45,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     /**
      * @var array
      */
-    protected $assetPropertiesByNodeType;
+    protected $assetPropertiesByNodeType = null;
 
     /**
      * @var bool
@@ -96,20 +103,17 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         return $this->startingPoint;
     }
 
-    /**
-     * @return void
-     */
-    public function initializeObject()
+    private function getAssetPropertiesForNodeType(NodeType $nodeType): array
     {
-        if ($this->getIncludeImageUrls()) {
-            $relevantPropertyTypes = [
-                'array<Neos\Media\Domain\Model\Asset>' => true,
-                'Neos\Media\Domain\Model\Asset' => true,
-                'Neos\Media\Domain\Model\ImageInterface' => true
-            ];
+        if ($this->assetPropertiesByNodeType[$nodeType->getName()] === null) {
+            $this->assetPropertiesByNodeType[$nodeType->getName()] = [];
+            if ($this->getIncludeImageUrls()) {
+                $relevantPropertyTypes = [
+                    'array<Neos\Media\Domain\Model\Asset>' => true,
+                    'Neos\Media\Domain\Model\Asset' => true,
+                    'Neos\Media\Domain\Model\ImageInterface' => true
+                ];
 
-            foreach ($this->nodeTypeManager->getNodeTypes(false) as $nodeType) {
-                /** @var NodeType $nodeType */
                 foreach ($nodeType->getProperties() as $propertyName => $propertyConfiguration) {
                     if (isset($relevantPropertyTypes[$nodeType->getPropertyType($propertyName)])) {
                         $this->assetPropertiesByNodeType[$nodeType->getName()][] = $propertyName;
@@ -117,6 +121,8 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
                 }
             }
         }
+
+        return $this->assetPropertiesByNodeType[$nodeType->getName()];
     }
 
     /**
@@ -130,7 +136,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         if ($this->isDocumentNodeToBeIndexed($node)) {
             $item = [
                 'node' => $node,
-                'lastModificationDateTime' => $node->getNodeData()->getLastModificationDateTime(),
+                //'lastModificationDateTime' => $node->getNodeData()->getLastModificationDateTime(),
                 'priority' => $node->getProperty('xmlSitemapPriority') ?: '',
                 'images' => [],
             ];
@@ -155,22 +161,30 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      */
     protected function resolveImages(NodeInterface $node, array &$item)
     {
-        if (isset($this->assetPropertiesByNodeType[$node->getNodeType()->getName()]) && !empty($this->assetPropertiesByNodeType[$node->getNodeType()->getName()])) {
+        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($node->getNodeType());
 
-            foreach ($this->assetPropertiesByNodeType[$node->getNodeType()->getName()] as $propertyName) {
-                if (is_array($node->getProperty($propertyName)) && !empty($node->getProperty($propertyName))) {
-                    foreach ($node->getProperty($propertyName) as $asset) {
-                        if ($asset instanceof ImageInterface) {
-                            $item['images'][$this->persistenceManager->getIdentifierByObject($asset)] = $asset;
-                        }
+        foreach ($assetPropertiesForNodeType as $propertyName) {
+            if (is_array($node->getProperty($propertyName)) && !empty($node->getProperty($propertyName))) {
+                foreach ($node->getProperty($propertyName) as $asset) {
+                    if ($asset instanceof ImageInterface) {
+                        $item['images'][$this->persistenceManager->getIdentifierByObject($asset)] = $asset;
                     }
-                } elseif ($node->getProperty($propertyName) instanceof ImageInterface) {
-                    $item['images'][$this->persistenceManager->getIdentifierByObject($node->getProperty($propertyName))] = $node->getProperty($propertyName);
                 }
+            } elseif ($node->getProperty($propertyName) instanceof ImageInterface) {
+                $item['images'][$this->persistenceManager->getIdentifierByObject($node->getProperty($propertyName))] = $node->getProperty($propertyName);
             }
         }
 
-        foreach ($node->getChildNodes('Neos.Neos:ContentCollection,Neos.Neos:Content') as $childNode) {
+        $contentRepository = $this->contentRepositoryRegistry->get($node->getSubgraphIdentity()->contentRepositoryIdentifier);
+        $nodeTypeConstraintParser = NodeTypeConstraintParser::create($contentRepository->getNodeTypeManager());
+
+        $nodeAccessor = $this->nodeAccessorManager->accessorFor($node->getSubgraphIdentity());
+        $childNodes = $nodeAccessor->findChildNodes(
+            $node,
+            $nodeTypeConstraintParser->parseFilterString('Neos.Neos:ContentCollection,Neos.Neos:Content')
+        );
+
+        foreach ($childNodes as $childNode) {
             $this->resolveImages($childNode, $item);
         }
     }
@@ -185,10 +199,10 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      */
     protected function isDocumentNodeToBeIndexed(NodeInterface $node): bool
     {
-        return !$node->getNodeType()->isOfType('Neos.Seo:NoindexMixin') && $node->isVisible()
-            && ($this->getRenderHiddenInIndex() || !$node->isHiddenInIndex()) && $node->isAccessible()
+        return !$node->getNodeType()->isOfType('Neos.Seo:NoindexMixin')// TODO?? && $node->isVisible()
+            && ($this->getRenderHiddenInIndex())// TODO?? || !$node->isHiddenInIndex()) && $node->isAccessible()
             && $node->getProperty('metaRobotsNoindex') !== true
-            && ((string)$node->getProperty('canonicalLink') === '' || substr($node->getProperty('canonicalLink'),7)=== $node->getIdentifier());
+            && ((string)$node->getProperty('canonicalLink') === '' || substr($node->getProperty('canonicalLink'), 7) === $node->getNodeAggregateIdentifier()->getValue());
     }
 
     /**
