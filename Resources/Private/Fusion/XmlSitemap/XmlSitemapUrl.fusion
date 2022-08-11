@@ -20,7 +20,7 @@ prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
     renderer = afx`
         <url>
             <loc @key="loc"><Neos.Neos:NodeUri node={props.node} format="html" absolute={true}/></loc>
-            <lastmod @key="lastmod">{props.lastModificationDateTime}</lastmod>
+            <lastmod @key="lastmod" @if.lastModification={props.lastModificationDateTime}>{props.lastModificationDateTime}</lastmod>
             <changefreq @key="changefreq" @if.hasChangeFrequency={props.changeFrequency}>{props.changeFrequency}</changefreq>
             <priority @key="priority" @if.hasPriority={props.priority}>{props.priority}</priority>
             <Neos.Seo:XmlSitemap.ImageUrls @key="images" images={props.images} @if.hasImages={props.images}/>
