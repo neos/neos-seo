@@ -13,7 +13,7 @@ namespace Neos\Seo\Fusion;
  */
 
 use Neos\ContentRepository\NodeAccess\NodeAccessorManager;
-use Neos\ContentRepository\Projection\ContentGraph\NodeInterface;
+use Neos\ContentRepository\Projection\ContentGraph\Node;
 use Neos\ContentRepository\SharedModel\NodeType\NodeType;
 use Neos\ContentRepository\SharedModel\NodeType\NodeTypeConstraintParser;
 use Neos\ContentRepositoryRegistry\ContentRepositoryRegistry;
@@ -29,12 +29,6 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      * @var ContentRepositoryRegistry
      */
     protected $contentRepositoryRegistry;
-
-    /**
-     * @Flow\Inject
-     * @var NodeAccessorManager
-     */
-    protected $nodeAccessorManager;
 
     /**
      * @Flow\Inject
@@ -58,7 +52,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     protected $includeImageUrls;
 
     /**
-     * @var NodeInterface
+     * @var Node
      */
     protected $startingPoint;
 
@@ -92,9 +86,9 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     }
 
     /**
-     * @return NodeInterface
+     * @return Node
      */
-    public function getStartingPoint(): NodeInterface
+    public function getStartingPoint(): Node
     {
         if ($this->startingPoint === null) {
             return $this->fusionValue('startingPoint');
@@ -127,11 +121,11 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
 
     /**
      * @param array & $items
-     * @param NodeInterface $node
+     * @param Node $node
      * @return void
      * @throws NodeException
      */
-    protected function appendItems(array &$items, NodeInterface $node)
+    protected function appendItems(array &$items, Node $node)
     {
         if ($this->isDocumentNodeToBeIndexed($node)) {
             $item = [
@@ -154,14 +148,14 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     }
 
     /**
-     * @param NodeInterface $node
+     * @param Node $node
      * @param array & $item
      * @return void
      * @throws NodeException
      */
-    protected function resolveImages(NodeInterface $node, array &$item)
+    protected function resolveImages(Node $node, array &$item)
     {
-        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($node->getNodeType());
+        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($node->nodeType);
 
         foreach ($assetPropertiesForNodeType as $propertyName) {
             if (is_array($node->getProperty($propertyName)) && !empty($node->getProperty($propertyName))) {
@@ -175,14 +169,14 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             }
         }
 
-        $contentRepository = $this->contentRepositoryRegistry->get($node->getSubgraphIdentity()->contentRepositoryIdentifier);
+        $contentRepository = $this->contentRepositoryRegistry->get($node->subgraphIdentity->contentRepositoryIdentifier);
         $nodeTypeConstraintParser = NodeTypeConstraintParser::create($contentRepository->getNodeTypeManager());
 
-        $nodeAccessor = $this->nodeAccessorManager->accessorFor($node->getSubgraphIdentity());
-        $childNodes = $nodeAccessor->findChildNodes(
-            $node,
-            $nodeTypeConstraintParser->parseFilterString('Neos.Neos:ContentCollection,Neos.Neos:Content')
-        );
+        $childNodes = $this->contentRepositoryRegistry->subgraphForNode($node)
+            ->findChildNodes(
+                $node->nodeAggregateIdentifier,
+                $nodeTypeConstraintParser->parseFilterString('Neos.Neos:ContentCollection,Neos.Neos:Content')
+            );
 
         foreach ($childNodes as $childNode) {
             $this->resolveImages($childNode, $item);
@@ -193,13 +187,13 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      * Return TRUE/FALSE if the node is currently hidden; taking the "renderHiddenInIndex" configuration
      * of the Menu Fusion object into account.
      *
-     * @param NodeInterface $node
+     * @param Node $node
      * @return bool
      * @throws NodeException
      */
-    protected function isDocumentNodeToBeIndexed(NodeInterface $node): bool
+    protected function isDocumentNodeToBeIndexed(Node $node): bool
     {
-        return !$node->getNodeType()->isOfType('Neos.Seo:NoindexMixin')// TODO?? && $node->isVisible()
+        return !$node->nodeType->isOfType('Neos.Seo:NoindexMixin')// TODO?? && $node->isVisible()
             && ($this->getRenderHiddenInIndex())// TODO?? || !$node->isHiddenInIndex()) && $node->isAccessible()
             && $node->getProperty('metaRobotsNoindex') !== true
             && ((string)$node->getProperty('canonicalLink') === '' || substr($node->getProperty('canonicalLink'), 7) === $node->getNodeAggregateIdentifier()->getValue());
