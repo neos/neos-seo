@@ -35,6 +35,7 @@
         label: i18n
         inspector:
           group: 'twittercard'
+          editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
           editorOptions:
             placeholder: i18n
       validation:

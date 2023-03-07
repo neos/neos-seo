@@ -19,7 +19,7 @@ Check the [documentation](https://neos-seo.readthedocs.io/en/stable/) for all fe
 
 1. Run the following command f.e. in your site package:
    ```bash
-   composer require --no-update neos/seo
+   composer require --no-update "neos/seo:^3.3"
    ```
    
 2. Update your dependencies by running the following command in your project root folder:

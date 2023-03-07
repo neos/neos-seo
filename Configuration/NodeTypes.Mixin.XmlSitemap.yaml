@@ -22,7 +22,7 @@
           editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
           editorOptions:
             allowEmpty: true
-            placeholder: 'none (unspecified)'
+            placeholder: i18n
             values:
               always:
                 label: i18n
@@ -52,6 +52,7 @@
         inspector:
           group: 'xmlsitemap'
           position: 20
+          editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
           editorOptions:
             placeholder: i18n
       validation:
