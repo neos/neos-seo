@@ -1,6 +1,6 @@
 prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     @if.languageDimensionExists = ${this.dimensionConfiguration != null}
-    @if.onlyRenderWhenInLiveWorkspace = ${this.node.context.workspace.name == 'live'}
+    @if.onlyRenderWhenInLiveWorkspace = ${Neos.Node.isLive(this.node)}
     @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
 
     node = ${documentNode}
