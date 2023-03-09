@@ -1,12 +1,11 @@
 prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
-    @if.languageDimensionExists = ${this.dimensionConfiguration != null}
     @if.onlyRenderWhenInLiveWorkspace = ${Neos.Node.isLive(this.node)}
+    @if.languageDimensionExists = ${this.defaultDimensionValue}
     @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
 
     node = ${documentNode}
     dimension = 'language'
-    defaultLocale = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension + '.default')}
-    dimensionConfiguration = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + this.dimension)}
+    defaultDimensionValue = ${Neos.Dimension.findDefaultValue(this.node, this.dimension)}
     excludedPresets = ${[]}
 
     # The hreflang value needs to have a format like 'en-US', therefore internally used values
@@ -14,16 +13,23 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     dimensionValueSeparator = '_'
 
     renderer = Neos.Fusion:Loop {
-        items = Neos.Neos:DimensionsMenuItems {
-            dimension = ${props.dimension}
+        items = ${Neos.Dimension.findVariantsInDimension(props.node, props.dimension)}
+        itemName = 'alternateLanguageNode'
+        itemRenderer = Neos.Fusion:Component {
+            @if.indexingAllowed = ${q(alternateLanguageNode).property('metaRobotsNoindex') != true}
+            @if.notExcluded = ${!props.excludedPresets || Array.indexOf(props.excludedPresets, this.dimensionValue) == -1}
+
+            node = ${alternateLanguageNode}
+            dimensionValue = ${Neos.Dimension.currentValue(alternateLanguageNode, props.dimension)}
+            defaultDimensionValue = ${props.defaultDimensionValue}
+            dimensionValueSeparator = ${props.dimensionValueSeparator}
+
+            renderer = afx`
+                <Neos.Seo:AlternateLanguageLink @key="defaultLink" node={props.node} hreflang="x-default"
+                    @if.isDefaultLocale={props.defaultDimensionValue == props.dimensionValue}/>
+                <Neos.Seo:AlternateLanguageLink node={props.node}
+                    hreflang={String.replace(props.dimensionValue, props.dimensionValueSeparator, '-')}/>
+            `
         }
-        itemRenderer = afx`
-            <Neos.Seo:AlternateLanguageLink @key="defaultLink" node={item.node} hreflang="x-default"
-                @if.isDefaultLocale={props.defaultLocale == item.dimensions[props.dimension][0]}/>
-            <Neos.Seo:AlternateLanguageLink node={item.node}
-                @if.isNotAbsent={item.state != 'absent'}
-                @if.notExcluded={!props.excludedPresets || Array.indexOf(props.excludedPresets, item.dimensions[props.dimension][0]) == -1}
-                hreflang={String.replace((item.preset ? item.preset.values[0] : item.dimensions[props.dimension][0]), props.dimensionValueSeparator, '-')}/>
-        `
     }
 }
