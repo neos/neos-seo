@@ -1,5 +1,9 @@
 prototype(Neos.Seo:LangAttribute) < prototype(Neos.Fusion:Value) {
-    value = ${String.replace(documentNode.subgraphIdentity.dimensionSpacePoint.coordinates.language, '_', '-')}
-    @if.languageDimensionExists = ${documentNode.subgraphIdentity.dimensionSpacePoint.coordinates.language}
+    dimension = 'language'
+    dimensionValueSeparator = '_'
+
+    value = ${Neos.Dimension.currentValue(documentNode, this.dimension)}
+    value.@process.replaceUnderscore = ${value ? String.replace(value, this.dimensionValueSeparator , '-') : null}
+
     @if.onlyRenderWhenInLiveWorkspace = ${Neos.Node.isLive(documentNode)}
 }
