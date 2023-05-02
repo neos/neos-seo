@@ -24,7 +24,7 @@ prototype(Neos.Seo:XmlSitemap) < prototype(Neos.Fusion:Http.Message) {
         @cache {
             mode = 'cached'
             entryIdentifier {
-                startingPoint = ${startingPoint}
+                startingPoint = ${Neos.Caching.entryIdentifierForNode(startingPoint)}
             }
             entryTags {
                 1 = ${Neos.Caching.nodeTag(startingPoint)}

@@ -12,50 +12,44 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
     excludedDimensionPresets = ${Configuration.setting('Neos.Seo.robotsTxt.excludedDimensionsPresets')}
     linebreak = ${String.chr(10)}
 
-    renderer = Neos.Fusion:Component {
-        sitemaps = Neos.Fusion:Case {
-            @if.shouldRender = ${props.renderXMLSitemapLinks}
-            hasLanguage {
-                condition = ${Configuration.setting('Neos.ContentRepository.contentDimensions.' + props.languageDimension) != null}
-                renderer = Neos.Fusion:Loop {
-                    items = Neos.Neos:DimensionsMenuItems {
-                        dimension = ${props.languageDimension}
-                        presets = ${Type.isArray(props.dimensionsPresets) ? props.dimensionsPresets : null}
-                        includeAllPresets = true
-                    }
-                    itemRenderer = Neos.Neos:NodeUri {
-                        absolute = true
-                        format = 'xml.sitemap'
-                        node = ${item.node}
-                        @process.prefix = ${'Sitemap: ' + value + props.linebreak}
-                        @if.notExcluded = ${!props.excludedDimensionPresets || Array.indexOf(props.excludedDimensionPresets, item.dimensions[props.languageDimension][0]) == -1}
-                    }
-                }
-            }
-            noLanguage {
-                condition = true
-                renderer = Neos.Neos:NodeUri {
+    @private.sitemaps = Neos.Fusion:Case {
+        @if.shouldRender = ${props.renderXMLSitemapLinks}
+        hasLanguage {
+            condition = ${props.languageDimension && Neos.Dimension.currentValue(site, props.languageDimension) != null}
+
+            renderer = Neos.Fusion:Loop {
+                items = ${Neos.Dimension.allDimensionValues(site, props.languageDimension)}
+                itemName = 'dimensionValue'
+                itemRenderer = Neos.Neos:NodeUri {
                     absolute = true
                     format = 'xml.sitemap'
-                    node = ${site}
-                    @process.prefix = ${'Sitemap: ' + value}
+                    node = ${Neos.Dimension.findVariantInDimension(site, props.languageDimension, dimensionValue)}
+                    @process.prefix = ${'Sitemap: ' + value + props.linebreak}
+                    @if.isIncluded = ${!props.dimensionsPresets || Array.indexOf(props.dimensionsPresets, dimensionValue.value) != -1}
+                    @if.notExcluded = ${!props.excludedDimensionPresets || Array.indexOf(props.excludedDimensionPresets, dimensionValue.value) == -1}
                 }
             }
-            @process.prefix = ${props.linebreak + value}
         }
-
-        data = ${props.data}
-        linebreak = ${props.linebreak}
-
-        renderer = Neos.Fusion:Http.Message {
-            httpResponseHead.headers.Content-Type = 'text/plain;'
-            body = afx`
-                <Neos.Fusion:Loop items={props.data}>
-                    {item}{props.linebreak}
-                </Neos.Fusion:Loop>
-                {props.sitemaps}
-            `
+        noLanguage {
+            condition = true
+            renderer = Neos.Neos:NodeUri {
+                absolute = true
+                format = 'xml.sitemap'
+                node = ${site}
+                @process.prefix = ${'Sitemap: ' + value}
+            }
         }
+        @process.prefix = ${props.linebreak + value}
+    }
+
+    renderer = Neos.Fusion:Http.Message {
+        httpResponseHead.headers.Content-Type = 'text/plain;'
+        body = afx`
+            <Neos.Fusion:Loop items={props.data}>
+                {item}{props.linebreak}
+            </Neos.Fusion:Loop>
+            {private.sitemaps}
+        `
     }
 
     @cache {
