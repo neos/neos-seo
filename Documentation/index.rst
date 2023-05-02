@@ -252,64 +252,24 @@ Alternatively you can change the caching behavior and have a cron job that recre
 Alternate Language Tag
 ------------------------
 
-The `Alternate Language Tag` provides information that the site is also available in other languages. By default the tags
-are rendered with the `Neos.Neos:DimensionMenu` and the `language` dimension. Given the Neos Demo Site Package as an
+The `Alternate Language Tag` provides information that the site is also available in other languages. Given the Neos Demo Site Package as an
 example the rendered tags for the homepage would be.
 
 ::
 
   <link rel="alternate" hreflang="en_US" href="http://neos.dev/"/>
   <link rel="alternate" hreflang="en_UK" href="http://neos.dev/uk"/>
+  <link rel="alternate" hreflang="de" href="http://neos.dev/de/"/>
 
-According to the following dimension settings, there would be a lot more tags expected. However only two variants of the
-homepage exists, thus only `en_US` and its fallback `en_UK` are rendered.
+If you only want to render a subset of the available language dimensions (e.g., if the content is not yet ready)
+you can configure this in the `Settings.yaml`::
 
-In case the dimension that contains the language is not named `language` you have to set the alternative name with the
-property `ContentRepository.dimensionTypes.language`.
+  Neos:
+    Seo:
+      alternateLanguageLinks:
+        # Show all but exclude German
+        excludedDimensionsPresets: ['de']
 
-::
-
-  ContentRepository:
-    contentDimensions:
-      'language':
-        label: 'Language'
-        icon: 'icon-language'
-        default: 'en_US'
-        defaultPreset: 'en_US'
-        presets:
-          'all': ~
-          'en_US':
-            label: 'English (US)'
-            values: ['en_US']
-            uriSegment: 'en'
-          'en_UK':
-            label: 'English (UK)'
-            values: ['en_UK', 'en_US']
-            uriSegment: 'uk'
-          'de':
-            label: 'German'
-            values: ['de']
-            uriSegment: 'de'
-          'fr':
-            label: 'French'
-            values: ['fr']
-            uriSegment: 'fr'
-          'nl':
-            label: 'Dutch'
-            values: ['nl', 'de']
-            uriSegment: 'nl'
-          'dk':
-            label: 'Danish'
-            values: ['dk']
-            uriSegment: 'dk'
-          'lv':
-            label: 'Latvian'
-            values: ['lv']
-            uriSegment: 'lv'
-    dimensionTypes:
-      language: 'language'
-
-You can exclude presets by overriding `Neos.Seo:AlternateLanguageLinks`.
 
 Dynamic robots.txt
 ------------------

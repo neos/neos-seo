@@ -22,6 +22,9 @@ Neos:
       'Neos.Seo.Image': 'Neos\Seo\Fusion\Helper\ImageHelper'
 
   Seo:
+    # hreflang settings
+    alternateLanguageLinks:
+      excludedDimensionsPresets: []
     # robots.txt settings
     robotsTxt:
       dimensionsPresets: null

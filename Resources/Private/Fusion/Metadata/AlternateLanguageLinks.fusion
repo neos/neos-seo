@@ -5,7 +5,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
 
     node = ${documentNode}
     dimension = 'language'
-    excludedPresets = ${[]}
+    excludedPresets = ${Configuration.setting('Neos.Seo.alternateLanguageLinks.excludedDimensionsPresets')}
 
     # The hreflang value needs to have a format like 'en-US', therefore internally used values
     # like 'en_US' will be modified to match.
