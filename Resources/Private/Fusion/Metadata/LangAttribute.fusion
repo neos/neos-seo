@@ -1,5 +1,9 @@
 prototype(Neos.Seo:LangAttribute) < prototype(Neos.Fusion:Value) {
-    value = ${String.replace(documentNode.context.dimensions.language[0], '_', '-')}
-    @if.languageDimensionExists = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language') != null}
-    @if.onlyRenderWhenInLiveWorkspace = ${node.context.workspace.name == 'live'}
+    dimension = 'language'
+    dimensionValueSeparator = '_'
+
+    value = ${Neos.Dimension.currentValue(documentNode, this.dimension).value}
+    value.@process.replaceUnderscore = ${value ? String.replace(value, this.dimensionValueSeparator , '-') : null}
+
+    @if.onlyRenderWhenInLiveWorkspace = ${Neos.Node.isLive(documentNode)}
 }

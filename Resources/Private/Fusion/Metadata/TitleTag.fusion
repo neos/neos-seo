@@ -1,5 +1,5 @@
 prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
-    suffix = ${site.context.currentSite.name}
+    suffix = ${Neos.Site.findBySiteNode(site).name}
     titleOverride = ${q(node).property('titleOverride')}
     breadcrumbSeparator = ' - '
     suffixSeparator = ${this.breadcrumbSeparator}
