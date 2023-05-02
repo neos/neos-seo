@@ -1,11 +1,10 @@
 prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     @if.onlyRenderWhenInLiveWorkspace = ${Neos.Node.isLive(this.node)}
-    @if.languageDimensionExists = ${this.languageDimension}
+    @if.languageDimensionExists = ${this.dimension}
     @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
 
     node = ${documentNode}
     dimension = 'language'
-    languageDimension = ${Neos.Dimension.all(this.node)[this.dimension]}
     excludedPresets = ${[]}
 
     # The hreflang value needs to have a format like 'en-US', therefore internally used values
@@ -13,7 +12,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     dimensionValueSeparator = '_'
 
     renderer = Neos.Fusion:Loop {
-        items = ${Neos.Dimension.allDimensionValues(site, 'language')}
+        items = ${Neos.Dimension.allDimensionValues(site, props.dimension)}
         itemName = 'dimensionValue'
         # First root value is used as default language
         iterationName = 'iteration'
