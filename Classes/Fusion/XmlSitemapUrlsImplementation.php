@@ -158,7 +158,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         if ($this->isDocumentNodeToBeIndexed($node)) {
             $item = [
                 'node' => $node,
-                'lastModificationDateTime' => $node->timestamps->lastModified,
+                'lastModificationDateTime' => $node->timestamps->lastModified ?: $node->timestamps->created,
                 'priority' => $node->getProperty('xmlSitemapPriority') ?: '',
                 'images' => [],
             ];
