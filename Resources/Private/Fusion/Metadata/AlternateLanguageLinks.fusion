@@ -13,7 +13,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
     dimensionValueSeparator = '_'
 
     renderer = Neos.Fusion:Loop {
-        items = ${props.languageDimension.values.values}
+        items = ${Neos.Dimension.allDimensionValues(site, 'language')}
         itemName = 'dimensionValue'
         # First root value is used as default language
         iterationName = 'iteration'
