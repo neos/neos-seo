@@ -15,11 +15,10 @@ namespace Neos\Seo\Fusion;
 use Neos\ContentRepository\Core\NodeType\NodeType;
 use Neos\ContentRepository\Core\NodeType\NodeTypeName;
 use Neos\ContentRepository\Core\NodeType\NodeTypeNames;
-use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\FindSubtreesFilter;
+use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\FindSubtreeFilter;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Node;
 use Neos\ContentRepository\Core\Projection\ContentGraph\NodeTypeConstraints;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Subtree;
-use Neos\ContentRepository\Core\SharedModel\Node\NodeAggregateIds;
 use Neos\ContentRepositoryRegistry\ContentRepositoryRegistry;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
@@ -118,11 +117,10 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
                 $nodeTypeManager->getSubNodeTypes('Neos.Neos:Document', false)
             ));
 
-            // @todo: change to `findSubtree` after merge of https://github.com/neos/neos-development-collection/pull/4076/
-            $subtree = $subgraph->findSubtrees(
-                NodeAggregateIds::create($startingPoint->nodeAggregateId),
-                FindSubtreesFilter::nodeTypeConstraints(NodeTypeConstraints::create($nodeTypeNames, NodeTypeNames::createEmpty()))
-            )->first();
+            $subtree = $subgraph->findSubtree(
+                $startingPoint->nodeAggregateId,
+                FindSubtreeFilter::create(NodeTypeConstraints::create($nodeTypeNames, NodeTypeNames::createEmpty()))
+            );
 
             $this->collectItems($items, $subtree);
             $this->items = $items;
@@ -133,8 +131,8 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
 
     private function getAssetPropertiesForNodeType(NodeType $nodeType): array
     {
-        if (!array_key_exists($nodeType->name->getValue(), $this->assetPropertiesByNodeType)) {
-            $this->assetPropertiesByNodeType[$nodeType->name->getValue()] = [];
+        if (!array_key_exists($nodeType->name->value, $this->assetPropertiesByNodeType)) {
+            $this->assetPropertiesByNodeType[$nodeType->name->value] = [];
             if ($this->getIncludeImageUrls()) {
                 $relevantPropertyTypes = [
                     'array<Neos\Media\Domain\Model\Asset>' => true,
@@ -144,13 +142,13 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
 
                 foreach ($nodeType->getProperties() as $propertyName => $propertyConfiguration) {
                     if (isset($relevantPropertyTypes[$nodeType->getPropertyType($propertyName)])) {
-                        $this->assetPropertiesByNodeType[$nodeType->name->getValue()][] = $propertyName;
+                        $this->assetPropertiesByNodeType[$nodeType->name->value][] = $propertyName;
                     }
                 }
             }
         }
 
-        return $this->assetPropertiesByNodeType[$nodeType->name->getValue()];
+        return $this->assetPropertiesByNodeType[$nodeType->name->value];
     }
 
     protected function collectItems(array &$items, Subtree $subtree): void
@@ -160,20 +158,21 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         if ($this->isDocumentNodeToBeIndexed($node)) {
             $item = [
                 'node' => $node,
-                // @todo: 'lastModificationDateTime' => $node->getNodeData()->getLastModificationDateTime(),
+                'lastModificationDateTime' => $node->timestamps->lastModified,
                 'priority' => $node->getProperty('xmlSitemapPriority') ?: '',
                 'images' => [],
             ];
             if ($node->getProperty('xmlSitemapChangeFrequency')) {
                 $item['changeFrequency'] = $node->getProperty('xmlSitemapChangeFrequency');
             }
+
             if ($this->getIncludeImageUrls()) {
                 $nodeTypeManager = $this->contentRepositoryRegistry->get($node->subgraphIdentity->contentRepositoryId)->getNodeTypeManager();
                 $collectionNodeTypeNames = array_map(
                     fn(NodeType $nodeType): NodeTypeName => $nodeType->name,
                     $nodeTypeManager->getSubNodeTypes('Neos.Neos:ContentCollection', false)
                 );
-                $collectionNodeTypeNames[] = NodeTypeName::fromString('Neos.Neos:ContentCollection');
+                $collectionNodeTypeNames['Neos.Neos:ContentCollection'] = NodeTypeName::fromString('Neos.Neos:ContentCollection');
                 $contentNodeTypeNames = array_map(
                     fn(NodeType $nodeType): NodeTypeName => $nodeType->name,
                     $nodeTypeManager->getSubNodeTypes('Neos.Neos:Content', false)
@@ -181,15 +180,14 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
                 $nodeTypeNames = NodeTypeNames::fromArray(array_merge($collectionNodeTypeNames, $contentNodeTypeNames));
 
                 $subgraph = $this->contentRepositoryRegistry->subgraphForNode($node);
-                // @todo: change to `findSubtree` after merge of https://github.com/neos/neos-development-collection/pull/4076/, this will return ?Subtree after refactoring
-                $contentSubtree = $subgraph->findSubtrees(
-                    NodeAggregateIds::create($node->nodeAggregateId),
-                    FindSubtreesFilter::nodeTypeConstraints(NodeTypeConstraints::create($nodeTypeNames, NodeTypeNames::createEmpty()))
-                )->first();
+                $contentSubtree = $subgraph->findSubtree(
+                    $node->nodeAggregateId,
+                    FindSubtreeFilter::create(NodeTypeConstraints::create($nodeTypeNames, NodeTypeNames::createEmpty()))
+                );
 
                 $this->resolveImages($contentSubtree, $item);
-
             }
+
             $items[] = $item;
         }
 
@@ -237,7 +235,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             && $node->getProperty('metaRobotsNoindex') !== true
             && (
                 (string)$node->getProperty('canonicalLink') === ''
-                || substr($node->getProperty('canonicalLink'), 7) === $node->nodeAggregateId->getValue()
+                || substr($node->getProperty('canonicalLink'), 7) === $node->nodeAggregateId->value
             );
     }
 }
