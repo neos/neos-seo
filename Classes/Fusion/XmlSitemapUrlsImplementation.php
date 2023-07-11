@@ -131,12 +131,8 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             $item = [
                 'node' => $node,
                 'lastModificationDateTime' => $node->getNodeData()->getLastModificationDateTime(),
-                'priority' => $node->getProperty('xmlSitemapPriority') ?: '',
                 'images' => [],
             ];
-            if ($node->getProperty('xmlSitemapChangeFrequency')) {
-                $item['changeFrequency'] = $node->getProperty('xmlSitemapChangeFrequency');
-            }
             if ($this->getIncludeImageUrls()) {
                 $this->resolveImages($node, $item);
             }
