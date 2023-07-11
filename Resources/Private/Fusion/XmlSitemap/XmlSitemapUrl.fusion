@@ -2,8 +2,6 @@ prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
     node = null
     lastModificationDateTime = ${Date.now()}
     lastModificationDateTime.@process.format = ${Date.format(value, 'c')}
-    changeFrequency = ''
-    priority = ''
     images = ${[]}
     includeAlternateLanguageLinks = false
 
@@ -21,8 +19,6 @@ prototype(Neos.Seo:XmlSitemap.Url) < prototype(Neos.Fusion:Component) {
         <url>
             <loc @key="loc"><Neos.Neos:NodeUri node={props.node} format="html" absolute={true}/></loc>
             <lastmod @key="lastmod">{props.lastModificationDateTime}</lastmod>
-            <changefreq @key="changefreq" @if.hasChangeFrequency={props.changeFrequency}>{props.changeFrequency}</changefreq>
-            <priority @key="priority" @if.hasPriority={props.priority}>{props.priority}</priority>
             <Neos.Seo:XmlSitemap.ImageUrls @key="images" images={props.images} @if.hasImages={props.images}/>
             <Neos.Seo:AlternateLanguageLinks @key="alternateLanguageLinks" node={props.node} @if.includeAlternateLanguageLinks={props.includeAlternateLanguageLinks}/>
         </url>

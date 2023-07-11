@@ -6,7 +6,7 @@ prototype(Neos.Seo:XmlSitemap.UrlList) < prototype(Neos.Fusion:Component) {
         <Neos.Fusion:Loop items={props.items}>
             <Neos.Seo:XmlSitemap.Url node={item.node} lastModificationDateTime={item.lastModificationDateTime}
                                      includeAlternateLanguageLinks={props.includeAlternateLanguageLinks}
-                                     priority={item.priority} changeFrequency={item.changeFrequency} images={item.images}/>
+                                     images={item.images}/>
         </Neos.Fusion:Loop>
     `
 }

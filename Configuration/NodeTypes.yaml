@@ -8,7 +8,6 @@
     'Neos.Seo:TwitterCardMixin': true
     'Neos.Seo:CanonicalLinkMixin': true
     'Neos.Seo:OpenGraphMixin': true
-    'Neos.Seo:XmlSitemapMixin': true
   ui:
     inspector:
       tabs:
@@ -25,4 +24,3 @@
     'Neos.Seo:TwitterCardMixin': false
     'Neos.Seo:CanonicalLinkMixin': false
     'Neos.Seo:OpenGraphMixin': false
-    'Neos.Seo:XmlSitemapMixin': false
