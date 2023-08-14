@@ -29,10 +29,6 @@ Neos:
     robotsTxt:
       dimensionsPresets: null
       excludedDimensionsPresets: []
-    # Twitter Card settings
-    twitterCard:
-      # the Twitter handle for the twitter:site attribution
-      siteHandle: ~
     # Facebook settings
     facebook:
       # The id of the user that can be followed on this site
@@ -48,7 +44,6 @@ Neos:
       # `logo` can be for example `resource://Vendor.Site/Public/Images/MyLogo.png`
       logo: ''
       profiles:
-        twitter: ''
         facebook: ''
         instagram: ''
         linkedIn: ''
@@ -63,12 +58,4 @@ Neos:
       'Neos.Seo:OpenGraph.Landscape':
         maximumWidth: 1200
         maximumHeight: 628
-      # Preset based on https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image
-      'Neos.Seo:TwitterCard.SummaryCardLargeImage':
-        maximumWidth: 1200
-        maximumHeight: 600
-      # Preset based on https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary
-      'Neos.Seo:TwitterCard.SummaryCard':
-        maximumWidth: 600
-        maximumHeight: 600
 

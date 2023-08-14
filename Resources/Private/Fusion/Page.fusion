@@ -8,7 +8,6 @@ prototype(Neos.Neos:Page) {
         metaRobotsTag = Neos.Seo:MetaRobotsTag
         canonicalLink = Neos.Seo:CanonicalLink
         alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
-        twitterCard = Neos.Seo:TwitterCard
         openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
         facebookMetaTags = Neos.Seo:FacebookMetaTags
         metaGoogleSiteVerification = Neos.Seo:GoogleSiteVerification

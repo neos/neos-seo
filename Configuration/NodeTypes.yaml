@@ -5,7 +5,6 @@
   superTypes:
     'Neos.Seo:TitleTagMixin': true
     'Neos.Seo:SeoMetaTagsMixin': true
-    'Neos.Seo:TwitterCardMixin': true
     'Neos.Seo:CanonicalLinkMixin': true
     'Neos.Seo:OpenGraphMixin': true
     'Neos.Seo:XmlSitemapMixin': true
@@ -22,7 +21,6 @@
     'Neos.Seo:TitleTagMixin': false
     'Neos.Seo:SeoMetaTagsMixin': false
     'Neos.Seo:NoindexMixin': true
-    'Neos.Seo:TwitterCardMixin': false
     'Neos.Seo:CanonicalLinkMixin': false
     'Neos.Seo:OpenGraphMixin': false
     'Neos.Seo:XmlSitemapMixin': false
