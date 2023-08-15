@@ -36,24 +36,6 @@ If they are filled in, `<meta>` tags for their contents will be rendered (see `N
 
 Two checkboxes allow to set the content for the `<meta name="robots">` tag to any combination of the possible values `follow`, `nofollow`, `index` and `noindex`.
 
-Twitter Cards
--------------
-
-The `Neos.Seo:TwitterCardMixin` (added to `Neos.Neos:Document` by default) provides a new inspector tab to
-configure Twitter Cards on any document. If a Twitter Card is enabled, the related meta tags will be rendered as needed
-and useful.
-
-The `twitter:site` handle can be configured with the setting `Neos.Seo.twitterCard.siteHandle` by providing a valid Twitter handle::
-
-  Neos:
-    Seo:
-      twitterCard:
-        siteHandle: '@neoscms'
-
-Check the documentation on https://dev.twitter.com/cards/overview for more on Twitter Cards.
-
-Also check out the defined fallback-definitions_ for the individual tags.
-
 Facebook
 --------
 
@@ -96,26 +78,12 @@ from other fields.
 
 For more information about Open Graph please have a look at http://ogp.me/.
 
-Define image fallback for Twitter Cards or Open Graph
+Define image fallback for Open Graph
 -----------------------------------------------------
 
 The fusion object of this package defines Case-Objects that you can use to add your fallback. Here are some examples how to do so:
 
-Example: Add a document property `headerImage` as fallback, if no Twitter Card image is present::
-
-    prototype(Neos.Seo:TwitterCard) {
-        image {
-            asset {
-                headerImage {
-                    condition = ${Type.instance(q(node).property('headerImage'), 'Neos\Media\Domain\Model\ImageInterface')}
-                    renderer = ${q(node).property('headerImage')}
-                }
-            }
-        }
-    }
-
-
-Example: Add the image of the first content node found that has an image property as fallback, when no Twitter Card image is present::
+Example: Add the image of the first content node found that has an image property as fallback, when no OpenGraph image is present::
 
     prototype(Neos.Seo:OpenGraphMetaTags) {
         image {
@@ -207,7 +175,6 @@ To adjust the profile configure this according to your requirements in your `Set
           type: 'set either to "Person" or "Organization"'
           logo: 'resource://Vendor.Site/Public/Images/MyLogo.png'
           profiles:
-            twitter: 'your twitter name'
             facebook: 'your facebook name'
             instagram: 'your instagram name'
             linkedIn: 'your linkedin name'
@@ -327,7 +294,6 @@ enabled in the `Configuration/NodeTypes.yaml` file, along with an inspector tab:
     superTypes:
       'Neos.Seo:TitleTagMixin': true
       'Neos.Seo:SeoMetaTagsMixin': true
-      'Neos.Seo:TwitterCardMixin': true
       'Neos.Seo:CanonicalLinkMixin': true
       'Neos.Seo:OpenGraphMixin': true
       'Neos.Seo:XmlSitemapMixin': true
@@ -344,7 +310,6 @@ enabled in the `Configuration/NodeTypes.yaml` file, along with an inspector tab:
       'Neos.Seo:TitleTagMixin': false
       'Neos.Seo:SeoMetaTagsMixin': false
       'Neos.Seo:NoindexMixin': true
-      'Neos.Seo:TwitterCardMixin': false
       'Neos.Seo:CanonicalLinkMixin': false
       'Neos.Seo:OpenGraphMixin': false
       'Neos.Seo:XmlSitemapMixin': false
@@ -361,7 +326,6 @@ Then to enable rendering of all SEO meta tags, the following code is used::
       metaRobotsTag = Neos.Seo:MetaRobotsTag
       canonicalLink = Neos.Seo:CanonicalLink
       alternateLanguageLinks = Neos.Seo:AlternateLanguageLinks
-      twitterCard = Neos.Seo:TwitterCard
       openGraphMetaTags = Neos.Seo:OpenGraphMetaTags
       facebookMetaTags = Neos.Seo:FacebookMetaTags
       structuredData = Neos.Seo:StructuredData.Container
