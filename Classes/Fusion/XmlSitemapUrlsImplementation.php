@@ -19,17 +19,16 @@ use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\FindSubtreeFilter
 use Neos\ContentRepository\Core\Projection\ContentGraph\Node;
 use Neos\ContentRepository\Core\Projection\ContentGraph\NodeTypeConstraints;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Subtree;
-use Neos\ContentRepositoryRegistry\ContentRepositoryRegistry;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
+use Neos\Neos\Utility\NodeTypeWithFallbackProvider;
 use Neos\Utility\Exception\PropertyNotAccessibleException;
 
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
-    #[Flow\Inject(lazy: false)]
-    protected ContentRepositoryRegistry $contentRepositoryRegistry;
+    use NodeTypeWithFallbackProvider;
 
     /**
      * @var PersistenceManager
@@ -205,7 +204,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     protected function resolveImages(Subtree $subtree, array &$item): void
     {
         $node = $subtree->node;
-        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($node->nodeType);
+        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($this->getNodeType($node));
 
         foreach ($assetPropertiesForNodeType as $propertyName) {
             if (is_array($node->getProperty($propertyName)) && !empty($node->getProperty($propertyName))) {
@@ -230,7 +229,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      */
     protected function isDocumentNodeToBeIndexed(Node $node): bool
     {
-        return !$node->nodeType->isOfType('Neos.Seo:NoindexMixin')
+        return !$this->getNodeType($node)->isOfType('Neos.Seo:NoindexMixin')
             && ($this->getRenderHiddenInIndex() || $node->getProperty('hiddenInIndex') !== true)
             && $node->getProperty('metaRobotsNoindex') !== true
             && (
