@@ -19,6 +19,7 @@ use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\FindSubtreeFilter
 use Neos\ContentRepository\Core\Projection\ContentGraph\Node;
 use Neos\ContentRepository\Core\Projection\ContentGraph\NodeTypeConstraints;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Subtree;
+use Neos\ContentRepositoryRegistry\Utility\ContentRepositoryRegistryProvider;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
@@ -28,6 +29,7 @@ use Neos\Utility\Exception\PropertyNotAccessibleException;
 
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
+    use ContentRepositoryRegistryProvider;
     use NodeTypeWithFallbackProvider;
 
     /**
