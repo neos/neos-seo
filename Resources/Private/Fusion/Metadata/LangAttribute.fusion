@@ -5,5 +5,5 @@ prototype(Neos.Seo:LangAttribute) < prototype(Neos.Fusion:Value) {
     value = ${Neos.Dimension.currentValue(documentNode, this.dimension).value}
     value.@process.replaceUnderscore = ${value ? String.replace(value, this.dimensionValueSeparator , '-') : null}
 
-    @if.onlyRenderWhenInLiveWorkspace = ${Neos.Node.isLive(documentNode)}
+    @if.onlyRenderWhenInLiveWorkspace = ${!renderingMode.isEdit}
 }
