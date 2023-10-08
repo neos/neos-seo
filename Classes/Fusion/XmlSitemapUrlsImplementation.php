@@ -24,47 +24,35 @@ use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
+use Neos\Neos\Utility\NodeTypeWithFallbackProvider;
 use Neos\Utility\Exception\PropertyNotAccessibleException;
 
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
-    #[Flow\Inject(lazy: false)]
+    use NodeTypeWithFallbackProvider;
+
+    #[Flow\Inject]
     protected ContentRepositoryRegistry $contentRepositoryRegistry;
 
-    /**
-     * @var PersistenceManager
-     */
     #[Flow\Inject(lazy: true)]
-    protected $persistenceManager;
+    protected PersistenceManager $persistenceManager;
 
     /**
      * @var array<string, array<int, string>>
      */
-    protected $assetPropertiesByNodeType = [];
+    protected array $assetPropertiesByNodeType = [];
+
+    protected ?bool $renderHiddenInIndex = null;
+
+    protected ?bool $includeImageUrls = null;
+
+    protected ?Node $startingPoint = null;
 
     /**
-     * @var bool
+     * @var array|null
      */
-    protected $renderHiddenInIndex;
+    protected ?array $items = null;
 
-    /**
-     * @var bool
-     */
-    protected $includeImageUrls;
-
-    /**
-     * @var Node
-     */
-    protected $startingPoint;
-
-    /**
-     * @var array
-     */
-    protected $items;
-
-    /**
-     * @return bool
-     */
     public function getIncludeImageUrls(): bool
     {
         if ($this->includeImageUrls === null) {
@@ -74,9 +62,6 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         return $this->includeImageUrls;
     }
 
-    /**
-     * @return bool
-     */
     public function getRenderHiddenInIndex(): bool
     {
         if ($this->renderHiddenInIndex === null) {
@@ -102,6 +87,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      * Evaluate this Fusion object and return the result
      *
      * @return array
+     * @throws PropertyNotAccessibleException
      */
     public function evaluate(): array
     {
@@ -151,6 +137,9 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         return $this->assetPropertiesByNodeType[$nodeType->name->value];
     }
 
+    /**
+     * @throws PropertyNotAccessibleException
+     */
     protected function collectItems(array &$items, Subtree $subtree): void
     {
         $node = $subtree->node;
@@ -205,7 +194,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     protected function resolveImages(Subtree $subtree, array &$item): void
     {
         $node = $subtree->node;
-        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($node->nodeType);
+        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($this->getNodeType($node));
 
         foreach ($assetPropertiesForNodeType as $propertyName) {
             if (is_array($node->getProperty($propertyName)) && !empty($node->getProperty($propertyName))) {
@@ -230,7 +219,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      */
     protected function isDocumentNodeToBeIndexed(Node $node): bool
     {
-        return !$node->nodeType->isOfType('Neos.Seo:NoindexMixin')
+        return !$this->getNodeType($node)->isOfType('Neos.Seo:NoindexMixin')
             && ($this->getRenderHiddenInIndex() || $node->getProperty('hiddenInIndex') !== true)
             && $node->getProperty('metaRobotsNoindex') !== true
             && (

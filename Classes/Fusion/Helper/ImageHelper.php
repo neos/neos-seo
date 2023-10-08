@@ -21,11 +21,8 @@ use Neos\Media\Exception\ThumbnailServiceException;
 
 class ImageHelper implements ProtectedContextAwareInterface
 {
-    /**
-     * @Flow\Inject
-     * @var ThumbnailService
-     */
-    protected $thumbnailService;
+    #[Flow\Inject]
+    protected ThumbnailService $thumbnailService;
 
     /**
      * @param AssetInterface $asset
@@ -54,8 +51,7 @@ class ImageHelper implements ProtectedContextAwareInterface
         $async = false,
         $quality = null,
         $format = null
-    )
-    {
+    ): ?ImageInterface {
         if (!empty($preset)) {
             $thumbnailConfiguration = $this->thumbnailService->getThumbnailConfigurationForPreset($preset);
         } else {
@@ -82,9 +78,8 @@ class ImageHelper implements ProtectedContextAwareInterface
      * All methods are considered safe
      *
      * @param string $methodName
-     * @return boolean
      */
-    public function allowsCallOfMethod($methodName)
+    public function allowsCallOfMethod($methodName): bool
     {
         return true;
     }
