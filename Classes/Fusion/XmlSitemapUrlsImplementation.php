@@ -16,8 +16,8 @@ use Neos\ContentRepository\Core\NodeType\NodeType;
 use Neos\ContentRepository\Core\NodeType\NodeTypeName;
 use Neos\ContentRepository\Core\NodeType\NodeTypeNames;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\FindSubtreeFilter;
+use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\NodeType\NodeTypeCriteria;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Node;
-use Neos\ContentRepository\Core\Projection\ContentGraph\NodeTypeConstraints;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Subtree;
 use Neos\ContentRepositoryRegistry\ContentRepositoryRegistry;
 use Neos\Flow\Annotations as Flow;
@@ -105,7 +105,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
 
             $subtree = $subgraph->findSubtree(
                 $startingPoint->nodeAggregateId,
-                FindSubtreeFilter::create(NodeTypeConstraints::create($nodeTypeNames, NodeTypeNames::createEmpty()))
+                FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
             );
 
             $this->collectItems($items, $subtree);
@@ -171,7 +171,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
                 $subgraph = $this->contentRepositoryRegistry->subgraphForNode($node);
                 $contentSubtree = $subgraph->findSubtree(
                     $node->nodeAggregateId,
-                    FindSubtreeFilter::create(NodeTypeConstraints::create($nodeTypeNames, NodeTypeNames::createEmpty()))
+                    FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
                 );
 
                 $this->resolveImages($contentSubtree, $item);
