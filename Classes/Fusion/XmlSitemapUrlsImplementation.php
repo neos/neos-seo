@@ -42,7 +42,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      */
     protected array $assetPropertiesByNodeType = [];
 
-    protected ?bool $renderHiddenInIndex = null;
+    protected ?bool $renderHiddenInMenu = null;
 
     protected ?bool $includeImageUrls = null;
 
@@ -62,13 +62,13 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         return $this->includeImageUrls;
     }
 
-    public function getRenderHiddenInIndex(): bool
+    public function getRenderHiddenInMenu(): bool
     {
-        if ($this->renderHiddenInIndex === null) {
-            $this->renderHiddenInIndex = (boolean)$this->fusionValue('renderHiddenInIndex');
+        if ($this->renderHiddenInMenu === null) {
+            $this->renderHiddenInMenu = (boolean)$this->fusionValue('renderHiddenInMenu');
         }
 
-        return $this->renderHiddenInIndex;
+        return $this->renderHiddenInMenu;
     }
 
     /**
@@ -214,13 +214,13 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     }
 
     /**
-     * Return TRUE/FALSE if the node is currently hidden; taking the "renderHiddenInIndex" configuration
+     * Return TRUE/FALSE if the node is currently hidden; taking the "renderHiddenInMenu" configuration
      * of the Menu Fusion object into account.
      */
     protected function isDocumentNodeToBeIndexed(Node $node): bool
     {
         return !$this->getNodeType($node)->isOfType('Neos.Seo:NoindexMixin')
-            && ($this->getRenderHiddenInIndex() || $node->getProperty('hiddenInIndex') !== true)
+            && ($this->getRenderHiddenInMenu() || $node->getProperty('hiddenInMenu') !== true)
             && $node->getProperty('metaRobotsNoindex') !== true
             && (
                 (string)$node->getProperty('canonicalLink') === ''
