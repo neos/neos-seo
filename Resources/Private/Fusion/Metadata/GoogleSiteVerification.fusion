@@ -6,7 +6,7 @@ prototype(Neos.Seo:GoogleSiteVerification) < prototype(Neos.Fusion:Component) {
 
     renderer = afx`
         <meta
-            property="google-site-verification"
+            name="google-site-verification"
             content={props.googleSiteVerification}
         />
     `
