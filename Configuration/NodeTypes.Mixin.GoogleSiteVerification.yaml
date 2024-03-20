@@ -12,4 +12,4 @@
           position: 100
       validation:
         'Neos.Neos/Validation/RegularExpressionValidator':
-          regularExpression: '/^[a-z0-9]$/i'
+          regularExpression: '/^[a-zA-Z0-9_-]+$/'
