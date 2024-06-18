@@ -25,8 +25,16 @@ use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
-use Neos\Utility\Exception\PropertyNotAccessibleException;
 
+/**
+ * @phpstan-type SitemapUrlItem array{
+ *     node: Node,
+ *     lastModificationDateTime: \DateTimeImmutable,
+ *     priority: string,
+ *     images: array<string, ImageInterface>,
+ *     changeFrequency?: true
+ * }
+ */
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
     #[Flow\Inject]
@@ -36,7 +44,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     protected PersistenceManager $persistenceManager;
 
     /**
-     * @var array<string, array<int, string>>
+     * @var array<string, list<string>>
      */
     protected array $assetPropertiesByNodeType = [];
 
@@ -47,7 +55,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     protected ?Node $startingPoint = null;
 
     /**
-     * @var array|null
+     * @var list<SitemapUrlItem>|null
      */
     protected ?array $items = null;
 
@@ -84,8 +92,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     /**
      * Evaluate this Fusion object and return the result
      *
-     * @return array
-     * @throws PropertyNotAccessibleException
+     * @return list<SitemapUrlItem>
      */
     public function evaluate(): array
     {
@@ -105,7 +112,9 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
                 $startingPoint->aggregateId,
                 FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
             );
-
+            if (!$subtree) {
+                throw new \RuntimeException(sprintf('The "startingPoint" Node with identifier "%s" doesnt exist anymore.', $startingPoint->aggregateId->value), 1718735861);
+            }
             $this->collectItems($items, $subtree);
             $this->items = $items;
         }
@@ -113,6 +122,9 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         return $this->items;
     }
 
+    /**
+     * @return list<string>
+     */
     private function getAssetPropertiesForNodeType(NodeType $nodeType): array
     {
         if (!array_key_exists($nodeType->name->value, $this->assetPropertiesByNodeType)) {
@@ -136,7 +148,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     }
 
     /**
-     * @throws PropertyNotAccessibleException
+     * @param list<SitemapUrlItem> $items
      */
     protected function collectItems(array &$items, Subtree $subtree): void
     {
@@ -171,7 +183,9 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
                     $node->aggregateId,
                     FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
                 );
-
+                if (!$contentSubtree) {
+                    throw new \RuntimeException(sprintf('The Node with identifier "%s" doesnt exist anymore.', $node->aggregateId->value), 1718735861);
+                }
                 $this->resolveImages($contentSubtree, $item, $nodeTypeManager);
             }
 
@@ -184,10 +198,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     }
 
     /**
-     * @param Subtree $subtree
-     * @param array & $item
-     * @return void
-     * @throws PropertyNotAccessibleException
+     * @param SitemapUrlItem $item
      */
     protected function resolveImages(Subtree $subtree, array &$item, NodeTypeManager $nodeTypeManager): void
     {
