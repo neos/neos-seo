@@ -13,6 +13,7 @@ namespace Neos\Seo\Fusion;
  */
 
 use Neos\ContentRepository\Core\NodeType\NodeType;
+use Neos\ContentRepository\Core\NodeType\NodeTypeManager;
 use Neos\ContentRepository\Core\NodeType\NodeTypeName;
 use Neos\ContentRepository\Core\NodeType\NodeTypeNames;
 use Neos\ContentRepository\Core\Projection\ContentGraph\Filter\FindSubtreeFilter;
@@ -24,13 +25,10 @@ use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 use Neos\Media\Domain\Model\ImageInterface;
-use Neos\Neos\Utility\NodeTypeWithFallbackProvider;
 use Neos\Utility\Exception\PropertyNotAccessibleException;
 
 class XmlSitemapUrlsImplementation extends AbstractFusionObject
 {
-    use NodeTypeWithFallbackProvider;
-
     #[Flow\Inject]
     protected ContentRepositoryRegistry $contentRepositoryRegistry;
 
@@ -97,14 +95,14 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             $startingPoint = $this->getStartingPoint();
             $subgraph = $this->contentRepositoryRegistry->subgraphForNode($startingPoint);
 
-            $nodeTypeManager = $this->contentRepositoryRegistry->get($startingPoint->subgraphIdentity->contentRepositoryId)->getNodeTypeManager();
+            $nodeTypeManager = $this->contentRepositoryRegistry->get($startingPoint->contentRepositoryId)->getNodeTypeManager();
             $nodeTypeNames = NodeTypeNames::fromArray(array_map(
                 fn(NodeType $nodeType): NodeTypeName => $nodeType->name,
                 $nodeTypeManager->getSubNodeTypes('Neos.Neos:Document', false)
             ));
 
             $subtree = $subgraph->findSubtree(
-                $startingPoint->nodeAggregateId,
+                $startingPoint->aggregateId,
                 FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
             );
 
@@ -143,8 +141,9 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
     protected function collectItems(array &$items, Subtree $subtree): void
     {
         $node = $subtree->node;
+        $nodeTypeManager = $this->contentRepositoryRegistry->get($node->contentRepositoryId)->getNodeTypeManager();
 
-        if ($this->isDocumentNodeToBeIndexed($node)) {
+        if ($this->isDocumentNodeToBeIndexed($node, $nodeTypeManager)) {
             $item = [
                 'node' => $node,
                 'lastModificationDateTime' => $node->timestamps->lastModified ?: $node->timestamps->created,
@@ -156,7 +155,6 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             }
 
             if ($this->getIncludeImageUrls()) {
-                $nodeTypeManager = $this->contentRepositoryRegistry->get($node->subgraphIdentity->contentRepositoryId)->getNodeTypeManager();
                 $collectionNodeTypeNames = array_map(
                     fn(NodeType $nodeType): NodeTypeName => $nodeType->name,
                     $nodeTypeManager->getSubNodeTypes('Neos.Neos:ContentCollection', false)
@@ -170,11 +168,11 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
 
                 $subgraph = $this->contentRepositoryRegistry->subgraphForNode($node);
                 $contentSubtree = $subgraph->findSubtree(
-                    $node->nodeAggregateId,
+                    $node->aggregateId,
                     FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
                 );
 
-                $this->resolveImages($contentSubtree, $item);
+                $this->resolveImages($contentSubtree, $item, $nodeTypeManager);
             }
 
             $items[] = $item;
@@ -191,10 +189,11 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      * @return void
      * @throws PropertyNotAccessibleException
      */
-    protected function resolveImages(Subtree $subtree, array &$item): void
+    protected function resolveImages(Subtree $subtree, array &$item, NodeTypeManager $nodeTypeManager): void
     {
         $node = $subtree->node;
-        $assetPropertiesForNodeType = $this->getAssetPropertiesForNodeType($this->getNodeType($node));
+        $nodeType = $nodeTypeManager->getNodeType($node->nodeTypeName);
+        $assetPropertiesForNodeType = $nodeType ? $this->getAssetPropertiesForNodeType($nodeType) : [];
 
         foreach ($assetPropertiesForNodeType as $propertyName) {
             if (is_array($node->getProperty($propertyName)) && !empty($node->getProperty($propertyName))) {
@@ -209,7 +208,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
         }
 
         foreach ($subtree->children as $childSubtree) {
-            $this->resolveImages($childSubtree, $item);
+            $this->resolveImages($childSubtree, $item, $nodeTypeManager);
         }
     }
 
@@ -217,14 +216,15 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
      * Return TRUE/FALSE if the node is currently hidden; taking the "renderHiddenInMenu" configuration
      * of the Menu Fusion object into account.
      */
-    protected function isDocumentNodeToBeIndexed(Node $node): bool
+    protected function isDocumentNodeToBeIndexed(Node $node, NodeTypeManager $nodeTypeManager): bool
     {
-        return !$this->getNodeType($node)->isOfType('Neos.Seo:NoindexMixin')
+        $nodeType = $nodeTypeManager->getNodeType($node->nodeTypeName);
+        return !$nodeType?->isOfType('Neos.Seo:NoindexMixin')
             && ($this->getRenderHiddenInMenu() || $node->getProperty('hiddenInMenu') !== true)
             && $node->getProperty('metaRobotsNoindex') !== true
             && (
                 (string)$node->getProperty('canonicalLink') === ''
-                || substr($node->getProperty('canonicalLink'), 7) === $node->nodeAggregateId->value
+                || substr($node->getProperty('canonicalLink'), 7) === $node->aggregateId->value
             );
     }
 }
