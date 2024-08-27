@@ -14,9 +14,8 @@
     'node':
       handler:     'Neos\Neos\FrontendRouting\FrontendNodeRoutePartHandlerInterface'
       options:
+        uriPathSuffix: ''
         onlyMatchSiteNodes: true
-  appendExceedingArguments: true
-
 
 -
   name:  'XML Sitemap'
@@ -30,8 +29,8 @@
     'node':
       handler:     'Neos\Neos\FrontendRouting\FrontendNodeRoutePartHandlerInterface'
       options:
+        uriPathSuffix: ''
         onlyMatchSiteNodes: true
-  appendExceedingArguments: true
 
 -
   name:  'robots.txt'
@@ -45,5 +44,5 @@
     'node':
       handler:     'Neos\Neos\FrontendRouting\FrontendNodeRoutePartHandlerInterface'
       options:
+        uriPathSuffix: ''
         onlyMatchSiteNodes: true
-  appendExceedingArguments: true

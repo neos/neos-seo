@@ -97,14 +97,14 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             $startingPoint = $this->getStartingPoint();
             $subgraph = $this->contentRepositoryRegistry->subgraphForNode($startingPoint);
 
-            $nodeTypeManager = $this->contentRepositoryRegistry->get($startingPoint->subgraphIdentity->contentRepositoryId)->getNodeTypeManager();
+            $nodeTypeManager = $this->contentRepositoryRegistry->get($startingPoint->contentRepositoryId)->getNodeTypeManager();
             $nodeTypeNames = NodeTypeNames::fromArray(array_map(
                 fn(NodeType $nodeType): NodeTypeName => $nodeType->name,
                 $nodeTypeManager->getSubNodeTypes('Neos.Neos:Document', false)
             ));
 
             $subtree = $subgraph->findSubtree(
-                $startingPoint->nodeAggregateId,
+                $startingPoint->aggregateId,
                 FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
             );
 
@@ -156,7 +156,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             }
 
             if ($this->getIncludeImageUrls()) {
-                $nodeTypeManager = $this->contentRepositoryRegistry->get($node->subgraphIdentity->contentRepositoryId)->getNodeTypeManager();
+                $nodeTypeManager = $this->contentRepositoryRegistry->get($node->contentRepositoryId)->getNodeTypeManager();
                 $collectionNodeTypeNames = array_map(
                     fn(NodeType $nodeType): NodeTypeName => $nodeType->name,
                     $nodeTypeManager->getSubNodeTypes('Neos.Neos:ContentCollection', false)
@@ -170,7 +170,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
 
                 $subgraph = $this->contentRepositoryRegistry->subgraphForNode($node);
                 $contentSubtree = $subgraph->findSubtree(
-                    $node->nodeAggregateId,
+                    $node->aggregateId,
                     FindSubtreeFilter::create(nodeTypes: NodeTypeCriteria::create($nodeTypeNames, NodeTypeNames::createEmpty()))
                 );
 
@@ -224,7 +224,7 @@ class XmlSitemapUrlsImplementation extends AbstractFusionObject
             && $node->getProperty('metaRobotsNoindex') !== true
             && (
                 (string)$node->getProperty('canonicalLink') === ''
-                || substr($node->getProperty('canonicalLink'), 7) === $node->nodeAggregateId->value
+                || substr($node->getProperty('canonicalLink'), 7) === $node->aggregateId->value
             );
     }
 }
