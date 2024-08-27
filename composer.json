@@ -7,6 +7,9 @@
         "neos/neos": "^9.0",
         "neos/fusion-afx": "^9.0"
     },
+    "scripts": {
+        "lint:phpstan": "../../../bin/phpstan analyse"
+    },
     "autoload": {
         "psr-4": {
             "Neos\\Seo\\": "Classes"

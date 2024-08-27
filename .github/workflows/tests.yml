@@ -1,0 +1,64 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, '[0-9]+.x' ]
+  pull_request:
+    branches: [ main, '[0-9]+.x' ]
+  workflow_dispatch: # Allow manual triggering on any branch via `gh workflow run tests.yml -r branch-name`
+
+jobs:
+  build:
+    env:
+      FLOW_PATH_ROOT: ../neos-base-distribution
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - php-version: "8.2"
+            neos-version: "9.0"
+          - php-version: "8.3"
+            neos-version: "9.0"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: mbstring, xml, json, zlib, iconv, intl, pdo_sqlite, mysql
+
+      - id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Prepare Neos distribution
+        run: |
+          git clone --depth 1 --branch ${{ matrix.neos-version }} https://github.com/neos/neos-development-distribution.git ${FLOW_PATH_ROOT}
+          cd ${FLOW_PATH_ROOT}
+          composer config --no-plugins allow-plugins.neos/composer-plugin true
+          composer config repositories.package '{ "type": "path", "url": "../neos-seo", "options": { "symlink": false } }'
+          composer require --no-update --no-interaction neos/seo:@dev
+          composer require --dev --no-update --no-interaction phpstan/phpstan:^1.10
+
+      - name: Install dependencies
+        run: |
+          cd ${FLOW_PATH_ROOT}
+          rm -rf composer.lock
+          composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Linting
+        run: |
+          cd ${FLOW_PATH_ROOT}/Packages/Application/Neos.Seo
+          composer run lint:phpstan
