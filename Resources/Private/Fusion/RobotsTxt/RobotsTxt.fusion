@@ -29,6 +29,7 @@ prototype(Neos.Seo:RobotsTxt) < prototype(Neos.Fusion:Component) {
                         node = ${item.node}
                         @process.prefix = ${'Sitemap: ' + value + props.linebreak}
                         @if.notExcluded = ${!props.excludedDimensionPresets || Array.indexOf(props.excludedDimensionPresets, item.dimensions[props.languageDimension][0]) == -1}
+                        @if.nodeExists = ${item.node}
                     }
                 }
             }
