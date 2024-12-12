@@ -3,8 +3,6 @@ name: Tests
 on:
   push:
     branches: [ main, '[0-9]+.x' ]
-  pull_request:
-    branches: [ main, '[0-9]+.x' ]
   workflow_dispatch: # Allow manual triggering on any branch via `gh workflow run tests.yml -r branch-name`
 
 jobs:
@@ -53,8 +51,6 @@ jobs:
           git clone --depth 1 --branch ${{ matrix.neos-version }} https://github.com/neos/neos-development-distribution.git ${FLOW_PATH_ROOT}
           cd ${FLOW_PATH_ROOT}
           composer config --no-plugins allow-plugins.neos/composer-plugin true
-
-          git -C ../${{ env.PACKAGE_FOLDER }} checkout -b ${PACKAGE_TARGET_VERSION}
           composer config repositories.package '{ "type": "path", "url": "../${{ env.PACKAGE_FOLDER }}", "options": { "symlink": false } }'
           composer require --no-update --no-interaction neos/seo:@dev
           composer require --dev --no-update --no-interaction phpstan/phpstan:^1.10
