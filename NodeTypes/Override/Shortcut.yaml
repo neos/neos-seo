@@ -1,0 +1,11 @@
+#
+# Disable SEO mixins on shortcuts
+#
+'Neos.Neos:Shortcut':
+  superTypes:
+    'Neos.Seo:TitleTagMixin': false
+    'Neos.Seo:SeoMetaTagsMixin': false
+    'Neos.Seo:NoindexMixin': true
+    'Neos.Seo:CanonicalLinkMixin': false
+    'Neos.Seo:OpenGraphMixin': false
+    'Neos.Seo:XmlSitemapMixin': false
