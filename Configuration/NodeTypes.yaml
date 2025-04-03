@@ -14,7 +14,7 @@
         seo:
           label: 'Neos.Seo:NodeTypes.Document:tabs.seo'
           position: 30
-          icon: 'icon-bullseye'
+          icon: 'bullseye'
 
 'Neos.Neos:Shortcut':
   superTypes:

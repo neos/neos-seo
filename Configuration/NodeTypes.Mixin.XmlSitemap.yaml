@@ -8,7 +8,7 @@
       groups:
         xmlsitemap:
           label: i18n
-          icon: 'icon-sitemap'
+          icon: 'sitemap'
           position: 500
           tab: seo
   properties:
@@ -26,25 +26,25 @@
             values:
               always:
                 label: i18n
-                icon: 'icon-clock'
+                icon: 'clock'
               hourly:
                 label: i18n
-                icon: 'icon-hourglass'
+                icon: 'hourglass'
               daily:
                 label: i18n
-                icon: 'icon-calendar-day'
+                icon: 'calendar-day'
               weekly:
                 label: i18n
-                icon: 'icon-calendar-week'
+                icon: 'calendar-week'
               monthly:
                 label: i18n
-                icon: 'icon-calendar'
+                icon: 'calendar'
               yearly:
                 label: i18n
-                icon: 'icon-glass-cheers'
+                icon: 'glass-cheers'
               never:
                 label: i18n
-                icon: 'icon-time-circle'
+                icon: 'time-circle'
     xmlSitemapPriority:
       type: string
       ui:
