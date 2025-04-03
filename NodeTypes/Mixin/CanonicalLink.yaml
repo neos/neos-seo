@@ -8,7 +8,7 @@
       groups:
         canonicallink:
           label: i18n
-          icon: 'icon-link'
+          icon: 'link'
           position: 200
           tab: seo
   properties:

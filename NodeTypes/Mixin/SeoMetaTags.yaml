@@ -8,7 +8,7 @@
       groups:
         seometa:
           label: i18n
-          icon: 'icon-tags'
+          icon: 'tags'
           position: 100
           tab: seo
   properties:

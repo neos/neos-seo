@@ -8,7 +8,7 @@
       groups:
         openGraph:
           label: i18n
-          icon: 'icon-share-alt'
+          icon: 'share-alt'
           position: 300
           tab: seo
   properties:
@@ -25,10 +25,10 @@
             values:
               website:
                 label: i18n
-                icon: 'icon-file'
+                icon: 'file'
               article:
                 label: i18n
-                icon: 'icon-newspaper'
+                icon: 'newspaper'
     openGraphTitle:
       type: string
       ui:
