@@ -2,7 +2,7 @@ prototype(Neos.Seo:OpenGraphMetaTags) < prototype(Neos.Fusion:Component) {
     type = ${q(node).property('openGraphType') || 'website'}
     title = ${q(node).property('openGraphTitle') || q(node).property('titleOverride') || q(node).property('title')}
     description = ${q(node).property('openGraphDescription') || q(node).property('metaDescription')}
-    siteName = ${q(site).property('titleOverride') || site.label}
+    siteName = ${q(site).property('titleOverride') || Neos.Node.label(site)}
     locale = Neos.Seo:LangAttribute
     url = Neos.Neos:NodeUri {
         node = ${node}

@@ -5,7 +5,7 @@ prototype(Neos.Seo:StructuredData.Breadcrumb) < prototype(Neos.Fusion:Component)
     renderer = afx`
         <Neos.Seo:StructuredData.RootObject type="BreadcrumbList">
             <Neos.Fusion:Map items={props.items} iterationName="iteration" @path="attributes.itemListElement">
-                <Neos.Seo:StructuredData.Object type="ListItem" attributes.position={iteration.cycle} attributes.name={item.label}>
+                <Neos.Seo:StructuredData.Object type="ListItem" attributes.position={iteration.cycle} attributes.name={Neos.Node.label(item)}>
                     <Neos.Neos:NodeUri node={item} absolute={true} @path="attributes.item"/>
                 </Neos.Seo:StructuredData.Object>
             </Neos.Fusion:Map>
