@@ -23,12 +23,15 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
 
             node = ${Neos.Dimension.findVariantInDimension(props.node, props.dimension, dimensionValue)}
             dimensionValueSeparator = ${props.dimensionValueSeparator}
+            dimension = ${props.dimension}
 
             renderer = afx`
                 <Neos.Seo:AlternateLanguageLink @key="defaultLink" node={props.node} hreflang="x-default"
                                                 @if.isFirst={iteration.isFirst}/>
                 <Neos.Seo:AlternateLanguageLink node={props.node}
-                    hreflang={String.replace(dimensionValue.value, props.dimensionValueSeparator, '-')}/>
+                    hreflang={String.replace(dimensionValue.value, props.dimensionValueSeparator, '-')}
+                    @if.isNoFallback={Neos.Dimension.currentValue(props.node, props.dimension) == Neos.Dimension.originValue(props.node, props.dimension)}
+                />
             `
         }
     }
