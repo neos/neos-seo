@@ -3,7 +3,17 @@ prototype(Neos.Seo:CanonicalLink) < prototype(Neos.Fusion:Tag) {
     attributes {
         rel = 'canonical'
         href = Neos.Fusion:Component {
-            node = ${documentNode}
+            node = Neos.Fusion:Case {
+                useFallback {
+                    condition = ${documentNode.originDimensionSpacePoint.hash != documentNode.dimensionSpacePoint.hash}
+                    renderer = ${q(documentNode).context({dimensions: NeosIo.Node.dimensionSpacePointArray(documentNode.originDimensionSpacePoint)}).get(0)}
+                }
+                default {
+                    condition = true
+                    renderer = ${documentNode}
+                }
+            }
+
             canonicalLink = ${q(this.node).property('canonicalLink')}
 
             renderer = Neos.Fusion:Case {
