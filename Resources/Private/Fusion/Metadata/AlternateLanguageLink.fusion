@@ -17,4 +17,6 @@ prototype(Neos.Seo:AlternateLanguageLink) < prototype(Neos.Fusion:Component) {
     renderer = afx`<link rel="alternate" hreflang={props.hreflang} href={props.nodeUri}/>`
 
     @if.hasNode = ${this.node}
+    @if.hasMetaRobotsNoIndexNotSet = ${!q(this.node).property('metaRobotsNoindex') && !q(this.node).is('[instanceof Neos.Seo:NoindexMixin]')}
+    @if.hasNoForeignCanonical = ${String.isBlank(q(this.node).property('canonicalLink'))}
 }

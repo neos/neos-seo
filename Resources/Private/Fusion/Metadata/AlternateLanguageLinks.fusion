@@ -30,7 +30,7 @@ prototype(Neos.Seo:AlternateLanguageLinks) < prototype(Neos.Fusion:Component) {
                                                 @if.isFirst={iteration.isFirst}/>
                 <Neos.Seo:AlternateLanguageLink node={props.node}
                     hreflang={String.replace(dimensionValue.value, props.dimensionValueSeparator, '-')}
-                    @if.isNoFallback={Neos.Dimension.currentValue(props.node, props.dimension) == Neos.Dimension.originValue(props.node, props.dimension)}
+                @if.isNoFallback={Neos.Dimension.currentValue(props.node, props.dimension) == Neos.Dimension.originValue(props.node, props.dimension)}
                 />
             `
         }
