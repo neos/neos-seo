@@ -324,7 +324,7 @@ to `RewriteRule ^(_Resources/Packages/|favicon\.ico) - [L]`.
   RewriteCond %{REQUEST_URI} ^/robots\.txt
   RewriteRule (.*) index.php [L]
 
-**If you use nginx you should disable the following entry if you have it::**
+**If you use nginx you should disable the following entry if you have it**::
 
   location = /robots.txt {
     allow all;
