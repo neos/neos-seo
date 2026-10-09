@@ -1,5 +1,5 @@
 prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
-    // Optional context. Usually "http://schema.org" for root objects
+    // Optional context. Usually "https://schema.org" for root objects
     context = ''
 
     // The required `schema.org` type for this object
