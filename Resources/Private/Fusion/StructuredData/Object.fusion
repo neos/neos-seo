@@ -5,6 +5,9 @@ prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
     // The required `schema.org` type for this object
     type = ''
 
+    // Optional externally referencable identifier (https://www.w3.org/TR/json-ld11/#node-identifiers).
+    id = ''
+
     // Inherit props from parent object into data. These can be accessed in the renderer via props.data.
     data = ${props}
 
@@ -15,6 +18,8 @@ prototype(Neos.Seo:StructuredData.Object) < prototype(Neos.Fusion:Component) {
         '@context' = ${props.context}
         '@context'.@if.isSet = ${props.context}
         '@type' = ${props.type}
+        '@id' = ${props.id}
+        '@id'.@if.isSet = ${props.id}
         @apply.attributes = ${props.attributes ? Array.filter(props.attributes, attribute => attribute != null) : []}
     }
     @if.hasType = ${this.type}
