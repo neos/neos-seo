@@ -1,5 +1,5 @@
 prototype(Neos.Seo:StructuredData.Website) < prototype(Neos.Fusion:Component) {
-    @if.onHomepage = ${documentNode == site}
+    @if.onHomepage = ${documentNode.aggregateId.value == site.aggregateId.value}
 
     name = ${Neos.Node.label(site)}
     url = Neos.Neos:NodeUri {

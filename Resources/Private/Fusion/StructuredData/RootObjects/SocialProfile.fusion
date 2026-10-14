@@ -3,7 +3,7 @@
 # https://developers.google.com/search/docs/data-types/social-profile
 #
 prototype(Neos.Seo:StructuredData.SocialProfile) < prototype(Neos.Fusion:Component) {
-    @if.onHomepage = ${documentNode == site}
+    @if.onHomepage = ${documentNode.aggregateId.value == site.aggregateId.value}
     @if.hasProfiles = ${Array.length(this.urls) > 0}
 
     // 'type' can either be 'Person' or 'Organization' and should be set accordingly
