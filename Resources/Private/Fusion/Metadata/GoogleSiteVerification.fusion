@@ -1,7 +1,7 @@
 prototype(Neos.Seo:GoogleSiteVerification) < prototype(Neos.Fusion:Component) {
     googleSiteVerification = ${q(node).property('metaGoogleSiteVerification') || Configuration.setting('Neos.Seo.google.siteVerification')}
 
-    @if.isSite = ${node == site}
+    @if.isSite = ${node.aggregateId.value == site.aggregateId.value}
     @if.hasGoogleSiteVerification = ${this.googleSiteVerification}
 
     renderer = afx`
