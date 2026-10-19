@@ -26,7 +26,7 @@ prototype(Neos.Seo:TitleTag) < prototype(Neos.Fusion:Component) {
                 // Retrieve all parent document nodes excluding the homepage
                 items = ${q(documentNode).add(q(documentNode).parents('[instanceof Neos.Neos:Document]')).get()}
                 items.@process.removeSiteNode = ${Array.slice(value, 0, -1)}
-                items.@process.removeSiteNode.@if.onSubPage = ${documentNode != site}
+                items.@process.removeSiteNode.@if.onSubPage = ${documentNode.aggregateId.value != site.aggregateId.value}
                 // Implode node titles with the separator
                 itemRenderer = ${q(item).property('title') + (iterator.isLast ? '' : breadcrumbSeparator)}
             }
